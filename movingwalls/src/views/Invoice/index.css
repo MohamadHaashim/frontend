@@ -1,0 +1,288 @@
+.invoice-header {
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.17px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 22px;
+    margin-bottom: 45px;
+}
+
+.invoice-full-content {
+    background: #F2F6FA;
+    padding-bottom: 2%;
+}
+
+.invoice-full-page-right-side .terms-condtions {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    gap: 0px;
+    opacity: 1;
+}
+
+.terms-para {
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+
+/* Invoice Common Css */
+
+.card-bottom {
+    margin-bottom: 20px;
+}
+
+.invoice-table-right {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.deal-name {
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.deal-name-value {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 17.05px;
+    text-align: left;
+    color: black;
+}
+
+.invoice-full-page-right-side {
+    padding-left: 35px !important;
+}
+
+.invoice-download-icon {
+    width: 14px;
+    height: 14px;
+    gap: 2px !important;
+    margin-right: 6px;
+    opacity: 1 !important;
+}
+
+.download-btn button {
+    padding: 15px 30px;
+    margin-left: -13px;
+    border-radius: 10px;
+    border: 1.4px solid #014DC0;
+    color: #014DC0;
+    font-family: Proxima Nova;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.05px;
+    text-align: left;
+}
+
+.created-by-top {
+    margin-top: 27px !important;
+}
+
+.invoice-frame-underline {
+    border-bottom: 1px solid lightgray;
+    margin-top: 2.3rem;
+    margin-bottom: 2rem;
+    width: 41rem;
+}
+
+@media screen and (max-width: 992px) {
+    .invoice-frame-underline {
+        width: 25.5rem;
+    }
+}
+
+@media screen and (min-width:984px) and (max-width: 1196px) {
+    .invoice-frame-underline {
+        width: 35.5rem;
+    }
+}
+
+@media screen and (min-width: 399px) and (max-width: 767px) {
+    .invoice-frame-underline {
+        width: 27.5rem;
+    }
+}
+
+.invoice-frame-underline-Digital {
+    border-bottom: 1px solid lightgray;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    width: 40.8rem;
+    margin-left: -0.5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .invoice-frame-underline-Digital {
+        width: 35.5rem;
+    }
+}
+
+@media screen and (min-width: 399px) and (max-width: 767px) {
+    .invoice-frame-underline-Digital {
+        width: 27.5rem;
+    }
+}
+
+@media screen and (min-width: 994px)and (max-width:1200px) {
+    .invoice-frame-underline-Digital {
+        width: 35.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 986px) {
+    .invoice-frame-underline-Digital {
+        width: 25.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .invoice-frame-underline-Digital {
+        width: 25.5rem;
+    }
+}
+
+.invoice-frame-vrtical-underline {
+    width: 0.5px;
+    height: 67.5%;
+    background-color: lightgray;
+    position: absolute;
+    right: 24.5rem;
+    top: 30px;
+}
+
+@media screen and (max-width: 1160px) {
+    .invoice-frame-vrtical-underline {
+        width: 0.5px;
+        height: 65.5%;
+        background-color: lightgray;
+        position: absolute;
+        right: 19.5rem;
+        top: 30px;
+    }
+}
+
+@media screen and (min-width: 994px)and (max-width:1200px) {
+    .invoice-frame-vrtical-underline {
+        right: 19.6rem;
+        top: 2vh;
+    }
+}
+
+@media screen and (min-width: 935px) and (max-width: 988px) {
+    .invoice-frame-vrtical-underline {
+        right: 14.6rem;
+        top: 2vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .invoice-frame-vrtical-underline {
+        right: 15rem;
+        top: 2vh;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .invoice-frame-vrtical-underline {
+        right: 0rem;
+        top: 2vh;
+    }
+}
+
+.price-detail {
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+}
+
+.price-value {
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.36px;
+    text-align: left;
+    color: #000000;
+}
+
+.grand-total {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    margin-top: 39px;
+}
+
+.grand-total-frame-underline {
+    border-bottom: 1px solid lightgray;
+    margin-top: 1.2rem;
+    margin-bottom: 0.1rem;
+    width: 41rem;
+}
+
+.sub-total-frame-underline {
+    border-bottom: 1px solid lightgray;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    width: 41rem;
+}
+
+@media screen and (min-width: 399px) and (max-width: 767px) {
+    .sub-total-frame-underline {
+        width: 27.5rem;
+        margin-left: 1.5rem;
+    }
+}
+
+.sub-total {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+}
+
+.aud-value {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.aud-value-left {
+    padding-right: 13px;
+}
+
+.bg-color {
+    background: #D9D9D9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.invoice-summary {
+    padding-top: 15px;
+}
+
+.terms {
+    margin-left: 9px;
+}

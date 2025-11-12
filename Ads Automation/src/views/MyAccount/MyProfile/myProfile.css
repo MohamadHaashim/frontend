@@ -1,0 +1,255 @@
+.my-accout-profile {
+  margin-bottom: 3rem;
+  margin-top: 6rem;
+}
+.my-accout-profile .profileCard {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.my-accout-profile .profileHeading {
+  margin-bottom: 1rem;
+}
+.my-accout-profile .avartarheader {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 10px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+.my-accout-profile .avatarNamediv {
+  display: flex;
+}
+.my-accout-profile .avatarNamediv .avatarImg img {
+  border-radius: 50%;
+}
+.my-accout-profile .emailPhoneField {
+  display: flex;
+}
+.my-accout-profile .mailHead .mail {
+  display: flex;
+}
+.my-accout-profile .phoneHead .phone {
+  display: flex;
+}
+.my-accout-profile .avatarNamediv .uploadPictureLink {
+  border-bottom: 0.5px solid #00976d;
+  color: #00976d;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.my-accout-profile .avatarNamediv .uploadPictureLink label{
+  cursor: pointer;
+}
+.my-accout-profile .profileEditBtnContainer {
+  text-align: right;
+  margin-top: 22%;
+  margin-right: 0.5rem;
+}
+.my-accout-profile .emailPhoneField img,
+.my-accout-profile .profileEditBtnContainer .profileEditBtn img {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+.my-accout-profile .profileEditBtnContainer .profileEditBtn {
+  width: 95px;
+  height: 40px;
+  color: #00976d;
+  padding: 10px 19px 9px 19px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #00976d;
+  font-size: 14px;
+  font-weight: 600;
+}
+.my-accout-profile .profileEditBtnContainer .profileEditBtn:hover{
+  background-color: #00976d;
+  border: 2px solid #00976d;
+  color: #ffffff;
+}
+.my-accout-profile .profile-form .row {
+  margin-top: 0.5rem;
+}
+.my-accout-profile .profile-form label {
+  color: #111827 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 5px !important;
+}
+.my-accout-profile .profileMail-logo {
+  padding: 12px;
+  right: 10px;
+  background-image: url("../../../assets/images/icons/profile-mail-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-right: 5px;
+}
+.my-accout-profile .sample .changePassword {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  height:90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00976d;
+  font-weight: 550 !important;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 2px;
+  background-color: #ffffff;
+}
+.my-accout-profile .sample .form-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-accout-profile .profile-form .drapDownDefaultSelectlightColor {
+  color: #9ca3af !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+.my-accout-profile .profile-form .drapDownDefaultSelectDarkColor {
+  color: #111827 !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+.my-accout-profile .emailPhoneField .mailHead {
+  margin-right: 30px;
+}
+.my-accout-profile .submitBtn {
+  text-align: right;
+  margin-top: 20px;
+}
+.my-accout-profile .submitBtn .cancelBtn {
+  padding: 8px, 32px, 8px, 32px;
+  height: 40px;
+  width: 120px;
+  border-radius: 4px;
+  border: 1px solid #9ca3af;
+  color: #9ca3af;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffffff;
+  margin-left: 20px;
+}
+.my-accout-profile .submitBtn .cancelBtn:hover {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #9ca3af;
+}
+.my-accout-profile .submitBtn .saveChangesBtn {
+  padding: 8px, 32px, 8px, 32px;
+  height: 40px;
+  width: 175px;
+  border-radius: 4px;
+  border: 1px solid #00d26e;
+  color: #001912;
+  background-color: #00d26e;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.my-accout-profile .submitBtn .saveChangesBtn:hover {
+  border: 1px solid #00d26e;
+  color: #00d26e;
+  background-color: #ffffff;
+}
+.my-accout-profile .avatarImg {
+  margin-right: 10px;
+}
+.my-accout-profile .changePasswordHeading{
+  padding: 2rem;
+}
+.my-accout-profile .changePasswordHeading .changePasswordForm   h5{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.my-accout-profile .changePasswordHeading .changePasswordForm   input{
+margin-bottom: 1rem;
+}
+.my-accout-profile .changePasswordHeading .saveContent{
+display: flex; 
+justify-content: space-evenly;
+}
+.my-accout-profile .changePasswordHeading .cangePasswordBtn {
+  height: 40px;
+  width: 330px;
+  border-radius: 4px;
+  border: 1px solid #00d26e;
+  color: #ffffff;
+  background-color: #00d26e;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: -42px;
+}
+.my-accout-profile .changePasswordHeading .cancelPasswordBtn {
+  height: 40px;
+
+  font-size: 16px;
+  margin-left: 20px;
+}
+.my-accout-profile .changePasswordForm label{
+  color: #111827 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+.profileEditBtn .bi-pencil-fill{
+  border-bottom: 2px solid #00976d
+}
+.profileEditBtn:hover .bi-pencil-fill{
+  border-bottom: 2px solid #ffffff
+}
+.editableBtnOn{
+  color: black !important;
+  background-color: lightblue !important;
+  /* border: 3px solid #00976d !important; */
+
+}
+.editableBtnOn .bi-pencil-fill{
+  border-bottom: 2px solid black;
+  margin-bottom: 0.25rem;
+}
+.editableBtnOn:hover{
+  background-color: #00976d !important;
+  border: 2px solid #00976d !important;
+  color: #ffffff !important;
+}
+
+.my-accout-profile .sample button[disabled]{
+background-color: #E9ECEF !important;
+}
+.my-accout-profile .changePasswordModel{
+  width: 75% !important;
+  margin: auto;
+}
+/* .my-accout-profile .modal.show .modal-dialog {
+  margin-right: auto;
+  margin-left: auto;
+} */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.cancelPasswordBtn {
+  margin-top: -350px;
+  transform: translateX(280px);
+  background-color: white;
+  color: #d2b300;
+  font-size: medium;
+
+}
+.single-line {
+  white-space: nowrap;
+  font-size: 12px;
+  color: #9ca3af;
+  font-weight: 300; /* Adjust as needed */
+}

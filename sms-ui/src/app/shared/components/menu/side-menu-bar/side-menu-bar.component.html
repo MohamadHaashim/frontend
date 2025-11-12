@@ -1,0 +1,598 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+
+    <ul *ngIf="loginUserRole === 'School Admin'" class="nav">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/admin/dashboard']">
+                <span [ngClass]="{ active: currentPath == '/admin/dashboard' }">
+            <i class="menu-icon mdi mdi-television"></i>
+            <span class="menu-title">Dashboard</span>
+                </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#staff" aria-expanded="false" aria-controls="ui-basic">
+                <span [ngClass]="{
+              active:
+                currentPath == '/admin/staff/list' ||
+                currentPath == '/admin/staff/map' ||
+                currentPath == '/school/admin/staff/create' ||
+                currentPath == '/admin/assign/role' ||
+                currentPath == '/admin/assign/class' ||
+                currentPath == '/admin/assign/subject'
+            }">
+            <i class="menu-icon mdi mdi-content-copy"></i>
+            Staff Management
+            <i class="menu-arrow"></i
+          ></span>
+            </a>
+            <div class="collapse" id="staff">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/school/admin/staff/list']"><span routerLinkActive="active">List Staffs</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/school/admin/staff/create']"
+                ><span routerLinkActive="active">Add Staff</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/school/admin/assign/role']"
+                ><span routerLinkActive="active">Assign Role</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/school/admin/assign/class']"
+                ><span routerLinkActive="active">Assign Class</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/school/admin/assign/subject']"
+                ><span routerLinkActive="active">Assign Subject</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          data-toggle="collapse"
+          href="#students"
+          aria-expanded="false"
+          aria-controls="ui-basic"
+        >
+          <span
+            [ngClass]="{
+              active:
+                currentPath == '/admin/student/list' ||
+                currentPath == '/admin/student/map' ||
+                currentPath == '/admin/student/create'
+            }"
+          >
+            <i class="menu-icon mdi mdi-content-copy"></i>
+            <span class="menu-title">Student Management </span>
+            <i class="menu-arrow"></i
+          ></span>
+        </a>
+                        <div class="collapse" id="students">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" [routerLink]="['/admin/student/list']"><span routerLinkActive="active">List Students</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/admin/student/create']"
+                ><span routerLinkActive="active">Add Student</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          data-toggle="collapse"
+          href="#setup"
+          aria-expanded="false"
+          aria-controls="ui-basic"
+          ><span
+            [ngClass]="{
+              active:
+                currentPath == '/school/setup/general/create' ||
+                currentPath == '/setup/subject-management/create' ||
+                currentPath == '/school/setup/fee/list' ||
+                currentPath == '/setup/fee/create' ||
+                currentPath == '/setup/session-mangement/create'
+            }"
+          >
+            <i class="menu-icon mdi mdi-content-copy"></i>
+            <span class="menu-title">Setup Management </span>
+            <i class="menu-arrow"></i
+          ></span>
+        </a>
+                                    <div class="collapse" id="setup">
+                                        <ul class="nav flex-column sub-menu">
+                                            <li class="nav-item">
+                                                <a class="nav-link" [routerLink]="['/school/setup/general/create']"><span routerLinkActive="active">General</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                [routerLink]="['/setup/session-mangement/create']"
+                ><span routerLinkActive="active">Session Mangement</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                [routerLink]="['/setup/subject-management/create']"
+                ><span routerLinkActive="active">Subject Management</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/school/setup/fee/list']"
+                ><span routerLinkActive="active">Fee Management</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item" [ngClass]="{'active': (currentPath == '/admin/staff/list' || currentPath == '/admin/staff/map')}">
+        <a class="nav-link" data-toggle="collapse" href="#staffs" aria-expanded="false" aria-controls="ui-basic">
+          <i class="menu-icon mdi mdi-content-copy"></i>
+          <span class="menu-title">Staff Management</span>
+          <i class="menu-arrow"></i>
+        </a>
+                                                <div class="collapse" id="staffs">
+                                                    <ul class="nav flex-column sub-menu">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" [routerLink]="['/admin/staff/list']" [ngClass]="{'active': currentPath == '/admin/staff/list'}">Staffs</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" [routerLink]="['/admin/staff/map']" [ngClass]="{'active': currentPath == '/admin/staff/map'}">Map Staff to Class</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item" [ngClass]="{'active': (currentPath == '/admin/user/list')}">
+                                                <a class="nav-link" data-toggle="collapse" href="#users" aria-expanded="false" aria-controls="ui-basic">
+                                                    <i class="menu-icon mdi mdi-content-copy"></i>
+                                                    <span class="menu-title">User Management</span>
+                                                    <i class="menu-arrow"></i>
+                                                </a>
+                                                <div class="collapse" id="users">
+                                                    <ul class="nav flex-column sub-menu">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" [routerLink]="['/admin/user/list']" [ngClass]="{'active': currentPath == '/admin/user/list'}">Users</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item" [ngClass]="{'active': (currentPath == '/admin/report/student' || currentPath == '/admin/report/staff')}">
+                                                <a class="nav-link" data-toggle="collapse" href="#reports" aria-expanded="false" aria-controls="ui-basic">
+                                                    <i class="menu-icon mdi mdi-content-copy"></i>
+                                                    <span class="menu-title">Reports</span>
+                                                    <i class="menu-arrow"></i>
+                                                </a>
+                                                <div class="collapse" id="reports">
+                                                    <ul class="nav flex-column sub-menu">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" [routerLink]="['/admin/report/student']" [ngClass]="{'active': currentPath == '/admin/report/student'}">Student</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" [routerLink]="['/admin/report/staff']" [ngClass]="{'active': currentPath == '/admin/report/staff'}">Staff</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item" [ngClass]="{'active': (currentPath == '/admin/settings/classes' || currentPath == '/admin/settings/roles')}">
+                                                <a class="nav-link" data-toggle="collapse" href="#master" aria-expanded="false" aria-controls="ui-basic">
+                                                    <i class="menu-icon mdi mdi-content-copy"></i>
+                                                    <span class="menu-title">Master Settings</span>
+                                                    <i class="menu-arrow"></i>
+                                                </a>
+                                                <div class="collapse" id="master">
+                                                    <ul class="nav flex-column sub-menu">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" [routerLink]="['/admin/settings/classes']" [ngClass]="{'active': currentPath == '/admin/settings/classes'}">Classes</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" [routerLink]="['/admin/settings/roles']" [ngClass]="{'active': currentPath == '/admin/settings/roles'}">Roles</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul *ngIf="loginUserRole === 'School Admin'" class="nav">
+                                            <li class="nav-item" [ngClass]="{ active: currentPath == 'super-admin/dashboard' }">
+                                                <a class="nav-link" [routerLink]="['/super-admin/dashboard']">
+                                                    <i class="menu-icon mdi mdi-television"></i>
+                                                    <span class="menu-title">Dashboard</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="collapse" href="#admin" aria-expanded="false" aria-controls="ui-basic">
+                                                    <span [ngClass]="{
+              active:
+                currentPath == '/super-admin/school/list' ||
+                currentPath == '/super-admin/school/create' ||
+                currentPath == '/super-admin/school/edit'
+            }">
+            <i class="menu-icon mdi mdi-content-copy"></i>
+            School Management
+            <i class="menu-arrow"></i
+          ></span>
+                                                </a>
+                                                <div class="collapse" id="admin">
+                                                    <ul class="nav flex-column sub-menu">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" [routerLink]="['/super-admin/school/list']"><span routerLinkActive="active">List School</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/super-admin/school/create']"
+                ><span routerLinkActive="active">Add School</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/super-admin/school/Edit']"
+                ><span routerLinkActive="active">Edit School</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          data-toggle="collapse"
+          href="#user"
+          aria-expanded="false"
+          aria-controls="ui-basic"
+        >
+          <span
+            [ngClass]="{
+              active:
+                currentPath == '/super-admin/user/list' ||
+                currentPath == '/super-admin/user/create' ||
+                currentPath == '/super-admin/user/edit'
+            }"
+          >
+            <i class="menu-icon mdi mdi-content-copy"></i>
+            User Management
+            <i class="menu-arrow"></i
+          ></span>
+        </a>
+                                                            <div class="collapse" id="user">
+                                                                <ul class="nav flex-column sub-menu">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" [routerLink]="['/super-admin/user/list']"><span routerLinkActive="active">List User</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/super-admin/user/create']"
+                ><span routerLinkActive="active">Add User</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/super-admin/school/Edit']"
+                ><span routerLinkActive="active">Edit School</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul *ngIf="loginUserRole === 'Student'" class="nav">
+      <li
+        class="nav-item"
+        [ngClass]="{ active: currentPath == '/admin/dashboard' }"
+      >
+        <a class="nav-link" [routerLink]="['/admin/dashboard']">
+          <i class="menu-icon mdi mdi-television"></i>
+          <span class="menu-title">Dashboard</span>
+        </a>
+                                                                    </li>
+                                                                    <li class="nav-item" [ngClass]="{ active: currentPath == '/admin/school/list' }">
+                                                                        <a class="nav-link" [routerLink]="['/admin/school/list']">
+                                                                            <i class="menu-icon mdi mdi-television"></i>
+                                                                            <span class="menu-title">Schools</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item" [ngClass]="{ active: currentPath == '/admin/school/list' }">
+                                                                        <a class="nav-link" [routerLink]="['/admin/school/list']">
+                                                                            <i class="menu-icon mdi mdi-television"></i>
+                                                                            <span class="menu-title">Schools</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul *ngIf="loginUserRole === 'Super Admin'" class="nav">
+                                                                    <li class="nav-item" [ngClass]="{ active: currentPath == '/admin/dashboard' }">
+                                                                        <a class="nav-link" [routerLink]="['/admin/dashboard']">
+                                                                            <i class="menu-icon mdi mdi-television"></i>
+                                                                            <span class="menu-title">Dashboard</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item" [ngClass]="{
+          active:
+            currentPath == '/admin/school/list' ||
+            currentPath == '/admin/school/create' ||
+            currentPath == '/admin/school/edit' ||
+            currentPath == '/admin/user/list' ||
+            currentPath == '/admin/user/create' ||
+            currentPath == '/admin/user/edit'
+        }">
+                                                                        <a class="nav-link" data-toggle="collapse" href="#school" aria-expanded="false" aria-controls="ui-basic">
+                                                                            <span>
+            <i class="menu-icon mdi mdi-content-copy"></i>
+            <span>School Management</span>
+                                                                            <i class="menu-arrow"></i
+          ></span>
+        </a>
+        <div class="collapse" id="school">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/school/list'
+                  || currentPath == '/admin/school/create'
+                  || currentPath == '/admin/school/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/school/list']"
+                ><span>List School</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/user/list'
+                  || currentPath == '/admin/user/create' 
+                  || currentPath == '/admin/user/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/user/list']"
+                ><span>School Admin User</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item"
+        [ngClass]="{
+          active :
+            currentPath == '/admin/settings/caste-categories/list' ||
+            currentPath == '/admin/settings/caste-categories/create' ||
+            currentPath == '/admin/settings/caste-categories/edit' ||
+            currentPath == '/admin/settings/religions/list' ||
+            currentPath == '/admin/settings/religions/create' ||
+            currentPath == '/admin/settings/religions/edit' ||
+            currentPath == '/admin/settings/blood-groups/list' ||
+            currentPath == '/admin/settings/blood-groups/create' ||
+            currentPath == '/admin/settings/blood-groups/edit' ||
+            currentPath == '/admin/settings/languages/list' ||
+            currentPath == '/admin/settings/languages/create' ||
+            currentPath == '/admin/settings/languages/edit' ||
+            currentPath == '/admin/settings/hobbies/list' ||
+            currentPath == '/admin/settings/hobbies/create' ||
+            currentPath == '/admin/settings/hobbies/edit' ||
+            currentPath == '/admin/settings/culturals/list' ||
+            currentPath == '/admin/settings/culturals/create' ||
+            currentPath == '/admin/settings/culturals/edit' ||
+            currentPath == '/admin/settings/sports/list' ||
+            currentPath == '/admin/settings/sports/create' ||
+            currentPath == '/admin/settings/sports/edit' ||
+            currentPath == '/admin/settings/states/list' ||
+            currentPath == '/admin/settings/states/create' ||
+            currentPath == '/admin/settings/states/edit' ||
+            currentPath == '/admin/settings/districts/list' ||
+            currentPath == '/admin/settings/districts/create' ||
+            currentPath == '/admin/settings/districts/edit' ||
+            currentPath == '/admin/settings/taluks/list' ||
+            currentPath == '/admin/settings/taluks/create' ||
+            currentPath == '/admin/settings/taluks/edit' ||
+            currentPath == '/admin/settings/panchayats/list' ||
+            currentPath == '/admin/settings/panchayats/create' ||
+            currentPath == '/admin/settings/panchayats/edit' ||
+            currentPath == '/admin/settings/wards/list' ||
+            currentPath == '/admin/settings/wards/create' ||
+            currentPath == '/admin/settings/wards/edit' ||
+            currentPath == '/admin/settings/board/list' ||
+            currentPath == '/admin/settings/board/create' ||
+            currentPath == '/admin/settings/board/edit' ||
+            currentPath == '/admin/settings/admitted-category/list' ||
+            currentPath == '/admin/settings/admitted-category/create' ||
+            currentPath == '/admin/settings/admitted-category/edit'
+        }"
+      >
+        <a
+          class="nav-link"
+          data-toggle="collapse"
+          href="#settings"
+          aria-expanded="false"
+          aria-controls="ui-basic"
+        >
+          <span>
+            <i class="menu-icon mdi mdi-content-copy"></i>
+                                                                            <span>Master Settings</span>
+                                                                            <i class="menu-arrow"></i
+          ></span>
+        </a>
+        <div class="collapse" id="settings">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/caste-categories/list'
+                  || currentPath == '/admin/settings/caste-categories/create'
+                  || currentPath == '/admin/settings/caste-categories/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/caste-categories/list']"
+                ><span>Caste Categories</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/religions/list'
+                  || currentPath == '/admin/settings/religions/create' 
+                  || currentPath == '/admin/settings/religions/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/religions/list']"
+                ><span>Religions</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/blood-groups/list'
+                  || currentPath == '/admin/settings/blood-groups/create' 
+                  || currentPath == '/admin/settings/blood-groups/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/blood-groups/list']"
+                ><span>Blood Groups</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/languages/list'
+                  || currentPath == '/admin/settings/languages/create' 
+                  || currentPath == '/admin/settings/languages/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/languages/list']"
+                ><span>Languages</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/hobbies/list'
+                  || currentPath == '/admin/settings/hobbies/create' 
+                  || currentPath == '/admin/settings/hobbies/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/hobbies/list']"
+                ><span>Hobbies</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/culturals/list'
+                  || currentPath == '/admin/settings/culturals/create' 
+                  || currentPath == '/admin/settings/culturals/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/culturals/list']"
+                ><span>Culturals</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/sports/list'
+                  || currentPath == '/admin/settings/sports/create' 
+                  || currentPath == '/admin/settings/sports/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/sports/list']"
+                ><span>Sports</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/states/list'
+                  || currentPath == '/admin/settings/states/create' 
+                  || currentPath == '/admin/settings/states/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/states/list']"
+                ><span>States</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/districts/list'
+                  || currentPath == '/admin/settings/districts/create' 
+                  || currentPath == '/admin/settings/districts/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/districts/list']"
+                ><span>Districts</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/taluks/list'
+                  || currentPath == '/admin/settings/talukscreate' 
+                  || currentPath == '/admin/settings/taluks/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/taluks/list']"
+                ><span>Taluks</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/panchayats/list'
+                  || currentPath == '/admin/settings/panchayats/create' 
+                  || currentPath == '/admin/settings/panchayats/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/panchayats/list']"
+                ><span>Panchayats</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/wards/list'
+                  || currentPath == '/admin/settings/wards/create' 
+                  || currentPath == '/admin/settings/wards/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/wards/list']"
+                ><span>Wards</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/board/list'
+                  || currentPath == '/admin/settings/board/create' 
+                  || currentPath == '/admin/settings/board/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/board/list']"
+                ><span>Board</span></a
+              >
+            </li>
+            <li class="nav-item"
+              [ngClass]="{
+                active:
+                  currentPath == '/admin/settings/admitted-category/list'
+                  || currentPath == '/admin/settings/admitted-category/create' 
+                  || currentPath == '/admin/settings/admitted-category/edit'
+              }"
+            >
+              <a class="nav-link" [routerLink]="['/admin/settings/admitted-category/list']"
+                ><span>Admitted Category</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+</nav>

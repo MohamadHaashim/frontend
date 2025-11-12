@@ -1,0 +1,207 @@
+<div class="profile-edit-btn">
+  <button *ngIf="!editMode" class="btn btn-sm btn-primary" (click)="enableEditMode()">Edit</button>
+  <button *ngIf="editMode" class="btn btn-sm btn-primary" (click)="enableViewMode()">Cancel Edit</button>
+</div>
+<div *ngIf="!editMode">
+<form *ngIf="studentDetails">
+  <h6 class="heading-small text-muted mb-4">Personal Details</h6>
+  <div class="pl-lg-4">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-username">Gender</label>
+          <p><strong>{{studentDetails.gender}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-email">Category</label>
+          <p><strong>{{studentDetails.category_name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-first-name">Caste</label>
+          <p><strong>{{studentDetails.caste}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Religion</label>
+          <p><strong>{{studentDetails.religion_name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Economic Category
+          </label>
+          <p><strong>{{studentDetails.economic_category}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-email">Blood Group</label>
+          <p><strong>{{studentDetails.blood_group_name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-first-name">Ambition</label>
+          <p><strong>{{studentDetails.ambition}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Mother Tongue</label>
+          <p><strong>{{studentDetails.mother_tonque_language}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Hobbies</label>
+          <div><span class="badge bg-primary mr-1" *ngFor="let hobbie of studentDetails.hobbies; let i = index">{{hobbie.hobby_name}}</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-username">Cultural talents</label>
+          <div><span class="badge bg-primary mr-1" *ngFor="let talent of studentDetails.talents; let i = index">{{talent.talent_name}}</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-email">How do you come to school</label>
+          <div><span class="badge bg-primary mr-1" *ngFor="let conveyance of studentDetails.conveyance; let i = index">{{conveyance.conveyance_name}}</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-first-name">Sports</label>
+          <div><span class="badge bg-primary mr-1" *ngFor="let sport of studentDetails.sports; let i = index">{{sport.sports_name}}</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Strength</label>
+          <p><strong>{{studentDetails.strength}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Weakness</label>
+          <p><strong>{{studentDetails.weakness}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Languages Known</label>
+          <p><strong>{{studentDetails.languages_known}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Other Skills</label>
+          <p><strong>{{studentDetails.other_skills}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Differnetly Abled</label>
+          <p><strong>{{studentDetails.differnetly_abled}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-4" />
+  <!-- Address -->
+  <h6 class="heading-small text-muted mb-4">Resident Details</h6>
+  <div class="pl-lg-4" *ngIf="studentDetails.resident">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-city">State</label>
+          <p><strong>{{studentDetails.resident.state_name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-country">District</label>
+          <p><strong>{{studentDetails.resident.district_name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-country">Taluk</label>
+          <p><strong>{{studentDetails.resident.taluk_name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-country">Panchayat</label>
+          <p><strong>{{studentDetails.resident.panchayat_name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-country">Ward</label>
+          <p><strong>{{studentDetails.resident.name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label class="form-control-label" for="input-country">Other details</label>
+          <p><strong>{{studentDetails.ward_name}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-4" />
+  <!-- Description -->
+  <div *ngFor="let relation of studentDetails.relations; let i = index">
+    <h6 class="heading-small text-muted mb-4">{{relation.type}}</h6>
+    <div class="pl-lg-4">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="form-group">
+            <label class="form-control-label">Salutation</label>
+            <p><strong>{{relation.salutation}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label class="form-control-label">Name</label>
+            <p><strong>{{relation.name}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <label class="form-control-label">Occupation</label>
+            <p><strong>{{relation.occupation}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label">Other details</label>
+            <p><strong>{{relation.other_details}}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+  </div>
+
+  <!-- Description -->
+  <h6 class="heading-small text-muted mb-4">Aadhar No</h6>
+  <div class="pl-lg-4">
+    <div class="form-group">
+      <p><strong>{{studentDetails.aadhar_no}}</strong></p>
+    </div>
+  </div>
+</form>
+</div>
+<div *ngIf="editMode">
+  <app-student-profile-personal-detail-form
+  [studentId]=studentId
+  [studentDetails]=studentDetails
+  ></app-student-profile-personal-detail-form>
+</div>

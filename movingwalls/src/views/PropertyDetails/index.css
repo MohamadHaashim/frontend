@@ -1,0 +1,1154 @@
+/* body & container align */
+
+.propery-light-skyblue {
+    background-color: #F2F6FA;
+    height: 1600px;
+}
+
+.property_details_scroll {
+    max-height: 1000px;
+    overflow-y: auto;
+}
+
+.property_details_scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.property_details_scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 3px solid #014DC0;
+    ;
+}
+
+.property_details_scroll::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+
+/* scroll-bar css */
+
+.property-group-item {
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: royalblue;
+    height: 10rem;
+}
+
+.property-rectangle-parent {
+    top: 10.288rem;
+    left: 1419.07px;
+    height: 10.813rem;
+}
+
+.property-group-child {
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: rgb(225, 223, 223);
+    height: 76.813rem;
+}
+
+.property-group-child,
+.property-group-item,
+.property-rectangle-parent {
+    position: absolute;
+    width: 0.375rem;
+}
+
+
+/*  */
+
+.property-back-btn {
+    font-family: 'proxima-nova', sans-serif;
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+/* General card styling */
+
+.property-main-row {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Proxima  Nova';
+}
+
+
+/*1st card Image styling */
+
+.property_img_fluid {
+    object-fit: cover;
+    border-radius: 12px;
+    width: 100%;
+    /* margin-top: 15px;
+    margin-left: 7px; */
+}
+
+.img-indicate {
+    margin-top: 12px;
+    left: 15px;
+}
+
+
+/*  */
+
+
+/* headers in 3 */
+
+.property-card-body {
+    padding: 1.5rem;
+    margin-left: -23px;
+}
+
+.property-card-body-1 {
+    padding: 1.5rem;
+    margin-left: -47px;
+}
+
+.property-card-body ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.property-card-body ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.property-card-body {
+    padding: 1.5rem;
+}
+
+
+/*  */
+
+
+/* 1st card-head */
+
+.property-head {
+    display: flex;
+    margin-left: 17px;
+    font-weight: 700;
+}
+
+
+/*  */
+
+
+/* 1st card title 1 */
+
+.property-card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'proxima-nova', sans-serif;
+    /* width: 27%; */
+    margin-left: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.36px;
+    text-align: left;
+}
+
+
+/*  */
+
+
+/* 1st card title-2 */
+
+.property-card-text {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+    margin-left: 0px;
+    /* margin-right: 7rem; */
+    margin-top: 5px;
+}
+
+
+/*  */
+
+
+/* 1st card title-3 */
+
+.property-card-amount {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.49px;
+    text-align: left;
+    width: 30%;
+    font-size: 1.2rem;
+    color: black;
+    /* margin-left: 10rem;
+    padding-left: 8.8rem; */
+}
+
+
+/*  */
+
+.property-map {
+    width: 100%;
+    height: 360px;
+    border: 0;
+}
+
+
+/* 1st card title-4 */
+
+.property-text-muted {
+    font-family: 'proxima-nova', sans-serif;
+    /* font-size: 0.95rem; */
+    color: #6c757d;
+    margin-left: 35px;
+}
+
+
+/*  */
+
+
+/* 1st card container-4 */
+
+.property-list-unstyled {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.property-list-unstyled .property-title-1 {
+    color: #333;
+    margin-bottom: 8px;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+}
+
+.property-list-unstyled .property-value-1 {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: black;
+}
+
+.property-list-unstyled .property-title-msg {
+    width: 10rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+
+/*  */
+
+
+/* 1st card-row  */
+
+.property-row-1 {
+    font-size: 13px;
+    /* width: 79%; */
+    display: flex;
+    margin-bottom: 1rem;
+    margin-left: 26px;
+}
+
+
+/*  */
+
+
+/* 1st card-column */
+
+
+/* .property-column-1 {
+    flex: 1;
+    width: 132px;
+  } */
+
+
+/* margin-right: 5rem; */
+
+
+/* margin-left: -7px; */
+
+
+/* .property-column-1:last-child {
+    margin-right: 0;
+  }
+   */
+
+
+/*  */
+
+.property-title-1 {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.prop-loc-con {
+    margin-top: -20px;
+}
+
+.property-value-1 {
+    font-family: 'proxima-nova', sans-serif;
+    width: 81px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+}
+
+
+/*1st card Button styling */
+
+.propety-btn-primary {
+    background: #014DC0;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.propety-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+}
+
+.btn-secondary:disabled {
+    background-color: #cccccc;
+}
+
+.property-card-3 {
+    font-family: 'Proxima  Nova';
+}
+
+button.properties-btn {
+    font-family: 'proxima-nova', sans-serif;
+    display: block;
+    padding: 14px 20px;
+    background: #014DC0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-left: 2rem;
+      margin-top: -7px;
+      margin-right: auto; */
+    width: 100%;
+}
+
+button.properties-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* button end */
+
+
+/*first card-container end */
+
+
+/* map-view start */
+
+
+/* Styling for the displayed image on the left */
+
+.property-main-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+
+/* Styling for the small clickable images */
+
+.property-thumb-img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #f2f2f2;
+}
+
+.property-thumb-img:hover {
+    border: 2px solid #007bff;
+}
+
+.property-thumb-container {
+    margin-top: 20px;
+}
+
+.property-nav-tabs {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    column-gap: 15px;
+}
+
+#location-tab {
+    color: #014DC0;
+}
+
+.map-section img {
+    width: 100%;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.location-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.map-section {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.map-section img {
+    width: 100%;
+    height: auto;
+}
+
+.location-details {
+    font-family: 'proxima-nova', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* mapview-row-2 */
+
+.property-row-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.property-content-1 {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.property-content-2 {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: black;
+}
+
+
+/*  */
+
+.property-head2 {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+    margin-bottom: 10px;
+}
+
+.property-column-2 {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.property-column-2:last-child {
+    margin-right: 0;
+}
+
+.location-details p {
+    margin-bottom: 0.5rem;
+}
+
+
+/*  */
+
+
+/* Custom styles for tabs */
+
+.property-nav-tabs .nav-link.active {
+    background-color: #e9ecef;
+    border-color: #dee2e6 #dee2e6 #fff;
+    padding: 10px;
+}
+
+.property-tab-content {
+    margin-top: 1rem;
+}
+
+.property-main-image {
+    width: 621px;
+    height: 401px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.property-thumb-img {
+    border-radius: 10px;
+    Width: 139px;
+    height: 81px;
+    margin: 10px;
+}
+
+
+/* map-view end */
+
+
+/* 3-card-container start */
+
+.card-head-line h5 {
+    margin-left: 10px;
+    margin-bottom: 1.5rem;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.92px;
+    text-align: left;
+}
+
+.card-img-top {
+    border-radius: 5px;
+}
+
+.propety-btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.propety-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+}
+
+.btn-secondary:disabled {
+    background-color: #cccccc;
+}
+
+
+/* Tab styling */
+
+.property-nav-tabs .nav-link.active {
+    background-color: #e9ecef;
+    border-color: #dee2e6 #dee2e6 #fff;
+    padding: 10px;
+}
+
+.property-tab-content {
+    margin-top: 1rem;
+}
+
+
+/* card-content */
+
+.property-card-title3 {
+    width: 75%;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.49px;
+    text-align: left;
+}
+
+.property-card-text-3 {
+    color: #5A5A5A;
+    margin-left: 0px;
+    margin-right: 5rem;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+}
+
+.property-card-text-4 {
+    font-weight: 600;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.49px;
+    text-align: left;
+    color: black;
+}
+
+.property-title-msg {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.property-title-msg {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #000000;
+}
+
+.property-row-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.property-column-3 {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.property-column-3:last-child {
+    margin-right: 0;
+}
+
+
+/* Card hover effect */
+
+.card-img-overlay-custom {
+    font-family: 'proxima-nova', sans-serif;
+    position: absolute;
+    margin-top: -20rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.status-label-1 {
+    font-family: 'proxima-nova', sans-serif;
+    position: absolute;
+    left: 20px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.props-status-label {
+    font-family: 'proxima-nova', sans-serif;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.props-hover,
+.props-hover2,
+.props-hover3 {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.props-hover:hover .card-img-overlay-custom {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.props-hover2:hover .card-img-overlay-custom {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.props-hover3:hover .card-img-overlay-custom {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* Hide the label by default */
+
+
+/* selling now */
+
+.card.props-hover .status-label {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card.props-hover:hover .status-label {
+    opacity: 0;
+}
+
+
+/* sold out */
+
+.card.props-hover2 .status-label {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card.props-hover2:hover .status-label {
+    opacity: 0;
+}
+
+
+/* available */
+
+.card.props-hover3 .status-label {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Show the label on hover */
+
+.card.props-hover3:hover .status-label {
+    opacity: 0;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+
+.property-card-3 {
+    min-height: 150px;
+}
+
+.property-logo-img {
+    margin-top: -5px;
+}
+
+
+/*  */
+
+
+/* 3-card-container end */
+
+
+/* Style for active tab */
+
+.audience-content {
+    font-family: "Proxima Nova";
+}
+
+.audience-btns {
+    display: flex;
+    column-gap: 40px
+}
+
+.audience-btn1 button,
+.audience-btn2 button {
+    border: none;
+    color: #5A5A5A;
+    padding: 5px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffff;
+}
+
+.audience-activebuttons {
+    padding: 5px 20px;
+    border: solid 1px transparent;
+}
+
+.audience-activebuttons.active {
+    color: #014DC0;
+    border: solid 1px #014DC0;
+    border-radius: 20px;
+    background-color: #ffff;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.audience-value {
+    margin-top: 20px;
+}
+
+.value-label {
+    font-size: 12px;
+    color: #5A5A5A;
+}
+
+.audience-value-label1 h6,
+.audience-value-label2 h6,
+.audience-value-label3 h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+.audiences-card1,
+.audiences-card2 {
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.audiences-card1 {
+    height: 400px;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card1-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card1-chart {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.card1-horizontal-lines-parent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1-horizontal-line-child {
+    border-top: 1px solid #e0e0e0;
+    margin: 0px 10px;
+}
+
+.card1-bar-chart {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.card1-bar {
+    width: 80px;
+    background-color: #0062ff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card1-labels-parent {
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 10px;
+    padding-left: 10px; */
+    color: #6b6b6b;
+}
+
+.card1-label-child {
+    width: 80px;
+    text-align: center;
+}
+
+.card1-y-axis-labels-parent {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+.card1-y-axis-label-child {
+    text-align: right;
+}
+
+
+/* audience component */
+
+.audiences-card2 {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gender-chart {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gender-chart-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#1a73e8 0deg 240deg, #e8f0fe 240deg 360deg);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.gender-chart-circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.gender-chart-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.gender-category {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.gender-category-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.gender-category-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.male-color {
+    background-color: #1a73e8;
+}
+
+.female-color {
+    background-color: #e8f0fe;
+}
+
+.audience-analysis {
+    height: 750px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin: auto
+}
+
+.cart-you-may-like {
+    position: relative;
+    top: 14rem;
+    padding-bottom: 13rem;
+}
+
+.property-nav-tabs .nav-item button {
+    border-radius: 0px;
+    padding: 10px 10px !important;
+}
+
+.audience_segment_label {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: -5rem;
+}
+
+.audience_segment_head {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    margin-right: 10px;
+    margin-top: 7px !important;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #5A5A5A;
+}
+
+.audience_segment {
+    word-wrap: normal;
+    width: 122px;
+    height: 33px;
+    padding: 1px 15px 2px 15px;
+    background: #FFFFFF;
+    color: #014DC0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 25px 0px #0000000D;
+}
+
+.seniorgraph:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 40%;
+    left: 18%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.adultgraph:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 40%;
+    left: 51%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.youthgraph:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 40%;
+    left: 83.5%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.gender-chart-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+
+.gender-chart-circle:hover::after {
+    content: "Male: " attr(data-male-percentage) "%" " | " "Female: " attr(data-female-percentage) "%";
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.bubble {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    background: rgba(0, 0, 0, 0.596);
+    border-radius: 40px;
+    padding: 30px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid rgba(0, 0, 0, 0.596);
+    border-right: 20px solid transparent;
+    border-top: 0px solid rgba(0, 0, 0, 0.596);
+    border-bottom: 10px solid transparent;
+    left: 60px;
+    bottom: -10px;
+}

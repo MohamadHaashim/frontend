@@ -1,0 +1,833 @@
+<div class="content-wrapper">
+  <div class="row page-header">
+      <div class="col-md-6">
+          <h3>Staff</h3>
+      </div>
+      <div class="col-md-6 btn-actions">
+          <a [routerLink]="['/school/admin/staff/list']">
+              <button type="button" class="btn btn-success">
+            <i class="mdi mdi-step-backward"></i>
+            Back
+          </button></a>
+      </div>
+  </div>
+  <div class="row page-content">
+      <div class="col-lg-12">
+        {{ isEditMode ? 'Edit Staff' : 'Create Staff' }}
+          <!-- <h4>{{ isEditMode ? 'Edit Caste' : 'Create Caste' }}</h4> -->
+      </div>
+  <div class="col-xs-12 col-md-12 mt-3 fieldset tab-cont-1 active">
+    <form [formGroup]="addStaffForm">
+      <div class="row field-block addStaffFormbg">
+
+
+        <div class="col-lg-12">
+          <label style="padding-bottom: 1px;" class="form-control-label" for="qualification">
+            Personal Info
+          </label>
+          <hr class="custom-hr">
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="first_name">First Name</label>
+                <input
+                  class="form-control"
+                  placeholder="Choose First Name"
+                  type="text"
+                  id="first_name"
+                  maxlength="200"
+                  formControlName="first_name"
+                 
+                />
+                <!-- <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addStaffForm.controls['first_name'].dirty ||
+                      addStaffForm.controls['first_name'].touched) &&
+                    addStaffForm.hasError('required', 'first_name')
+                  "
+                >
+                  First Name is required
+                </div> -->
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="last_name">Last Name</label>
+                <input
+                  class="form-control"
+                  placeholder="Choose lname"
+                  type="text"
+                  id="last_name"
+                  maxlength="200"
+                  formControlName="last_name"
+                 
+                />
+                <!-- <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addStaffForm.controls['last_name'].dirty ||
+                      addStaffForm.controls['last_name'].touched) &&
+                    addStaffForm.hasError('last_name', 'lname')
+                  "
+                >
+                  Last Name is required
+                </div> -->
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="middle_name">Middle Name</label>
+                <input
+                  class="form-control"
+                  placeholder="Choose Middle Name"
+                  type="text"
+                  id="middle_name"
+                  maxlength="200"
+                  formControlName="middle_name"
+                  
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="dob">Date Of Birth</label>
+                <input
+                  class="form-control"
+                  placeholder="Choose Date of Birth"
+                  type="date"
+                  id="dob"
+                  maxlength="200"
+                  formControlName="dob"
+                  required
+                  [ngClass]="{
+                    'border-danger':
+                      (submitted ||
+                        addStaffForm.controls['dob'].dirty ||
+                        addStaffForm.controls['dob'].touched) &&
+                      addStaffForm.hasError('required', 'dob')
+                  }"
+                />
+                <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addStaffForm.controls['dob'].dirty ||
+                      addStaffForm.controls['dob'].touched) &&
+                    addStaffForm.hasError('required', 'dob')
+                  "
+                >
+                  Date Of Birth is required
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="address">Address</label>
+                <input
+                  class="form-control"
+                  placeholder="Choose Address"
+                  type="text"
+                  id="address"
+                  maxlength="200"
+                  formControlName="address"
+                  
+                />
+                <!-- [ngClass]="{
+                'is-invalid': priSubmitted && prif['dob'].errors
+              }"
+              bsDatepicker
+              readonly
+              [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }" -->
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="phone">Phone</label>
+                <input
+                  class="form-control"
+                  placeholder="Choose Phone"
+                  type="text"
+                  id="phone"
+                  maxlength="200"
+                  formControlName="phone"
+                  
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="gender">Gender</label>
+                <div class="custom-select-wrapper">
+                <select
+                id="gender"
+                class="form-control"
+                formControlName="gender"
+                
+              >
+                <option value="" disabled selected>Choose Type</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <!-- <option *ngFor="let classes of classesList" [ngValue]="classes.id">
+                {{ classes.class_name }}
+              </option> -->
+              </select>
+              <span class="custom-arrow">
+
+              </span>
+             </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="designation"
+                  >Designation</label
+                >
+                <input
+                  class="form-control"
+                  placeholder="Enter Designation"
+                  type="text"
+                  id="designation"
+                  maxlength="200"
+                  formControlName="designation"
+                  
+                  
+                />
+                <!-- <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addStaffForm.controls['designation'].dirty ||
+                      addStaffForm.controls['designation'].touched) &&
+                    addStaffForm.hasError('required', 'designation')
+                  "
+                >
+                  Designation is required
+                </div> -->
+              </div>
+            </div>
+
+
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="notionality"
+                  >Notionality</label
+                >
+                
+                <div class="custom-select-wrapper">
+                  <select
+                  [ngModel]="this.nationDataId"
+                  id="nationality"
+                  class="form-control"
+                  formControlName="nationality"
+                 
+                >
+                  <option value="" disabled selected>Choose Type</option>
+                  <option *ngFor="let nation of nationData" [ngValue]="nation.id">{{nation.country_name}}</option>
+                  
+                  <!-- <option *ngFor="let classes of classesList" [ngValue]="classes.id">
+                  {{ classes.class_name }}
+                </option> -->
+                </select>
+                <span class="custom-arrow">
+  
+                </span>
+               </div>
+                <!-- <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addStaffForm.controls['nationality'].dirty ||
+                      addStaffForm.controls['nationality'].touched) &&
+                    addStaffForm.hasError('required', 'nationality')
+                  "
+                >
+                  Notionality is required
+                </div> -->
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="state">State</label>
+                <div class="custom-select-wrapper">
+                  <select
+                 
+                  id="state"
+                  class="form-control"
+                  formControlName="state"
+                 
+                >
+                  <option value="" disabled selected>Choose Type</option>
+                  <option *ngFor="let state of stateData" [ngValue]="state.id">{{state.state_name}}</option>
+                  
+                  <!-- <option *ngFor="let classes of classesList" [ngValue]="classes.id">
+                  {{ classes.class_name }}
+                </option> -->
+                </select>
+                <span class="custom-arrow">
+  
+                </span>
+               </div>
+                <!-- <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addStaffForm.controls['state'].dirty ||
+                      addStaffForm.controls['state'].touched) &&
+                    addStaffForm.hasError('required', 'state')
+                  "
+                >
+                  State is required
+                </div> -->
+              </div>
+            </div>
+    
+         
+    
+       
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="img_id"
+                  >Photo Upload</label
+                >
+                <input
+                  class="form-control"
+                  placeholder="Choose Photo Upload"
+                  type="file"
+                  id="img_id"
+                  maxlength="200"
+                  formControlName="img_id"
+                   (change)="selectFile($event)"
+                />
+                <!-- [ngClass]="{
+                'is-invalid': priSubmitted && prif['dob'].errors
+              }"
+              bsDatepicker
+              readonly
+              [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }" -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+     
+        
+
+
+        <div class="col-lg-12">
+          <label style="padding-bottom: 1px;" class="form-control-label" for="qualification"
+            >Official Info</label
+          >
+          <hr class="custom-hr1">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="staff_id">Staff ID</label>
+                <input
+                  class="form-control"
+                  placeholder="Enter Staff ID"
+                  type="text"
+                  id="staff_id"
+                  maxlength="200"
+                  formControlName="staff_id"
+                  
+                 
+                />
+               
+              </div>
+            </div>
+
+
+            <!-- <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="role">Role</label>
+                <div class="custom-select-wrapper">
+                  <div class="custom-select">
+                    <div class="select-selected" (click)="toggleDropdown($event)">
+                      <p>
+                        {{ selectedOptions.length ? getSelectedRoleNames().join(', ') : 'Select referral type' }}
+                      </p>
+                    </div>
+                    <div class="select-items" [ngClass]="{ 'd-block': isDropdownOpen }">
+                      <div *ngFor="let option of rolesData" class="checkbox-label">
+                        <label class="checkbox-container">
+                          <input
+                            type="checkbox"
+                            [value]="option.id" 
+                            [checked]="selectedOptions.includes(option.id)"  
+                            (click)="$event.stopPropagation()" 
+                            (change)="onCheckboxChange($event, option)"
+                          >
+                          {{ option.role_name }}
+                        </label>
+                      </div>
+                    </div>
+                    <span class="custom-arrow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+             -->
+
+            
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="role">Role</label>
+                    <div class="custom-select-wrapper">
+                      <div class="custom-select" (clickOutside)="closeDropdown()">
+                        <div class="select-selected" (click)="toggleDropdown()">
+                         
+                          
+                          <p>
+                            {{ selectedOptions.length ? getSelectedRoleNames().join(', ') : 'Select referral type' }}
+                          </p>
+                
+                        </div>
+                        <div class="select-items" [ngClass]="{ 'd-block': isDropdownOpen }">
+                          <div *ngFor="let option of rolesData" class="checkbox-label">
+                            <label class="checkbox-container">
+                              <input
+                                type="checkbox"
+                                [value]="option.id" 
+                                [checked]="selectedOptions.includes(option.id)"  
+                                (change)="onCheckboxChange($event, option)"
+                              >
+                              {{ option.role_name }}
+                            </label>
+                          </div>
+                        </div>
+                        <span class="custom-arrow"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+            
+            
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="type">Type</label>
+                <div class="custom-select-wrapper">
+                <select
+                id="type"
+                class="form-control"
+                formControlName="type"
+                
+              >
+                <option value="" disabled selected>Choose Type</option>
+                <option value="Permenant">Permenant</option>
+                <option value="Temporary">Temporary</option>
+                <option value="Contract">Contract</option>
+
+               
+              </select>
+              <span class="custom-arrow">
+                
+              </span>
+              </div>
+              
+              </div>
+            </div>
+           
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="date_of_appointment"
+                  >Date Of Appoinment</label
+                >
+                <input
+                  class="form-control"
+                  placeholder="Choose Date of Appoinment"
+                  type="date"
+                  id="date_of_appointment"
+                  maxlength="200"
+                  formControlName="date_of_appointment"
+                  
+                 
+                />
+                <!-- <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addStaffForm.controls['date_of_appointment'].dirty ||
+                      addStaffForm.controls['date_of_appointment'].touched) &&
+                    addStaffForm.hasError('required', 'date_of_appointment')
+                  "
+                >
+                  Date Of Appoinment is required
+                </div> -->
+              </div>
+            </div>
+         
+
+            </div>
+            </div>
+
+
+
+            <div class="col-lg-12">
+              <label style="padding-bottom: 1px;" class="form-control-label" for="qualification"
+                >Login Information</label
+              >
+              <hr class="custom-hr2">
+              <div class="row">
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="email">Email / Username</label>
+                    <input
+                      class="form-control"
+                      placeholder="Choose Email"
+                      type="text"
+                      id="email"
+                      maxlength="200"
+                      formControlName="email"
+                      required
+                      [ngClass]="{
+                        'border-danger':
+                          (submitted ||
+                            addStaffForm.controls['email'].dirty ||
+                            addStaffForm.controls['email'].touched) &&
+                          addStaffForm.hasError('required', 'email')
+                      }"
+                    />
+                    <div
+                      class="text-danger"
+                      *ngIf="
+                        (submitted ||
+                          addStaffForm.controls['email'].dirty ||
+                          addStaffForm.controls['email'].touched) &&
+                        addStaffForm.hasError('required', 'email')
+                      "
+                    >
+                      Email Id is required
+                    </div>
+                  </div>
+                </div>
+              
+               
+                <div class="col-lg-6" *ngIf="!isEditMode">
+                  <div class="form-group">
+                    <label class="form-control-label" for="password">Password</label>
+                    <input
+                      class="form-control"
+                      placeholder="Choose Password"
+                      type="text"
+                      id="password"
+                      maxlength="200"
+                      formControlName="password"
+                      
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6" *ngIf="!isEditMode">
+                  <div class="form-group">
+                    <label class="form-control-label" for="cpassword">Confirm Password</label>
+                    <input
+                      class="form-control"
+                      placeholder="Choose Confirm Password"
+                      type="text"
+                      id="confirm_password"
+                      maxlength="200"
+                      formControlName="confirm_password"
+                     
+                    />
+                  </div>
+                </div>
+            
+                </div>
+                </div>
+
+
+                <div class="col-lg-12">
+                  <form [formGroup]="contactFormQuali" (ngSubmit)="onSubmitQuali()">
+                    <div formArrayName="contactsQuali" class="scrollable-container">
+                      <div *ngFor="let contact of contactsQuali.controls; let i = index" [formGroupName]="i">
+                        <label style="padding-bottom: 1px;" class="form-control-label" for="qualification">Qualification : {{i + 1}}</label>
+                        <hr class="custom-hr3">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="form-group">
+                              <label class="form-control-label" for="degree">Degree</label>
+                              <input
+                                class="form-control"
+                                placeholder="Choose Degree"
+                                type="text"
+                                id="degree"
+                                formControlName="degree"
+                                (change)="handleChangeQuali(i, 'degree', $event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="form-group">
+                              <label class="form-control-label" for="year">Year</label>
+                              <input
+                                class="form-control"
+                                placeholder="Choose Year"
+                                type="text"
+                                id="year"
+                                formControlName="year"
+                                (change)="handleChangeQuali(i, 'year', $event)"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="form-group">
+                              <label class="form-control-label" for="grade">Grade/Percentage</label>
+                              <input
+                                class="form-control"
+                                placeholder="Choose Grade/Percentage"
+                                type="text"
+                                id="grade"
+                                formControlName="grade"
+                                (change)="handleChangeQuali(i, 'grade', $event)"
+                              />
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="button-container">
+                                  <ul class="ul-lists">
+                                    <li *ngIf="contactsQuali.length > 1">
+                                      <div tabindex="0" class="plusButton">
+                                        <svg (click)="removeContactQuali(i)" class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                          <g mask="url(#mask0_21_345)">
+                                            <path d="M6.25 16.25H23.75V13.75H6.25V16.25Z"></path>
+                                          </g>
+                                        </svg>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div tabindex="0" class="plusButton">
+                                        <svg (click)="addContactQuali()" class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                          <g mask="url(#mask0_21_345)">
+                                            <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+                                          </g>
+                                        </svg>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </form>
+                </div>
+                
+                
+
+
+        
+
+
+
+
+
+        <div class="col-lg-12">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div formArrayName="contacts" class="scrollable-container">
+              <div *ngFor="let contact of contacts.controls; let i = index" [formGroupName]="i">
+                <label style="padding-bottom: 1px;" class="form-control-label" for="experience">Experience : {{ i + 1 }}</label>
+                <hr class="custom-hr4">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="school">School</label>
+                      <input
+                        class="form-control"
+                        placeholder="Enter School"
+                        type="text"
+                        id="school"
+                        formControlName="school"
+                        (change)="handleChange(i, 'school', $event)"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="years">Year</label>
+                      <input
+                        class="form-control"
+                        placeholder="Enter Year"
+                        type="text"
+                        id="years"
+                        formControlName="years"
+                        (change)="handleChange(i, 'years', $event)"
+                      />
+                    </div>
+
+
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="button-container">
+        <ul class="ul-lists">
+          <li *ngIf='contacts.length > 1'>
+            <div tabindex="0" class="plusButton">
+              <svg (click)="removeContactExp(i)" class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <g mask="url(#mask0_21_345)">
+                  <path d="M6.25 16.25H23.75V13.75H6.25V16.25Z"></path>
+                </g>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div tabindex="0" class="plusButton">
+              <svg (click)="addContact()" class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                <g mask="url(#mask0_21_345)">
+                  <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+                </g>
+              </svg>
+            </div>
+          </li>
+         
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+
+
+                    <!-- <div class="row">
+                      <div   class="col-md-12">
+                        <div class="button-container">
+                          <ul  class="ul-lists">
+                            <li>
+                              <div  tabindex="0" class="plusButton">
+                                <svg (click)="addContact()" class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                  <g mask="url(#mask0_21_345)">
+                                    <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                            </li>
+                            <li *ngFor="let contact of contacts.controls; let i = index" >
+                              <div tabindex="0" class="plusButton">
+                                <svg (click)="removeContactExp(i)" class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                                  <g mask="url(#mask0_21_345)">
+                                    <path d="M6.25 16.25H23.75V13.75H6.25V16.25Z"></path>
+                                  </g>
+                                </svg>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div> -->
+                    
+        
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+
+
+
+
+
+
+        <div  class="col-md-12">
+          <div class="row">
+            <div class="col-md-4"></div>
+          
+            <div class="col-md-4"></div>
+            <div style="padding-top: 20px;" class="col-md-4 btn-next-con addStaffCreateBtn">
+              <button  (click)="staffFormSubmit()" class="btn btn-primary btn-next">
+                {{ isEditMode ? 'Update' : 'Create' }}
+              </button>
+            </div>
+          </div> 
+        </div>
+
+        <!--  -->
+        <!-- <div class="col-lg-6"></div> -->
+      </div>
+    </form>
+
+
+    <!-- <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div formArrayName="contacts">
+        <div *ngFor="let contact of contacts.controls; let i = index" [formGroupName]="i">
+          <h5>Contact Person: {{ i + 1 }}</h5>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  formControlName="name"
+                  class="form-control"
+                  (change)="handleChange(i, 'name', $event)"
+                  [ngStyle]="submit && contact.get('name')?.errors ? {'border-color': 'red'} : {}"
+                />
+                <div *ngIf="submit && contact.get('name')?.errors" class="text-danger">
+                  Name is required
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="mobile_no">Mobile No:</label>
+                <input type="text" formControlName="mobile_no" class="form-control" />
+              </div>
+            </div>
+         
+          </div>
+        </div>
+      </div>
+    
+      <div style="text-align: right; float: right;">
+        <button type="button" (click)="addContact()" class="btn btn-primary" >Add Contact</button>
+      </div>
+    
+      <div style="text-align: center; margin-top: 20px;">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+    
+ -->
+
+    
+  </div>
+</div>
+
+
+
+<!-- The Modal -->
+<!-- <div id="confirmDeleteModal" class="custom-modal">
+
+  <div class="custom-modal-content">
+      <div class="custom-modal-header">
+          <span class="close" (click)="closeDeleteModal()">&times;</span>
+          <h4>Confirm Delete!</h4>
+      </div>
+      <div class="custom-modal-body">
+          <p class="text-center">Are you sure, you want to delete this student</p>
+      </div>
+      <div class="custom-modal-footer align-middle">
+          <button type="button" class="btn btn-default" (click)="closeDeleteModal()">
+      Cancel
+    </button>
+          <button type="button" class="btn btn-inverse-primary" (click)="confirmDelete()">
+      Delete
+    </button>
+      </div>
+  </div>
+</div> -->

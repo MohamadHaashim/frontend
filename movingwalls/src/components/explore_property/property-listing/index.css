@@ -1,0 +1,681 @@
+.property-list-search-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.property_list_search_location_logo {
+    margin-left: 20px;
+}
+
+.property_list_search_con_2 {
+    justify-self: end;
+    margin-top: 10px;
+}
+
+.property_list_search_con_3 {
+    gap: 15px;
+}
+
+.property_list_search_card_con {
+    background: #F2F6FA;
+    border-radius: 5px;
+}
+
+.property_list_search_card {
+    border: none;
+    background-color: transparent;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #014DC0;
+    width: 95px;
+    height: 32px;
+    text-align: center;
+}
+
+.property_list_filter_icon {
+    width: 15px;
+    height: 17px;
+    margin-top: 5px;
+}
+
+.property_list_avil_content {
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+    color: #000000;
+}
+
+.property_list_pagination_content {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: right;
+    color: #5A5A5A;
+    margin-top: 10px;
+}
+
+.property_list_pagination_left {
+    background-color: #cbc9c9;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+    padding-top: 0;
+}
+
+.property_list_pagination_left.active {
+    background: #014DC0;
+}
+
+.property_list_pagination_right {
+    margin-left: 15px;
+    background: #014DC0;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    padding-top: 0;
+}
+
+.property_list_popup_header {
+    background: #F2F6FA;
+}
+
+.property_list_popup_header_content {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.property_list_popup_notify_content {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.49px;
+    text-align: left;
+    color: #FF0000;
+}
+
+.property_list_popup_gotit_btn {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    opacity: 1;
+    background: #014DC0;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+.property_list_filter_popup_header {
+    background: #F2F6FA;
+}
+
+.property_list_filter_popup_header_content {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.property_list_filter_popup_selected_input_header {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    color: #000000;
+}
+
+.property_list_filter_popup_selected_input {
+    background: #F2F6FA;
+    padding: 8px 16px 8px 16px;
+    gap: 5px;
+    border-radius: 100px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #014DC0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.property_list_filter_popup_selected_input_close {
+    font-size: 8px;
+    color: #014DC0 !important;
+}
+
+.property_list_popup_list_header {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding-bottom: 15px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: center;
+    /* margin-left: 10px; */
+    padding-top: 15px;
+}
+
+.property_list_popup_list_header_1 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    margin-top: -8px;
+    /* margin-left: -12px; */
+}
+
+.property_list_popup_list_header_2 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    margin-top: -15px;
+    /* margin-left: -15px; */
+}
+
+.property_list_popup_list_header_2.active,
+.property_list_popup_list_header_1.active {
+    font-weight: 600;
+    background: #F2F6FA;
+    color: #014DC0;
+}
+
+
+/* Styles for active state during clicking */
+
+.property_list_popup_list_header_2:active,
+.property_list_popup_list_header_1:active {
+    font-weight: 600;
+    background: #F2F6FA;
+    /* Keep the same if desired */
+    color: #014DC0;
+    /* Keep the same if desired */
+}
+
+.category-list {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.property_list_popup_list_header_formcheck {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #014DC0;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.property_list_popup_list_header_formcheck_1 {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+    margin-left: 20px;
+}
+
+.property_list_select_state {
+    border: none;
+    border-bottom: 0.5px solid #e4e4e4;
+    border-radius: 0;
+}
+
+.property_list_popup_rightarrow {
+    font-size: 10px;
+    float: right;
+}
+
+input[type="checkbox"] {
+    accent-color: #014DC0;
+    width: 16px;
+    height: 16px;
+    top: 379px;
+    left: 187px;
+    gap: 0px;
+    border-radius: 2px;
+    opacity: 1;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #014DC0;
+    width: 16px;
+    height: 16px;
+    top: 379px;
+    left: 187px;
+    gap: 0px;
+    border-radius: 2px;
+    opacity: 1;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+
+.property_list_popup_list_header_3 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    width: 100%;
+    padding: 15px;
+    margin-top: -8px;
+    /* margin-left: -12px; */
+}
+
+.property_list_popup_list_header_4 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    width: 100%;
+    padding: 15px;
+    margin-top: -15px;
+    /* margin-left: -15px; */
+}
+
+.property_list_popup_list_header_5 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    width: 100%;
+    /* margin-left: -15px; */
+}
+
+.property_list_popup_list_cm {
+    margin: 15px;
+}
+
+.property_list_scrollbar {
+    height: 70px;
+    overflow-y: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#style::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+}
+
+#style::-webkit-scrollbar {
+    width: 5px;
+    background-color: #E5E5E5;
+    height: 5px;
+}
+
+#style::-webkit-scrollbar-thumb {
+    background-color: #014DC0;
+    border-radius: 10px;
+}
+
+.property-list-main-container .property_list_scroll .card-img-overlay-custom button {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.05px;
+    text-align: center;
+}
+
+.property-list-main-container .property_list_scroll .card-img-overlay-custom button.propety-btn-primary img {
+    padding-right: 10px;
+}
+
+.property-list-main-container .props-hover2:hover>img,
+.property-list-main-container .props-hover2:hover>.property-card-body {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.propety-btn-danger {
+    background-color: #dc3545;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    width: 80%;
+}
+
+.propety-btn-danger .property-logo-img {
+    padding-right: 10px;
+}
+
+.grdcategory-checkbox {
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.exploreproperty_list_navbar_header_1 {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: black;
+    width: 70px;
+    margin-left: 16px;
+    margin-top: -2rem !important;
+}
+
+.explore-date p {
+    color: black;
+    cursor: pointer;
+}
+
+.explore-enddate {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.explore_property_filter_popup_header {
+    background: #F2F6FA;
+}
+
+.exploredate_title {
+    font-size: 16px;
+}
+
+.explore_startDate,
+.explore_endDate {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.explore_startDate label,
+.explore_endDate label {
+    margin-right: 0.3rem;
+}
+
+.explore-content {
+    width: 80% !important;
+}
+
+.explore_dateSubmit {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background: #014DC0;
+}
+
+.exploreloginfilled-your-logo-icon {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.explorelogin-leftside .exploreloginfilled-your-logo-icon {
+    background-color: black;
+    /* padding: 22px 16px !important; */
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.explorelogin-leftside {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.explorelogin-leftside .exploreloginfilled-welcome-to-outfront-container {
+    text-align: left;
+    font-family: 'Caudex', serif;
+    font-size: 45px;
+    height: 150px;
+    font-weight: 700;
+    width: 410px;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.explorelogin-leftside .exploreloginfilled-run-your-next {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Caudex', serif;
+    top: -2rem;
+    width: 360px;
+    height: 123px;
+    color: black;
+}
+
+.explorelogin_header {
+    border-bottom: none;
+}
+
+.cart-bg-style {
+    padding: 0 !important;
+}
+
+.exploreloginfilled-login-form-parent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../../../assets/images/login-right-bg.png"); */
+    padding: 15px;
+    border-radius: 15px;
+    background-position: left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.exploreright-side-alignment {
+    padding: 15px 20px;
+}
+
+.exploreloginfilled-please-enter-your {
+    width: 18rem;
+    font-family: Proxima Nova;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 43.51px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.exploreloginfilled-login-btn button {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #014DC0;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 9px;
+    border: none;
+    align-items: center;
+    font-family: 'Proxima Nova';
+}
+
+.exploreloginfilled-register-now,
+.signup-line {
+    margin-left: 4px;
+    margin-right: 4px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Helvetica';
+}
+
+.exploreSubmit-header {
+    background-color: #F2F6FA;
+    border: none;
+    padding: 13px 20px;
+    font-family: 'Proxima Nova';
+}
+
+.exploreSubmit-body h6 {
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.exploreSubmitClose {
+    border: 1px solid #014DC0;
+    border-radius: 5px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    color: #014DC0;
+    padding: 10px 50px 10px 50px;
+    background: transparent;
+}
+
+.exploreSubmitRequest {
+    background: #014DC0;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 10px 10px 25px;
+    border-radius: 5px;
+    width: 11rem;
+}
+
+.exploreSubmitInput {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: -11.95px;
+    text-align: left;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #D9D9D9;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.error-border {
+    border-bottom: 1px solid red !important;
+}
+
+.exploreSubmitInput:focus {
+    box-shadow: none !important;
+}
+
+.exploremodal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 125%;
+    margin-left: -105px;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}
+
+.explore-rightside {
+    border: none;
+    margin-top: -20px;
+}
+
+.exploreloginfilled-login-form-parent .loginfilled-hatimbig-parent {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.loginfilled-hatimbig-parent input {
+    padding-right: 2.5rem;
+}
+
+.exploreloginfilled-login-form-parent .loginfilled-hatimbig-parent .loginfilled-frame-username {
+    border-bottom: 1px solid lightgray;
+    margin-top: 0.8rem;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.exploreloginfilled-login-form-parent .loginfilled-hatimbig-parent .loginfilled-frame-username.error {
+    border-bottom: 1px solid red;
+}
+
+.exploreloginfilled-login-form-parent .loginfilled-hatimbig-parent .loginfilled-frame-password {
+    border-bottom: 1px solid lightgray;
+    margin-top: 0.8rem;
+}
+
+.exploreloginfilled-login-form-parent .loginfilled-hatimbig-parent .loginfilled-frame-password.error {
+    border-bottom: 1px solid red;
+}
+
+.explore-forgetpassword a {
+    text-decoration: none;
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 50px;
+    float: right;
+    text-underline-position: 'from-font';
+    text-decoration-skip-ink: none;
+}
+
+.exploreLogin_left {
+    border-right: 1.5px solid #D9D9D9;
+}
+
+.submitenquiry-dates-popup {
+    border-bottom: 1px solid #D9D9D9;
+    padding-bottom: 3px;
+}

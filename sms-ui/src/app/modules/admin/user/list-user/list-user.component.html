@@ -1,0 +1,79 @@
+<div class="content-wrapper">
+    <div class="row page-header">
+        <div class="col-md-6">
+            <h3>School Users</h3>
+        </div>
+        <div class="col-md-6 btn-actions">
+            <button type="button" class="btn btn-success" (click)="navigateToCreate()">
+              <i class="mdi mdi-plus"></i> Add
+          </button>
+        </div>
+    </div>
+    <div class="row page-content card-shadow">
+        <h4>List Users</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th class="list-avatar-td">Avatar</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th class="list-status-td">Action</th>
+                    </tr>
+                </thead>
+                <tbody *ngIf="userData.length > 0; else noData">
+                    <tr *ngFor="let user of userData">
+                        <td class="text-center">
+                            <img class="userImg" [src]="getImageUrl(user)" alt="No image found">
+                        </td>
+                        <td>{{user.first_name}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.phone}}</td>
+                        <td>
+                            <button type="button" class="btn btn-icons btn-inverse-primary" [routerLink]="['/admin/user/edit/',user.id]">
+                              <i class="mdi mdi-pencil"></i>
+                          </button>
+                            <button type="button" class="btn btn-icons btn-inverse-danger" aria-hidden="true" (click)="setDeleteId(user.id)">
+                              <i class="mdi mdi-delete-forever"></i>
+                          </button>
+                        </td>
+                    </tr>
+                </tbody>
+                <ng-template #noData>
+                    <tr>
+                        <td colspan="5" class="text-center fs-6 mt-20">No data found</td>
+                    </tr>
+                </ng-template>
+            </table>
+        </div>
+        <div class="paginationStyle d-flex justify-content-end" *ngIf="userData.length > 0">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="currentPage" [pageSize]="itemsPerPage" (pageChange)="onPageChange($event)">
+            </ngb-pagination>
+        </div>
+    </div>
+</div>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="ball-scale-multiple" [fullScreen]="true">
+    <img style="width:160px;height:140px;" src="../../../../../assets/images/loading-removebg-preview.png" alt="noImg">
+</ngx-spinner>
+<!-- The Modal -->
+<div id="confirmDeleteModal" class="custom-modal">
+    <!-- Modal content -->
+    <div class="custom-modal-content">
+        <div class="custom-modal-header">
+            <span class="close" (click)="closeDeleteModal()">&times;</span>
+            <h4>Confirm Delete!</h4>
+        </div>
+        <div class="custom-modal-body">
+            <p class="text-center">Are you sure, you want to delete this admin?</p>
+        </div>
+        <div class="custom-modal-footer align-middle">
+            <button type="button" class="btn btn-default" (click)="closeDeleteModal()">
+              Cancel
+          </button>
+            <button type="button" class="btn btn-inverse-primary" (click)="confirmDelete()">
+              Delete
+          </button>
+        </div>
+    </div>
+</div>

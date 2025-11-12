@@ -1,0 +1,27 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Works for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.form-control:focus {
+  border-color: #888888;
+  outline: 0;
+  border-width: 2px;
+  -webkit-box-shadow: inset 0 0px 0px 0px;
+          box-shadow: inset 0 0px 0px 0px;
+}
+.input_icon {
+  position: absolute;
+  right: 2px;
+  height: 90%;
+  top: 2px;
+  background: #fff;
+  > * {
+    margin: 20px;
+  }
+}

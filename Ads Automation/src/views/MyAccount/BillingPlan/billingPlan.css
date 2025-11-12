@@ -1,0 +1,454 @@
+.my-account-billing {
+  margin-bottom: 3rem;
+  margin-top: 6rem;
+}
+.my-account-billing .billingCard {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.my-account-billing .freePlanContainer {
+  margin-top: 0.5rem;
+}
+.my-account-billing .freePlanHeading {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.my-account-billing .proVersionHeader {
+  border: 1px solid #00d26e;
+  border-radius: 10px;
+  background-color: #eaffec;
+  padding: 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.my-account-billing .Billingheading {
+  margin-bottom: 1rem;
+}
+.proVersionHeader .proVersionContainer {
+  margin-top: 0.5rem;
+}
+.my-account-billing .freePlanContainer .upgradePlanAlink a {
+  text-decoration: none;
+}
+.my-account-billing .proVersionContainer .proVersionContent {
+  display: flex;
+}
+.my-account-billing .proVersionContainer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+.my-account-billing .proVersionContainer h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #111827;
+}
+.my-account-billing .proVersionContainer h3 small {
+  font-size: 24px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.my-account-billing .freePlanContainer h3 small {
+  font-size: 24px;
+  font-weight: 500;
+  color: #6b7280;
+}
+.my-account-billing .proVersionHeader p {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.my-account-billing .proVersionHeader .cancelRenewalBtn {
+  margin-top: 1rem;
+}
+
+.my-account-billing .proVersionHeader .cancelRenewalBtn h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #001912;
+}
+
+.my-account-billing .searchInput {
+  height: 40px !important;
+}
+.saveCard {
+  border-radius: 4px !important;
+  background: #38a1e1 !important;
+  height: 50px !important;
+  padding: 8px 16px;
+  border-color: #38a1e1 !important;
+  color: white !important;
+  font-size: 20px !important;
+}
+.my-account-billing .upgradeModel {
+  width: 500px !important;
+}
+.my-account-billing .paymentModel {
+  width: 350px !important;
+  background-color: #fcfcfd !important;
+  margin: auto;
+}
+.my-account-billing .proCrownModel {
+  width: 500px !important;
+}
+.my-account-billing .editCardModel {
+  width: 350px !important;
+  margin: auto;
+}
+.modal-body {
+  height: auto !important;
+}
+.my-account-billing .btnforCancel {
+  border: 2px solid #00d26e !important;
+  color: #00d26e !important;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.my-account-billing .btnforCancel:hover {
+  color: #00d26e !important;
+}
+
+.my-account-billing .payNow-btn {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.my-account-billing .closeIcon {
+  text-align: right;
+  padding: 1rem;
+}
+.my-account-billing .paymentModel .saveCardForm h5 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+.my-account-billing .paymentModel .saveCardHeading,
+.my-account-billing .editCardModel .editCardHeading {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.my-account-billing .upgradePlanAlink a {
+  color: #00976d !important;
+  border-bottom: 2px solid #00976d !important;
+  font-size: 14px;
+  font-weight: 600;
+}
+.my-account-billing .billingCard h2 {
+  color: #111827 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+.my-account-billing .freePlanHeading p {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+.my-account-billing .paymentheading {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.my-account-billing .paymentheading h2 {
+  color: #111827 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+.my-account-billing .paymentContainer {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 0.3rem 0 0.3rem 1rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.my-account-billing .paymentContainer .visaContent {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.my-account-billing .paymentContainer .visaContent .visaLogo {
+  margin-bottom: 1rem;
+}
+.my-account-billing .paymentContainer .dropdownContent {
+  text-align: right;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.my-account-billing .paymentContainer .expireContent {
+  margin-top: 4rem;
+  text-align: right;
+}
+.my-account-billing .paymentContainer .dropdownContent > p > svg{
+  cursor: pointer;
+}
+.my-account-billing .paymentContainer .dropdownContent .dropdown-menu {
+  margin-left: 2rem !important;
+  right: 0px !important;
+  width: 150px;
+  inset: auto !important;
+  right: 0px !important;
+  top: 0px !important;
+}
+.my-account-billing .paymentContainer .dropdownContent ul.dropdown-menu li{
+  cursor: pointer;
+}
+.my-account-billing .paymentContainer .expireContent h6 {
+  margin-bottom: 0;
+}
+.my-account-billing .billingHistory {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+.my-account-billing .billingHistory h2 {
+  color: #111827 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+.my-account-billing .billingHistory .searchBox input {
+  height: 40px !important;
+}
+.my-account-billing .upgradeModel .upgradeModelBody {
+  padding: 1.5rem;
+}
+.Toastify__toast-body {
+  background-color: #fdd18e !important;
+  color: black !important;
+  /* font-weight: 600; */
+}
+.Toastify__toast {
+  background-color: #fdd18e !important ;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.my-account-billing .saveCardForm .cardNumber,
+.my-account-billing .editCardForm .cardNumber {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.my-account-billing .saveCardForm .monthyear,
+.my-account-billing .editCardForm .monthyear {
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.my-account-billing .saveCardForm .cvv,
+.my-account-billing .editCardForm .cvv {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 4px !important;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.my-account-billing .saveCardForm .monthyearCvv,
+.my-account-billing .editCardForm .monthyearCvv {
+  display: flex;
+}
+.my-account-billing .saveCardForm .cardDetails .form-input,
+.my-account-billing .editCardForm .cardDetails .form-input {
+  margin: 0px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb !important;
+  padding: 0px 0px 0px 6px;
+}
+.my-account-billing .saveCardForm .cardDetails input,
+.my-account-billing .editCardForm .cardDetails input {
+  border: 2px solid #ffffff !important;
+  display: block;
+  width: 100%;
+}
+.my-account-billing .editCardForm .email .form-input,
+.my-account-billing .saveCardForm .email .form-input,
+.my-account-billing .billingHistory .searchBox .form-input {
+  margin: 0px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e7eb !important;
+  padding: 0px 0px 0px 6px;
+  border-radius: 4px;
+}
+.my-account-billing .editCardForm .email,
+.my-account-billing .saveCardForm .email {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+.my-account-billing .editCardForm .email input,
+.my-account-billing .saveCardForm .email input,
+.my-account-billing .billingHistory .searchBox input {
+  border: 2px solid #ffffff !important;
+  display: block;
+  width: 100%;
+}
+.my-account-billing .saveCardForm .readMe,
+.my-account-billing .editCardForm .readMe {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+.my-account-billing .saveCardHeading .payContent,
+.my-account-billing .editCardHeading .saveContent {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.my-account-billing .saveCardHeading .payContent .payButton,
+.my-account-billing .editCardHeading .saveContent .saveCardBtn {
+  width: 100%;
+}
+.my-account-billing .editCardForm .email .icon,
+.my-account-billing .saveCardForm .email .icon,
+.my-account-billing .billingHistory .searchBox .icon {
+  left: 15px;
+  top: 0;
+  color: gray !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-account-billing .saveCardForm .cardDetails .icon,
+.my-account-billing .editCardForm .cardDetails .icon {
+  left: 15px;
+  top: 0;
+  color: gray !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-account-billing .editCardForm .fa {
+  font-size: 20px !important;
+}
+.my-account-billing .saveCardForm .fa {
+  font-size: 20px !important;
+}
+.plan-container {
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+.my-account-billing .upgradeModel .upgradeModelBody .plan-container {
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+.my-account-billing .upgradeModel .upgradeModelBody .plan-container h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.my-account-billing .upgradeModel .upgradeModelBody .plan-container h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.my-account-billing .upgradeModel .upgradeModelBody .plan-container h2 small {
+  font-size: 16px;
+  font-weight: 500;
+}
+.my-account-billing
+  .upgradeModel
+  .upgradeModelBody
+  .plan-container
+  .discount
+  span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background-image: url("../../../assets/images/icons/billing-year-discount-banner.svg");
+  padding: 10px 0px 10px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 8px;
+}
+.my-account-billing .upgradeModel .upgradeModelBody .plan-container .discount {
+  display: flex;
+}
+.plan-container.selected {
+  border: 1px solid #00d26e !important;
+  background-color: #eaffec !important;
+  color: #00976d !important;
+}
+.plan-container .plan-status-icon {
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/plan-inactive-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.plan-container.selected .plan-status-icon {
+  background-image: url("../../../assets/images/icons/plan-active-icon.svg");
+}
+.plan-container.selected h2 small {
+  color: #00976d !important;
+}
+.selectedPayNowBtn {
+  background-color: #00d26e !important;
+  color: #001912 !important;
+}
+.form-control:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+.my-account-billing .upgradePlanBtn {
+  text-align: right;
+  margin-top: 22%;
+}
+.my-account-billing .upgradePlanBtn button {
+  width: 170px;
+  height: 40px;
+  padding: 8px 32px 8px 32px;
+  border-radius: 4px;
+  background-color: #00d26e;
+  font-size: 16px;
+  font-weight: 600;
+  color: #001912 !important;
+}
+.my-account-billing .upgradePlanBtn a {
+  text-decoration: none;
+  color: #001912 !important;
+}
+.my-account-billing .proCrownImageContainer {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.my-account-billing .proCrownModel .proCrownImg {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.my-account-billing .proCrownModel .proCrownOkbtnContainer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.my-account-billing .proCrownModel .proCrownOkbtnContainer .crownOkBtn {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #00d26e;
+  color: #001912;
+  font-size: 22px;
+  font-weight: 600;
+}
+.my-account-billing .proCrownModel .proCrownHeading h4 {
+  font-size: 24px;
+  font-weight: 600;
+}

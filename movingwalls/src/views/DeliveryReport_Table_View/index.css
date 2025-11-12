@@ -1,0 +1,254 @@
+.delivery-table-view-form {
+    font-family: 'Proxima Nova';
+    background-color: white;
+    padding: 1% 2% 6%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px 5px #00000008;
+}
+
+
+/*Delivery-Report Start*/
+
+.delivery-table-view-content {
+    background: #F2F6FA;
+    padding-bottom: 2%;
+}
+
+.delivery-table-view-head h5 {
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: left;
+}
+
+.delivery-table-view-date {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: -10px;
+}
+
+.delivery-table-view-date span {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+}
+
+.delivery-table-view-date span {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.49px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.delivery-table-view-buttons {
+    text-align: right;
+}
+
+.delivery-table-view-buttons button {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 1;
+    background: transparent;
+    border: 1px solid #014DC0;
+    margin-right: -30px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.05px;
+    text-align: left;
+    color: #014DC0;
+}
+
+.delivery-table-view-second-head h5 {
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.delivery-table-view-second-head span {
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.17px;
+    text-align: left;
+    color: #014DC0;
+}
+
+.delivery-table-view-second-head h6 {
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.75px;
+    text-align: left;
+    color: #5A5A5A;
+    border-top: 1px solid #D9D9D9;
+    padding: 30px 0;
+    width: 103%;
+    margin-left: -10px;
+}
+
+.content-hub-tbody td img.content-logo {
+    width: 89px;
+    height: 53px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.delivery-table-view-thead th {
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 20px 8px;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.delivery-table-view-thead img {
+    margin-left: 5px;
+}
+
+.videocam img {
+    margin-right: 5px;
+}
+
+.delivery-table-view-tbody .contenthub-creatives-name {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.05px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.delivery-table-view-tbody td {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+}
+
+.delivery-table-view-tbody i {
+    color: #014DC0;
+}
+
+.delivery-table-view-tbody svg {
+    margin-right: 5px;
+}
+
+.scrollbar {
+    height: 327px;
+    width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.force-overflow {
+    min-height: 1200px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #E5E5E5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #014DC0;
+    border-radius: 10px;
+}
+
+.content-hub-tbody tr td.contenthub-creatives-nodata {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.delivery-table-view-download-icon {
+    width: 14px;
+    height: 14px;
+    gap: 2px !important;
+    margin-right: 6px;
+}
+
+
+/* loader */
+
+.loader {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-top: 8px solid #fff;
+    border-left: 8px solid #fff;
+    border-right: 8px solid #ff00;
+    animation: loader .7s infinite linear;
+}
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    width: 150px;
+    height: 150px;
+    border-left: 5px solid #38ff8e;
+    border-radius: 50%;
+    animation: right5231 0.9s linear infinite;
+}
+
+.loader::before,
+.loader::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+    border-right: 5px solid #ffbe0b;
+    border-radius: 50%;
+    animation: left036 0.9s linear infinite;
+}
+
+.loader::after {
+    width: 90px;
+    height: 90px;
+    top: calc(50% - 45px);
+    left: calc(50% - 45px);
+    border: 0;
+    border-top: 5px solid #ff086e;
+    animation: none;
+}
+
+@keyframes right5231 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes left036 {
+    from {
+        transform: rotate(720deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,76 @@
+/* Apply custom scrollbar styling */
+
+.template-dropdown {
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+
+/* Webkit-based browsers (Chrome, Safari) */
+
+.template-dropdown::-webkit-scrollbar {
+    width: 2px;
+}
+
+.template-dropdown::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    /* Rounded corners on the thumb */
+}
+
+.template-dropdown::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Darker color on hover */
+}
+
+
+/* For other browsers (Firefox) */
+
+.template-dropdown {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    /* thumb and track color */
+}
+
+.wrapper {
+    overflow: hidden;
+    will-change: transform;
+}
+
+.media-loader {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #0bbede;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    top: 7.5px;
+    right: 10px;
+}
+
+.media-loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-bottom: 4px solid #004aad;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

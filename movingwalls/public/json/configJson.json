@@ -1,0 +1,1582 @@
+[{
+        "name": "Landing Page",
+        "configurations": [{
+                "key": "do_you_need_landing_page",
+                "type": "radio",
+                "label": "Do you need landing page?",
+                "default": "yes",
+                "disabled": true,
+                "options": [{
+                        "label": "Yes",
+                        "value": "yes"
+                    },
+                    {
+                        "label": "No",
+                        "value": "no"
+                    }
+                ]
+            },
+            {
+                "key": "login",
+                "type": "switch",
+                "label": "Login",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "Explore",
+                "type": "switch",
+                "label": "Explore",
+                "default": true
+            },
+            {
+                "key": "address",
+                "type": "switch",
+                "label": "Address",
+                "default": true
+            },
+            {
+                "key": "logo",
+                "type": "switch",
+                "label": "Logo",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "contact form",
+                "type": "switch",
+                "label": "Contact Form",
+                "default": true
+            },
+            {
+                "key": "contact email",
+                "type": "switch",
+                "label": "Contact Email",
+                "default": true
+            },
+            {
+                "key": "footer",
+                "type": "switch",
+                "label": "Footer",
+                "default": true
+            },
+            {
+                "key": "headline",
+                "type": "switch",
+                "label": "Headline",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "sub headline",
+                "type": "switch",
+                "label": "Sub headline",
+                "default": true
+            },
+            {
+                "key": "do you need an image in your landing page",
+                "type": "switch",
+                "label": "Do you need an image in your landing page",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "featured properties",
+                "type": "switch",
+                "label": "Featured properties",
+                "default": true
+            },
+            {
+                "key": "popular properties",
+                "type": "switch",
+                "label": "Popular properties",
+                "default": true
+            },
+            {
+                "key": "clients we have served",
+                "type": "switch",
+                "label": "Clients we have served",
+                "default": true
+            },
+            {
+                "key": "clients testimonials",
+                "type": "switch",
+                "label": "Clients testimonials",
+                "default": true
+            },
+            {
+                "key": "start a campaign",
+                "type": "switch",
+                "label": "Start a campaign",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "social media links",
+                "type": "switch",
+                "label": "Social media links",
+                "default": true
+            },
+            {
+                "key": "terms&conditions",
+                "type": "switch",
+                "label": "Terms&Conditions",
+                "default": true
+            },
+            {
+                "key": "privacy policy",
+                "type": "switch",
+                "label": "Privacy policy",
+                "default": true
+            },
+            {
+                "key": "add image for contact us",
+                "type": "switch",
+                "label": "Add image for contact us",
+                "default": true
+            }
+        ]
+    },
+
+    {
+        "name": "Cart",
+        "configurations": [{
+                "key": "Quick Summary",
+                "label": "Quick Summary",
+                "fields": [{
+                        "key": "impressions",
+                        "type": "switch",
+                        "label": "Impressions",
+                        "default": true
+                    },
+                    {
+                        "key": "reach",
+                        "type": "switch",
+                        "label": "Reach",
+                        "default": true
+                    },
+                    {
+                        "key": "average frequency",
+                        "type": "switch",
+                        "label": "Average Frequency",
+                        "default": true
+                    }
+                ]
+            },
+            {
+                "key": "take payment in cart",
+                "label": "Take payment in cart",
+                "disabled": true,
+                "fields": [{
+                        "key": "take_payment_in_cart",
+                        "type": "radio",
+                        "label": "Take payment in cart",
+                        "default": "no",
+                        "options": [{
+                                "label": "Yes",
+                                "value": "yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": "no"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "email",
+                        "type": "email",
+                        "label": "Email",
+                        "default": "sudheer@gmail.com"
+                    },
+                    {
+                        "key": "email_response",
+                        "type": "rich_text",
+                        "label": "Email response",
+                        "default": "<pre>\nI am sudheer</pre>\n"
+                    }
+                ]
+            },
+            {
+                "key": "show report in cart page?",
+                "label": "Show report in cart page?",
+                "fields": [{
+                        "key": "play log",
+                        "type": "switch",
+                        "label": "Delivery Report",
+                        "default": true
+                    },
+                    {
+                        "key": "proof of play",
+                        "type": "switch",
+                        "label": "Proof of Play",
+                        "default": true
+                    },
+                    {
+                        "key": "post campaign report",
+                        "type": "switch",
+                        "label": "PCR(Post Campaign Report)",
+                        "default": true
+                    },
+                    {
+                        "key": "Cartnegotiation",
+                        "type": "switch",
+                        "label": "Negotiation",
+                        "default": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "My Campaigns",
+        "configurations": [{
+                "key": "dropdownstatuslist",
+                "type": "switch",
+                "label": "Dropdown status list",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "searchInOrders",
+                "type": "switch",
+                "label": "Search In Orders",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "allowCancellations",
+                "type": "switch",
+                "label": "Allow Cancellations",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "customiseTable",
+                "type": "switch",
+                "label": "Customise Table",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "creative",
+                "type": "switch",
+                "label": "Creative",
+                "default": true
+            },
+            {
+                "key": "deliveryReport",
+                "type": "switch",
+                "label": "Delivery Report",
+                "default": true
+            },
+            {
+                "key": "paymentInvoice",
+                "type": "switch",
+                "label": "Payment Invoice",
+                "default": true
+            }
+        ]
+    },
+    {
+        "name": "Property details",
+        "configurations": [{
+                "key": "location",
+                "label": "Location",
+                "fields": [{
+                        "key": "site owner",
+                        "type": "switch",
+                        "label": "Site Owner",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "access",
+                        "type": "switch",
+                        "label": "Access",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "facing",
+                        "type": "switch",
+                        "label": "Facing",
+                        "default": true
+                    },
+                    {
+                        "key": "board facing",
+                        "type": "switch",
+                        "label": "Board Facing",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "site address",
+                        "type": "switch",
+                        "label": "Site Address",
+                        "default": true
+                    },
+                    {
+                        "key": "category",
+                        "type": "switch",
+                        "label": "Category",
+                        "default": true
+                    },
+                    {
+                        "key": "billboard type",
+                        "type": "switch",
+                        "label": "Board Type (Classic/Digital)",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "active",
+                        "type": "switch",
+                        "label": "Active",
+                        "default": false,
+                        "disabled": true
+                    },
+                    {
+                        "key": "availability",
+                        "type": "switch",
+                        "label": "Availability",
+                        "default": true
+                    }
+                ]
+            },
+            {
+                "key": "specification",
+                "label": "Specification",
+                "fields": [{
+                        "key": "video support",
+                        "type": "switch",
+                        "label": "Video support",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "PlaySoftware",
+                        "type": "switch",
+                        "label": "Play Software",
+                        "default": true
+                    },
+                    {
+                        "key": "image support",
+                        "type": "switch",
+                        "label": "Image Support",
+                        "default": true
+                    },
+                    {
+                        "key": "audio support",
+                        "type": "switch",
+                        "label": "Audio support",
+                        "default": true
+                    },
+                    {
+                        "key": "feature support",
+                        "type": "switch",
+                        "label": "Feature support",
+                        "default": true
+                    },
+                    {
+                        "key": "panel format",
+                        "type": "switch",
+                        "label": "Panel Format",
+                        "default": true
+                    },
+                    {
+                        "key": "number of panels",
+                        "type": "switch",
+                        "label": "Number of Panels",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "number of screens",
+                        "type": "switch",
+                        "label": "Number of Screens",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "lead time(Days)",
+                        "type": "switch",
+                        "label": "Lead Time(Days)",
+                        "default": true
+                    },
+                    {
+                        "key": "language support",
+                        "type": "switch",
+                        "label": "Language Support",
+                        "default": true
+                    },
+                    {
+                        "key": "resolution/size",
+                        "type": "switch",
+                        "label": "Resolution/Size",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "video/audio/image Support",
+                        "type": "switch",
+                        "label": "Video/Audio/Image Support",
+                        "default": true
+                    },
+                    {
+                        "key": "content approval",
+                        "type": "switch",
+                        "label": "Content Approval",
+                        "default": true
+                    },
+                    {
+                        "key": "total Sqft",
+                        "type": "switch",
+                        "label": "Total Sqft",
+                        "default": true
+                    },
+                    {
+                        "key": "exclusion",
+                        "type": "switch",
+                        "label": "Exclusion",
+                        "default": true
+                    },
+                    {
+                        "key": "sell as network",
+                        "type": "switch",
+                        "label": "Sell as Network",
+                        "default": true
+                    }
+                ]
+            },
+            {
+                "key": "audiences",
+                "label": "Audiences",
+                "fields": [{
+                        "key": "impressions",
+                        "type": "switch",
+                        "label": "Impressions",
+                        "default": true
+                    },
+                    {
+                        "key": "reach",
+                        "type": "switch",
+                        "label": "Reach",
+                        "default": true
+                    },
+                    {
+                        "key": "average frequency",
+                        "type": "switch",
+                        "label": "Average Frequency",
+                        "default": true
+                    },
+                    {
+                        "key": "audience segment",
+                        "type": "switch",
+                        "label": "Audience Segment",
+                        "default": true
+                    }
+                ]
+            },
+            {
+                "key": "gallery",
+                "label": "Gallery",
+                "fields": [{
+                    "key": "asset",
+                    "type": "switch",
+                    "label": "Asset",
+                    "default": true,
+                    "disabled": true
+                }]
+            },
+            {
+                "key": "rates",
+                "label": "Rates",
+                "disabled": true,
+                "fields": [{
+                        "key": "rate/month",
+                        "type": "switch",
+                        "label": "Rate/Month",
+                        "default": false
+                    },
+                    {
+                        "key": "rate/week",
+                        "type": "switch",
+                        "label": "Rate/Week",
+                        "default": false
+                    },
+                    {
+                        "key": "rate/day",
+                        "type": "switch",
+                        "label": "Rate/Day",
+                        "default": false
+                    },
+                    {
+                        "key": "content management fees",
+                        "type": "switch",
+                        "label": "Content Management Fees",
+                        "default": false
+                    },
+                    {
+                        "key": "monthly %",
+                        "type": "switch",
+                        "label": "Monthly %",
+                        "default": false
+                    },
+                    {
+                        "key": "spots",
+                        "type": "switch",
+                        "label": "Spots",
+                        "default": false
+                    },
+                    {
+                        "key": "duration based pricing",
+                        "type": "switch",
+                        "label": "Duration Based Pricing",
+                        "default": false
+                    }
+                ]
+            },
+            {
+                "key": "configurations",
+                "label": "Configurations",
+                "fields": [{
+                        "key": "spot duration",
+                        "type": "switch",
+                        "label": "Spot Duration",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "spots/hour",
+                        "type": "switch",
+                        "label": "Spots/Hour",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "max. Spot/Day",
+                        "type": "switch",
+                        "label": "Max. Spot/Day",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "min. Spot/Day",
+                        "type": "switch",
+                        "label": "Min. Spot/Day",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "loop duration",
+                        "type": "switch",
+                        "label": "Loop Duration",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "operations hours",
+                        "type": "switch",
+                        "label": "Operations Hours",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "no.of Clients per Hour",
+                        "type": "switch",
+                        "label": "No.of Clients per Hour",
+                        "default": true
+                    },
+                    {
+                        "key": "mode of operation",
+                        "type": "switch",
+                        "label": "Mode of Operation",
+                        "default": true
+                    },
+                    {
+                        "key": "programmatic enabled",
+                        "type": "switch",
+                        "label": "Programmatic Enabled",
+                        "default": true
+                    },
+                    {
+                        "key": "timezone",
+                        "type": "switch",
+                        "label": "Timezone",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "exposure",
+                        "type": "switch",
+                        "label": "Exposure",
+                        "default": false,
+                        "disabled": true
+                    },
+                    {
+                        "key": "near by POI",
+                        "type": "switch",
+                        "label": "Near By POI",
+                        "default": true
+                    },
+                    {
+                        "key": "available days",
+                        "type": "switch",
+                        "label": "Available days",
+                        "default": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Property List",
+        "configurations": [{
+                "key": "MapAndListView",
+                "type": "radio",
+                "label": "Set default appearance",
+                "default": "yes",
+                "options": [{
+                        "label": "List View",
+                        "value": "yes"
+                    },
+                    {
+                        "label": "Map View",
+                        "value": "yes"
+                    }
+                ]
+            },
+            {
+                "key": "Property card details",
+                "label": "Property card details",
+                "fields": [{
+                        "key": "display name",
+                        "type": "switch",
+                        "label": "Display Name",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "district & state",
+                        "type": "switch",
+                        "label": "District & State",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "city",
+                        "type": "switch",
+                        "label": "City",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "board type (Classic/Digital)",
+                        "type": "switch",
+                        "label": "Board Type (Classic/Digital)",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "screen type",
+                        "type": "switch",
+                        "label": "Screen Type",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "resolution/size",
+                        "type": "switch",
+                        "label": "Resolution/Size",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "show potential views",
+                        "type": "switch",
+                        "label": "Show Potential Views",
+                        "default": true
+                    },
+                    {
+                        "key": "price/month",
+                        "type": "switch",
+                        "label": "Price/Month",
+                        "default": true
+                    },
+                    {
+                        "key": "view more",
+                        "type": "switch",
+                        "label": "View More",
+                        "default": true
+                    },
+                    {
+                        "key": "DisplayImage",
+                        "type": "switch",
+                        "label": "Display Image",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "AddToCart",
+                        "type": "switch",
+                        "label": "Add To cart",
+                        "default": true
+                    },
+                    {
+                        "key": "Next Availability",
+                        "type": "switch",
+                        "label": "Next availability",
+                        "default": true
+                    },
+                    {
+                        "key": "Availability",
+                        "type": "switch",
+                        "label": "Availability",
+                        "default": true
+                    },
+                    {
+                        "key": "spotduration",
+                        "type": "switch",
+                        "label": "Spot Duration",
+                        "default": true
+                    }
+                ]
+            },
+            {
+                "key": "Show only",
+                "label": "Show only",
+                "fields": [{
+                        "key": "classic",
+                        "type": "switch",
+                        "label": "Classic",
+                        "default": true
+                    },
+                    {
+                        "key": "digital",
+                        "type": "switch",
+                        "label": "Digital",
+                        "default": true
+                    },
+                    {
+                        "key": "network",
+                        "type": "switch",
+                        "label": "Network",
+                        "default": false
+                    },
+                    {
+                        "key": "scrollable",
+                        "type": "switch",
+                        "label": "Scrollable",
+                        "default": false
+                    },
+                    {
+                        "key": "package",
+                        "type": "switch",
+                        "label": "Package",
+                        "default": false
+                    },
+                    {
+                        "key": "transit",
+                        "type": "switch",
+                        "label": "Transit",
+                        "default": false
+                    }
+                ]
+            },
+            {
+                "key": "filters",
+                "label": "Filters",
+                "fields": [{
+                        "key": "do you need a filter?",
+                        "type": "switch",
+                        "label": "Do you need a filter?",
+                        "default": true
+                    },
+                    {
+                        "key": "environment",
+                        "type": "switch",
+                        "label": "Environment",
+                        "default": true
+                    },
+                    {
+                        "key": "select state",
+                        "type": "switch",
+                        "label": "Select State",
+                        "default": true
+                    },
+                    {
+                        "key": "select district",
+                        "type": "switch",
+                        "label": "Select District",
+                        "default": true
+                    },
+                    {
+                        "key": "categories",
+                        "type": "switch",
+                        "label": "Categories",
+                        "default": true
+                    },
+                    {
+                        "key": "site type",
+                        "type": "switch",
+                        "label": "Site Type",
+                        "default": true
+                    },
+                    {
+                        "key": "screen Size (Digital)",
+                        "type": "switch",
+                        "label": "Screen Size (Digital)",
+                        "default": true
+                    },
+                    {
+                        "key": "billboard Format Based",
+                        "type": "switch",
+                        "label": "Billboard Format Based",
+                        "default": true
+                    },
+                    {
+                        "key": "average price",
+                        "type": "switch",
+                        "label": "Average Price",
+                        "default": true
+                    },
+                    {
+                        "key": "minimum price",
+                        "type": "switch",
+                        "label": "Minimum Price",
+                        "default": true
+                    },
+                    {
+                        "key": "maximum price",
+                        "type": "switch",
+                        "label": "Maximum Price",
+                        "default": true
+                    }
+                ]
+            },
+            {
+                "key": "Search",
+                "label": "Search",
+                "disabled": true,
+                "fields": [{
+                        "key": "by billboard name",
+                        "type": "switch",
+                        "label": "By billboard name",
+                        "default": true
+                    },
+                    {
+                        "key": "by date range",
+                        "type": "switch",
+                        "label": "By date range",
+                        "default": true
+                    },
+                    {
+                        "key": "search by location (State,District and City)",
+                        "type": "switch",
+                        "label": "Search By Location (State,District and City)",
+                        "default": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "User Registration",
+        "configurations": [{
+                "key": "basicInformation",
+                "label": "Basic Information",
+                "fields": [{
+                        "key": "business name",
+                        "type": "switch",
+                        "label": "Business Name",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "title",
+                        "type": "switch",
+                        "label": "Title",
+                        "default": true
+                    },
+                    {
+                        "key": "first name",
+                        "type": "switch",
+                        "label": "First Name",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "last name",
+                        "type": "switch",
+                        "label": "Last Name",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "email id",
+                        "type": "switch",
+                        "label": "Email Id",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "business type",
+                        "type": "switch",
+                        "label": "Business Type",
+                        "default": true
+                    },
+                    {
+                        "key": "phone number with Country Code",
+                        "type": "switch",
+                        "label": "Phone number with Country Code",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "business phone number",
+                        "type": "switch",
+                        "label": "Business phone number",
+                        "default": true
+                    },
+                    {
+                        "key": "business VAT/GST",
+                        "type": "switch",
+                        "label": "Business VAT/GST",
+                        "default": true,
+                        "disabled": true
+                    },
+                    {
+                        "key": "designation",
+                        "type": "switch",
+                        "label": "Designation",
+                        "default": true
+                    },
+                    {
+                        "key": "company name",
+                        "type": "switch",
+                        "label": "Company Name",
+                        "default": true
+                    }
+                ]
+            },
+            {
+                "key": "login",
+                "label": "Login",
+                "fields": [{
+                        "key": "login using email",
+                        "type": "switch",
+                        "label": "Login using email",
+                        "default": true
+                    },
+                    {
+                        "key": "username Login",
+                        "type": "switch",
+                        "label": "Username Login",
+                        "default": true
+                    },
+                    {
+                        "key": "otp based login",
+                        "type": "switch",
+                        "label": "OTP based login",
+                        "default": false,
+                        "disabled": true
+                    },
+                    {
+                        "key": "two factor authentication",
+                        "type": "switch",
+                        "label": "Two factor authentication",
+                        "default": false,
+                        "disabled": true
+                    },
+                    {
+                        "key": "login using phone number",
+                        "type": "switch",
+                        "label": "Login using phone number",
+                        "default": false,
+                        "disabled": true
+                    },
+                    {
+                        "key": "login using both number & email",
+                        "type": "switch",
+                        "label": "Login using both number & email",
+                        "default": false,
+                        "disabled": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Terms & conditions",
+        "configurations": [{
+                "key": "do_you_need_terms_and_condition_page",
+                "type": "radio",
+                "label": "Do you need Terms and Condition Page?",
+                "default": "yes",
+                "disabled": true,
+                "options": [{
+                        "label": "Yes",
+                        "value": "yes"
+                    },
+                    {
+                        "label": "No",
+                        "value": "no"
+                    }
+                ]
+            },
+            {
+                "key": "payment invoice",
+                "type": "switch",
+                "label": "Payment invoice",
+                "default": true
+            },
+            {
+                "key": "download invoice",
+                "type": "switch",
+                "label": "Download invoice",
+                "default": true
+            },
+            {
+                "key": "cart page",
+                "type": "switch",
+                "label": "Cart page",
+                "default": true
+            }
+        ]
+    },
+    {
+        "name": "Privacy Policy",
+        "configurations": [{
+            "key": "do_you_need_privacy_policy_page",
+            "type": "radio",
+            "label": "Do you need Privacy Policy Page",
+            "default": "yes",
+            "disabled": true,
+            "options": [{
+                    "label": "Yes",
+                    "value": "yes"
+                },
+                {
+                    "label": "No",
+                    "value": "no"
+                }
+            ]
+        }]
+    },
+    {
+        "name": "Contact Us",
+        "configurations": [{
+                "key": "do_you_need_contact_us_page",
+                "type": "radio",
+                "label": "Do you need Contact Us Page",
+                "default": "yes",
+                "disabled": true,
+                "options": [{
+                        "label": "Yes",
+                        "value": "yes"
+                    },
+                    {
+                        "label": "No",
+                        "value": "no"
+                    }
+                ]
+            },
+            {
+                "key": "fullName",
+                "type": "switch",
+                "label": "Full Name",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "e-mail",
+                "type": "switch",
+                "label": "E-mail",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "message",
+                "type": "switch",
+                "label": "Message",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "companyName",
+                "type": "switch",
+                "label": "Company Name",
+                "default": false
+            },
+            {
+                "key": "address",
+                "type": "switch",
+                "label": "Address",
+                "default": false
+            },
+            {
+                "key": "contactNumber",
+                "type": "switch",
+                "label": "Contact Number",
+                "default": false
+            }
+        ]
+    },
+    {
+        "name": "Reports",
+        "configurations": [{
+                "key": "do_you_need_report_page",
+                "type": "radio",
+                "label": "Do you want to show report page?",
+                "default": "yes",
+                "disabled": true,
+                "options": [{
+                        "label": "Yes",
+                        "value": "yes"
+                    },
+                    {
+                        "label": "No",
+                        "value": "no"
+                    }
+                ]
+            },
+            {
+                "key": "show report in cart page?",
+                "label": "Delivery Report Required",
+                "fields": [{
+                        "key": "do_you_need_report_required",
+                        "type": "radio",
+                        "label": "Delivery Report Required",
+                        "default": "yes",
+                        "disabled": true,
+                        "options": [{
+                                "label": "Yes",
+                                "value": "yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": "no"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "play log",
+                        "type": "switch",
+                        "label": "Play Log",
+                        "default": true
+                    },
+                    {
+                        "key": "proof of play",
+                        "type": "switch",
+                        "label": "Proof of Play",
+                        "default": true
+                    },
+                    {
+                        "key": "post campaign report",
+                        "type": "switch",
+                        "label": "Post campaign Report",
+                        "default": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Alert & Notification",
+        "configurations": [{
+                "key": "userRegistration",
+                "type": "checkboxTable",
+                "label": "User Registration",
+                "disabled": true,
+                "fields": [{
+                        "key": "signUp",
+                        "admin": true,
+                        "buyer": false,
+                        "label": "Sign Up"
+                    },
+                    {
+                        "key": "accept",
+                        "admin": false,
+                        "buyer": true,
+                        "label": "Accept"
+                    },
+                    {
+                        "key": "rejection",
+                        "admin": false,
+                        "buyer": true,
+                        "label": "Rejection"
+                    }
+                ]
+            },
+            {
+                "key": "campaign",
+                "type": "checkboxTable",
+                "label": "Campaign",
+                "disabled": true,
+                "fields": [{
+                        "key": "generated",
+                        "admin": false,
+                        "buyer": true,
+                        "label": "Generated"
+                    },
+                    {
+                        "key": "bookingConfirmed",
+                        "admin": true,
+                        "buyer": true,
+                        "label": "Booking Confirmed"
+                    },
+                    {
+                        "key": "negotiation",
+                        "admin": true,
+                        "buyer": true,
+                        "label": "Negotiation"
+                    },
+                    {
+                        "key": "rejectedByMediaOwner",
+                        "admin": true,
+                        "buyer": true,
+                        "label": "Rejected by Media Owner"
+                    },
+                    {
+                        "key": "campaignLive",
+                        "admin": true,
+                        "buyer": true,
+                        "label": "Campaign Live"
+                    },
+                    {
+                        "key": "campaignCompleted",
+                        "admin": false,
+                        "buyer": false,
+                        "label": "Campaign Completed"
+                    }
+                ]
+            },
+            {
+                "key": "creative",
+                "type": "checkboxTable",
+                "label": "Creative",
+                "disabled": true,
+                "fields": [{
+                        "key": "uploaded",
+                        "admin": true,
+                        "buyer": true,
+                        "label": "Uploaded"
+                    },
+                    {
+                        "key": "accepted",
+                        "admin": true,
+                        "buyer": false,
+                        "label": "Accepted"
+                    },
+                    {
+                        "key": "RejectedbyMediaowner",
+                        "admin": true,
+                        "buyer": true,
+                        "label": "Rejected by Media owner"
+                    }
+                ]
+            },
+            {
+                "key": "deliveryreport",
+                "type": "checkboxTable",
+                "label": "Delivery report",
+                "disabled": true,
+                "fields": [{
+                    "key": "uploaded",
+                    "admin": true,
+                    "buyer": true,
+                    "label": "\tUploaded"
+                }]
+            },
+            {
+                "key": "proofofplay",
+                "type": "checkboxTable",
+                "label": "Proof of play",
+                "disabled": true,
+                "fields": [{
+                    "key": "uploaded",
+                    "admin": true,
+                    "buyer": true,
+                    "label": "Uploaded"
+                }]
+            },
+            {
+                "key": "invoice",
+                "type": "checkboxTable",
+                "label": "Invoice",
+                "disabled": true,
+                "fields": [{
+                        "key": "paymentPending",
+                        "admin": false,
+                        "buyer": true,
+                        "label": "Payment Pending"
+                    },
+                    {
+                        "key": "paymentDone",
+                        "admin": false,
+                        "buyer": true,
+                        "label": "Payment Done"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Assets",
+        "configurations": [{
+                "key": "jpeg",
+                "type": "switch",
+                "label": "JPEG",
+                "default": true
+            },
+            {
+                "key": "mov",
+                "type": "switch",
+                "label": "Mov",
+                "default": true
+            },
+            {
+                "key": "avi",
+                "type": "switch",
+                "label": "AVI",
+                "default": true
+            },
+            {
+                "key": "gif",
+                "type": "switch",
+                "label": "GIF",
+                "default": true
+            },
+            {
+                "key": "png",
+                "type": "switch",
+                "label": "PNG",
+                "default": true
+            },
+            {
+                "key": "mp4",
+                "type": "switch",
+                "label": "Mp4",
+                "default": true
+            },
+            {
+                "key": "maxsizelimit",
+                "type": "switch",
+                "label": "Max size limit",
+                "default": true,
+                "disabled": true
+            },
+            {
+                "key": "totalstoragelimit",
+                "type": "switch",
+                "label": "Total storage limit",
+                "default": true
+            }
+        ]
+    },
+    {
+        "name": "Tech configuration",
+        "configurations": [{
+                "key": "AWSAndOtherServer",
+                "type": "radio",
+                "label": "Choose the server for publish",
+                "default": "yes",
+                "options": [{
+                        "label": "AWS",
+                        "value": "yes"
+                    },
+                    {
+                        "label": "Domain based server",
+                        "value": "no"
+                    }
+                ]
+            },
+            {
+                "key": "domain pointer to setup",
+                "label": "Domain pointer to setup",
+                "fields": [{
+                        "key": "cname name",
+                        "type": "text",
+                        "label": "CNAME name",
+                        "default": ""
+                    },
+                    {
+                        "key": "cname value",
+                        "type": "text",
+                        "label": "CNAME Value",
+                        "default": ""
+                    },
+                    {
+                        "key": "host name",
+                        "type": "text",
+                        "label": "Host Name",
+                        "default": "52.77.243.99"
+                    },
+                    {
+                        "key": "port number",
+                        "type": "text",
+                        "label": "Port Number",
+                        "default": "22"
+                    },
+                    {
+                        "key": "encryption type",
+                        "type": "text",
+                        "label": "Encryption type",
+                        "default": ""
+                    },
+                    {
+                        "key": "username",
+                        "type": "text",
+                        "label": "Username",
+                        "default": "ubuntu"
+                    },
+                    {
+                        "key": "password",
+                        "type": "text",
+                        "label": "Password",
+                        "default": "ubuntu"
+                    },
+                    {
+                        "key": "selfHostingDomain",
+                        "type": "text",
+                        "label": "Self-hosting domain name",
+                        "default": "oss-selfhost.lmx.ai"
+                    },
+                    {
+                        "key": "driver",
+                        "type": "text",
+                        "label": "Driver",
+                        "default": ""
+                    }
+                ]
+            },
+            {
+                "key": "AwsValue",
+                "label": "AWS configuration",
+                "fields": [{
+                        "key": "AccessKey",
+                        "type": "text",
+                        "label": "AWS access key ID",
+                        "default": "AKIA2CAVDEDAESMEGWF5",
+                        "required": true
+                    },
+                    {
+                        "key": "secretKey",
+                        "type": "text",
+                        "label": "AWS secret key",
+                        "default": "VBghVVVbCbt925po8xW63ZKsGsmxhmiAWdnSveBR",
+                        "required": true
+                    },
+                    {
+                        "key": "regionName",
+                        "type": "text",
+                        "label": "AWS region name",
+                        "default": "ap-southeast-2",
+                        "required": true
+                    },
+                    {
+                        "key": "s3Bucket",
+                        "type": "text",
+                        "label": "S3 bucket name",
+                        "default": "oss-2o-builder-builder"
+                    },
+                    {
+                        "key": "cloudfrontId",
+                        "type": "text",
+                        "label": "CloudFront distribution ID",
+                        "default": "ESXV48IDDIQDV"
+                    },
+                    {
+                        "key": "domain_name",
+                        "type": "text",
+                        "label": "Domain name",
+                        "default": ""
+                    }
+                ]
+            },
+            {
+                "key": "smtp configuration",
+                "label": "SMTP configuration",
+                "disabled": true,
+                "fields": [{
+                        "key": "host name1",
+                        "type": "text",
+                        "label": "Host Name",
+                        "default": ""
+                    },
+                    {
+                        "key": "port number1",
+                        "type": "text",
+                        "label": "Port Number",
+                        "default": ""
+                    },
+                    {
+                        "key": "encryption type1",
+                        "type": "text",
+                        "label": "Encryption type",
+                        "default": ""
+                    },
+                    {
+                        "key": "username1",
+                        "type": "text",
+                        "label": "Username",
+                        "default": ""
+                    },
+                    {
+                        "key": "password1",
+                        "type": "text",
+                        "label": "Password",
+                        "default": ""
+                    },
+                    {
+                        "key": "driver1",
+                        "type": "text",
+                        "label": "Driver",
+                        "default": ""
+                    }
+                ]
+            },
+            {
+                "key": "payment gateway configuration",
+                "label": "Payment gateway configuration",
+                "fields": [{
+                        "key": "enable instant payment (Stripe)",
+                        "type": "switch",
+                        "label": "Enable instant payment (Stripe)",
+                        "default": true
+                    },
+                    {
+                        "key": "provider",
+                        "type": "text",
+                        "label": "Provider",
+                        "default": ""
+                    },
+                    {
+                        "key": "payment access key",
+                        "type": "text",
+                        "label": "Payment access key",
+                        "default": "pk_test_51QCwXgCrRw56sPrIhSrhsvcs7vmxC15fYYUD93sgqMesIHhP2sIhI16v3Ces0PXanV14PwlXQoFTsltaF5Y9vsrv00jLDEiKBA"
+                    },
+                    {
+                        "key": "payment secret key",
+                        "type": "text",
+                        "label": "Payment secret key",
+                        "default": "sk_test_51QCwXgCrRw56sPrI65PuyRcafE3qpCeXtT0hIkwHvmlnH3tFVaWBB7lrnGIjdn1IC8gTPqGjnZkiO2tct724r1Gx00e8pnLinz"
+                    },
+                    {
+                        "key": "logo",
+                        "type": "switch",
+                        "label": "Logo",
+                        "default": false
+                    },
+                    {
+                        "key": "favicon icon",
+                        "type": "switch",
+                        "label": "Favicon Icon",
+                        "default": true
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+.vendor-passwordInput {
+    position: relative;
+}
+
+.vendor-passwordInputicon {
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    font-size: 12px;
+    right: 20px;
+}
+
+.loginfilled-frame-username {
+    border-bottom: 1px solid lightgray;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.loginfilled-frame-username.error {
+    border: 1px solid red;
+}

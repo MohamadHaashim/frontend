@@ -1,0 +1,66 @@
+    .view {
+        background-color: #f0f3f4;
+    }
+    
+    .contentView {
+        padding: 0 5%;
+        margin-left: -15px;
+    }
+    
+    .view h6 {
+        margin-top: 5px;
+        text-align: center;
+    }
+    
+    .schoolInfo {
+        padding: 30px;
+    }
+    
+    .userInfo {
+        position: relative;
+        top: -40px;
+    }
+    
+    .userInfo1 {
+        padding: 30px;
+        padding-top: 50px;
+        position: relative;
+        top: -40px;
+    }
+    
+    .profile-photo-cont {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .img {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+    }
+    
+    .back {
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 560px;
+    }
+    
+    .delete-photo {
+        width: 10%;
+        position: absolute;
+        bottom: 0px;
+        left: 165px;
+        text-align: center;
+        padding: 2px;
+        background-color: #333;
+        color: #ffffff;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .upload-btn {
+        background-color: white;
+        border-radius: 5px;
+        margin: 10px 10px 10px 0;
+    }

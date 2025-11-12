@@ -1,0 +1,161 @@
+<form [formGroup]="addStudentForm" (ngSubmit)="addStudentSubmit()">
+  <div class="elements-block">
+    <div class="inner">
+      <div class="row field-block">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username">Name</label>
+            <input
+              class="form-control"
+              type="text"
+              id="subject"
+              maxlength="200"
+              formControlName="msgSubject"
+              required
+              [ngClass]="{ 'is-invalid': submitted && f['msgSubject'].errors }"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username"
+              >E-Mail ID</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="subject"
+              maxlength="200"
+              formControlName="msgSubject"
+              required
+              [ngClass]="{ 'is-invalid': submitted && f['msgSubject'].errors }"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username"
+              >Phone Number</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="subject"
+              maxlength="200"
+              formControlName="msgSubject"
+              required
+              [ngClass]="{ 'is-invalid': submitted && f['msgSubject'].errors }"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row field-block">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username">Role</label>
+            <select
+              class="form-control"
+              formControlName="adCategory"
+              required
+              [ngClass]="{
+                'is-invalid': submitted && f['adCategory'].errors
+              }"
+            >
+              <option value="" disabled selected>Choose Category</option>
+              <option
+                *ngFor="let category of categoryList"
+                [ngValue]="category"
+              >
+                {{ category.category_name }}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username"
+              >Map to Class</label
+            >
+            <select
+              class="form-control"
+              formControlName="adCategory"
+              required
+              [ngClass]="{
+                'is-invalid': submitted && f['adCategory'].errors
+              }"
+            >
+              <option value="" disabled selected>Choose Category</option>
+              <option
+                *ngFor="let category of categoryList"
+                [ngValue]="category"
+              >
+                {{ category.category_name }}
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row field-block">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username"
+              >User Name</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="subject"
+              maxlength="200"
+              formControlName="msgSubject"
+              required
+              [ngClass]="{ 'is-invalid': submitted && f['msgSubject'].errors }"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username"
+              >Password</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="subject"
+              maxlength="200"
+              formControlName="msgSubject"
+              required
+              [ngClass]="{ 'is-invalid': submitted && f['msgSubject'].errors }"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row field-block">
+        <div class="col-lg-12">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username">About</label>
+            <textarea
+              class="form-control"
+              type="text"
+              id="content"
+              maxlength="200"
+              formControlName="msgContent"
+              required
+              [ngClass]="{ 'is-invalid': submitted && f['msgContent'].errors }"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row field-block">
+        <div class="col-lg-12 mb-4 text-center">
+          <button [disabled]="loading" class="btn btn-primary btn-md" href="#">
+            <span
+              *ngIf="loading"
+              class="spinner-border spinner-border-sm mr-1"
+            ></span>
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

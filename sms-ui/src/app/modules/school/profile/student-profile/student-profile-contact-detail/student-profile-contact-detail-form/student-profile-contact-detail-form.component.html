@@ -1,0 +1,355 @@
+<h6 class="heading-small text-muted mb-4">Contact information</h6>
+<form
+  [formGroup]="addStudentContactForm"
+  (ngSubmit)="addStudentContactSubmit()"
+>
+  <div class="row field-block">
+    <div class="col-lg-12">
+      <p><strong>Permanent Address</strong></p>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="contactPermanentAddressLine1"
+          >Address Line 1</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Address"
+          type="text"
+          id="contactPermanentAddressLine1"
+          maxlength="200"
+          formControlName="contactPermanentAddressLine1"
+          required
+          [ngClass]="{
+            'is-invalid':
+              conSubmitted && conf['contactPermanentAddressLine1'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="contactPermanentAddressLine2"
+          >Address Line 2</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Address"
+          type="text"
+          id="contactPermanentAddressLine2"
+          maxlength="200"
+          formControlName="contactPermanentAddressLine2"
+          required
+          [ngClass]="{
+            'is-invalid':
+              conSubmitted && conf['contactPermanentAddressLine2'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="contactPermanentAddressPIN"
+          >PIN</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter PIN"
+          type="text"
+          id="contactPermanentAddressPIN"
+          maxlength="200"
+          formControlName="contactPermanentAddressPIN"
+          required
+          [ngClass]="{
+            'is-invalid':
+              conSubmitted && conf['contactPermanentAddressPIN'].errors
+          }"
+        />
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <p><strong>Contact Address</strong></p>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="contactContactAddressLine1"
+          >Address Line 1</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Address"
+          type="text"
+          id="contactContactAddressLine1"
+          maxlength="200"
+          formControlName="contactContactAddressLine1"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="contactContactAddressLine2"
+          >Address Line 2</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Address"
+          type="text"
+          id="contactContactAddressLine2"
+          maxlength="200"
+          formControlName="contactContactAddressLine2"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="contactContactAddressPIN"
+          >PIN</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter PIN"
+          type="text"
+          id="contactContactAddressPIN"
+          maxlength="200"
+          formControlName="contactContactAddressPIN"
+        />
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <p><strong>Student's/Personal</strong></p>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="studentPhone1">Pone No 1</label>
+        <input
+          class="form-control"
+          placeholder="Enter Phone No."
+          type="text"
+          id="studentPhone1"
+          maxlength="200"
+          formControlName="studentPhone1"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="studentPhone2">Pone No 2</label>
+        <input
+          class="form-control"
+          placeholder="Enter Phone No."
+          type="text"
+          id="studentPhone2"
+          maxlength="200"
+          formControlName="studentPhone2"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="studentWhatsAppNo"
+          >WhatsAppNo</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Whats App No."
+          type="text"
+          id="studentWhatsAppNo"
+          maxlength="200"
+          formControlName="studentWhatsAppNo"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="studentTelegramNo"
+          >Telegram Number</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Telegram No."
+          type="text"
+          id="studentTelegramNo"
+          maxlength="200"
+          formControlName="studentTelegramNo"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="studentEmail">Email</label>
+        <input
+          class="form-control"
+          placeholder="Enter Email Address"
+          type="text"
+          id="studentEmail"
+          maxlength="200"
+          formControlName="studentEmail"
+        />
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <p><strong>Father</strong></p>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherPhoneNo1">Pone No 1</label>
+        <input
+          class="form-control"
+          placeholder="Enter Father Phone No."
+          type="text"
+          id="fatherPhoneNo1"
+          maxlength="200"
+          formControlName="fatherPhoneNo1"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherPhoneNo2">Pone No 2</label>
+        <input
+          class="form-control"
+          placeholder="Enter Father Phone No."
+          type="text"
+          id="fatherPhoneNo2"
+          maxlength="200"
+          formControlName="fatherPhoneNo2"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherPhoneNoOffice"
+          >Pone No (Office)</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Father Office No."
+          type="text"
+          id="fatherPhoneNoOffice"
+          maxlength="200"
+          formControlName="fatherPhoneNoOffice"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherTelegramNo"
+          >Telegram Number</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Father Telegram No."
+          type="text"
+          id="fatherTelegramNo"
+          maxlength="200"
+          formControlName="fatherTelegramNo"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherEmail">Email</label>
+        <input
+          class="form-control"
+          placeholder="Enter Father Email Address"
+          type="text"
+          id="fatherEmail"
+          maxlength="200"
+          formControlName="fatherEmail"
+        />
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <p><strong>Mother</strong></p>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="motherPhoneNo1">Pone No 1</label>
+        <input
+          class="form-control"
+          placeholder="Enter Mother Phone No."
+          type="text"
+          id="motherPhoneNo1"
+          maxlength="200"
+          formControlName="motherPhoneNo1"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="motherPhoneNo2">Pone No 2</label>
+        <input
+          class="form-control"
+          placeholder="Enter Mother Phone No."
+          type="text"
+          id="motherPhoneNo2"
+          maxlength="200"
+          formControlName="motherPhoneNo2"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="motherPhoneNoOffice"
+          >Pone No (Office)</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Mother Office No."
+          type="text"
+          id="motherPhoneNoOffice"
+          maxlength="200"
+          formControlName="motherPhoneNoOffice"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="motherTelegramNo"
+          >Telegram Number</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Mother Telegram No."
+          type="text"
+          id="motherTelegramNo"
+          maxlength="200"
+          formControlName="motherTelegramNo"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="motherEmail">Email</label>
+        <input
+          class="form-control"
+          placeholder="Enter Mother Email"
+          type="text"
+          id="motherEmail"
+          maxlength="200"
+          formControlName="motherEmail"
+        />
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="form-group">
+        <label class="form-control-label" for="sibiling">Sibling Details</label>
+        <textarea
+          class="form-control"
+          placeholder="Enter Sibiling Details"
+          type="text"
+          id="sibiling"
+          maxlength="200"
+          formControlName="sibiling"
+        ></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row f1-buttons">
+    <div class="col-lg-12 btn-next-con">
+      <button class="btn btn-primary btn-next">Save</button>
+    </div>
+  </div>
+</form>

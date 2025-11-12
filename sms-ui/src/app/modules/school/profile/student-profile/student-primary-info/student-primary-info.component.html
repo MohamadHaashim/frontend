@@ -1,0 +1,174 @@
+<div class="profile-edit-btn">
+    <button *ngIf="!editMode && loginUserRole !== 'Student'" class="btn btn-sm btn-primary" (click)="enableEditMode()">Edit</button>
+    <button *ngIf="editMode" class="btn btn-sm btn-primary" (click)="enableViewMode()">Cancel Edit</button>
+</div>
+<div *ngIf="!editMode">
+  <form *ngIf="studentDetails">
+    <div class="row">
+      <div class="col-lg-12">
+        <h6 class="heading-small text-muted mb-4">User information</h6>
+      </div>
+    </div>
+    <div class="pl-lg-4">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="profile-photo-cont">
+            <img *ngIf="studentDetails.gender == 'Male'" src="assets/images/faces-clipart/pic-4.png" alt="image" />
+            <img *ngIf="studentDetails.gender == 'Female'" src="assets/images/faces-clipart/pic-2.png" alt="image" />
+            <div class="change-photo" (click)="openChangePhotoModal()">Change Photo</div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="input-username">Name</label>
+                <p><strong>{{studentDetails.name}}</strong></p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="input-email">Class</label>
+                <p><strong>{{studentDetails.class_name}}</strong></p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="input-first-name">Admission No.</label>
+                <p><strong>{{studentDetails.admission_no}}</strong></p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="input-last-name">Date Of Birth</label>
+                <p><strong>{{studentDetails.dob}}</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+    <!-- Address -->
+    <h6 class="heading-small text-muted mb-4">Course information</h6>
+    <div class="pl-lg-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-address">Admitted Category</label>
+            <p><strong>{{studentDetails.admitted_category_name}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-city">Class No.</label>
+            <p><strong>{{studentDetails.class_no}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-country">Second Language</label>
+            <p><strong>{{studentDetails.language_name}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-country">Exam Registration no.</label>
+            <p><strong>{{studentDetails.exam_registration_no}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-country">Recommended by</label>
+            <p><strong>{{studentDetails.recommended_by}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-country">Course Completed</label>
+            <p><strong>{{studentDetails.course_completed}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-country">TC issued</label>
+            <p><strong>{{studentDetails.tc_issued}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-country">WGPA</label>
+            <p><strong>{{studentDetails.wgpa}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-country">AVP</label>
+            <p><strong>{{studentDetails.avp}}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+    <h6 class="heading-small text-muted mb-4">Course Other Details</h6>
+    <div class="pl-lg-4">
+      <div class="form-group">
+        <p>{{studentDetails.other_details}}</p>
+      </div>
+    </div>
+  </form>
+</div>
+<div *ngIf="editMode">
+  <app-student-primary-info-form
+  [studentId]=studentId
+  [studentDetails]=studentDetails
+  ></app-student-primary-info-form>
+</div>
+
+<!-- The Modal -->
+<div id="changePhotoModal" class="custom-modal">
+  <!-- Modal content -->
+  <div class="custom-modal-content">
+    <div class="custom-modal-header">
+      <span class="close" (click)="closeChangePhotoModal()">&times;</span>
+      <h4>Change Photo</h4>
+      </div>
+      <div class="custom-modal-body">
+        <input type="file" class="file-input"
+       [accept]="requiredFileType"
+       (change)="onFileSelected($event)" #fileUpload>
+
+        <div class="file-upload">
+
+          {{fileName || "No file uploaded yet."}}
+
+            <button mat-mini-fab color="primary" class="upload-btn"
+              (click)="fileUpload.click()">
+                <mat-icon>attach_file</mat-icon>
+
+            </button>
+
+        </div>
+
+        <div class="progress">
+
+          <mat-progress-bar class="progress-bar" mode="determinate"
+                            [value]="uploadProgress" *ngIf="uploadProgress">
+
+          </mat-progress-bar>
+
+          <mat-icon class="cancel-upload" (click)="cancelUpload()"
+                    *ngIf="uploadProgress">delete_forever</mat-icon>
+
+        </div>
+      </div>
+      <div class="custom-modal-footer align-middle">
+        <button type="button" class="btn btn-default" (click)="closeChangePhotoModal()">
+          Cancel
+        </button>
+        <button type="button" class="btn btn-inverse-primary" (click)="submitPhotoChange()">
+          Upload
+        </button>
+      </div>
+  </div>
+</div>

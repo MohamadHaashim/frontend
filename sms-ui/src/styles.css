@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/css/style.css";
+@import 'ngx-toastr/toastr';
+a .active{
+    color: #308ee0 !important;
+}

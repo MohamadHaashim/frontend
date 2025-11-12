@@ -1,0 +1,147 @@
+.faq-container > div{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.faq-container .faq-header-bg{
+  border-radius: 12px;
+  background-image: url("../../assets/images/faq-header-bg.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 220px;
+  padding: 40px;
+}
+.faq-container .faq-header-bg .faq-header-title{
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #111827;
+  padding-bottom: 25px;
+}
+.faq-container .faq-header-bg .faq-header-input{
+  border: 0px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #6B7280;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  box-shadow: 0px 0px 6px 0px #dddddd;
+
+}
+.faq-container .faq-header-bg p{
+  padding-top: 15px;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #111827;
+}
+.faq-container {
+  margin-bottom: 3rem;
+}
+.faq-container .faq-qa-card {
+  border: 0px solid #d2d2d2;
+  border-radius: 5px;
+}
+.faq-container .faq-qa-card h2 {
+  color: #111827 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+.faq-container .emailNotification h6 {
+  font-size: 16px !important;
+}
+.faq-container .pushNotification h6 {
+  font-size: 16px !important;
+}
+.faq-container .emailNotification p {
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 400;
+}
+.faq-container .pushNotification p {
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form-switch .form-check-input {
+  background-color: #4b5563 !important;
+  cursor: pointer;
+  height: 24px !important;
+  width: 40px !important;
+}
+.faq-container .emailBodyContent,
+.faq-container .pushBodyContent {
+  display: flex;
+}
+.faq-container .rightContent {
+  margin-left: 12px;
+}
+.form-switch .form-check-input:checked {
+  background-color: #44a048 !important;
+  border-color: #44a048 !important;
+}
+
+.faq-qa-card .faq-qa-header-container{
+  display: flex;
+}
+.faq-qa-card .faq-qa-header-container .faq-qa-header{
+  padding-right: 15px;
+}
+.faq-qa-card .faq-qa-header-container .faq-qa-header .faq-qa-header-image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #00976D;
+  padding: 14px;
+}
+.faq-qa-card .faq-qa-header-container .faq-qa-header h2 {
+  font-family: Plus Jakarta Sans;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #111827 !important;
+  margin-bottom: 0px;
+}
+.faq-qa-card .faq-qa-header-container .faq-qa-header p {
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6B7280;
+}
+
+.faq-qa-card .faq-qa-card-container .accordion-button{
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #111827;
+}
+.faq-qa-card .faq-qa-card-container .accordion-button:not(.collapsed){
+  background-color: transparent;
+  box-shadow: none;
+}
+.faq-qa-card .faq-qa-card-container .accordion-body{
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #374151;
+}

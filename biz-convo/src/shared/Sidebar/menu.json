@@ -1,0 +1,51 @@
+[{
+  "name": "Dashboard",
+  "to": "/dashboard",
+  "icon": "dashboard-icon",
+  "active": "dashboard",
+  "hasSubMenu": false,
+  "submenuList": null 
+},
+{
+  "name": "Bookshelfs",
+  "to": "/bookshelfs",
+  "icon": "bookshelfs-icon",
+  "active": "bookshelfs",
+  "hasSubMenu": false,
+  "submenuList": null
+},
+{
+  "name": "Ads",
+  "to": "#",
+  "icon": "ads-status-icon",
+  "active": "ads",
+  "hasSubMenu": true,
+  "submenuList": [{
+    "name": "Automation Rules",
+    "to": "/ads/automation-rules",
+    "active": "automation-rules",
+    "parent": "ads"
+  },
+  {
+    "name": "Ads Creations",
+    "to": "/ads/ads-creation",
+    "active": "ads-creation",
+    "parent": "ads"
+  },
+  {
+    "name": "Campaign Manager",
+    "to": "/ads/ads-compaign-manager",
+    "active": "ads-compaign-manager",
+    "parent": "ads"
+  }
+  ]
+},
+{
+  "name": "Goals",
+  "to": "#",
+  "icon": "goals-icon",
+  "active": "goals",
+  "hasSubMenu": false,
+  "submenuList": null
+}
+]

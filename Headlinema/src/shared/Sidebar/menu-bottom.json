@@ -1,0 +1,13 @@
+
+
+[
+ 
+
+{
+  "name": "Settings",
+  "to": "/settings",
+  "icon": "settings-icon",
+  "active": false,
+  "submenu": [{}]
+}
+]

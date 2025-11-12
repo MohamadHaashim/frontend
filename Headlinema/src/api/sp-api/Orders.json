@@ -1,0 +1,283 @@
+[
+  {
+  "category": "CatalogItems",
+  "models": [
+    {
+      "name": "GetCatalogItem",
+      "description": "Returns item details for a given ASIN.",
+      "path": "/catalog/2022-04-01/items/{asin}",
+      "methods": [
+        "GET"
+      ],
+      "parameters": [
+        {
+          "name": "asin",
+          "in": "path",
+          "description": "The Amazon Standard Identification Number (ASIN) of the item to retrieve.",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "MarketplaceId",
+          "in": "query",
+          "description": "A marketplace identifier.",
+          "required": true,
+          "type": "string"
+        },
+        {
+          "name": "IncludedData",
+          "in": "query",
+          "description": "A list of data types to include in the response.",
+          "required": false,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "locale",
+          "in": "query",
+          "description": "The language and locale in which to return item attribute values.",
+          "required": false,
+          "type": "string"
+        }
+      ]
+    }
+  ]
+  },
+{
+  "category": "Orders",
+  "models": [
+    {
+      "name": "GetOrder",
+      "description": "Returns order details for a given order ID.",
+      "path": "/orders/v0/orders/{orderId}",
+      "methods": [
+        "GET"
+      ],
+      "parameters": [
+        {
+          "name": "orderId",
+          "in": "path",
+          "description": "The identifier for the order to retrieve.",
+          "required": true,
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "ListOrders",
+      "description": "Returns orders created or updated during a specified time range.",
+      "path": "/orders/v0/orders",
+      "methods": [
+        "GET"
+      ],
+      "parameters": [
+        {
+          "name": "MarketplaceIds",
+          "in": "query",
+          "description": "A list of marketplace identifiers.",
+          "required": true,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "CreatedAfter",
+          "in": "query",
+          "description": "A date used for selecting orders created after (or at) a specified time.",
+          "required": false,
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "name": "CreatedBefore",
+          "in": "query",
+          "description": "A date used for selecting orders created before (or at) a specified time.",
+          "required": false,
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "name": "LastUpdatedAfter",
+          "in": "query",
+          "description": "A date used for selecting orders last updated after (or at) a specified time.",
+          "required": false,
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "name": "LastUpdatedBefore",
+          "in": "query",
+          "description": "A date used for selecting orders last updated before (or at) a specified time.",
+          "required": false,
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "name": "OrderStatuses",
+          "in": "query",
+          "description": "A list of order statuses.",
+          "required": false,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "FulfillmentChannels",
+          "in": "query",
+          "description": "A list of fulfillment channels.",
+          "required": false,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "PaymentMethods",
+          "in": "query",
+          "description": "A list of payment methods.",
+          "required": false,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "BuyerEmail",
+          "in": "query",
+          "description": "The buyer's email address.",
+          "required": false,
+          "type": "string"
+        },
+        {
+          "name": "SellerOrderId",
+          "in": "query",
+          "description": "The seller's order identifier.",
+          "required": false,
+          "type": "string"
+        },
+      {"name": "MaxResultsPerPage",
+      "in": "query",
+      "description": "The maximum number of results to return per page.",
+      "required": false,
+      "type": "integer"
+    },
+    {
+      "name": "EasyShipShipmentStatuses",
+      "in": "query",
+      "description": "A list of EasyShip shipment statuses.",
+      "required": false,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "AmazonOrderIds",
+      "in": "query",
+      "description": "A list of Amazon order identifiers.",
+      "required": false,
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "NextToken",
+      "in": "query",
+      "description": "The token for the next set of results.",
+      "required": false,
+      "type": "string"
+    }
+  ]
+},
+{
+  "name": "ListOrderItems",
+  "description": "Returns order item information for a specified Amazon order.",
+  "path": "/orders/v0/orders/{orderId}/orderItems",
+  "methods": [
+    "GET"
+  ],
+  "parameters": [
+    {
+      "name": "orderId",
+      "in": "path",
+      "description": "An Amazon-defined order identifier.",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "name": "NextToken",
+      "in": "query",
+      "description": "The token for the next set of results.",
+      "required": false,
+      "type": "string"
+    }
+  ]
+},
+{
+  "name": "GetOrderAddress",
+  "description": "Returns the shipping address for the specified order.",
+  "path": "/orders/v0/orders/{orderId}/address",
+  "methods": [
+    "GET"
+  ],
+  "parameters": [
+    {
+      "name": "orderId",
+      "in": "path",
+      "description": "An Amazon-defined order identifier.",
+      "required": true,
+      "type": "string"
+    }
+  ]
+},
+{
+  "name": "GetOrderBuyerInfo",
+  "description": "Returns buyer information for the specified order.",
+  "path": "/orders/v0/orders/{orderId}/buyerInfo",
+  "methods": [
+    "GET"
+  ],
+  "parameters": [
+    {
+      "name": "orderId",
+      "in": "path",
+      "description": "An Amazon-defined order identifier.",
+      "required": true,
+      "type": "string"
+    }
+  ]
+},
+{
+  "name": "GetOrderItemsBuyerInfo",
+  "description": "Returns buyer information for the specified order items.",
+  "path": "/orders/v0/orders/{orderId}/orderItems/buyerInfo",
+  "methods": [
+    "GET"
+  ],
+  "parameters": [
+    {
+      "name": "orderId",
+      "in": "path",
+      "description": "An Amazon-defined order identifier.",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "name": "NextToken",
+      "in": "query",
+      "description": "The token for the next set of results.",
+      "required": false,
+      "type": "string"
+    }
+  ]
+}
+]
+}  
+         
+    
+    ]

@@ -1,0 +1,60 @@
+<div class="auto-form-wrapper">
+    <form [formGroup]="loginForm" (ngSubmit)="loginSubmit()" autocomplete="off" id="signInForm">
+        <div class="form-group">
+            <label class="label">Username</label>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Username" id="username" minlength="3" name="username" formControlName="username" maxlength="100" required [ngClass]="{
+              'is-invalid':
+                (loginForm.controls['username'].dirty ||
+                  loginForm.controls['username'].touched ||
+                  submitted) &&
+                loginForm.hasError('required', 'username')
+            }" />
+                <div class="input-group-append">
+                    <span class="input-group-text" [ngClass]="{
+                'is-invalid':
+                  (loginForm.controls['username'].dirty ||
+                    loginForm.controls['username'].touched ||
+                    submitted) &&
+                  loginForm.hasError('required', 'username')
+              }">
+              <i class="mdi mdi-check-circle-outline"></i>
+            </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="label">Password</label>
+            <div class="input-group">
+                <input type="password" class="form-control" placeholder="*********" id="password" name="password" formControlName="password" maxlength="100" required [ngClass]="{
+              'is-invalid':
+                (loginForm.controls['password'].dirty ||
+                  loginForm.controls['password'].touched ||
+                  submitted) &&
+                loginForm.hasError('required', 'password')
+            }" />
+                <div class="input-group-append">
+                    <span class="input-group-text" [ngClass]="{
+                'is-invalid':
+                  (loginForm.controls['password'].dirty ||
+                    loginForm.controls['password'].touched ||
+                    submitted) &&
+                  loginForm.hasError('required', 'password')
+              }">
+              <i class="mdi mdi-check-circle-outline"></i>
+            </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary submit-btn btn-block">
+          Login
+        </button>
+        </div>
+        <div class="form-group d-flex justify-content-between">
+            <div class="form-check form-check-flat mt-0"></div>
+            <a [routerLink]="['/forgot/password']" class="text-small forgot-password text-black">Forgot Password</a
+        >
+      </div>
+    </form>
+  </div>

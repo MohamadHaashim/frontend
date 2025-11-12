@@ -1,0 +1,79 @@
+.my-account-navbar ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.my-account-navbar li a {
+  color: #6b7280 !important;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 2px;
+}
+.my-account-navbar li a.active,
+.my-account-navbar li a:hover {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  color: #111827 !important;
+}
+.my-account-navbar li a.active {
+  background-color: #f3f4f6;
+  color: black;
+}
+a.active .profile-logo,
+a:hover .profile-logo {
+  background-image: url("../../../assets/images/icons/myaccount-profile-active-icon.svg");
+}
+a.active .profileBilling-logo,
+a:hover .profileBilling-logo {
+  background-image: url("../../../assets/images/icons/myaccount-billing-active-icon.svg");
+}
+a.active .profileNotification-logo,
+a:hover .profileNotification-logo {
+  background-image: url("../../../assets/images/icons/myaccount-notification-active-icon.svg");
+}
+a.active .amazonConnection-logo,
+a:hover .amazonConnection-logo {
+  background-image: url("../../../assets/images/icons/my-account-link-active-icon.svg");
+}
+.profile-logo {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/myaccount-profile-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}
+.profileBilling-logo {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/myaccount-billing-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}
+.profileNotification-logo {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/myaccount-notification-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}
+.amazonConnection-logo {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/my-account-link-active-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}

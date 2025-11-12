@@ -1,0 +1,354 @@
+/* input style  */
+.floating-label-input {
+  position: relative;
+  background: var(--surface-color);
+  
+}
+
+.input-text {
+  /* width: 50%; */
+  height: 40px;
+  padding: 1em;
+  background: var(--surface-color);
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+}
+
+.input-text::placeholder {
+  color: #664c3e;
+  opacity: 0.8; /* optional — makes it slightly softer */
+}
+
+.floating-label-input > label {
+  position: absolute;
+
+  top: 50%;
+  left: 1em;
+
+  color: #999999;
+  background: var(--surface-color);
+  
+  transform: translateY(-50%);
+
+  cursor: text;
+
+  transition: all 0.1s ease-out;
+}
+
+.input-text:focus {
+  outline: 2px solid #eed8cd;
+}
+
+.input-text:focus + label,
+.input-text:not(:placeholder-shown) + label
+{
+  padding: 0 0.5em;
+
+  top: 0;
+  left: 0.8em;
+
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.input-text:focus + label {
+   color: #664c3e;
+}
+/* button style  */
+.gradient-btn {
+  position: relative; /* Needed for ::before to work properly */
+  width: 80%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #FFBF9D, #f79059, #f56721);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Prevent the ::before shine from overflowing */
+  z-index: 0;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gradient-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Shine effect */
+.gradient-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: all 0.6s ease;
+  z-index: 1;
+}
+
+.gradient-btn:hover::before {
+  left: 100%;
+}
+/* 📋 Table Style */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dee2e6;
+  word-wrap: break-word;
+}
+
+.custom-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.custom-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Add scroll on small screens */
+.table-border {
+  border: 2px solid #eaeaea;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #fff;
+  overflow-x: auto; /* allow scroll */
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  box-sizing: border-box;
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* 🧭 Entries Dropdown */
+.entries-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  flex-wrap: wrap; /* for smaller screens */
+  margin-top: 25px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.entries-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px 28px 5px 12px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.entries-select:hover {
+  border-color: #664c3e;
+  background-color: #f9f9f9;
+}
+
+/* Focus effect */
+.entries-select:focus {
+  outline: none;
+  border-color: #664c3e;
+  box-shadow: 0 0 4px rgba(255, 72, 0, 0.4);
+  background-color: #fff;
+}
+
+/* Dropdown icon */
+.dropdown-icon {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Change icon color on hover/focus */
+.select-wrapper:hover .dropdown-icon,
+.entries-select:focus + .dropdown-icon {
+  color: #664c3e;
+}
+
+/* 📱 Mobile Responsive */
+/* 📱 Mobile Responsive (≤768px) */
+@media (max-width: 768px) {
+  .table-border {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .custom-table {
+    font-size: 13px;
+    min-width: 500px;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    padding: 8px;
+  }
+
+  .Mobile-res{
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+
+  .Mobile-res {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .entries-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .entries-select {
+    width: 100%;
+  }
+
+  .custom-table {
+    font-size: 12px;
+  }
+
+  .pagination {
+    font-size: 12px;
+  }
+}
+/* form button */
+/* 🎨 Base Style */
+.common-btn {
+  background: linear-gradient(90deg, #6f1cff, #9e66ff, #7a2ffb);
+  color: white;
+  position: relative;
+  width: 80%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 0;
+  text-align: center;
+}
+
+/* ✨ Hover & Active Effects */
+.common-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.common-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 💫 Shine Animation */
+.common-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: all 0.6s ease;
+  z-index: 1;
+}
+
+.common-btn:hover::before {
+  left: 100%;
+}
+
+/* 📏 Default Size */
+.btn-size {
+  min-width: 150px;
+  height: 42px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .common-btn {
+    width: 100%; /* full width on tablets */
+    padding: 12px 0;
+  }
+
+  .btn-size {
+    min-width: auto;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  /* Disable hover scaling (better UX on touch devices) */
+  .common-btn:hover {
+    transform: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 480px) {
+  .common-btn {
+    width: 100%;
+    font-size: 13px;
+    padding: 10px 0;
+    border-radius: 6px;
+  }
+
+  .btn-size {
+    height: 55px;
+    font-size: 13px;
+  }
+}
+

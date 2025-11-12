@@ -1,0 +1,110 @@
+.staff-passwordInput {
+    position: relative;
+}
+
+.staff-passwordInputicon {
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    font-size: 12px;
+    right: 20px;
+}
+
+.dropdown .storename-dropdown-menu.show:before {
+    top: -20px;
+    left: 330px !important;
+}
+
+.storename-dropdown-menu {
+    width: 100%;
+}
+
+.import-staff-icon {
+    background-color: lightgray;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.import-popup-footer {
+    display: flex;
+    justify-content: center !important;
+    border: none;
+}
+
+.import-popup-header {
+    border: none;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.default-file-input {
+    display: none;
+}
+
+.cannot-upload-message {
+    background-color: #ffc6c4;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 10px 5px 30px;
+    border-radius: 5px;
+    color: #BB0000;
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.browse-files-text {
+    cursor: pointer;
+}
+
+.drag-file-area {
+    border: 2px dashed lightgray;
+    border-radius: 40px;
+    margin: 10px 0 15px;
+    padding: 30px 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.exportwithData,
+.exportwithoutData {
+    text-align: start;
+    padding: 1% 7%;
+    font-size: 12px;
+}
+
+.exportwithData-para {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.exportwithData-para1 {
+    font-size: 12.9px;
+}
+
+.exportwithData-btn {
+    border: 0px;
+    background: linear-gradient(310deg, #004aad, #0dc0df);
+    color: white;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-weight: 500;
+}
+
+.exportModal-hr {
+    background: gray;
+    width: 90%;
+    margin: 2% 5%;
+    height: 0.8px !important;
+}

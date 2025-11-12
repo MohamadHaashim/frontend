@@ -1,0 +1,21 @@
+.amazon-conection{
+  margin-bottom: 3rem;
+  margin-top: 6rem !important;
+}
+.amazon-conection .amazonConectionHeading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.amazon-conection .amazonConnectionCard {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+}
+.amazon-conection .amazonConectionHeading h2 {
+  color: #111827 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+.amazon-conection .amazonConectionHeading .btn-primary {
+  height: 35px !important;
+}

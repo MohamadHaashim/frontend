@@ -1,0 +1,11 @@
+.sadmin-passwordInput {
+    position: relative;
+}
+
+.sadmin-passwordInputicon {
+    cursor: pointer;
+    position: absolute;
+    top: 13px;
+    font-size: 12px;
+    right: 10px;
+}

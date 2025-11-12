@@ -1,0 +1,51 @@
+.login-sadmin {
+    background-image: url("../../../src/assets/img/curved-images/curved-6.jpg");
+}
+
+.login-input-group {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.vendor-login-btn {
+    background: var(--bs-gray-dark);
+    padding: 8px;
+    margin-bottom: 7px !important;
+    font-size: 10px;
+}
+
+.vendor-login-btn:hover {
+    background-color: #ad0000 !important;
+    border-color: #22c55e;
+}
+
+.biz-login-content-side {
+    font-size: 35px;
+    color: var(--bs-gray-dark);
+    border-bottom: 4px solid var(--bs-gray-light);
+}
+
+.biz-login-content-side-1 {
+    color: var(var(--bs-gray-dark));
+    font-weight: 700;
+}
+
+.login-bg-text-go {
+    color: white;
+}
+
+.login-sadmin {
+    background-image: url("../../../src/assets/img/Yalli_Login.jpg");
+    filter: blur(3px);
+    -webkit-filter: blur(3.5px);
+    background-size: contain;
+}
+
+.vendor-login-icon img {
+    width: 120px;
+    margin: 0 0 20px;
+}
+
+.vendor-login-txt {
+    margin-left: 5px;
+}

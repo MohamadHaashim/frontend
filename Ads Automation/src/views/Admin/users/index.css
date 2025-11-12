@@ -1,0 +1,112 @@
+.admin-user-input-head {
+    font-weight: 700;
+}
+
+.admin-user-create {
+    float: center;
+    text-align: center;
+}
+
+.admin-user-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+}
+
+.admin-user-nodata {
+    height: 400px;
+}
+
+.admin-user-table-body {
+    display: block;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+.admin-user-table-head,
+.admin-user-table-body tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.admin-user-custom-modal .modal-content {
+    background: linear-gradient(135deg, #f0f2f5, #dfe3e8);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.admin-user-custom-modal-header {
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.admin-user-custom-modal .modal-dialog {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* toggle css */
+
+.toggle-switch {
+    position: relative;
+    width: 47px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4f5863;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #4caf50;
+}
+
+input:checked+.slider:before {
+    transform: translateX(24px);
+}

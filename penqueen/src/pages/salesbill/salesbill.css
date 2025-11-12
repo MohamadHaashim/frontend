@@ -1,0 +1,107 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button style */
+.dropdown-toggle {
+  background: var(--b);
+  color: var(--main-color);
+  border: 1px solid var(--bor);
+  border-radius: var(--radius);
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  transition: all 0.3s var(--cubic);
+  box-shadow: 
+    hsl(from var(--shadow-color) h s l / 0.02) 0px 1px 1px -0.5px,
+    hsl(from var(--shadow-color) h s l / 0.03) 0px 2px 2px -1px,
+    hsl(from var(--shadow-color) h s l / 0.03) 0px 3px 3px -1.5px;
+}
+
+/* Add dropdown arrow icon */
+.dropdown-toggle::after {
+  content: "";
+  border: solid var(--main-color);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  margin-left: 8px;
+  transform: rotate(45deg);
+  transition: transform 0.3s var(--cubic);
+}
+
+/* Rotate arrow when open */
+.dropdown.show .dropdown-toggle::after {
+  transform: rotate(-135deg);
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  background: var(--b);
+  border: none;
+  border-radius: calc(var(--radius) * 1.2);
+  box-shadow:
+    hsl(from var(--shadow-color) h s l / 0.03) 0px 1px 1px -0.5px,
+    hsl(from var(--shadow-color) h s l / 0.04) 0px 4px 10px -1px,
+    hsl(from var(--shadow-color) h s l / 0.04) 0px 12px 24px -4px;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  min-width: 220px;
+  opacity: 0;
+  transform: scale(0.95) translateY(-10px);
+  transform-origin: top;
+  transition: all 0.35s var(--spring);
+}
+
+/* Animate open state */
+.dropdown.show .dropdown-menu {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* Dropdown items */
+.dropdown-item {
+  color: var(--main-color);
+  border-radius: var(--radius);
+  padding: 0.6em 1em;
+  font-weight: 500;
+  transition: all 0.25s var(--cubic);
+}
+
+/* Hover and focus states */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background: hsl(from var(--active-color) h s l / 10%);
+  color: var(--hover-color);
+}
+
+/* Active/selected item */
+.dropdown-item.active,
+.dropdown-item:active {
+  background: hsl(from var(--active-color) h s l / 15%);
+  color: var(--selected-color);
+}
+.sales-bill-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sales-bill-page h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+.input-size {
+  height: 50px;
+}
+.dropdown-names{
+  width: 200px;
+}
+
+

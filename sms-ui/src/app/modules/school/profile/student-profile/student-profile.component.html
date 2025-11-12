@@ -1,0 +1,46 @@
+<div class="content-wrapper">
+  <div class="row">
+    <div class="col-xl-12 order-xl-1">
+      <h3>View Profile</h3>
+      <div class="card custom-card">
+        <div class="tab-menu">
+          <ul>
+            <li class="tab-1 active" (click)="clickTabMenu(1)">Overview</li>
+            <li class="tab-2" (click)="clickTabMenu(2)">Profile Details</li>
+            <li class="tab-3" (click)="clickTabMenu(3)">Contact Details</li>
+            <li class="tab-4" (click)="clickTabMenu(4)">Education Details</li>
+            <li class="tab-5" (click)="clickTabMenu(5)">Other Details</li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-con-container tab-con-1 active">
+            <app-student-primary-info
+            [studentId]=studentId
+            [loginUserRole]=loginUserRole
+            ></app-student-primary-info>
+          </div>
+          <div class="tab-con-container tab-con-2">
+            <app-student-profile-personal-detail
+            [studentId]=studentId
+            ></app-student-profile-personal-detail>
+          </div>
+          <div class="tab-con-container tab-con-3">
+            <app-student-profile-contact-detail
+            [studentId]=studentId
+            ></app-student-profile-contact-detail>
+          </div>
+          <div class="tab-con-container tab-con-4">
+            <app-student-profile-education-detail
+            [studentId]=studentId
+            ></app-student-profile-education-detail>
+          </div>
+          <div class="tab-con-container tab-con-5">
+            <app-student-profile-other-detail
+            [studentId]=studentId
+            ></app-student-profile-other-detail>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+<div class="bg">
+  <h3>Subject</h3>
+  <div class="col-xs-12 col-md-12 mt-3 fieldset tab-cont-1 active">
+    <form [formGroup]="addSubjectForm" (ngSubmit)="addSubjectSubmit()">
+      <div class="elements-block">
+        <div class="inner">
+          <div class="row field-block Formbg">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="subject">Subject</label>
+                <input
+                  id="subject"
+                  type="text"
+                  class="form-control"
+                  formControlName="subject"
+                  required
+                  [ngClass]="{
+                    'border-danger':
+                      (submitted ||
+                        addSubjectForm.controls['subject'].dirty ||
+                        addSubjectForm.controls['subject'].touched) &&
+                      addSubjectForm.hasError('required', 'subject')
+                  }"
+                />
+                <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addSubjectForm.controls['subject'].dirty ||
+                      addSubjectForm.controls['subject'].touched) &&
+                    addSubjectForm.hasError('required', 'subject')
+                  "
+                >
+                  Subject is required
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="shortName"
+                  >Short Name</label
+                >
+                <input
+                  type="text"
+                  id="shortName"
+                  class="form-control"
+                  formControlName="shortName"
+                  required
+                  [ngClass]="{
+                    'border-danger':
+                      (submitted ||
+                        addSubjectForm.controls['shortName'].dirty ||
+                        addSubjectForm.controls['shortName'].touched) &&
+                      addSubjectForm.hasError('required', 'shortName')
+                  }"
+                />
+                <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addSubjectForm.controls['shortName'].dirty ||
+                      addSubjectForm.controls['shortName'].touched) &&
+                    addSubjectForm.hasError('required', 'shortName')
+                  "
+                >
+                  Short Name is required
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label checkBoxLabel" for="classes"
+                  >Select Class</label
+                >
+
+                <input
+                  type="checkbox"
+                  id="junior"
+                  value="J3"
+                  name="class"
+                  formControlName="class"
+                  required
+                />&nbsp;Junior
+                <input
+                  type="checkbox"
+                  id="senior"
+                  value="J4"
+                  name="class"
+                  formControlName="class"
+                  required
+                />&nbsp;Senior
+
+                <!--   [ngClass]="{
+                    'is-invalid': submitted && f['msgSubject'].errors
+                  }" -->
+              </div>
+            </div>
+            <div class="col-lg-6 assignSubmitBtn">
+              <button
+                [disabled]="loading"
+                class="btn btn-primary btn-md"
+                href="#"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

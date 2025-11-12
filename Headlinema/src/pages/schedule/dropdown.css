@@ -1,0 +1,80 @@
+.custom-dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .custom-dropdown-container label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .dropdownContent__schedule {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  
+  .dropdownContent__schedule p {
+    background-color: #fff;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;  /* Adjust width to fit your content */
+  }
+  .dropdownContent__schedule p:hover {
+    box-shadow: 0 0 0 1px #ebb96e
+  }
+  .dropdownContent__schedule p:focus{
+    border: 1px solid #ebb96e !important;
+  }
+  .dropdownContent__schedule p:hover {
+    border: 1px solid #ebb96e !important;
+  }
+  
+  .dropdown-menu__schedule {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    padding: 10px 0 10px 0!important;
+  }
+  
+  .dropdown-menu__schedule  li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu__schedule  li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdownContent__schedule p .down-arrow-right,
+  .dropdownContent__schedule p .up-arrow-right {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dropdownContent__schedule .dropdown-menu__schedule .show {
+    display: block; /* Show the dropdown */
+  }
+  
+  /* Style the badge (optional) */
+  .ant-badge {
+    margin-left: 8px;
+  }
+  

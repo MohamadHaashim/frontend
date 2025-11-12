@@ -1,0 +1,336 @@
+@import "rsuite/dist/rsuite.css";
+
+/* Tab container adjustments */
+.tab-container {
+  padding: 0 !important;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+/* Campaign Manager adjustments */
+.dashboard-container.campaing-manger .filter-container {
+  position: relative;
+  /* padding: 0 30px; */
+  margin-top: 0 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 1230px;
+}
+
+.column-link-container .dropdown-container {
+  min-width: 300px;
+}
+
+.global-filter {
+  width: 500px;
+}
+
+/* Alignment adjustments */
+.vertical-top {
+  vertical-align: top;
+}
+
+/* Dropdown customization */
+.cus-dropdown .dropdown-container.open {
+  display: block;
+}
+
+/* Button adjustments */
+.btn {
+  font-size: 14px !important;
+}
+
+/* Calendar styling */
+.rs-calendar-table-cell-disabled > div > span {
+  color: #aaaaaa;
+}
+
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+  color: #6b7380;
+}
+
+/* Dollar input field styling */
+.dollar-text {
+  background-color: #f3f4f6;
+  left: 1px;
+  top: 1.5px;
+  height: 38px;
+  border-radius: 3px 0 0 3px;
+  width: 35px;
+  border: 1px solid #f3f4f6;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.dollar-text-end {
+  background-color: #f3f4f6;
+  right: 0.5px;
+  top: 1.5px;
+  height: 38px;
+  border-radius: 0 3px 3px 0;
+  width: 35px;
+  border: 1px solid #f3f4f6;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* Custom date picker styling */
+.datesincustom {
+  height: 10px;
+  margin-top: -70px;
+  margin-left: 250px;
+}
+
+.datesincustoms {
+  height: 10px;
+  width: 200px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* Profile image adjustments */
+.profile {
+  position: fixed;
+  top: 18px;
+  left: 80px;
+  z-index: 10 !important;
+}
+
+.profile2 {
+  position: absolute;
+  top: -43px;
+  left: 20px;
+  z-index: 10 !important;
+}
+
+/* Button secondary style */
+.secondary {
+  background-color: white !important;
+  color: #FE9900 !important;
+  height: 38px !important;
+}
+
+/* Select dropdown adjustments */
+.form-select:not(.form-control):not(.rdl-filter) {
+  opacity: 1;
+  /* width: 70px;
+  height: 35px; */
+}
+
+.dropdown {
+  font-weight: 40;
+  font-size: 14px;
+  /* margin: -27px 0px 0px 140px; */
+  /* border: none; */
+}
+.marketplace-footer-left{
+  margin-top: 20px;
+}
+/* Main page title container adjustments */
+.main-con-page-title-container {
+  /* margin-right: 50px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* Page header adjustments */
+.page-header {
+  margin-top: 70px;
+  display: flex;
+}
+
+/* Tabs alignment */
+.nav-tabs {
+  margin-top: -30px;
+}
+
+/* Filter container adjustments */
+.filter-containers {
+  margin-right: 14%;
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: flex-end;
+ 
+}
+.filter-container {
+  /* margin-left: 46%;  */
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-end; 
+  justify-content: flex-end;
+ 
+}
+
+/* Dropdown container styling */
+.filter-item.filter-link-container.dropdownContent {
+  border: 1px solid #d1d5db;
+  width: 120px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* Search input adjustments */
+.search-filter-container input {
+  width: 350px;
+  padding: 5px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  /* margin-left: 150px; */
+}
+.marketsearch-filter-container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  
+}
+/* Export button adjustments */
+.filter-item.export-link-container {
+  border: 1px solid #d1d5db;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Column alignment for larger screens */
+@media (min-width: 768px) {
+  .col-md-9 {
+    flex: 0 0 75%; 
+    max-width: 75%; 
+    display: flex; 
+    gap: 15px; 
+    flex-direction: row; 
+    align-items: flex-end; 
+    justify-content: space-between; 
+  }
+}
+@media (min-width: 768px) {
+  .col-md-5 {
+      flex: 0 0 41.66666667%;
+      max-width: 41.66666667%;
+      margin-top: -10px;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-7 {
+      flex: 0 0 58.33333333%;
+      max-width: 58.33333333%;
+      margin-top: 10px;
+  }
+}
+/* Ensures the icon and text are aligned in a row */
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px; /* Adds spacing between the icon and text */
+  margin: 0; /* Removes default paragraph margin */
+}
+
+.filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.filter-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333; 
+}
+
+.down-arrow-right {
+  margin-left: 5px;
+  font-size: 12px; /* Adjust size as needed */
+  color: #333; /* Match text color */
+}
+
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px; 
+  /* border: 1px solid #d1d5db; */
+}
+
+.dropdown-menu {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+.export-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px; 
+  margin: 0;
+}
+
+.export-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.export-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Export link container styles */
+.export-link-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: #f9fafb; /* Optional background */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.export-link-container:hover {
+  background-color: #f3f4f6; /* Hover effect */
+}
+
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 98.5%;
+  }
+}
+.nk-wrap {
+  min-height: 110vh;
+}
+
+
+
+#globalSearch:focus {
+  border: 1px solid #ebb96e !important;
+}
+
+.condition-filter >table{
+  border-spacing: 5px !important;
+  border-collapse: separate !important;
+}

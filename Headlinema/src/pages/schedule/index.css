@@ -1,0 +1,327 @@
+.schedule-container{
+    margin-top: 85px;
+}
+.search_icon{
+  align-self: center;
+    position: absolute;
+    left: 0;
+    padding: 8px;
+}
+.search-filter-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+/* 
+   Based on / inspired by the helpful demo
+   found here: https://css-tricks.com/css-pie-timer/
+   This could probably be 'simplified' into less markup.
+   It would definitely benefit from the addition of a pre-processor.
+*/
+
+.wrapper {
+  margin: 3em auto 0;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background: url('https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Toronto_Blue_Jays_logo.svg/1024px-Toronto_Blue_Jays_logo.svg.png') no-repeat;
+  background-size: cover;
+}
+
+.pie {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: #052A5F;
+}
+
+.spinner {
+  border-radius: 125px 0 0 125px;
+  z-index: 200;
+  border-right: none;
+  transform-origin: right;
+  animation: spin 3s linear infinite;
+}
+
+.filler {
+  border-radius: 0 125px 125px 0;
+  z-index: 100;
+  border-left: none;
+  transform-origin: left;
+  animation: fill 3s linear infinite;
+  left: 50%;
+  opacity: 1;
+}
+
+.mask {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 300;
+   /* background: white url('https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Toronto_Blue_Jays_logo.svg/1024px-Toronto_Blue_Jays_logo.svg.png') no-repeat; / */
+  background-size: cover;
+}
+
+.mask.spin {
+  left: 0;
+  animation: mask-spin 3s linear infinite;
+}
+
+.mask.fill {
+  right: 0;
+  background-position: right;
+  animation: mask-fill 3s linear infinite;
+}
+
+@keyframes spin {
+  0%      { opacity: 1;
+            transform: rotate(0deg); }
+  50%     { transform: rotate(360deg); }
+  74.999% { opacity: 1; }
+  75%     { opacity: 0;
+            transform: rotate(360deg); }
+  100%    { opacity: 0;
+            transform: rotate(0deg); }
+}
+
+@keyframes fill {
+  0%      { opacity: 0; }
+  24.999% { opacity: 0; }
+  25%     { opacity: 1; }
+  50%     { transform: rotate(0deg); }
+  100%    { transform: rotate(360deg); }
+}
+
+@keyframes mask-spin {
+  0%     { opacity: 1; }
+  24.99% { opacity: 1; }
+  25%    { opacity: 0; }
+  100%   { opacity: 0; }
+}
+
+@keyframes mask-fill {
+  0%        { opacity: 0; }
+  74.999%   { opacity: 0; }
+  75%       { opacity: 1; }
+  100%      { opacity: 1; }
+}
+.date-picker{
+  width: 250px;
+  border-radius: 5px;
+  /* height: 40px;
+  margin-top: 10px; */
+  /* bottom: 1; */
+  /* padding: 0px; */
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 20px; 
+}
+.profile-dropdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px; 
+  border-radius: 5px;
+  
+  background-color: transparent;
+    border: 1px solid #ccc;
+}
+#dropdown {
+ 
+  text-align: center;  
+  border-radius: 5px;
+  position: relative;
+}
+
+
+#dropdown option {
+  position: absolute;
+  bottom: 0;
+  text-align: center; 
+}
+
+.table-footer-right{
+  margin-left: 78%; 
+}
+
+.table-footer-left {
+  display: block;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px; /* Space between elements */
+  /* background-color: #333; */
+  /* border: 5px solid #ccc !important; */
+}
+
+
+.table-footer-left span {
+  font-size: 14px;
+  color: #333;
+}
+
+label {
+  margin: 0;
+}
+.dropdow{
+  border: 5px solid red !important;
+  outline: none;
+  padding: 5px 15px ;
+  width: 100%;
+}
+.form-select-dropdown{
+  opacity: 9;
+  width: 100%;
+  margin-left: 6px;
+}
+.rs-calendar-table .rs-calendar-table-cell.rs-calendar-table-cell-selected.rs-calendar-table-cell-selected-start .rs-calendar-table-cell-content {
+  background: #ebb96e !important;  
+  color: #fff !important;         
+}
+.rs-calendar-table .rs-calendar-table-cell.rs-calendar-table-cell-selected.rs-calendar-table-cell-selected-end .rs-calendar-table-cell-content {
+  background: #ebb96e !important;  
+  color: #fff !important;           
+}
+
+.rs-stack-item .rs-picker-toolbar-right .rs-btn.rs-btn-primary.rs-btn-sm {
+  background-color: #ebb96e !important; 
+  color: #fff !important;                   
+  border-radius: 5px !important;            
+}
+.rs-stack-item .rs-picker-toolbar-right .rs-btn.rs-btn-primary.rs-btn-sm.rs-btn-disabled {
+  background-color: lightgray !important; 
+  color: #333 !important;              
+  cursor: not-allowed !important;         
+}
+
+.rs-picker-toolbar-ranges .rs-btn.rs-btn-link.rs-btn-sm {
+  color: #ebb96e !important;  
+  text-decoration: none;
+}
+.rs-input-group:focus-within, .rs-input-group:not(.rs-input-group-disabled).rs-input-group-focus {
+  outline: 1px solid  #ebb96e !important; 
+}
+.rs-input-group:focus-within, .rs-input-group:not(.rs-input-group-disabled).rs-input-group-focus, .rs-input-group:not(.rs-input-group-disabled):hover {
+  border-color: #ebb96e !important;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #ebb96e !important;
+  border-color: #ebb96e !important;
+  text-decoration: none;
+}
+.rs-picker-popup{
+  margin-left: -280px;
+}
+
+
+
+.table thead th {
+  vertical-align: middle !important;
+  
+}
+.thead__Checkbox .form-check-input {
+  border: 2px solid #eeb96e;
+  border-color:  #eeb96e !important;
+  background-color: white !important;
+  display: table-cell  !important;
+  vertical-align: middle !important;
+  margin: -5px  4px  !important;
+  padding: 0 !important;
+  /* margin: 21px 0px 0px 13px; */
+}
+
+/* .custom-checkbox .form-check-input:checked{
+  border: 2px solid #eeb96e;
+  border-color:  #eeb96e !important;
+  background-color: white !important;
+  display: table-cell  !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+} */
+/* .thead__Checkbox .form-check-input:checked {
+  background-color: #eeb96e !important;
+  border-color: #eeb96e !important;
+  
+}
+.thead__Checkbox  .form-check-input:checked:focus {
+  box-shadow: 0 0 0 0.05rem rgba(238, 185, 110, 0.5) !important;
+}
+
+.custom-checkbox .form-check-input {
+  border-color: #ddd !important;
+  background-color: white !important;
+  box-shadow: 0 0 0 0.05rem rgba(238, 185, 110, 0.1) !important;
+
+}
+.custom-checkbox .form-check-input:checked {
+  background-color: #eeb96e !important;
+  border-color: #eeb96e !important;
+}
+.custom-checkbox .form-check-input:checked:focus {
+  box-shadow: 0 0 0 0.05rem rgba(238, 185, 110, 0.5) !important;
+}
+
+ 
+.form-check-input{
+  vertical-align: middle !important;
+  margin: 0 !important;
+  padding: 0 !important;
+} */
+.form-check-input {
+  position: relative !important;
+  vertical-align: middle !important;
+  margin: 0 !important; 
+  padding: 0 !important;
+  vertical-align: middle !important; 
+  border: 2px solid #eeb96e  !important;
+    background-color: #eeb96e !important;
+    border-color: #eeb96e !important;
+}
+
+.thead__Checkbox .form-check-input {
+  border: 2px solid #eeb96e;
+  border-color:  #eeb96e !important;
+  background-color: white !important;
+  display: table-cell  !important;
+  vertical-align: middle !important;
+   /* margin: -5px  4px  !important;  */
+  padding: 0 !important;
+}
+.thead__Checkbox .form-check-input:checked {
+  background-color: #eeb96e !important;
+  border-color: #eeb96e !important;
+  
+  
+}
+
+.custom-checkbox .form-check-input:checked {
+  border-color: #eeb96e !important;
+  background-color: #eeb96e !important;
+}
+
+.custom-checkbox .form-check-input:focus {
+  box-shadow: 0 0 0 0.05rem rgba(238, 185, 110, 0.5) !important;
+}
+
+.custom-checkbox .form-check-input {
+  position: relative !important;
+  vertical-align: middle !important;
+  border-color: #ddd !important;
+  background-color: white !important;
+}
+.bulkOperations_Badge{
+  right: -12px;
+    top: -10px;
+    background:#eeb96e
+}

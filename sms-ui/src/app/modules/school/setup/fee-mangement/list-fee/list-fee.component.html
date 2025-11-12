@@ -1,0 +1,106 @@
+<div class="content-wrapper">
+  <div class="row page-header">
+    <div class="col-md-6">
+      <h3>Fee List</h3>
+    </div>
+    <div class="col-md-6 btn-actions">
+      <a [routerLink]="['/school/setup/fee/create']">
+        <button type="button" class="btn btn-success">
+          <i class="mdi mdi-plus text-light"></i>
+          Add
+        </button></a
+      >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Section</th>
+                  <th>Class Level</th>
+                  <th>Fee Name</th>
+                  <th>Amount</th>
+                  <th class="list-status-td">Action</th>
+                </tr>
+              </thead>
+              <tbody *ngIf="feesData.length > 0; else noData">
+                <tr *ngFor="let fees of feesData; let i = index">
+                  <td>{{i+1}}</td>
+                  <td>{{fees.section_name}}</td>
+                  <td>{{fees.class_name}}</td>
+                  <td>{{fees.fee_name}}</td>
+                  <td>{{fees.amount}}</td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-icons btn-inverse-primary"
+                      [routerLink]="['/school/setup/fee/edit',fees.id]"
+                    >
+                      <i class="mdi mdi-pencil"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icons btn-inverse-danger"
+                      data-toggle="modal"
+                      data-target="#confirmDeleteModal"
+                     
+                   
+                     
+                    >
+                      <i class="mdi mdi-delete-forever"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+
+
+              <!-- No Data -->
+
+              <ng-template #noData>
+                <tr>
+                    <td colspan="5" class="text-center fs-6 mt-20">No data found</td>
+                </tr>
+            </ng-template>
+
+            </table>
+          </div>
+
+          <div class="paginationStyle d-flex justify-content-end" *ngIf="feesData.length > 0">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="curentPage" [pageSize]="itemsPerPage" (pageChange)="onPageChange($event)">
+            </ngb-pagination>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- The Modal -->
+
+<!-- <div id="confirmDeleteModal" class="custom-modal">
+
+  <div class="custom-modal-content">
+      <div class="custom-modal-header">
+          <span class="close" (click)="closeDeleteModal()">&times;</span>
+          <h4>Confirm Delete!</h4>
+      </div>
+      <div class="custom-modal-body">
+          <p class="text-center">Are you sure, you want to delete this student</p>
+      </div>
+      <div class="custom-modal-footer align-middle">
+          <button type="button" class="btn btn-default" (click)="closeDeleteModal()">
+        Cancel
+      </button>
+          <button type="button" class="btn btn-inverse-primary" (click)="confirmDelete()">
+        Delete
+      </button>
+      </div>
+  </div>
+</div> -->

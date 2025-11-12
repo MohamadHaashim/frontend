@@ -1,0 +1,188 @@
+.add-rule-container h4{
+    font-size: 16px;
+    color: #111827;
+    font-weight: 600;
+}
+.add-rule-container p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.add-rule-container h5{
+    font-size: 16px;
+    color: #6B7280;
+    font-weight: 600;
+}
+.add-rule-container.add-new-rule h5{
+    font-size: 16px;
+    color: #111827;
+    font-weight: 600;
+}
+.add-rule-container .rule-box{
+    border: 1px #E5E7EB solid;
+    background-color: #F9FAFB;
+    border-radius: 8px;
+    padding: 15px 20px;
+    position: relative;
+    cursor: pointer;
+    height: 115px;
+}
+.add-rule-container .rule-box .box-header{
+    color: #111827;
+    font-size: 18px;
+    font-weight: 600;
+}
+.add-rule-container .rule-box .box-header i{
+    padding-right: 10px;
+}
+.add-rule-container .rule-box .box-body{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.add-rule-container .rule-box .box-body p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #6B7280;
+}
+.add-rule-container a{
+    text-decoration: none;
+}
+.add-rule-container .rule-box .box-body select.form-select{
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    border-color: #D1D5DB;
+}
+.add-rule-container .rule-box .radio-icon{
+    background-image: url("../../../assets/images/icons/radio-inactive.svg");
+    background-repeat: no-repeat;
+    padding: 10px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.circle-minus-icon {
+   
+    font-family: 'Arial', sans-serif; /* Example font-family */
+    font-size: 16px; /* Example font size */
+    color: #FE9900; /* Example color */
+   
+  }
+
+.add-rule-container .rule-box:hover{
+    border-color: #FE9900;
+    background-color: #f5e0c1;
+}
+.add-rule-container .rule-box:hover .radio-icon{
+    background-image: url("../../../assets/images/icons/radio-active.svg");
+}
+
+.add-rule-container.add-new-rule .form-control{
+    height: 40px !important;
+}
+.datesincustom .rs-picker-has-value.rs-picker-cleanable .rs-picker-toggle.rs-btn {
+    padding-right: 40px;
+    position: absolute;
+    width: 252px;
+    top: 379px;
+    left:700px;
+}
+.rs-picker-has-value.rs-picker-cleanable .rs-picker-toggle.rs-btn {
+    padding-right: 32px;
+    height: 40px;
+
+  }
+  .Campaign-list{
+    border: 1px solid #dee2e6;
+    padding: 10px;
+  }
+  .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    font-size: 14x !important;
+  }
+  .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root ,.css-1bn53lx {
+    height: 38px !important;
+    width: 150px !important;
+    font-size: 14px !important;
+
+  }
+  .css-4jnixx-MuiStack-root,.css-160unip  {
+    padding: 0px !important;
+    overflow: hidden !important;
+  }
+  .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root:focus ,.css-1bn53lx:focus{
+    border-color: #007bff; /* Change the border color to blue when input is clicked */
+  }
+  .css-1e3wlyl-MuiButtonBase-root-MuiMenuItem-root-MuiMultiSectionDigitalClockSection-item.Mui-selected ,.css-1ox9k5z.Mui-selected  {
+    background-color: #f7bc64 !important;
+    color: #fff;
+}
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root,.css-1ujsas3  {
+    color: #FE9900 !important;
+}
+.dropdown-select{
+    width: 150px;
+    background-color: white !important;
+    border-color:#dee2e6 !important ;
+    height: 40px !important;
+    display: flex !important;
+    align-items: start !important;
+    justify-content: start !important;
+    color: #212529 !important;
+    font-weight: 400 !important;
+
+}
+.dropdown-item{
+    color: #212529 !important;
+    font-weight: 400 !important;  
+    padding: 2px 5px 0px 5px !important;
+    font-size: 14px !important;
+}
+.dropdown-item:hover{
+    background-color: #ffd28e !important;
+   color: black !important;
+   text-decoration: none !important;
+}
+.dropdown-item:focus{
+
+   text-decoration: none !important;
+}
+.dropdown-menu.show {
+padding: 5px !important;
+}
+.file{
+    height: 34px !important;
+}
+:where(.css-dev-only-do-not-override-3mqfnx).ant-picker:hover ,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-picker:focus,
+:where(.css-3mqfnx).ant-picker-focused.ant-picker,
+:where(.css-3mqfnx).ant-picker:hover {
+    border-color: #FE9900 !important;
+}
+ 
+:where(.css-dev-only-do-not-override-3mqfnx).ant-btn-primary,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-btn-primary,
+:where(.css-3mqfnx).ant-btn-primary ,
+:where(.css-3mqfnx).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover
+{
+    background-color: white !important;
+    box-shadow :none !important;
+    color:#FE9900  !important
+}
+:where(.css-dev-only-do-not-override-3mqfnx).ant-picker-dropdown .ant-picker-time-panel-column >li.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner,
+:where(.css-3mqfnx).ant-picker-dropdown .ant-picker-time-panel-column >li.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner{
+    background: #ebc182 ;
+}
+.ant-picker-now-btn{
+    color:#FE9900  !important ;
+    display: none !important;
+}
+.ant-btn{
+    border:none !important
+}
+.time-box{
+    border: 1px solid #dee2e6 ;
+    padding: 10px 10px 0px 10px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 13px;
+}

@@ -1,0 +1,51 @@
+<div class="content-wrapper">
+    <div class="row page-header">
+        <div class="col-md-6">
+            <h3>Caste Categories</h3>
+        </div>
+        <div class="col-md-6 btn-actions">
+            <a [routerLink]="['/admin/settings/caste-categories/list']">
+                <button type="button" class="btn btn-success">
+              <i class="mdi mdi-step-backward"></i>
+              Back
+            </button></a>
+        </div>
+    </div>
+    <div class="row page-content">
+        <div class="col-lg-12">
+            <h4>{{ isEditMode ? 'Edit Caste' : 'Create Caste' }}</h4>
+        </div>
+        <div class="col-xs-12 col-md-12 mt-3 fieldset tab-cont-1 active">
+
+            <form [formGroup]="schoolCreateForm">
+                <div class="elements-block">
+                    <div class="inner">
+                        <div class="row field-block Formbg">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="categoryName">Name</label>
+                                    <input type="text" id="categoryName" class="form-control" formControlName="category_name" required />
+                                    <div *ngIf="submitted && schoolCreateForm.controls['category_name'].hasError('required')" class="text-danger" style="font-size:13px">
+                                        Name is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="categoryDesc">Description</label>
+                                    <textarea id="categoryDesc" class="form-control" formControlName="category_desc" placeholder="Enter Description..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6" style="display: flex; justify-content: flex-end; height: fit-content; margin-top: auto;">
+                                <button (click)="casteCreate()" type="submit" class="btn btn-primary btn-md">{{ isEditMode ? 'Update' : 'Submit' }}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

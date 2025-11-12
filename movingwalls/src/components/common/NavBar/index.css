@@ -1,0 +1,87 @@
+/* General styling for navbar */
+
+nav.navbar {
+    height: 100px;
+}
+
+.navbar-top {
+    font-family: 'proxima-nova', sans-serif;
+    /* height: 80px; */
+    padding: 1rem 1.5rem;
+    background-color: white;
+}
+
+.navbar-brand img {
+    border-radius: 5px;
+    /* margin-left: 20px; */
+    max-height: 50px;
+}
+
+.nav-link {
+    font-family: Proxima Nova semi-bold;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    font-size: 14px;
+    line-height: 17.05px;
+    color: #014DC0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgb(229, 240, 245) !important;
+    color: #014DC0 !important;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(84, 143, 220) !important;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #000;
+}
+
+
+/* Dropdown menu */
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef;
+    color: #014DC0;
+}
+
+.navbar-drop a {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-right: 48px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.navbar-drop li {
+    text-decoration: none;
+}
+
+.navbar-drop {
+    background-color: #FFFFFF;
+    margin-left: 8px;
+    border: none;
+    padding: 14px 10px 17px 10px;
+    border-radius: 10px;
+}
+
+.navbar-chevron-down {
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.dropdown-menu li a {
+    cursor: pointer;
+}
+
+.navbar-logoImg {
+    width: 125px;
+    height: 39.13px;
+    border-radius: 5.43px;
+}

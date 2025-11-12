@@ -1,0 +1,47 @@
+.login-leftside .company-details-run-your-next {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Caudex', serif;
+    top: 7rem;
+    width: 471px;
+    height: 123px;
+    line-height: 41.25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20) !important;
+}
+
+.companyDetails-height {
+    padding: 0px;
+}
+
+.companyDetails-rightside {
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .login-leftside .company-details-run-your-next {
+        font-size: 20px;
+        line-height: 36px;
+        top: -25px;
+        width: 19rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .login-leftside .company-details-run-your-next {
+        font-size: 24px;
+        line-height: 36px;
+        top: -25px;
+        width: 19rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .login-leftside .loginfilled-welcome-to-outfront-container font {
+        font-size: 43px;
+        line-height: 36px;
+    }
+}

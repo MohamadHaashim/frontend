@@ -1,0 +1,101 @@
+.register-password-form-headline {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.17px;
+}
+
+.register-password-form {
+    padding-top: 60px;
+    max-width: 25rem;
+    padding-left: 40px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Proxima Nova';
+}
+
+.register-password-hatimbig-parent {
+    align-self: stretch;
+    border-bottom: 1px solid var(--color-gainsboro-200);
+    flex-direction: row;
+    padding: var(--padding-lgi) 0 var(--padding-lg);
+    max-width: 100%;
+    z-index: 1;
+    font-family: 'Proxima Nova';
+    position: relative;
+    margin-top: 4.5rem !important;
+    /* margin-top: ; */
+}
+
+.register-password-hatimbig {
+    width: 30.313rem;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-family: "Proxima Nova" !important;
+    color: var(--color-black);
+    text-align: left;
+    padding: 0;
+}
+
+.register-password-frame-password {
+    border-bottom: 1px solid lightgray;
+    margin-top: 0.8rem;
+}
+
+.register-password-frame-password.error {
+    border-bottom: 1px solid red;
+}
+
+.register-password-frame-cpassword {
+    border-bottom: 1px solid lightgray;
+    margin-top: 0.8rem;
+}
+
+.register-password-frame-cpassword.error {
+    border-bottom: 1px solid red;
+}
+
+.password-eye {
+    position: absolute;
+    /* right: 10px; */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray;
+}
+
+.reg-password-btn button.disabled {
+    background-color: #014DC0;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.reg-password-btn button {
+    margin-top: 7rem;
+}
+
+.registerPassword-height {
+    padding: 0px;
+}
+
+.registerPassword-rightside {
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 760px) {
+    .register-password-form {
+        padding-top: 10px !important;
+        padding-left: 0 !important;
+    }
+}
+
+.error {
+    border-color: red;
+    /* or your desired color */
+}
+
+.text-danger {
+    color: red;
+    /* error message color */
+}

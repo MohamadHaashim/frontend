@@ -1,0 +1,53 @@
+.SettingHeader{
+    width: 100%;
+    padding-bottom: 20px;
+    h3{
+     color: $heading-text;
+     font-weight: 500;
+     font-size: 1.2375rem; 
+     padding-bottom: 15px;
+     margin: 0;
+    }
+}
+.active {
+      color: black;
+      font-size: 18px;
+  }
+  .nav-link {
+      color: rgb(231, 66, 22);
+      font-size: 18px;
+  }
+  .nav-link {
+    background: #e9ecef !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.nav-link.active {
+  background-color: #fff !important;
+  border-top: 3px solid !important;
+  // color: #568fed !important;
+  font-weight: 700;
+}
+  .headerBar {
+    border-bottom: 2px solid rgba(119, 119, 119,0.5);
+    display: flex;
+    justify-content: space-between
+  }
+  .listRow {
+    display:flex;
+    flex-direction:row
+  }
+  .managerBox{
+    background-color: #D3D3D3;
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+    cursor: pointer;
+  }
+
+  .tab_bg{
+    background-color: $lite-bg;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+    padding: 25px 10px;
+  }

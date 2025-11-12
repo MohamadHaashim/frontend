@@ -1,0 +1,165 @@
+<div class="content-wrapper">
+  <div class="col-lg-12">
+    {{ isEditMode ? 'Edit Fee' : 'Create Fee' }}
+      <!-- <h4>{{ isEditMode ? 'Edit Caste' : 'Create Caste' }}</h4> -->
+  </div>
+  <div class="col-xs-12 col-md-12 mt-3 fieldset tab-cont-1 active">
+    <form [formGroup]="addFeeForm">
+      <div class="elements-block">
+        <div class="inner">
+          <div class="row field-block Formbg">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="section">Section</label>
+            
+                <select [ngModel]="feeSectionData.id"
+                  id="section"
+                  class="form-control"
+                  formControlName="section"
+                  required
+                  [ngClass]="{
+                    'border-danger':
+                      (submitted ||
+                        addFeeForm.controls['section'].dirty ||
+                        addFeeForm.controls['section'].touched) &&
+                      addFeeForm.hasError('required', 'section')
+                  }"
+                >
+                  <option value="" disabled selected>Choose Section Name</option>
+                  <option *ngFor="let section of feeSectionData" value="section.id">
+                    {{ section.section_name }}
+                  </option>
+                </select>
+            
+                <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addFeeForm.controls['section'].dirty ||
+                      addFeeForm.controls['section'].touched) &&
+                    addFeeForm.hasError('required', 'section')
+                  "
+                >
+                  Section is required
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label" for="classLevel"
+                  >Class Level</label
+                >
+                <select 
+                [ngModel]="feeClassData.id"
+                id="classLevel"
+                class="form-control"
+                formControlName="classLevel"
+                required
+                [ngClass]="{
+                  'border-danger':
+                    (submitted ||
+                      addFeeForm.controls['classLevel'].dirty ||
+                      addFeeForm.controls['classLevel'].touched) &&
+                    addFeeForm.hasError('required', 'classLevel')
+                }"
+              >
+              <option value="" disabled selected>Choose ClassLevel</option>
+                <option *ngFor="let class of feeClassData" value="class.id">
+          {{ class.class_name }}
+        </option>
+              </select>
+                <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addFeeForm.controls['classLevel'].dirty ||
+                      addFeeForm.controls['classLevel'].touched) &&
+                    addFeeForm.hasError('required', 'classLevel')
+                  "
+                >
+                  Class Level is required
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label checkBoxLabel" for="feeName"
+                  >Fee Name</label
+                >
+                <input
+                  type="text"
+                  id="feeName"
+                  class="form-control"
+                  formControlName="feeName"
+                  required
+                  [ngClass]="{
+                    'border-danger':
+                      (submitted ||
+                        addFeeForm.controls['feeName'].dirty ||
+                        addFeeForm.controls['feeName'].touched) &&
+                      addFeeForm.hasError('required', 'feeName')
+                  }"
+                />
+                <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addFeeForm.controls['feeName'].dirty ||
+                      addFeeForm.controls['feeName'].touched) &&
+                    addFeeForm.hasError('required', 'feeName')
+                  "
+                >
+                  Fee Name is required
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label class="form-control-label checkBoxLabel" for="amount"
+                  >Amount</label
+                >
+                <input
+                  type="text"
+                  id="amount"
+                  class="form-control"
+                  formControlName="amount"
+                  required
+                  [ngClass]="{
+                    'border-danger':
+                      (submitted ||
+                        addFeeForm.controls['amount'].dirty ||
+                        addFeeForm.controls['amount'].touched) &&
+                      addFeeForm.hasError('required', 'amount')
+                  }"
+                />
+                <div
+                  class="text-danger"
+                  *ngIf="
+                    (submitted ||
+                      addFeeForm.controls['amount'].dirty ||
+                      addFeeForm.controls['amount'].touched) &&
+                    addFeeForm.hasError('required', 'amount')
+                  "
+                >
+                  Amount is required
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6 assignSubmitBtn">
+              <button
+                [disabled]="loading"
+                class="btn btn-primary btn-md"
+                href="#"
+                (click)="addFeesDetail()"
+              >
+               {{isEditMode?'Edit':'Create'}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

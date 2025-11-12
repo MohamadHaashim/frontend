@@ -1,0 +1,307 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h6 class="heading-small text-muted mb-4">User information</h6>
+  </div>
+</div>
+<form
+  [formGroup]="addStudentPrimaryForm"
+  (ngSubmit)="addStudentPrimarySubmit()"
+>
+  <div class="row field-block">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="name">Name</label>
+        <input
+          class="form-control"
+          placeholder="Enter Name"
+          type="text"
+          id="name"
+          maxlength="200"
+          formControlName="name"
+          required
+          [ngClass]="{
+            'is-invalid': priSubmitted && prif['name'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="class">Class</label>
+        <select
+          id="class"
+          class="form-control"
+          formControlName="class"
+          required
+          [ngClass]="{
+            'is-invalid': priSubmitted && prif['class'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Class</option>
+          <option *ngFor="let classes of classesList" [ngValue]="classes.id">
+            {{ classes.class_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="admissionNo"
+          >Admission No.</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Admission No."
+          type="text"
+          id="admissionNo"
+          maxlength="200"
+          formControlName="admissionNo"
+          required
+          [ngClass]="{
+            'is-invalid': priSubmitted && prif['admissionNo'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="dob">Date of Birth</label>
+        <input
+          class="form-control"
+          placeholder="Choose Date of Birth"
+          type="text"
+          id="dob"
+          maxlength="200"
+          formControlName="dob"
+          required
+          [ngClass]="{ 'is-invalid': priSubmitted && prif['dob'].errors }"
+          bsDatepicker
+          readonly
+          [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row f1-buttons">
+    <div class="col-lg-6 btn-prev-con"></div>
+    <div class="col-lg-6 btn-next-con">
+      <button class="btn btn-primary btn-next">Save</button>
+    </div>
+  </div>
+</form>
+<hr class="my-4" />
+<h6 class="heading-small text-muted mb-4">Course Information</h6>
+<form [formGroup]="addStudentCourseForm" (ngSubmit)="addStudentCourseSubmit()">
+  <div class="row field-block">
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="courseAdmittedCategory"
+          >Admitted Category</label
+        >
+        <select
+          id="courseAdmittedCategory"
+          class="form-control"
+          formControlName="courseAdmittedCategory"
+          required
+          [ngClass]="{
+            'is-invalid': couSubmitted && couf['courseAdmittedCategory'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Admitted Category</option>
+          <option
+            *ngFor="let admittedCategory of admittedCategoryList"
+            [ngValue]="admittedCategory.id"
+          >
+            {{ admittedCategory.admitted_category_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="courseClassNo">Class No:</label>
+        <textarea
+          class="form-control"
+          placeholder="Enter Class No."
+          type="text"
+          id="courseClassNo"
+          maxlength="200"
+          formControlName="courseClassNo"
+          required
+          [ngClass]="{
+            'is-invalid': couSubmitted && couf['courseClassNo'].errors
+          }"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="courseSecondLanguage"
+          >Second Language</label
+        >
+        <select
+          id="courseSecondLanguage"
+          class="form-control"
+          formControlName="courseSecondLanguage"
+          required
+          [ngClass]="{
+            'is-invalid': couSubmitted && couf['courseSecondLanguage'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Second Language</option>
+          <option
+            *ngFor="let secondLanguage of secondaryLanguageList"
+            [ngValue]="secondLanguage.id"
+          >
+            {{ secondLanguage.language_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="courseExamRegistrationNo"
+          >Exam Registration Number</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Exam Registration No"
+          type="text"
+          id="courseExamRegistrationNo"
+          maxlength="200"
+          formControlName="courseExamRegistrationNo"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="courseRecommendedBy"
+          >Recommended by</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Recommended By"
+          type="text"
+          id="courseRecommendedBy"
+          maxlength="200"
+          formControlName="courseRecommendedBy"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="courseOtherDetails"
+          >Other Details</label
+        >
+        <textarea
+          class="form-control"
+          placeholder="Enter Other Details"
+          type="text"
+          id="courseOtherDetails"
+          maxlength="200"
+          formControlName="courseOtherDetails"
+        ></textarea>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label class="form-control-label" for="courseWGPA">WGPA</label>
+        <input
+          class="form-control"
+          placeholder="Enter WGPA"
+          type="text"
+          id="courseWGPA"
+          maxlength="200"
+          formControlName="courseWGPA"
+        />
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label class="form-control-label" for="courseAVP">AVP</label>
+        <input
+          class="form-control"
+          placeholder="Enter AVP"
+          type="text"
+          id="courseAVP"
+          maxlength="200"
+          formControlName="courseAVP"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="courseCompleted"
+          >Course Completed</label
+        >
+        <div
+          class="custom-radio"
+          [ngClass]="{
+            'is-invalid': couSubmitted && couf['courseCompleted'].errors
+          }"
+        >
+          <label for="courseCompleted1">
+            <input
+              type="radio"
+              id="courseCompleted1"
+              name="courseCompleted"
+              value="Yes"
+              formControlName="courseCompleted"
+            />
+            Yes</label
+          >
+          <label for="courseCompleted2">
+            <input
+              type="radio"
+              id="courseCompleted2"
+              name="courseCompleted"
+              value="No"
+              [checked]="true"
+              formControlName="courseCompleted"
+            />
+            No</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="courseTCIssued">TC issued</label>
+        <div
+          class="custom-radio"
+          [ngClass]="{
+            'is-invalid': couSubmitted && couf['courseTCIssued'].errors
+          }"
+        >
+          <label for="courseTCIssued1">
+            <input
+              type="radio"
+              id="courseTCIssued1"
+              name="courseTCIssued"
+              value="Yes"
+              formControlName="courseTCIssued"
+            />
+            Yes</label
+          >
+          <label for="courseTCIssued2">
+            <input
+              type="radio"
+              id="courseTCIssued2"
+              name="courseTCIssued"
+              value="No"
+              [checked]="true"
+              formControlName="courseTCIssued"
+            />
+            No</label
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row f1-buttons">
+    <div class="col-lg-12 btn-next-con">
+      <button class="btn btn-primary btn-next">Save</button>
+    </div>
+  </div>
+</form>

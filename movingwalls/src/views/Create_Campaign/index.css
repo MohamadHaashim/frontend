@@ -1,0 +1,530 @@
+.create-campaign-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 85vh;
+    font-family: "Proxima Nova";
+}
+
+.create-campaign-fullform {
+    background-color: #F2F6FA;
+}
+
+.campaign-create-card {
+    padding: 40px 70px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -10px rgb(91, 91, 91, .6);
+}
+
+.campaign-create-card {
+    margin: 50px 0;
+}
+
+
+/* campaign  */
+
+.campaign-form {
+    padding-top: 10px;
+}
+
+.campaign-create-header-content {
+    margin-top: 20px;
+}
+
+.campaign-create-header-heading {
+    font-family: "Proxima Nova";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.17px;
+    text-align: left;
+    color: #000;
+}
+
+.campaign-create-header-para {
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.49px;
+    text-align: left;
+}
+
+.campaign-create-label {
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    color: #000;
+}
+
+.campaign-input-name {
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 2% 1%;
+}
+
+.campaign-duration {
+    padding-top: 45px;
+}
+
+
+/* calendar */
+
+.campaign-create-calendar {
+    width: 22px;
+    height: 22px;
+    color: #5A5A5A;
+}
+
+.to-dates,
+.from-dates {
+    display: flex;
+    margin-top: 30px;
+    border-bottom: solid 1px grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+.to-date-calendar-text,
+.from-date-calendar-text {
+    color: #5A5A5A;
+    margin-left: 8px;
+}
+
+
+/* drop down */
+
+.campaign-state-text {
+    padding-top: 40px;
+}
+
+.campaign-district-text {
+    padding-top: 40px;
+}
+
+.campaign-stateDropDown-text {
+    padding-top: 20px;
+}
+
+.campaign-districtDropDown-text {
+    padding-top: 20px;
+}
+
+.campaign-stateDropDown-options,
+.campaign-districtDropDown-options {
+    width: 100%;
+}
+
+
+/* .campaign-districtDropDown-options{
+  width: 100%;
+} */
+
+.campaign-stateDropDown-text .campaign-stateDropDown-options,
+.campaign-districtDropDown-text .campaign-districtDropDown-options {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid gray;
+    border-radius: 1px;
+}
+
+
+/* .campaign-districtDropDown-text .campaign-districtDropDown-options {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid gray;
+  border-radius: 1px;
+} */
+
+.campaign-stateDropDown-options option {
+    color: #5A5A5A;
+    background-color: #ffff;
+}
+
+.campaign-districtDropDown-text .campaign-districtDropDown-options option {
+    border-radius: 10px;
+}
+
+
+/* drop down */
+
+.campaign-stateDropDown-text .state_drowdown_head {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid gray;
+    border-radius: 1px;
+}
+
+.state_dropdown_item,
+.districe_dropdown_item {
+    border-radius: 10px;
+    color: #5A5A5A;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    scrollbar-color: #014DC0;
+}
+
+.state_dropdown_item:hover {
+    background: #f2f4f5;
+    color: #014DC0;
+}
+
+.state_drowdown_head,
+.districe_drowdown_head {
+    width: 100%;
+    padding-bottom: 10px;
+    background: transparent;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.state_dropdown_item .tick,
+.districe_dropdown_item .tick {
+    display: none;
+    margin-left: 5px;
+}
+
+.state_dropdown_item:hover .tick,
+.districe_dropdown_item:hover .tick {
+    display: inline;
+}
+
+.state_drowdown_head i,
+.districe_drowdown_head i {
+    float: right;
+}
+
+.campaign-districtDropDown-text .districe_drowdown_head {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid gray;
+}
+
+.districe_dropdown_values,
+.state_dropdown_values {
+    width: 236px;
+    border-radius: 10px;
+    color: #5A5A5A;
+    padding: 5px;
+    border: none;
+    background-color: #ffff;
+    box-shadow: 0px 0px 25px 0px #0000001A;
+}
+
+.districe_dropdown_values :hover,
+.state_dropdown_values :hover {
+    background-color: #ffff;
+}
+
+
+/* button */
+
+.campagin-submit-btn button {
+    margin-top: 40px;
+    width: 110px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #014DC0;
+    color: #ffff;
+}
+
+
+/* / calender start / */
+
+.card_camp_header {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card_date_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-default-text p {
+    color: #5A5A5A;
+    font-size: 15px;
+    margin-bottom: -2px;
+}
+
+.card_date_starts,
+.card_date_ends {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card_date_ends {
+    padding: 18px 15px 15px 15px;
+    gap: 15px;
+    border: 1px 0px 0px 0px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.date-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.date-text p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: -2px;
+}
+
+.custom-header button {
+    background: transparent;
+    border: none;
+    color: #014DC0;
+    font-size: 21px;
+    margin-top: -4px;
+}
+
+.datepicker-wrapper {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    color: #014DC0;
+}
+
+.react-datepicker__day-names {
+    margin-top: 15px;
+}
+
+.react-datepicker__day-name {
+    margin: 7px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: left;
+    color: #252525;
+}
+
+.date-update-btn {
+    font-family: 'Proxima Nova';
+    float: right;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #014DC0;
+    color: white;
+}
+
+.card_date_header {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.49px;
+    text-align: left;
+    color: #000000;
+}
+
+.datepicker-wrapper .react-datepicker {
+    border: none;
+}
+
+.datepicker-wrapper .react-datepicker__header {
+    background-color: #fff;
+    border-bottom: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #2f4f4f;
+}
+
+.datepicker-wrapper .react-datepicker__day {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.datepicker-wrapper .react-datepicker__day--selected,
+.datepicker-wrapper .react-datepicker__day--keyboard-selected {
+    background: #F2F6FA;
+    color: #014DC0;
+}
+
+.datepicker-wrapper .react-datepicker__navigation--previous {
+    left: 10px;
+}
+
+.datepicker-wrapper .react-datepicker__navigation--next {
+    right: 10px;
+}
+
+.datepicker-wrapper .date-update-btn {
+    background-color: #014DC0;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.create-capaign-hatimbig-parent {
+    max-width: 100%;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 1.7rem;
+}
+
+.campagin-submit-btn button.disabled {
+    background-color: #014DC0;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.create-campaign-fullform .card_date_start {
+    padding: 18px 15px 15px 0px;
+}
+
+.create-campaign-fullform .card_date_end {
+    padding: 18px 15px 15px 0px;
+}
+
+.create-campaign-fullform .campaign-create-header-para {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.49px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.create-campaign-fullform .date-default-text {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+
+/* ////////////////////////// */
+
+/* General column and form alignment */
+.col-md-6 {
+    padding: 1rem !important;
+}
+
+/* Form group container styling */
+.form-group.campaign-state-text {
+    display: flex!important;
+    flex-direction: column!important;
+    gap: 0.5rem!important;
+}
+
+.campaign-create-label {
+    font-size: 1rem!important;
+    font-weight: 600!important;
+    margin: 0!important;
+}
+
+/* Dropdown wrapper styling */
+.create-capaign-hatimbig-parent {
+    position: relative!important;
+    width: 100%!important;
+}
+
+/* Dropdown styling */
+.companyform-group select.country-select {
+    width: 100%!important;
+    padding: 0.75rem 1rem!important;
+    font-size: 1rem!important;
+    border: 1px solid #d9d9d9!important;
+    border-radius: 8px!important;
+    background-color: #ffffff!important;
+    color: #333!important;
+    appearance: none!important;
+    outline: none!important;
+    cursor: pointer!important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease!important;
+}
+
+/* Dropdown focus state */
+.companyform-group select.country-select:focus {
+    border-color: #4c9aff!important;
+    box-shadow: 0 0 0 3px rgba(76, 154, 255, 0.3)!important;
+}
+
+/* Placeholder styling */
+.companyform-group select.country-select option[disabled] {
+    color: #aaa!important;
+}
+
+/* Add dropdown arrow */
+.companyform-group select.country-select::after {
+    content: '▼'!important;
+    position: absolute!important;
+    top: 50%!important;
+    right: 1rem!important;
+    transform: translateY(-50%)!important;
+    pointer-events: none!important;
+    color: #333!important;
+}
+
+/* Additional spacing for dropdown container */
+.company-details-frame-country {
+    margin-top: 0.5rem!important;
+}
+
+/* Dropdown container hover/focus effect */
+.companyform-group:hover select.country-select,
+.companyform-group select.country-select:focus {
+    border-color: #4c9aff!important;
+}
+
+
+/* / calender end  */

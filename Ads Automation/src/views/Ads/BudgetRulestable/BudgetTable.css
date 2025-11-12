@@ -1,0 +1,586 @@
+/* Container styling */
+.Budget-table {
+  height: 50vh; /* Set dynamic height relative to screen size */
+  max-height: 100vh; /* Prevent it from being too large */
+  min-height: 800px; /* Ensure a minimum height */
+  width: 100%;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.full-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
+
+/* Table header styling */
+.table-heaad th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: 600 !important;
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 2px solid #ddd;
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Prevent overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+.table-container {
+  overflow-x: auto; /* Enable horizontal scroll */
+}
+
+/* Table body styling */
+.tbody-td td {
+  padding: 6px 7px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  /* width: 15px; */
+  
+}
+.campaignsScheduletbody-td td {
+  padding: 6px 14px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  /* width: 15px; */
+  
+}
+
+/* Row hover effect */
+.campaignsScheduletbody-td tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.tbody-td tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Checkbox styling */
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .full-table {
+      font-size: 12px;
+  }
+
+  .table-heaad th, 
+  .tbody-td td {
+      padding: 8px 10px;
+  }
+}
+
+/* Switch Container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider styling */
+.slider {
+  position: absolute;
+  cursor: not-allowed; /* Indicate the toggle is disabled */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+/* When checked, change the slider's background */
+.switch input:checked + .slider {
+  background-color: #4caf50;
+}
+
+/* The round indicator inside the toggle */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Move the round indicator to the right when checked */
+.switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+.status-disabled {
+  color: red!important;
+}
+.campaigns{
+  padding: 5px;
+  width: 50%;
+  display: flex;
+  justify-content:flex-end!important;
+ 
+
+}
+.border_btn-ms-2 {
+  border-radius: 4px !important;
+  padding: 7px 12px 6px 12px !important;
+  height: 38px !important;
+  font-size: 14px;
+  /* font-weight: 600; */
+  color: #080d1c;
+  margin-left: 10px;
+  background-color: #FE9900
+}
+.Top-button {
+  border-radius: 4px !important;
+  padding: 7px 12px 6px 12px !important;
+  height: 38px !important;
+  font-size: 14px;
+  color: black;
+  margin-left: 10px;
+  background-color: white;
+  border: 1px solid #FE9900;
+  transition: all 0.3s ease;
+}
+.Top-button:hover {
+  color: white; 
+  background-color: #FE9900; 
+  border-color: #FE9900; 
+}
+.popoup{
+  width: 90px;
+}
+.text_search{
+width: 600px;
+padding: 8px 10px;
+border: 1px solid #FE9900;
+border-radius: 5px;
+box-shadow:#FE9900;
+}
+.text_search1{
+width: 250px;
+padding: 8px 10px;
+border: 1px solid #FE9900;
+border-radius: 5px;
+box-shadow:#FE9900;
+}
+.data-item {
+  padding: 1px;
+  border: 1px solid #ddd;
+  margin-bottom: 3px;
+  transition: background-color (0.3s), transform (0.3s);
+  text-align:start;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.data-item:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.01); 
+  cursor: pointer; 
+}
+.popup{
+  margin-bottom: 15px;
+}
+.List-Campaigns-pop{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.campaignssearch {
+  margin-inline-end: -1px;
+  border: 1px solid #FE9900;
+}
+.gobutton{
+  background-color:#FE9900; 
+  border-radius: 4px !important;
+  font-size: 14px;
+  color: white; 
+  padding: 7px 12px 6px 12px !important;
+  height: 38px !important;
+}
+.campaignssearch-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing between input and button */
+}
+
+.campaignssearch {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1; /* Makes the input take available space */
+}
+
+.gobutton {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #FE9900;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gobutton:hover {
+  background-color: #FE9900;
+}
+.campaigns-history{
+  padding: 5px;
+  width: 50%;
+  display: flex;
+  justify-content:flex-end!important;
+  gap: 10px;
+}
+.thead__Checkbox .form-check-input {
+  border: 2px solid #eeb96e;
+  border-color:  #eeb96e !important;
+  background-color: white !important;
+  display: table-cell  !important;
+  vertical-align: middle !important;
+  margin: -5px  4px  !important;
+  padding: 0 !important;
+  /* margin: 21px 0px 0px 13px; */
+}
+.thead__Checkbox .form-check-input::after{
+  content: "✔"; /* Tick mark */
+  color:white;/* Tick color */
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  line-height: 16px; /* Matches checkbox size */
+  background-color: #eeb96e;
+}
+.thead__Checkbox .form-check-input:checked {
+  background-color: #eeb96e; /* Background color when checked */
+  border-color: #eeb96e;
+}
+.threedot{
+  size: 25px;
+  margin-left: 46px;
+  font-weight: 100px;
+}
+/* Options container */
+.options {
+  background-color: white;
+  width: 130px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Budget-tablepopup{
+  /* height: 500px; */
+  width: 200%;
+  /* overflow-y: auto; */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+.modal-contentpopup {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-left: -400px; */
+  /* width: 150%; */
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  /* outline: 0; */
+}
+.handleAddToTemplateClick{
+  border-radius: 4px !important;
+  padding: 7px 12px 6px 12px !important;
+  height: 38px !important;
+  font-size: 14px;
+  color: white;
+  margin-left: 10px;
+  background-color: #FE9900;
+  border: 1px solid #FE9900;
+  transition: all 0.3s ease;
+}
+.handleAddToTemplateClick:hover {
+  color: white; 
+  background-color: #FE9900; 
+  border-color: #FE9900; 
+}
+.text_searchfromTemplate{
+width: 80%;
+padding: 8px 10px;
+border: 1px solid #FE9900;
+border-radius: 5px;
+box-shadow:#FE9900;
+}
+.text_searchfromTemplatelistcampaigns{
+width: 40%;
+padding: 8px 10px;
+border: 1px solid #FE9900;
+border-radius: 5px;
+box-shadow:#FE9900;
+display: flex;
+justify-content: flex-start;
+}
+.text_schedulename{
+width: 80%;
+padding: 8px 10px;
+border: 1px solid gray;
+border-radius: 5px;
+box-shadow:#FE9900;
+display: flex;
+justify-content: center;
+}
+.BudgetRules-modal-contentpopup{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -220px;
+  width: 150%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  /* outline: 0; */
+}
+.schedulename-modal-contentpopup{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -20px;
+  margin-top: 100px;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  /* outline: 0; */
+}
+.plus_icon{
+  justify-content: space-between;
+  display: flex;
+}
+.timezoneformcontrol{
+  width: 274px;
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.rulename-border{
+  border-bottom: 0.130rem dashed var(--bs-border-color);
+    padding-bottom: 20px;
+    margin: auto;
+}
+.minifiest{
+  justify-content: space-between;
+  display: flex;
+}
+.minus_icon{
+  align-content: center;
+}
+.form_rule {
+  width: 100%;
+  max-width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form_rule:focus {
+  border-color: #FE9900;
+  outline: none;
+}
+.campaignsSchedulesform_rule {
+  width: 500px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.campaignsSchedulesform_rule:focus {
+  border-color: #FE9900;
+  outline: none;
+}
+
+.icon {
+  cursor: pointer;
+  color: #dc3545;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+.custom-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3E%3Cpath d="M3.5 5.5l4 4 4-4z"%3E%3C/path%3E%3C/svg%3E') no-repeat right 20px center;
+  background-size: 20px;
+  padding-right: 25px; 
+}
+
+.custom-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.icon {
+  cursor: pointer;
+  color: #dc3545;
+  margin-left: 10px;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+/* :where(.css-dev-only-do-not-override-7ny38l).ant-picker-dropdown{
+  z-index: 10500 !important;
+} */
+.ant-picker-dropdown {
+  z-index: 10500 !important;
+}
+.row {
+  --bs-gutter-x: -0.5rem;
+}
+.budgetpopuplist{
+    margin-top: 20px;
+    position: absolute;
+    margin-left: -35px;
+}
+.budgetpopup-data{
+  display: flex;
+  /* border: 0.1px solid grey; */
+    margin-left: 0.5px !important;
+    padding: 2% 1%;
+    border-radius: 5px;
+}
+.budgetpopup-data .col-md-6 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  /* background-color: #f9f9f9; */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.budgetpopup-data .col-md-6:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.01); 
+  cursor: pointer; 
+}
+.budgetpopup-data label {
+  font-size: 14px;
+  margin: 0;
+  word-break: break-word;
+}
+.checkbox-popup{
+  display: flex;
+  justify-content: space-between;
+}
+.input_rule-checkbox {
+  border: 2px solid #eeb96e;
+  background-color: white !important;
+  display: table-cell !important;
+  vertical-align: middle !important;
+  margin: -5px 4px !important;
+  padding: 0 !important;
+  appearance: none; 
+  width: 16px; 
+  height: 16px;
+  border-radius: 3px; 
+  cursor: pointer;
+}
+.input_rule-checkbox:checked {
+  background-color: #eeb96e; 
+  border-color: #eeb96e;
+}
+
+.input_rule-checkbox:checked::after {
+  content: "✓"; 
+  color: white; 
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  line-height: 16px;
+  background-color: #eeb96e;
+}
+@media (min-width: 992px) {
+  .modal-lg, .modal-xl {
+      --bs-modal-width: 1036px;
+  }
+}
+.campaignsSchedulesTitle{
+  justify-content: space-between;
+  display: flex;
+}
+.nav-tabs .nav-link {
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #FE9900 !important;
+  background-color: transparent !important; 
+}
+
+.nav-tabs .nav-link.active {
+  color: #FE9900 !important;
+}
+.footerpopup{
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,53 @@
+.temp-view-head {
+    color: #525f7f;
+}
+
+.temp-view-body {
+    color: #5c6786;
+}
+
+.temp-view-footer {
+    color: #919fb0;
+}
+
+.template-preview-modal {
+    margin: 0 !important;
+    padding: 15px !important;
+}
+
+.template-previewModal-text {
+    font-size: 12px;
+}
+
+.template-view-modal-dialog {
+    max-width: 360px !important;
+}
+
+.or-text {
+    position: relative;
+    text-align: center;
+}
+
+.or-text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    max-width: 92%;
+    margin: 0 3.8%;
+}
+
+.or-text span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    z-index: 9;
+}
+
+.modal-slider-nav-buttons {
+    padding: 0 12px 0 6px !important;
+}

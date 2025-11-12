@@ -1,0 +1,476 @@
+.property-list-search-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.property_list_search_location_logo {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 3px;
+    padding: 5px;
+}
+
+.property_list_search_con_2 {
+    justify-self: end;
+    margin-top: 10px;
+}
+
+.property_list_search_con_3 {
+    gap: 15px;
+}
+
+.property_list_search_card_con {
+    background: #F2F6FA;
+    border-radius: 5px;
+}
+
+.property_list_search_card {
+    border: none;
+    background-color: transparent;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #014DC0;
+    width: 95px;
+    height: 32px;
+    text-align: center;
+}
+
+.property_list_filter_icon {
+    width: 20px !important;
+    height: 17px;
+    margin-top: 5px;
+}
+
+.property_list_avil_content {
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+    color: #000000;
+}
+
+.property_list_pagination_content {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: right;
+    color: #5A5A5A;
+    margin-top: 10px;
+}
+
+.property_list_pagination_left {
+    background-color: #cbc9c9;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+    padding-top: 0;
+}
+
+.property_list_pagination_left.active {
+    background: #014DC0;
+}
+
+.property_list_pagination_right {
+    margin-left: 15px;
+    background: #014DC0;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    padding-top: 0;
+}
+
+.property_list_popup_header {
+    background: #F2F6FA;
+}
+
+.property_list_popup_header_content {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.property_list_popup_notify_content {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.49px;
+    text-align: left;
+    color: #FF0000;
+}
+
+.property_list_popup_gotit_btn {
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    opacity: 1;
+    background: #014DC0;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+.property_list_filter_popup_header {
+    background: #F2F6FA;
+}
+
+.property_list_filter_popup_header_content {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.property_list_filter_popup_selected_input_header {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    color: #000000;
+}
+
+.property_list_filter_popup_selected_input {
+    background: #F2F6FA;
+    padding: 8px 16px 8px 16px;
+    gap: 5px;
+    border-radius: 100px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #014DC0;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.property_list_filter_popup_selected_input_close {
+    font-size: 8px;
+    color: #014DC0 !important;
+}
+
+.property_list_popup_list_header {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding-bottom: 15px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: center;
+    /* margin-left: 10px; */
+    padding-top: 15px;
+}
+
+.property_list_popup_list_header_1 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    margin-top: -8px;
+    /* margin-left: -12px; */
+}
+
+.property_list_popup_list_header_2 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    margin-top: -15px;
+    /* margin-left: -15px; */
+}
+
+.property_list_popup_list_header_2.active,
+.property_list_popup_list_header_1.active {
+    font-weight: 600;
+    background: #F2F6FA;
+    color: #014DC0;
+}
+
+
+/* Styles for active state during clicking */
+
+.property_list_popup_list_header_2:active,
+.property_list_popup_list_header_1:active {
+    font-weight: 600;
+    background: #F2F6FA;
+    /* Keep the same if desired */
+    color: #014DC0;
+    /* Keep the same if desired */
+}
+
+.category-list {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.property_list_popup_list_header_formcheck {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #014DC0;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.property_list_popup_list_header_formcheck_1 {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+    margin-left: 20px;
+}
+
+.property_list_select_state {
+    border: none;
+    border-bottom: 0.5px solid #e4e4e4;
+    border-radius: 0;
+}
+
+.property_list_popup_rightarrow {
+    font-size: 10px;
+    float: right;
+}
+
+input[type="checkbox"] {
+    accent-color: #014DC0;
+    width: 16px;
+    height: 16px;
+    top: 379px;
+    left: 187px;
+    gap: 0px;
+    border-radius: 2px;
+    opacity: 1;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #014DC0;
+    width: 16px;
+    height: 16px;
+    top: 379px;
+    left: 187px;
+    gap: 0px;
+    border-radius: 2px;
+    opacity: 1;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+
+.property_list_popup_list_header_3 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    width: 100%;
+    padding: 15px;
+    margin-top: -8px;
+    /* margin-left: -12px; */
+}
+
+.property_list_popup_list_header_4 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    width: 100%;
+    padding: 15px;
+    margin-top: -15px;
+    /* margin-left: -15px; */
+}
+
+.property_list_popup_list_header_5 {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    width: 100%;
+    /* margin-left: -15px; */
+}
+
+.property_list_popup_list_cm {
+    margin: 15px;
+}
+
+.property_list_scrollbar {
+    height: 70px;
+    overflow-y: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#style::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+}
+
+#style::-webkit-scrollbar {
+    width: 5px;
+    background-color: #E5E5E5;
+    height: 5px;
+}
+
+#style::-webkit-scrollbar-thumb {
+    background-color: #014DC0;
+    border-radius: 10px;
+}
+
+.property-list-main-container .property_list_scroll .card-img-overlay-custom button {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.05px;
+    text-align: center;
+}
+
+.property-list-main-container .property_list_scroll .card-img-overlay-custom button.propety-btn-primary img {
+    padding-right: 10px;
+}
+
+.property-list-main-container .props-hover2:hover>img,
+.property-list-main-container .props-hover2:hover>.property-card-body {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.propety-btn-danger {
+    background-color: #dc3545;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    width: 80%;
+}
+
+.propety-btn-danger .property-logo-img {
+    padding-right: 10px;
+}
+
+.grdcategory-checkbox {
+    margin-left: 20px;
+    margin-top: -25px;
+}
+
+.property_list_search_location_logo.lochighlighted {
+    background: #014DC0;
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.property_list_map.maphighlighted {
+    background: #014DC0;
+    color: white;
+    cursor: pointer;
+    padding: 6px 8px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.category-list p input {
+    margin-right: 5px;
+}
+
+.subcategorycheckbox {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    margin-top: -8px;
+    margin-right: 5px;
+}
+
+.propertyListsvg-path,
+.property_list_filter_icon {
+    fill: #014DC0;
+}
+
+@media screen and (max-width: 1470px) {
+    .mapbox-section {
+        width: 34% !important;
+        height: 70% !important;
+    }
+}
+
+@media screen and (max-width:2560px) {
+    .mapbox-section {
+        width: 46% !important;
+        height: 70% !important;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    .mapbox-section {
+        width: 34% !important;
+        height: 50% !important;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .mapbox-section {
+        width: 60.6% !important;
+        height: 70% !important;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .mapbox-section {
+        width: 61.6% !important;
+        height: 70% !important;
+    }
+}
+
+.mapbox-section {
+    position: absolute;
+    top: 40rem;
+    bottom: 0;
+    width: 59.3%;
+    height: 70%;
+}

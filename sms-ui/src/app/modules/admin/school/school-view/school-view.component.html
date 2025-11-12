@@ -1,0 +1,212 @@
+<div class="contentView">
+    <form>
+        <!--School Informations-->
+        <div class="pl-lg-4">
+            <div class="row">
+                <div class="col-lg-3 view" style="padding:1px">
+                    <h6 class="heading-small text-dark mb-2 pt-1">School Information</h6>
+                    <div class="profile-photo-cont">
+                        <img [src]="schoolImage" alt="School Photo" class="img" />
+                        <div class="photo-actions" style="padding: 100px;">
+                            <div class="change-photo photos" (click)="openChangePhotoModal()">Change Photo</div>
+                            <div class="delete-photo photos1" (click)="setDeleteId(schoolImageId)">
+                                <i class="mdi mdi-delete"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 view schoolInfo">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <button type="button" class="btn btn-success back" (click)="navigateBack()">
+                                <i class="mdi mdi-step-backward"></i>
+                                Back
+                            </button>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-username">School Name</label>
+                                <p><strong>{{ schoolName }}</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-email">School Email</label>
+                                <p><strong>{{ schoolEmail }}</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-first-name">School Phone No</label>
+                                <p><strong>{{ schoolPhone }}</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-last-name">School Address</label>
+                                <p><strong>{{ schoolAddress }}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4" />
+        <!-- User Information -->
+        <div class="pl-lg-4">
+            <div class="row">
+                <div class="col-lg-3 view userInfo">
+                    <h6 class="heading-small text-dark mb-2 pt-1">User Information</h6>
+                    <div class="profile-photo-cont">
+                        <img [src]="userImage" alt="User Photo" class="img" />
+                        <div class="change-photo photos" (click)="openChangePhotoModal1()">Change Photo</div>
+                        <div class="delete-photo photos1" (click)="setDeleteId1(userImageId)">
+                            <i class="mdi mdi-delete"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 view userInfo1">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-username">User Name</label>
+                                <p><strong>{{ userName }}</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-email">User Email</label>
+                                <p><strong>{{ userEmail }}</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-first-name">User Phone No</label>
+                                <p><strong>{{ userPhone }}</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-last-name">User Address</label>
+                                <p><strong>{{ userAddress || 'None' }}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--School Modal -->
+<div id="changePhotoModal" class="custom-modal">
+    <!-- Modal content -->
+    <div class="custom-modal-content">
+        <div class="custom-modal-header">
+            <span class="close" (click)="closeChangePhotoModal()">&times;</span>
+            <h4>Change Photo</h4>
+        </div>
+        <div class="custom-modal-body">
+            <input type="file" class="file-input" #fileUpload (change)="selectFile($event)" style="display: none;">
+            <div class="file-upload">
+                {{fileName || "No file uploaded yet."}}
+                <button mat-mini-fab color="primary" class="upload-btn" (click)="fileUpload.click()">
+                    Attach_file
+                </button>
+            </div>
+            <!-- <div class="progress">
+                <mat-progress-bar class="progress-bar" mode="determinate" [value]="progress" *ngIf="progress"></mat-progress-bar>
+            </div> -->
+        </div>
+        <div class="custom-modal-footer align-middle">
+            <button type="button" class="btn btn-default" (click)="closeChangePhotoModal()">
+                Cancel
+            </button>
+            <button type="button" class="btn btn-inverse-primary" (click)="upload()">
+                Upload
+            </button>
+        </div>
+    </div>
+</div>
+
+<!--Admin Modal -->
+<div id="changePhotoModal1" class="custom-modal">
+    <!-- Modal content -->
+    <div class="custom-modal-content">
+        <div class="custom-modal-header">
+            <span class="close" (click)="closeChangePhotoModal1()">&times;</span>
+            <h4>Changes Photo</h4>
+        </div>
+        <div class="custom-modal-body">
+            <input type="file" class="file-input" #fileUpload1 (change)="selectFile1($event)" style="display: none;">
+            <div class="file-upload">
+                {{fileName || "No file uploaded yet."}}
+                <button mat-mini-fab color="primary" class="upload-btn" (click)="fileUpload1.click()">
+                    Attach_file
+                </button>
+            </div>
+            <!-- <div class="progress">
+                <mat-progress-bar class="progress-bar" mode="determinate" [value]="progress" *ngIf="progress"></mat-progress-bar>
+            </div> -->
+        </div>
+        <div class="custom-modal-footer align-middle">
+            <button type="button" class="btn btn-default" (click)="closeChangePhotoModal1()">
+                Cancel
+            </button>
+            <button type="button" class="btn btn-inverse-primary" (click)="upload1()">
+                Upload
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Delete Modal School -->
+
+<div id="deletePhotoModal" class="custom-modal">
+    <!-- Modal content -->
+    <div class="custom-modal-content">
+        <div class="custom-modal-header">
+            <span class="close" (click)="closeChangePhotoModal()">&times;</span>
+            <h4>Confirm Delete</h4>
+        </div>
+        <div class="custom-modal-body text-center fs-5">
+            <div class="file-upload">
+                <p>Are you sure you want to delete this school image?</p>
+            </div>
+        </div>
+        <div class="custom-modal-footer align-middle">
+            <button type="button" class="btn btn-default" (click)="closeDeleteModal()">
+                Cancel
+            </button>
+            <button type="button" class="btn btn-inverse-primary" (click)="fileDeleteSchool()">
+                Delete
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Modal Admin -->
+
+<div id="deletePhotoModal1" class="custom-modal">
+    <!-- Modal content -->
+    <div class="custom-modal-content">
+        <div class="custom-modal-header">
+            <span class="close" (click)="closeChangePhotoModal1()">&times;</span>
+            <h4>Confirm Delete</h4>
+        </div>
+        <div class="custom-modal-body text-center fs-5">
+            <div class="file-upload">
+                <p>Are you sure you want to delete this admin image?</p>
+            </div>
+        </div>
+        <div class="custom-modal-footer align-middle">
+            <button type="button" class="btn btn-default" (click)="closeDeleteModal1()">
+                Cancel
+            </button>
+            <button type="button" class="btn btn-inverse-primary" (click)="fileDeleteAdmin()">
+                Delete
+            </button>
+        </div>
+    </div>
+</div>

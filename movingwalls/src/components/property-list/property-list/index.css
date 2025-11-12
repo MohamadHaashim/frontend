@@ -1,0 +1,222 @@
+.audience-content {
+    font-family: "Proxima Nova";
+}
+
+.audience-btns {
+    display: flex;
+    column-gap: 40px
+}
+
+.audience-btn1 button,
+.audience-btn2 button {
+    border: none;
+    color: #5A5A5A;
+    padding: 5px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ffff;
+}
+
+.audience-btn1 button:hover,
+.audience-btn2 button:hover {
+    color: #014DC0;
+    border: solid 1px #014DC0;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #ffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.audience-value {
+    margin-top: 20px;
+}
+
+.value-label {
+    font-size: 12px;
+    color: #5A5A5A;
+}
+
+.audience-value-label1 h6,
+.audience-value-label2 h6,
+.audience-value-label3 h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+.audiences-card1,
+.audiences-card2 {
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.audiences-card1 {
+    height: 400px;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card1-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card1-chart {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.card1-horizontal-lines-parent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1-horizontal-line-child {
+    border-top: 1px solid #e0e0e0;
+    margin: 0px 10px;
+}
+
+.card1-bar-chart {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.card1-bar {
+    width: 80px;
+    background-color: #0062ff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card1-labels-parent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: #6b6b6b;
+}
+
+.card1-label-child {
+    width: 80px;
+    text-align: center;
+}
+
+.card1-y-axis-labels-parent {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+.card1-y-axis-label-child {
+    text-align: right;
+}
+
+.audiences-card2 {
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gender-chart {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gender-chart-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient( #1a73e8 0deg 240deg, #e8f0fe 240deg 360deg);
+    margin: 0 auto;
+}
+
+.gender-chart-circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.gender-chart-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.gender-category {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.gender-category-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.gender-category-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.male-color {
+    background-color: #1a73e8;
+}
+
+.female-color {
+    background-color: #e8f0fe;
+}
+
+.audience-analysis {
+    height: 610px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

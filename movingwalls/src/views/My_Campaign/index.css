@@ -1,0 +1,890 @@
+/* .mycampaign-full-content {
+    background: #F2F6FA;
+    padding-bottom: 2%;
+} */
+
+.mycampaign-search {
+    display: flex;
+    align-items: center;
+}
+
+.mycampaign-search img {
+    margin-right: 8px;
+}
+
+.mycampaign-search input {
+    flex-grow: 1;
+}
+
+.mycampaign-search span {
+    margin-left: 10px;
+}
+
+.my-campaign-page nav.navbar {
+    height: auto;
+}
+
+.mycampaign-show-btn {
+    background-color: #014DC0;
+    color: white;
+}
+
+.mycampaign-search {
+    position: relative;
+}
+
+.mycampaign-search input {
+    width: 100%;
+    height: 55px;
+    padding-left: 40px;
+    border-bottom: 1px solid #D9D9D9;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: Proxima Nova;
+    font-size: 15px;
+    font-weight: 400;
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+.mycampaign-search img {
+    position: absolute;
+    top: 15px;
+}
+
+.mycampaign-filter {
+    position: relative;
+    margin-top: 5px;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    height: 30px;
+}
+
+.mycampaign-filter .filter-by {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.mycampaign-filter .right {
+    text-align: right;
+}
+
+.mycampaign-filter .border-right {
+    border-right: 1px solid #D9D9D9;
+}
+
+.mycampaign-filter img {
+    position: absolute;
+    top: 15px;
+}
+
+.mycampaign-filter span {
+    padding-left: 25px;
+}
+
+.order-filter-dropdown {
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: none;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #c00107;
+    border: 0px;
+}
+
+.order-filter-dropdown:focus-visible {
+    border: 0px;
+}
+
+.mycampaign-start-btn {
+    text-align: right;
+}
+
+.mycampaign-start-btn button {
+    padding: 20px 15px 20px 15px;
+    border-radius: 10px;
+    border: none;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    background: #014DC0;
+    color: #FFFFFF;
+}
+
+.statusFilter option {
+    box-shadow: 0px 15px 25px 5px #0000000D;
+    background: #FFFFFF;
+    background: #5A5A5A;
+    border: 0px;
+}
+
+.custom-dropdown svg {
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+
+/* Dropdown container */
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown img {
+    top: 12px;
+    left: 10px;
+}
+
+.custom-dropdown .dropdown-button img {
+    margin-top: 5px;
+    right: 15px;
+    left: auto;
+}
+
+.dropdown-button {
+    background-color: #f9f9f9;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 160px;
+    text-align: left;
+    border: none;
+}
+
+.custom-dropdown {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.custom-dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown-content label {
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.dropdown-content label input {
+    cursor: pointer;
+}
+
+.mycampaign-thead img {
+    margin-left: 5px;
+}
+
+.mycampaign-thead {
+    border-bottom: 1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+}
+
+.mycampaign-thead th {
+    background: #F8F8F8;
+    height: 47px;
+    font-family: "Proxima Nova";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #5A5A5A;
+}
+
+.mycampaign-tbody td p {
+    margin-bottom: 0px;
+    line-height: 25px;
+}
+
+tbody.mycampaign-tbody tr,
+tbody.mycampaign-tbody tr td {
+    background-color: transparent;
+}
+
+.mycampaign-td-one {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.mycampaign-tbl-e {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    color: #5A5A5A;
+}
+
+.mycampaign-tbody td {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+}
+
+.mycampaign-booking img,
+.mycampaign-action img {
+    margin-right: 5px;
+}
+
+.mycampaign-tbody .mycampaign-booking,
+.mycampaign-tbody .mycampaign-action {
+    color: #014DC0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.mycampaign-action a {
+    color: #014DC0;
+    text-decoration: none;
+}
+
+.custom-dropdown button {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #014DC0;
+    margin-left: 25px;
+    background-color: #ffffff;
+    height: 38px;
+}
+
+.mycampaign-scrollbar {
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.force-overflow {
+    min-height: 1200px;
+}
+
+.mycampaign-scrollbar::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+    border-radius: 29px;
+}
+
+.mycampaign-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #E5E5E5;
+}
+
+.mycampaign-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #014DC0;
+    border-radius: 29px;
+}
+
+
+/*mycampaign viewdrop start*/
+
+.mycampaign-action {
+    position: relative;
+}
+
+.mycampaign-view-dropdown {
+    cursor: pointer;
+}
+
+.mycampaign-view-dropdown-content {
+    display: none;
+    position: absolute;
+    right: -26px;
+    top: 20px;
+    background-color: white;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.mycampaign-view-dropdown:hover .mycampaign-view-dropdown-content {
+    display: block;
+}
+
+.mycampaign-view-dropdown-content a {
+    padding: 12px 8px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    color: #5A5A5A;
+    width: 170px;
+}
+
+.mycampaign-view-dropdown-content a:hover {
+    color: #014DC0;
+    background: #F2F6FA;
+}
+
+.mycampaign-view-dropdown i {
+    margin-right: 5px;
+}
+
+.dropdown-apply-btn button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    background-color: #014DC0;
+    color: white;
+    margin-top: 10px;
+}
+
+
+/*mycampaign viewdrop end*/
+
+
+/*mycampaign show popup start*/
+
+.mycampaign-show-cnt-closebtn {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    background: #014DC0;
+    color: white;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: center;
+}
+
+.mycampaign-show-cnt-footer {
+    border: none;
+}
+
+.mycampaign-show-modal-content {
+    padding: 2% 3%;
+    position: relative;
+    display: flex;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: 15px;
+    outline: 0;
+    box-shadow: 15px 15px 25px -2px #0000001A;
+}
+
+.mycampaign-show-cnt-search-img {
+    width: 355px;
+    height: 111.82px;
+    background: #F2F6FA;
+    padding-top: 14px;
+    border-radius: 15px;
+}
+
+.mycampaign-show-cnt-search-img img {
+    width: 119px;
+    height: 81px;
+    border-radius: 5px;
+}
+
+.mycampaign-show-cnt-search img {
+    position: absolute;
+    top: 15px;
+}
+
+.mycampaign-show-cnt-search input {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #D9D9D9;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 20px;
+}
+
+.mycampaign-showcnt-rt h6 {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.mycampaign-showcnt-rt p {
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 8px;
+    margin-bottom: 12px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.mycampaign-show-location h6,
+.mycampaign-show-impression h6 {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+}
+
+.mycampaign-tabimg1 img {
+    width: 100%;
+    height: 301px;
+    border-radius: 9px;
+}
+
+.mycamp-gallery-img img {
+    width: 100%;
+    height: 81px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.mycamp-gallery-img {
+    margin-top: 2rem;
+}
+
+.mycamp-gallery-img p {
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 3px;
+    line-height: 14.62px;
+    text-align: left;
+}
+
+.mycamp-gallery-img h5 {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.mycampaign-show-verticalln {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+}
+
+.mycampaign-show-nav-tabs {
+    margin-top: 20.9px;
+    border-bottom: 0.5px solid #D9D9D9;
+}
+
+.mycampaign-view-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.view-trigger {
+    cursor: pointer;
+}
+
+.mycampaign-view-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.mycampaign-view-dropdown:hover .mycampaign-view-dropdown-content {
+    display: block;
+}
+
+.homepage-group-footer-top {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.homepage-group-footer-top {
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-page-info {
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.pagination-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 18px;
+    margin: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+}
+
+.pagination-btn:hover:not(.disabled) {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.pagination-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-container:hover {
+    background-color: #f0f0f0;
+    /* Optional for hover effect */
+}
+
+
+/* loader */
+
+#container {
+    width: 100px;
+    height: 125px;
+    margin: auto auto;
+}
+
+.loading-title {
+    display: block;
+    text-align: center;
+    font-size: 20;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: #888;
+}
+
+.loading-circle {
+    display: block;
+    border-left: 5px solid;
+    border-top-left-radius: 100%;
+    border-top: 5px solid;
+    margin: 5px;
+    animation-name: Loader_611;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.sp1 {
+    border-left-color: #F44336;
+    border-top-color: #F44336;
+    width: 40px;
+    height: 40px;
+}
+
+.sp2 {
+    border-left-color: #FFC107;
+    border-top-color: #FFC107;
+    width: 30px;
+    height: 30px;
+}
+
+.sp3 {
+    width: 20px;
+    height: 20px;
+    border-left-color: #8bc34a;
+    border-top-color: #8bc34a;
+}
+
+@keyframes Loader_611 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+    }
+    25% {
+        transform: rotate(90deg);
+        transform-origin: right bottom;
+    }
+    50% {
+        transform: rotate(180deg);
+        transform-origin: right bottom;
+    }
+    75% {
+        transform: rotate(270deg);
+        transform-origin: right bottom;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: right bottom;
+    }
+}
+
+.img-icon {
+    font-size: 15px;
+}
+
+.mycampaign-action img {
+    width: 10px;
+}
+
+.inventory-list img {
+    width: 121px;
+    border-radius: 10px;
+    margin: 22px 5px;
+}
+
+.popup-value {
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    margin-top: 1px;
+    margin-bottom: 6px;
+}
+
+.popup-address-value {
+    font-family: 'Proxima Nova';
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.popup-address-values {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+}
+
+.inventoryName {
+    font-family: 'Proxima Nova';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19.49px;
+    text-align: left;
+    margin-left: 12px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.selectedCampaignId {
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    margin-top: 1px;
+    margin-left: 12px;
+    color: #5A5A5A;
+}
+
+.inventory-bg-color {
+    margin: 30px 0px 0px 0px;
+}
+
+.gallery-side img {
+    width: 100%;
+    height: 301px;
+    display: block;
+}
+
+.map-under-content {
+    margin-top: 60px;
+}
+
+.reason-rejection {
+    text-align: center;
+}
+
+.reason-rejection-name {
+    padding-bottom: 20px;
+}
+
+.map-design {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* mycampaign show popup end */
+
+.table>:not(caption)>*>* {
+    padding: .5rem 1.3rem;
+}
+
+.propertyViewModal .modal-header {
+    border-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.propertyViewModal .modal-body {
+    padding: 0px 40px;
+}
+
+.propertyViewModal .modal-footer {
+    border: 0px;
+}
+
+.modal-campaing-view-left {
+    border-right: 0.5px solid #D9D9D9;
+    padding-right: 40px;
+    height: calc(95vh);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.campaign-view-list-container .campaing-view-list {
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px -2px #ccc;
+}
+
+.campaign-view-list-container .campaing-view-list.active {
+    background-color: #F2F6FA;
+}
+
+.campaign-view-list-container .campaing-view-list img {
+    border-radius: 5px;
+}
+
+.campaign-view-list-container .campaing-view-list .header h5 {
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.49px;
+    text-align: left;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+.campaign-view-list-container .campaing-view-list .header p {
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.campaign-view-list-container .campaing-view-list p {
+    margin-bottom: 0px;
+}
+
+.campaign-view-list-container .campaing-view-list .label {
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.campaign-view-list-container .campaing-view-list .content .value {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    color: #000000;
+}
+
+.propertyViewModal .mycampaign-show-nav-tabs .nav-item .nav-link {
+    padding: 10px 15px;
+    border: 0;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.propertyViewModal .mycampaign-show-nav-tabs .nav-item .nav-link.active {
+    background-color: #F2F6FA !important;
+    color: #014DC0 !important;
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.map-popup-container {
+    max-width: 350px;
+    background: white;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.map-popup-image-container {
+    width: 100%;
+    max-height: 150px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.map-popup-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.map-popup-body {
+    padding-top: 10px;
+}
+
+.map-popup-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.map-popup-location,
+.map-popup-stat-label,
+.map-popup-price {
+    font-size: 14px;
+    color: #555;
+}

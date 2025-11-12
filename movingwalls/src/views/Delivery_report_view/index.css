@@ -1,0 +1,64 @@
+.delivery_report_view_card{
+    height: 550px;
+}
+
+
+.delivery_report_view_header {
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.17px;
+    text-align: left;
+    color: #000000;
+}
+
+.delivery_report_view_content_1 {
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.75px;
+    text-align: left;
+    color: #000000;
+}
+
+.delivery_report_view_content_2 {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+
+}
+
+.delivery_report_view_content_3 {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #014DC0;
+}
+
+.delivery_report_view_content_4 {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.delivery_report_view_content_5 {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #014DC0;
+
+}
+
+.delivery_report_view_scroll{
+    max-height: 200px;
+}

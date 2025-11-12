@@ -1,0 +1,179 @@
+p {
+    margin: 0;
+}
+
+.campaign_detail {
+    .header {
+        h5 {
+            margin-bottom: 23px;
+            text-align: center;
+
+        }
+
+        margin-top: 12px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        padding: 13px;
+
+        .sub_header {
+            display: flex;
+            margin-bottom: 10px;
+            justify-content: space-evenly;
+
+            p {
+                color: dimgray;
+            }
+        }
+    }
+
+    .rule_btn {
+        float: right;
+        margin: 20px 0;
+        margin-right: 4px;
+    }
+
+    .label_detail {
+        min-width: 120px;
+        color: gray;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+}
+
+.form-check-input:checked {
+    background-color: #ffc720 !important;
+    border-color: #ffc720 !important;
+}
+
+.form-check-input:focus {
+    outline: none !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://https://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27%3e%3ccircle r=%273%27 fill=%27%23fff%27/%3e%3c/svg%3e")
+}
+
+.nav-link {
+    color: #293042 !important;
+}
+
+.nav-link:active {
+    color: #568fed !important;
+
+}
+
+// campaign list modal //
+.campaginlist_modal {
+    .input_role {
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        padding: 6px;
+        width: 70%;
+
+    }
+
+
+}
+
+.selected_id {
+
+    max-height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 20px;
+}
+
+p.selected_list {
+    border-bottom: 1px solid lightgray;
+    margin: 7px;
+    font-size: 15px;
+    padding-bottom: 4px;
+}
+
+.inner_campaign {
+    display: flex;
+    margin: auto !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.budget_campaign_listing {
+
+
+    .select_list {
+        border: 1px solid lightgray;
+        margin: 20px 0;
+        height: 500px !important;
+        overflow: scroll;
+
+        p.data_lisiting {
+            background: yellow;
+            padding: 6px;
+            border-bottom: 1px solid lightgray;
+            margin-top: 0;
+        }
+
+        .data_lisiting:nth-child(odd) {
+            background: #f2f2f5;
+
+        }
+
+        .data_lisiting:nth-child(even) {
+            background: white;
+
+        }
+    }
+
+    .budget_campaign {
+        display: flex;
+
+        input.text_search {
+            width: 100%;
+            outline: none;
+            border: 1px solid lightgray;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        button.search_go {
+            padding: 7px;
+            background: blue;
+            margin-right: 5px;
+        }
+
+        .select_list_campaign {
+
+            height: 500px !important;
+            overflow: scroll;
+        }
+    }
+}
+
+.excel_choose {
+    display: grid;
+
+    label {
+        padding: 7px 8px;
+        background: #0a2351;
+        display: table;
+        color: #fff;
+        float: right;
+    }
+
+
+
+    input[type="file"] {
+        display: none;
+    }
+}
+
+.download_sample {
+    
+    button {
+        padding: 7px;
+        background: #0a2351 !important;
+
+        color: #fff !important;
+
+    }
+}
+
+#checkbox_selected {
+    accent-color:  #ffc720;
+}

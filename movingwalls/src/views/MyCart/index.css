@@ -1,0 +1,1017 @@
+.card_input_group_1 .card_border_bottom_only {
+    padding-left: 0px;
+}
+
+.card_filled_container {
+    background-color: #F2F6FA;
+    height: auto;
+    overflow: hidden;
+}
+
+.main_card {
+    /* width: 1140px; */
+    /* height: 847px; */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.mycart-scrollbar {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.no-data-found-containers button {
+    width: 150px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 15px 0px;
+    border-radius: 5px;
+    margin-top: 40px;
+    border: none;
+    background: #014DC0;
+    color: white;
+}
+
+
+/* first_container */
+
+.card_first_header {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.24px;
+    text-align: left;
+    color: #2A363F;
+}
+
+.card_content_1 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.card_data_1 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    text-align: left;
+    color: #2A363F;
+}
+
+.card_border_1 {
+    border: 1px solid #cccbcb;
+    /* width: 789px; */
+}
+
+.card_container_first {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/* delete icon */
+
+.card_billboard_delete {
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: #FF0000;
+    cursor: pointer;
+}
+
+.card_delete_icon,
+.card_billboard_delete {
+    display: none;
+}
+
+.billboard-row:hover .card_delete_icon,
+.billboard-row:hover .card_billboard_delete {
+    display: inline;
+}
+
+.card_delete_container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    /* margin-left: -13px; */
+}
+
+.card_delete_icon {
+    color: red;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+/*  */
+
+
+/* first_container_finish */
+
+
+/* second_container_start */
+
+.card_second_header {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.51px;
+    text-align: left;
+    color: #000000;
+}
+
+.card_second_header_1 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    text-align: left;
+    color: #5A5A5A;
+    margin-left: -12px;
+}
+
+.card_header_notification {
+    background: #327478;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.5px;
+    color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.card_list_header {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.card_list_data {
+    border-bottom: 1px solid #e9ecee;
+    padding: 10px;
+}
+
+.card_list_data:last-child {
+    /* border-bottom: none; */
+    border-bottom: 1px solid #e9ecee;
+}
+
+.card_list_data:hover {
+    background-color: #e7eef4;
+}
+
+.card_list_img {
+    width: 73px !important;
+    height: 53px;
+}
+
+span .semi-bold {
+    font-size: 12px !important;
+}
+
+.card_list_sunny {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.05px;
+    text-align: left;
+    color: #000000;
+}
+
+.card_text_avail {
+    width: 52px;
+    background: #10AC011A;
+    font-family: 'Fira Sans';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #10AC01;
+    padding: 4px 0px 4px 8px;
+    border-radius: 4px;
+    margin-top: -12px;
+}
+
+.card_value_imp {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: start;
+    color: #000000;
+}
+
+.card_container_second {
+    margin-left: 20px;
+    /* width: 373.5px; */
+    /* height: 714.5px; */
+}
+
+.proof-card-scroll {
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* second_container_finish */
+
+
+/* third_container_start */
+
+.card_vertical_line {
+    /* width: 714.5px; */
+    height: 50rem;
+    margin-left: 10px;
+    border: 0.5px solid #D9D9D9;
+}
+
+.card_camp_first {
+    border: 1px 0px 0px 0px;
+    color: #5A5A5A;
+}
+
+.card_camp_header {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.card_input_group_1 .card_search_icon {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #D9D9D9;
+    background-color: white;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 0;
+}
+
+.card_input_group_1 .card_border_bottom_only {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* padding-bottom: 20px; */
+    padding-left: 2px;
+    border-bottom: 1px solid #D9D9D9;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.card_edit_font {
+    border: 0.5px 0px 0px 0px;
+    color: #5A5A5A;
+}
+
+.edit_campaign_date_start,
+.edit_campaign_date_end {
+    border-bottom: 1px solid #D9D9D9;
+    padding: 5px 5px 15px 0px;
+}
+
+.edit_campaign_date_starts {
+    gap: 15px;
+    border: 1px 0px 0px 0px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+
+/* .card.drop-shadow .form-check {} */
+
+
+/* General Styles */
+
+
+/* calender start */
+
+.card_camp_header {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card_date_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_date_start,
+.card_date_end {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.date-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.date-text p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: -2px;
+}
+
+.custom-header button {
+    background: transparent;
+    border: none;
+    color: #014DC0;
+    font-size: 21px;
+    margin-top: -4px;
+}
+
+.mycart-datepickerend {
+    position: absolute;
+    left: -8.8rem !important;
+    top: 70px;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    color: #014DC0;
+}
+
+.react-datepicker__day-names {
+    margin-top: 15px;
+}
+
+.react-datepicker__day-name {
+    margin: 7px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: left;
+    color: #252525;
+}
+
+.update-button {
+    font-family: 'Proxima Nova';
+    float: right;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #014DC0;
+    color: white;
+}
+
+.card_date_header {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.49px;
+    text-align: left;
+    color: #000000;
+}
+
+.datepicker-wrapper .react-datepicker {
+    border: none;
+}
+
+.datepicker-wrapper .react-datepicker__header {
+    background-color: #fff;
+    border-bottom: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #2f4f4f;
+}
+
+.datepicker-wrapper .react-datepicker__day {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.datepicker-wrapper .react-datepicker__day--selected,
+.datepicker-wrapper .react-datepicker__day--keyboard-selected {
+    background: #F2F6FA;
+    color: #014DC0;
+}
+
+.datepicker-wrapper .react-datepicker__navigation--previous {
+    left: 10px;
+}
+
+.datepicker-wrapper .react-datepicker__navigation--next {
+    right: 10px;
+}
+
+.datepicker-wrapper .update-button {
+    /* background-color: #2f4f4f; */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* .datepicker-wrapper .update-button:hover {
+    background-color: #1e3a3a;
+} */
+
+.close-icon {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* calender end */
+
+.card_date_start {
+    padding: 22px 15px 15px 15px;
+    gap: 15px;
+    border: 1px 0px 0px 0px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.card_date_end {
+    /* margin-left: 10px; */
+    padding: 22px 15px 15px 15px;
+    gap: 15px;
+    border: 1px 0px 0px 0px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.card_checkbox_head_1 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.card_checkbox_head_2 {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.card_check_icon_msg {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.card_checkbox_content {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    text-align: left;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.card_list_data {
+    font-size: 14.5px;
+}
+
+.card_form-check-input:checked {
+    background-color: #014DC0;
+    border-color: #014DC0;
+    margin-top: 20px;
+}
+
+.card_checkbox_data_head {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.49px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.card_checkbox_data_1 {
+    width: 67px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #000000;
+}
+
+.card_checkbox_data_01 {
+    width: 67px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: left;
+    color: #000000;
+}
+
+.card_checkbox_data_c {
+    margin-top: 20px;
+}
+
+.card_checkbox_data_s {
+    width: 42px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: right;
+    color: #000000;
+    margin-left: 157px;
+}
+
+.card_checkbox_data_s1 {
+    width: 42px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin-left: 152px;
+    font-weight: 600;
+    line-height: 17.05px;
+    text-align: left;
+    color: #000000;
+}
+
+.card_checkbox_data_e {
+    /* Width:54px; */
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: right;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.card_checkbox_data_e2 {
+    /* Width:54px; */
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: right;
+    color: #000000;
+    margin-left: 36px;
+}
+
+.card_checkbox_data_e1 {
+    /* Width:54px; */
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-align: right;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.card_checkbox_data_co {
+    margin-top: 20px;
+    color: #F8F8F8;
+    border-top: 1px solid #D9D9D9;
+    padding: 20px 20px 20px 5px;
+    background-color: #F8F8F8;
+    width: 365px;
+}
+
+.card_term_condition {
+    margin-top: 50px;
+    border-radius: 2px;
+    border: 1px 0px 0px 0px;
+}
+
+.card_req_btn {
+    margin-left: 10px;
+    border-radius: 10px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    /* font-weight: 600; */
+    line-height: 17.05px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    background: #014DC0;
+}
+
+.card_save_btn {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    line-height: 17.05px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    background: #014DC0;
+    margin-left: 28px;
+}
+
+.card_check_sub1 {
+    margin-top: 10px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.62px;
+    text-align: left;
+}
+
+.card_check_sub1:checked {
+    background-color: #014DC0;
+    border-color: #014DC0;
+}
+
+.card_check_sub {
+    margin-top: 2px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.62px;
+    text-align: left;
+    width: 343px;
+}
+
+.card_chack_prime {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+}
+
+@media (min-width: 320px) {
+    .card_filled_container {
+        height: auto;
+    }
+    .card-body {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .card_checkbox_data_s {
+        margin-left: 110px;
+    }
+    .card_checkbox_data_s1 {
+        margin-left: 105px;
+    }
+    .card_save_btn {
+        margin-left: 0px;
+    }
+    .card_check_sub1 {
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card_check_sub1 {
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-body {
+        flex-wrap: nowrap;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .card_save_btn {
+        margin-left: 20px;
+    }
+    .card_check_sub1 {
+        margin-top: 4px;
+    }
+    /* .card_text_avail {
+        margin-left: 27px;
+    } */
+    /* .card_list_sunny {
+        text-align: center;
+    } */
+    .card_list_headers {
+        margin-left: -17px;
+    }
+    .card_list_headerss {
+        margin-left: -30px;
+    }
+    .card_delete_container {
+        margin-left: -13px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card_container_first {
+        width: 850px;
+    }
+    .card_border_1 {
+        width: 815px;
+    }
+    .card_text_avail {
+        margin-left: 0px;
+    }
+    .card_list_sunny {
+        text-align: left;
+    }
+    .card_list_headers {
+        margin-left: 0px;
+        /* width: 95px; */
+    }
+    .card_list_headerss {
+        margin-left: 0px;
+    }
+    .card_delete_container {
+        margin-left: 0px;
+    }
+    .card_list_img {
+        width: 102px;
+    }
+    .card_llist_header {
+        margin-left: 30px;
+    }
+    .card_container_second {
+        width: 348px;
+    }
+    .card_checkbox_data_s {
+        margin-left: 170px;
+    }
+    .card_checkbox_data_co {
+        width: 365px;
+    }
+    .card_checkbox_data_s1 {
+        margin-left: 164px;
+    }
+    .card_check_sub {
+        width: 343px;
+    }
+    .card_check_sub1 {
+        margin-top: 10px;
+    }
+    .card_save_btn {
+        margin-left: 35px;
+    }
+}
+
+.terms-title {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.term-header {
+    background: #F2F6FA;
+    border-bottom: 0;
+    height: 68px;
+}
+
+.term-body p,
+.term-body ul li {
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: black;
+}
+
+.term-body {
+    padding: 5% 5% 0%;
+}
+
+.term-body h5 {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.05px;
+    text-align: left;
+    color: black;
+}
+
+.term-footer {
+    border-top: none;
+}
+
+.term-footer button {
+    width: 228px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    background: #014DC0;
+    color: white;
+    border: none;
+}
+
+.proceedconfirm-header,
+.cart-delete-header {
+    border-bottom: none;
+    background: #F2F6FA;
+}
+
+.proceedconfirm-footer,
+.cart-delete-footer {
+    border-top: none;
+    display: block;
+    text-align: center;
+}
+
+.proceedconfirm-body {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5A5A5A;
+    padding: 8% 0 4%;
+}
+
+.cart-delete-body h6 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #5A5A5A;
+    /* padding: 8% 0 4%; */
+}
+
+.proceedconfirm-title,
+.cart-delete-title {
+    font-size: 19px;
+    font-weight: 600;
+    color: #5A5A5A;
+}
+
+.proceedconfirm-footer button,
+.cart-delete-footer button {
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.cart-delete-footer {
+    justify-content: center;
+}
+
+.term-cancel {
+    color: #014DC0;
+    border: 1px solid #014DC0;
+    background: transparent;
+}
+
+.cart-cancel {
+    color: #014DC0;
+    border: 1px solid #014DC0;
+    background: transparent;
+}
+
+.cart-delete {
+    background: rgb(201, 49, 49);
+    color: white;
+    border: none;
+}
+
+.term-submit {
+    background: #014DC0;
+    color: white;
+    border: none;
+}
+
+.negotiation-checkbox label {
+    font-size: 14px;
+}
+
+.negotiation-checkbox input {
+    width: 13px;
+    height: 12px;
+    margin-left: 5px;
+}
+
+.card_negotiation_check input {
+    width: 13px;
+}
+
+.mycart-scrollbar {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    margin-bottom: 25px;
+    scrollbar-width: thin;
+}
+
+.mycart-scrollbar::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+}
+
+.mycart-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: #E5E5E5;
+}
+
+.mycart-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #014DC0;
+    border-radius: 10px;
+}
+
+.cartpage-input input {
+    width: 100%;
+    padding: 0px 15px !important;
+}
+
+.badge-success {
+    background-color: green;
+    color: white;
+    padding: 2px 5px;
+    font-size: 11px;
+}
+
+.badge-danger {
+    background-color: #e64141;
+    color: white;
+    padding: 2px 5px;
+    font-size: 11px;
+}
+
+.cart-table .table>:not(caption)>*>* {
+    /* padding: .5rem 0.5rem !important; */
+}
+
+.cartpage-input input {
+    width: 86% !important;
+    margin-left: 4px;
+    border: none;
+    border-bottom: 2px solid #a5a1a1;
+    outline: none;
+}
+
+.cartpage-input input::placeholder {
+    font-size: 12px !important;
+}
+
+.basic-acknowledgepopup {
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.75px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 74%;
+    margin-left: 65px;
+    margin-top: 15px;
+}
+
+.payment-letterss {
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 15px;
+}

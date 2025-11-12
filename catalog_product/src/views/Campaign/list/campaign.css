@@ -1,0 +1,25 @@
+.campaign-status {
+    background-color: rgba(254, 201, 189, .5);
+    color: #ff3709;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 11px !important;
+}
+
+.campaign-status-warn {
+    background-color: rgb(255, 240, 212);
+    color: orange;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 11px !important;
+}
+
+.campaign-deletebtn {
+    background: #ff3709;
+    color: white;
+    padding: 2px 5px;
+    border: 0;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 500;
+}

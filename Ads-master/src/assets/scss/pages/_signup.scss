@@ -1,0 +1,44 @@
+.signUpTitle {
+    font-family: "Josefin Sans",  !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+  }
+  .error {
+    color: #E74216;
+    font-family: "Josefin Sans", ;
+    font-style: normal;
+    font-size: 14px;
+    padding: 6px 4px;
+    text-transform: capitalize;
+  }
+  .signUpBtn {
+    background: #383737;
+    font-family: "Josefin Sans", ;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0px solid;
+  }
+  .signUpContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+  .formContainer {
+    border-radius: 10px;
+    z-index: 10px;
+    border: 1px solid #888888;
+    box-shadow: 5px 10px #888888;
+  }
+  .appTitle{
+    font-size: 30px;
+    text-align: center;
+  }

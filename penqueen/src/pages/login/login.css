@@ -1,0 +1,393 @@
+.login-background {
+  perspective: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: rotateY(8deg) rotateX(3deg) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+}
+
+.logo-3d {
+  transform: translateZ(30px);
+  transition: transform 0.4s ease;
+  width: 160px;
+}
+
+.logo-3d:hover {
+  transform: translateZ(50px) scale(1.05);
+}
+
+
+.login-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.custom-bgcolor {
+  background-color: #EED8CD;
+}
+.navbar-bgcolor {
+  background-color: #664C3E;
+}
+.login-btn {
+  position: relative;
+  width: 100%;
+  padding: 12px 0;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #c94a70, #f25410d3);
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-top: 1.5rem;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(251, 55, 1, 0.6);
+}
+
+.login-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transition: all 0.5s ease;
+}
+
+.login-btn:hover::before {
+  left: 100%;
+}
+
+.login-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+
+:root {
+  --surface-color: #fff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  color: #1a1a1a;
+}
+.box-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  background-color: #eed8cd;
+}
+
+main {
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+a {
+  color: #144272;
+
+  font-weight: 500;
+}
+
+.box {
+  margin: 2em 1em;
+  padding: 3em 2em;
+
+  min-width: 360px;
+  max-width: 480px;
+
+  border-radius: 12px;
+
+  background: var(--surface-color);
+  box-shadow: 2px 0 15px -2px rgba(0, 0, 0, 0.2);
+
+  display: grid;
+  row-gap: 2em;
+}
+
+.box-header {
+  display: grid;
+  row-gap: 2em;
+}
+
+.box-header > h1 {
+  margin: 0;
+
+  font-size: 1.563em;
+  font-weight: 900;
+  text-align: center;
+  
+  color: #0d4c92;
+}
+
+.box-header > p {
+  font-size : 0.8em;
+  line-height: 1.8;
+
+  text-align: center;
+}
+
+.box-body > form {
+  display: grid;
+  row-gap: 1.6em;
+}
+
+
+.floating-label-input {
+  position: relative;
+  background: var(--surface-color);
+  margin-top: 1.4rem;
+}
+
+.input-text {
+  width: 100%;
+  padding: 1em;
+  background: var(--surface-color);
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input-text::placeholder {
+  opacity: 0;
+  color: #664c3e;
+}
+
+.floating-label-input > label {
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  color: #999999;
+  background: var(--surface-color);
+  transform: translateY(-50%);
+  cursor: text;
+  transition: all 0.15s ease-out;
+}
+
+.input-text:focus {
+  outline: 2px solid #0d4c92;
+}
+
+.input-text:focus + label,
+.input-text:not(:placeholder-shown) + label {
+  padding: 0 0.5em;
+  top: 0;
+  left: 0.8em;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #0d4c92;
+}
+
+.input-text:focus + label {
+   color: #0d4c92;
+}
+
+
+.password-manager {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.forgot-password {
+  font-size: 0.85em;
+  color: #144272;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.forgot-password:hover {
+  color: #0d4c92;
+}
+
+
+.button-group > input[type="button"] {
+  padding: 1em;
+
+  width: 100%;
+
+  font-weight: 600;
+
+  background-color: #0d4c92;
+  color: white;
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.sidebar-li{
+  margin-left: 15px;
+}
+.header-dropdown{
+  margin-top: 150px;
+  margin-right:20px
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    max-width: 320px;
+    padding: 1.5rem;
+  }
+
+  .logo-3d {
+    width: 140px;
+  }
+
+  .input-text {
+    font-size: 0.95rem;
+  }
+
+  .login-btn {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .login-card {
+    max-width: 100%;
+    padding: 1.2rem;
+  }
+
+  .logo-3d {
+    width: 120px;
+  }
+
+  .floating-label-input {
+    margin-top: 1rem;
+  }
+
+  .input-text {
+    font-size: 0.9rem;
+    padding: 0.9em;
+  }
+
+  .forgot-password {
+    font-size: 0.75em;
+  }
+
+  .login-btn {
+    font-size: 0.85rem;
+    padding: 10px 0;
+  }
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+  display: block;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+/* 🔥 Active link 3D base */
+.active-link {
+  background:linear-gradient(90deg, #4F1C51,#89328d,#4F1C51) !important;
+  position: relative;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 0;
+  display: block;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+
+/* ✨ Shine layer */
+.active-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: all 0.6s ease;
+  z-index: 1;
+}
+
+/* 🧊 3D effect on hover of li */
+.sidebar-li li:hover .active-link {
+  transform: translateY(-4px) rotateX(8deg) rotateY(3deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 💥 Small press-down effect when clicked */
+.sidebar-li li:active .active-link {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ✨ Move shine when hovered */
+.sidebar-li li:hover .active-link::before {
+  left: 100%;
+  
+}
+
+/* Subtle effect for non-active links */
+.sidebar-li li:hover .nav-link:not(.active-link) {
+  /* background-color: #F0BB78 ; */
+  background:linear-gradient(90deg, #F0BB78,#f5d2a6,#F0BB78) !important;
+  border-radius: 8px;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  color: white !important;
+
+}
+
+

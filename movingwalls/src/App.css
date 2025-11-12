@@ -1,0 +1,51 @@
+.theme-selection-container{
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -150px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 0px hsla(0, 0%, 0%, 0.1), 0 0px 4px hsla(0, 0%, 0%, 0.1) !important;
+  padding: 0px 10px;
+  border-radius: 0 0px 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-selection-container .theme-item{
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px #fff solid;
+}
+.theme-selection-container .theme-item.theme-gray{
+  background-color: #D9D9D9;
+}
+.theme-selection-container .theme-item.theme-blue{
+  background-color: #71aaff;
+}
+.theme-selection-container .theme-item.theme-orange{
+  background-color: #ffbd7f;
+}
+.theme-selection-container .theme-item.theme-pink{
+  background-color: #dda5f7;
+}
+
+.theme-selection-container .theme-item.theme-gray.active,.theme-selection-container .theme-item.theme-gray:hover{
+  background-color: #625E5E;
+  border: 1px #000 solid;
+}
+.theme-selection-container .theme-item.theme-blue.active,.theme-selection-container .theme-item.theme-blue:hover{
+  background-color: #014DC0;
+  border: 1px #000 solid;
+}
+.theme-selection-container .theme-item.theme-orange.active,.theme-selection-container .theme-item.theme-orange:hover{
+  background-color: #d46700;
+  border: 1px #000 solid;
+}
+.theme-selection-container .theme-item.theme-pink.active,.theme-selection-container .theme-item.theme-pink:hover{
+  background-color: #c444ff;
+  border: 1px #000 solid;
+}

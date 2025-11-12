@@ -1,0 +1,93 @@
+{
+  "name": "headlinemareact-beta",
+  "homepage": "https://www.headlinema.com/",
+  "version": "1.4.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/cache": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.3.1",
+    "@mui/material": "^6.3.1",
+    "@mui/system": "^6.3.1",
+    "@mui/x-data-grid": "^7.23.5",
+    "@mui/x-date-pickers": "^7.23.3",
+    "@mui/x-date-pickers-pro": "^7.23.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "antd": "^5.16.0",
+    "axios": "^1.7.9",
+    "bootstrap": "^4.6.2",
+    "chart.js": "^4.4.7",
+    "chartjs": "^0.3.24",
+    "classnames": "^2.3.2",
+    "copy-to-clipboard": "^3.3.3",
+    "dayjs": "^1.11.13",
+    "export-from-json": "^1.7.0",
+    "moment": "^2.30.1",
+    "multiselect-react-dropdown": "^2.0.25",
+    "qs": "^6.11.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.10.6",
+    "react-chartjs-2": "^2.11.2",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-country-flag": "^3.1.0",
+    "react-data-table-component": "^7.5.3",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^17.0.2",
+    "react-dual-listbox": "^2.3.0",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^6.15.8",
+    "react-modal-video": "^1.2.10",
+    "react-router": "^5.3.4",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "^5.0.1",
+    "react-select": "^4.3.1",
+    "react-slick": "^0.29.0",
+    "react-step-builder": "^2.0.11",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-toastify": "^8.2.0",
+    "reactstrap": "^8.10.1",
+    "rsuite": "^5.76.0",
+    "sass": "^1.83.1",
+    "simplebar-react": "^2.4.3",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.6",
+    "stylis": "^4.3.4",
+    "sweetalert2": "^11.6.9",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.26.3",
+    "@types/react-select": "^5.0.1",
+    "amazon-paapi": "^1.0.7",
+    "ckey": "^1.0.3",
+    "crypto-js": "^4.1.1",
+    "react-json-view": "^1.21.3",
+    "sass-loader": "^13.2.0",
+    "tailwindcss": "^3.2.4"
+  }
+}

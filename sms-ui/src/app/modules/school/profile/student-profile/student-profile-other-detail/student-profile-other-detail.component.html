@@ -1,0 +1,46 @@
+<div class="profile-edit-btn">
+  <button *ngIf="!editMode" class="btn btn-sm btn-primary" (click)="enableEditMode()">Edit</button>
+  <button *ngIf="editMode" class="btn btn-sm btn-primary" (click)="enableViewMode()">Cancel Edit</button>
+</div>
+<div *ngIf="!editMode">
+<form *ngIf="studentDetails">
+  <h6 class="heading-small text-muted mb-4">Other Details</h6>
+  <div class="pl-lg-4">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label class="form-control-label" for="input-username">Do you like to apply for NSS/SPC/Scout&Guides</label>
+          <p><strong>{{studentDetails.like_to_apply}}</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="studentDetails.like_to_apply === 'Yes'">
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="form-control-label" for="input-email">First Option</label>
+          <p><strong>{{studentDetails.option1}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="form-control-label" for="input-first-name">Second Option</label>
+          <p><strong>{{studentDetails.option2}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Third Option</label>
+          <p><strong>{{studentDetails.option3}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-4" />
+</form>
+</div>
+<div *ngIf="editMode">
+  <app-student-profile-other-detail-form
+  [studentId]=studentId
+  [studentDetails]=studentDetails
+  ></app-student-profile-other-detail-form>
+</div>

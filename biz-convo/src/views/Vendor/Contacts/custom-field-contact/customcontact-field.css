@@ -1,0 +1,29 @@
+.customOptionxmark {
+    border: 0px;
+    border-radius: 20px;
+    padding: 1px 7px;
+    margin-top: 10px;
+    background: #004aad;
+    box-shadow: 1px 1px 1.5px 1px rgb(185, 181, 181);
+    font-size: 12px;
+}
+
+.customOptionplus {
+    border: 0px;
+    border-radius: 20px;
+    padding: 1px 6px;
+    margin-top: 10px;
+    background: #0cc0df;
+    font-size: 12px;
+    box-shadow: 1px 1px 1.5px 1px rgb(185, 181, 181);
+}
+
+.customOptionplus i {
+    color: white;
+    font-size: 12px;
+}
+
+.customOptionxmark i {
+    color: white;
+    font-size: 12px;
+}

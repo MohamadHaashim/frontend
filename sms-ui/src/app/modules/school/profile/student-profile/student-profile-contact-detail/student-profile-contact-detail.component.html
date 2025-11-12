@@ -1,0 +1,83 @@
+<div class="profile-edit-btn">
+  <button *ngIf="!editMode" class="btn btn-sm btn-primary" (click)="enableEditMode()">Edit</button>
+  <button *ngIf="editMode" class="btn btn-sm btn-primary" (click)="enableViewMode()">Cancel Edit</button>
+</div>
+<div *ngIf="!editMode">
+<form *ngIf="studentDetails">
+  <h6 class="heading-small text-muted mb-4">Contact information</h6>
+  <div *ngFor="let address of studentDetails.address; let i = index">
+    <div class="pl-lg-4">
+      <div class="row">
+        <div class="col-lg-12 pb-3">
+          <strong style="text-transform: capitalize;">{{address.type}}</strong>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username">Address Line 1</label>
+            <p><strong>{{address.address_line1}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-email">Address Line 2</label>
+            <p><strong>{{address.address_line2}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-first-name">PIN</label>
+            <p><strong>{{address.pin}}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+  </div>
+  <div *ngFor="let contact of studentDetails.contactDetails; let i = index">
+    <div class="pl-lg-4">
+      <div class="row">
+        <div class="col-lg-12 pb-3">
+          <strong style="text-transform: capitalize;">{{contact.type}}</strong>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-username">Pone No 1</label>
+            <p><strong>{{contact.phone1}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-email">Pone No 2</label>
+            <p><strong>{{contact.phone2}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-first-name">WhatsAppNo</label>
+            <p><strong>{{contact.whatsapp}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-first-name">Telegram Number</label>
+            <p><strong>{{contact.telegram}}</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label class="form-control-label" for="input-first-name">Email</label>
+            <p><strong>{{contact.email}}</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4" />
+  </div>
+</form>
+</div>
+<div *ngIf="editMode">
+  <app-student-profile-contact-detail-form
+  [studentId]=studentId
+  [studentDetails]=studentDetails
+  ></app-student-profile-contact-detail-form>
+</div>

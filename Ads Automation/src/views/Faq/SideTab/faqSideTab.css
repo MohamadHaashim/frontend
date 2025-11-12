@@ -1,0 +1,90 @@
+.faq-side-tab ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.faq-side-tab li a {
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6b7280 !important;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.faq-side-tab li a.active,
+.faq-side-tab li a:hover {
+  background-color: #EAFFEC;
+  border-radius: 8px;
+  color: #00976D !important;
+}
+
+.faq-product-icon {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/product-service-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}
+.faq-flag-icon {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/flag-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}
+.faq-receipt-icon {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/receipt-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}
+.faq-security-icon {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/security-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}
+.faq-setting-icon {
+  padding: 12px;
+  right: 10px;
+  top: 10px;
+  background-image: url("../../../assets/images/icons/setting-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 5px;
+}
+a.active .profile-logo,
+a:hover .profile-logo {
+  background-image: url("../../../assets/images/icons/myaccount-profile-active-icon.svg");
+}
+a.active .profileBilling-logo,
+a:hover .profileBilling-logo {
+  background-image: url("../../../assets/images/icons/myaccount-billing-active-icon.svg");
+}
+a.active .profileNotification-logo,
+a:hover .profileNotification-logo {
+  background-image: url("../../../assets/images/icons/myaccount-notification-active-icon.svg");
+}
+a.active .amazonConnection-logo,
+a:hover .amazonConnection-logo {
+  background-image: url("../../../assets/images/icons/my-account-link-active-icon.svg");
+}

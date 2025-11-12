@@ -1,0 +1,3187 @@
+{
+  "success": true,
+  "message": "success",
+  "result": {
+    "id": "659bef2c8d756137613831c7",
+    "name": "meta",
+    "updatedDate": "2023-09-13T06:58:51.05Z",
+    "data": {
+      "date": [
+        {
+          "name": "On a Specific Date",
+          "value": "IsOn"
+        },
+        {
+          "name": "After a Specific Date",
+          "value": "IsAfter"
+        },
+        {
+          "name": "Before a Specific Date",
+          "value": "IsBefore"
+        },
+        {
+          "name": "Between Two Dates",
+          "value": "Between"
+        }
+      ],
+      "matchTypes": [
+        {
+          "name": "Broad Match",
+          "value": "Broad"
+        },
+        {
+          "name": "Phrase Match",
+          "value": "Phrase"
+        },
+        {
+          "name": "Exact Match",
+          "value": "Exact"
+        },
+        {
+          "name": "Loose Match",
+          "value": "Loose"
+        },
+        {
+          "name": "Close Match",
+          "value": "Close"
+        },
+        {
+          "name": "Substitutes Match",
+          "value": "Substitutes"
+        },
+        {
+          "name": "Complements Match",
+          "value": "Complements"
+        }
+      ],
+      "marketplaces": [
+        {
+          "name": "United States",
+          "value": "US"
+        },
+        {
+          "name": "United Kingdom",
+          "value": "UK"
+        },
+        {
+          "name": "Canada",
+          "value": "CA"
+        },
+        {
+          "name": "Australia",
+          "value": "AU"
+        },
+        {
+          "name": "Brazil",
+          "value": "BR"
+        },
+        {
+          "name": "Germany",
+          "value": "DE"
+        },
+        {
+          "name": "Spain",
+          "value": "ES"
+        },
+        {
+          "name": "France",
+          "value": "FR"
+        },
+        {
+          "name": "India",
+          "value": "IN"
+        },
+        {
+          "name": "Italy",
+          "value": "IT"
+        },
+        {
+          "name": "Japan",
+          "value": "JP"
+        },
+        {
+          "name": "Mexico",
+          "value": "MX"
+        }
+      ],
+      "numeric": [
+        {
+          "name": "Greater Than",
+          "value": "GreaterThan"
+        },
+        {
+          "name": "Less Than",
+          "value": "LessThan"
+        },
+        {
+          "name": "Equal To",
+          "value": "Equal"
+        },
+        {
+          "name": "Greater Than or Equal To",
+          "value": "GreaterThanOrEqual"
+        },
+        {
+          "name": "Less Than or Equal To",
+          "value": "LessThanOrEqual"
+        },
+        {
+          "name": "Not Equal To",
+          "value": "NotEqual"
+        },
+        {
+          "name": "Between Two Values",
+          "value": "Between"
+        }
+      ],
+      "status": [
+        {
+          "name": "Enabled",
+          "value": "Enabled"
+        },
+        {
+          "name": "Paused",
+          "value": "Paused"
+        },
+        {
+          "name": "Archived",
+          "value": "Archived"
+        }
+      ],
+      "text": [
+        {
+          "name": "Is Equal To",
+          "value": "Equal"
+        },
+        {
+          "name": "Is Not Equal To",
+          "value": "NotEqual"
+        },
+        {
+          "name": "Contains",
+          "value": "Contains"
+        },
+        {
+          "name": "Does Not Contain",
+          "value": "NotContains"
+        }
+      ],
+      "adTypes": [
+        {
+          "name": "Automatic",
+          "value": "Auto"
+        },
+        {
+          "name": "Manual",
+          "value": "Manual"
+        }
+      ],
+      "bid": [
+        {
+          "name": "Dynamic Down Only",
+          "value": "Dynamic down only"
+        },
+        {
+          "name": "Dynamic Up and Down",
+          "value": "Dynamic up and down"
+        },
+        {
+          "name": "Fixed",
+          "value": "Fixed"
+        }
+      ],
+      "bookFormats": [
+        {
+          "name": "Distribution",
+          "value": "Distribution"
+        },
+        {
+          "name": "Paperback",
+          "value": "Paperback"
+        },
+        {
+          "name": "Hardcover",
+          "value": "Hardcover"
+        },
+        {
+          "name": "Page Read",
+          "value": "Page_read"
+        },
+        {
+          "name": "eBook Free",
+          "value": "ebook_free"
+        },
+        {
+          "name": "eBook Paid",
+          "value": "ebook_paid"
+        },
+        {
+          "name": "eBook Pre-order",
+          "value": "ebook_preorder"
+        }
+      ],
+      "platforms": [
+        {
+          "name": "Apple",
+          "value": "Apple"
+        },
+        {
+          "name": "D2D",
+          "value": "D2D"
+        },
+        {
+          "name": "ACX",
+          "value": "ACX"
+        }
+      ],
+      "dateRanges": [
+        {
+          "name": "Yesterday",
+          "value": "Yesterday",
+          "mostCommonlyUsed": false
+        },
+        {
+          "name": "This Week",
+          "value": "This_week",
+          "mostCommonlyUsed": true
+        },
+        {
+          "name": "Last Week",
+          "value": "Last_week",
+          "mostCommonlyUsed": false
+        },
+        {
+          "name": "This Month",
+          "value": "This_month",
+          "mostCommonlyUsed": true
+        },
+        {
+          "name": "Last Month",
+          "value": "Last_month",
+          "mostCommonlyUsed": false
+        },
+        {
+          "name": "Last 7 days",
+          "value": "Last_7_days",
+          "mostCommonlyUsed": true
+        },
+        {
+          "name": "Last 14 days",
+          "value": "Last_14_days",
+          "mostCommonlyUsed": true
+        },
+        {
+          "name": "Last 30 days",
+          "value": "Last_30_days",
+          "mostCommonlyUsed": true
+        },
+        {
+          "name": "Last 65 days",
+          "value": "Last_65_days",
+          "mostCommonlyUsed": false
+        },
+        {
+          "name": "Last 90 days",
+          "value": "Last_90_days",
+          "mostCommonlyUsed": false
+        },
+        {
+          "name": "Last 180 days",
+          "value": "Last_180_days",
+          "mostCommonlyUsed": false
+        },
+        {
+          "name": "Year to Date",
+          "value": "Year_to_date",
+          "mostCommonlyUsed": true
+        },
+        {
+          "name": "Last Year",
+          "value": "Last_year",
+          "mostCommonlyUsed": false
+        },
+        {
+          "name": "Lifetime",
+          "value": "Lifetime",
+          "mostCommonlyUsed": false
+        },
+        {
+          "name": "Custom",
+          "value": "Custom",
+          "mostCommonlyUsed": false
+        }
+      ],
+      "columns": [
+        {
+          "name": "ACoS",
+          "displayName": "Advertising Cost of Sales",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "AdGroup",
+          "displayName": "Ad group",
+          "filterConditionType": "text",
+          "displayUnit": "Text",
+          "datatype": "string"
+        },
+        {
+          "name": "AdGroupName",
+          "displayName": "Ad group name",
+          "filterConditionType": "text",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "AdGroupStatus",
+          "displayName": "Ad group status",
+          "filterConditionType": "status",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "AdConversions",
+          "displayName": "Ad conversions",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "AdConversionRate",
+          "displayName": "Ad conversion rate",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "AmazonBiddingStrategy",
+          "displayName": "Amazon bidding strategy",
+          "filterConditionType": "bid",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "ASIN",
+          "displayName": "ASIN",
+          "filterConditionType": "text",
+          "displayUnit": "Text",
+          "datatype": "string"
+        },
+        {
+          "name": "Author",
+          "displayName": "Author",
+          "filterConditionType": "text",
+          "displayUnit": "Text",
+          "datatype": "string"
+        },
+        {
+          "name": "Bid",
+          "displayName": "Bid",
+          "filterConditionType": "numeric",
+          "displayUnit": "number",
+          "decimals": 2,
+          "datatype": "float"
+        },
+        {
+          "name": "BookCover",
+          "displayName": "Book Cover",
+          "displayUnit": "image",
+          "datatype": "string"
+        },
+        {
+          "name": "BookLive",
+          "displayName": "Book Cover",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "BreakevenACoS",
+          "displayName": "Breakeven ACoS",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "BSR",
+          "displayName": "BSR",
+          "filterConditionType": "numeric",
+          "displayUnit": "# numbers",
+          "datatype": "string"
+        },
+        {
+          "name": "Budget",
+          "displayName": "Budget",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "Campaign",
+          "displayName": "Campaign",
+          "filterConditionType": "text",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "CampaignDailyBudget",
+          "displayName": "Campaign daily budget",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "CampaignName",
+          "displayName": "Campaign name",
+          "filterConditionType": "text",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "CampaignStatus",
+          "displayName": "Campaign status",
+          "filterConditionType": "status",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "CampaignTargetingType",
+          "displayName": "Campaign targeting type",
+          "filterConditionType": "adTypes",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "Clicks",
+          "displayName": "Clicks",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "CPC",
+          "displayName": "CPC",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "CR",
+          "displayName": "CR",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "ConversionRateAd",
+          "displayName": "CR",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "CTR",
+          "displayName": "CTR",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "Costs",
+          "displayName": "Costs",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "DailyBudget",
+          "displayName": "Daily Budget",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "DefaultBid",
+          "displayName": "Default Bid",
+          "filterConditionType": "numeric",
+          "displayUnit": "number",
+          "decimals": 2,
+          "datatype": "float"
+        },
+        {
+          "name": "EndDate",
+          "displayName": "End date",
+          "filterConditionType": "date",
+          "displayUnit": "Date",
+          "datatype": "string"
+        },
+        {
+          "name": "Followers",
+          "displayName": "Followers",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "GrossRoyalty",
+          "displayName": "Gross Royalty",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "Impressions",
+          "displayName": "Impressions",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "Keyword",
+          "displayName": "Keyword",
+          "filterConditionType": "text",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "Marketplace",
+          "displayName": "Marketplace",
+          "filterConditionType": "marketplaces",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "MatchTypes",
+          "displayName": "Match Types",
+          "filterConditionType": "matchTypes",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "Match",
+          "displayName": "Match",
+          "filterConditionType": "matchTypes",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "NetRoyalty",
+          "displayName": "Net Royalty",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "Orders",
+          "displayName": "Orders",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "OrdersAd",
+          "displayName": "Orders Ad",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "PageReadAd",
+          "displayName": "Page Reads - Ad",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "PageReadTotal",
+          "displayName": "Page Reads - Total",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "Portfolio",
+          "displayName": "Portfolio",
+          "filterConditionType": "text",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "Price",
+          "displayName": "Price",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "ProductPageBidMultiplier",
+          "displayName": "Product page bid multiplier",
+          "filterConditionType": "numeric",
+          "displayUnit": "number",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "Rating",
+          "displayName": "Rating",
+          "filterConditionType": "numeric",
+          "displayUnit": "number",
+          "datatype": "int"
+        },
+        {
+          "name": "ROAS",
+          "displayName": "Return on Advertising Spend",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "ROI",
+          "displayName": "Return on Investment",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesDistribution",
+          "displayName": "Royalties - Distribution",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltieseBookPaid",
+          "displayName": "Royalties - eBook Paid",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltieseBookTotal",
+          "displayName": "Royalties - eBook Total",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesHardcopy",
+          "displayName": "Royalties - Hardcopy",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesPageReadAd",
+          "displayName": "Royalties - Page Reads - Ad",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesPageReadTotal",
+          "displayName": "Royalties - Page Reads - Total",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesPaperback",
+          "displayName": "Royalties - Paperback",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesPrint",
+          "displayName": "Royalties - Print",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesProjected",
+          "displayName": "Royalties - Projected",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesTotalGross",
+          "displayName": "Royalties - Total Gross",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesTotalNet",
+          "displayName": "Royalties - Total Net",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesTotalNetByMarketplace",
+          "displayName": "Royalties - Total Net %",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "RoyaltiesTotalNetByBooks",
+          "displayName": "Royalties - Total Net %",
+          "filterConditionType": "numeric",
+          "displayUnit": "percentage",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "Sales",
+          "displayName": "Sales",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "SalesAd",
+          "displayName": "Sales Ad",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "Spend",
+          "displayName": "Spend",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "SpendAuto",
+          "displayName": "Spend - Auto",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "SpendManual",
+          "displayName": "Spend - Manual",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "SpendTotal",
+          "displayName": "Spend - Total",
+          "filterConditionType": "numeric",
+          "displayUnit": "currency",
+          "currencySymbol": "$",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "StartDate",
+          "displayName": "Start Date",
+          "filterConditionType": "date",
+          "displayUnit": "Date",
+          "datatype": "string"
+        },
+        {
+          "name": "Targets",
+          "displayName": "Targets",
+          "filterConditionType": "adTypes",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "Title",
+          "displayName": "Title",
+          "filterConditionType": "text",
+          "displayUnit": "text",
+          "datatype": "string"
+        },
+        {
+          "name": "TopOfSearchBidMultiplier",
+          "displayName": "Top of search bid multiplier",
+          "filterConditionType": "numeric",
+          "displayUnit": "number",
+          "decimals": 2,
+          "datatype": "double"
+        },
+        {
+          "name": "UnitsSoldDistribution",
+          "displayName": "Units Sold - Distribution",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldeBookFree",
+          "displayName": "Units Sold - eBook Free",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldeBookPaid",
+          "displayName": "Units Sold - eBook Paid",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldeBookPreorder",
+          "displayName": "Units Sold - eBook Preorder",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldeBookTotal",
+          "displayName": "Units Sold - eBook Total",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldHardcopy",
+          "displayName": "Units Sold - Hardcopy",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldPaidTotal",
+          "displayName": "Units Sold - Paid Total",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldPaperback",
+          "displayName": "Units Sold - Paperback",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldPrintTotal",
+          "displayName": "Units Sold - Print Total",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        },
+        {
+          "name": "UnitsSoldTotal",
+          "displayName": "Units Sold - Total",
+          "filterConditionType": "numeric",
+          "displayUnit": "numbers",
+          "datatype": "int"
+        }
+      ],
+      "tables": [
+        {
+          "name": "CampaignManager_MarketPlaces",
+          "displayName": "MarketPlaces",
+          "columns": [
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "Budget",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "CR",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "Orders",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "PageReadAd",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "PageReadTotal",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "RoyaltiesDistribution",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "RoyaltieseBookPaid",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "RoyaltieseBookTotal",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "RoyaltiesHardcopy",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "RoyaltiesPageReadAd",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "RoyaltiesPageReadTotal",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "RoyaltiesPaperback",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "RoyaltiesPrint",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "RoyaltiesProjected",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "RoyaltiesTotalGross",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "RoyaltiesTotalNet",
+              "visible": true,
+              "order": 23
+            },
+            {
+              "name": "Sales",
+              "visible": true,
+              "order": 24
+            },
+            {
+              "name": "SpendAuto",
+              "visible": true,
+              "order": 25
+            },
+            {
+              "name": "SpendManual",
+              "visible": true,
+              "order": 26
+            },
+            {
+              "name": "SpendTotal",
+              "visible": true,
+              "order": 27
+            },
+            {
+              "name": "UnitsSoldDistribution",
+              "visible": true,
+              "order": 28
+            },
+            {
+              "name": "UnitsSoldeBookFree",
+              "visible": true,
+              "order": 29
+            },
+            {
+              "name": "UnitsSoldeBookPaid",
+              "visible": true,
+              "order": 30
+            },
+            {
+              "name": "UnitsSoldeBookPreorder",
+              "visible": true,
+              "order": 31
+            },
+            {
+              "name": "UnitsSoldeBookTotal",
+              "visible": true,
+              "order": 32
+            },
+            {
+              "name": "UnitsSoldHardcopy",
+              "visible": true,
+              "order": 33
+            },
+            {
+              "name": "UnitsSoldPaidTotal",
+              "visible": true,
+              "order": 34
+            },
+            {
+              "name": "UnitsSoldPaperback",
+              "visible": true,
+              "order": 35
+            },
+            {
+              "name": "UnitsSoldPrintTotal",
+              "visible": true,
+              "order": 36
+            },
+            {
+              "name": "UnitsSoldTotal",
+              "visible": true,
+              "order": 37
+            }
+          ]
+        },
+        {
+          "name": "CampaignManager_Portfolios",
+          "displayName": "Portfolios",
+          "columns": [
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "Budget",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "Orders",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "Sales",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "Spend",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "GrossRoyalty",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "NetRoyalty",
+              "visible": true,
+              "order": 13
+            }
+          ]
+        },
+        {
+          "name": "CampaignManager_Campaigns",
+          "displayName": "Campaigns",
+          "columns": [
+            {
+              "name": "Spend",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "Sales",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Orders",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "CR",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "DailyBudget",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "CampaignTargetingType",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "Portfolio",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "Status",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "StartDate",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "EndDate",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "CampaignDailyBudget",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "AmazonBiddingStrategy",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "ProductPageBidMultiplier",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "TopOfSearchBidMultiplier",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "GrossRoyalty",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "NetRoyalty",
+              "visible": true,
+              "order": 23
+            }
+          ]
+        },
+        {
+          "name": "CampaignManager_AdGroups",
+          "displayName": "AdGroups",
+          "columns": [
+            {
+              "name": "Campaign",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "Spend",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Sales",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "Orders",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "CR",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "DefaultBid",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "Status",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "CampaignTargetingType",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "CampaignDailyBudget",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "CampaignName",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "CampaignStatus",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "Portfolio",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "Marketplace",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "GrossRoyalty",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "NetRoyalty",
+              "visible": true,
+              "order": 22
+            }
+          ]
+        },
+        {
+          "name": "CampaignManager_Targets",
+          "displayName": "Targeting",
+          "columns": [
+            {
+              "name": "Campaign",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "AdGroup",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Spend",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "Sales",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "Orders",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "CR",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "Match",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "Bid",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "AdGroupStatus",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "CampaignName",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "CampaignTargetingType",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "CampaignDailyBudget",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "CampaignStatus",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "Portfolio",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "Marketplace",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "Status",
+              "visible": true,
+              "order": 23
+            },
+            {
+              "name": "GrossRoyalty",
+              "visible": true,
+              "order": 24
+            },
+            {
+              "name": "NetRoyalty",
+              "visible": true,
+              "order": 25
+            }
+          ]
+        },
+        {
+          "name": "CampaignManager_Products",
+          "displayName": "Products",
+          "columns": [
+            {
+              "name": "Campaign",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "AdGroup",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Spend",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "Sales",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "Orders",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "CR",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "Match",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "Bid",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "AdGroupStatus",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "CampaignName",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "CampaignTargetingType",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "CampaignDailyBudget",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "CampaignStatus",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "Portfolio",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "Marketplace",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "Status",
+              "visible": true,
+              "order": 23
+            },
+            {
+              "name": "GrossRoyalty",
+              "visible": true,
+              "order": 24
+            },
+            {
+              "name": "NetRoyalty",
+              "visible": true,
+              "order": 25
+            }
+          ]
+        },
+        {
+          "name": "CampaignManager_SearchTerms",
+          "displayName": "Search Terms",
+          "columns": [
+            {
+              "name": "Campaign",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "AdGroup",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Targets",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "Costs",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "Sales",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "Orders",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "CR",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "AdGroupName",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "Ad_group_status",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "CampaignName",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "CampaignTargetingType",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "CampaignDailyBudget",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "CampaignStatus",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "Portfolio",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "Marketplace",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "GrossRoyalty",
+              "visible": true,
+              "order": 23
+            },
+            {
+              "name": "NetRoyalty",
+              "visible": true,
+              "order": 24
+            }
+          ]
+        },
+        {
+          "name": "CampaignManager_Ads",
+          "displayName": "Ads",
+          "columns": [
+            {
+              "name": "Campaign",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "AdGroup",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Costs",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "Sales",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "Orders",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "CR",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "AdGroupName",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "AdGroupStatus",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "CampaignName",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "CampaignTargetingType",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "CampaignDailyBudget",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "CampaignStatus",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "Portfolio",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "Marketplace",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "ASIN",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "GrossRoyalty",
+              "visible": true,
+              "order": 23
+            },
+            {
+              "name": "NetRoyalty",
+              "visible": true,
+              "order": 24
+            }
+          ]
+        },
+        {
+          "name": "BooksTable",
+          "displayName": "Books Table",
+          "columns": [
+            {
+              "name": "Rating",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "BookCover",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Title",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "BSR",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "ASIN",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "Author",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "BreakevenACoS",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "ConversionRateAd",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "OrdersAd",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "PageReadAd",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "PageReadTotal",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "Price",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "RoyaltiesDistribution",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "RoyaltieseBookPaid",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "RoyaltieseBookTotal",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "RoyaltiesHardcopy",
+              "visible": true,
+              "order": 23
+            },
+            {
+              "name": "RoyaltiesPageReadAd",
+              "visible": true,
+              "order": 24
+            },
+            {
+              "name": "RoyaltiesPageReadTotal",
+              "visible": true,
+              "order": 25
+            },
+            {
+              "name": "RoyaltiesPaperback",
+              "visible": true,
+              "order": 26
+            },
+            {
+              "name": "RoyaltiesPrint",
+              "visible": true,
+              "order": 27
+            },
+            {
+              "name": "RoyaltiesProjected",
+              "visible": true,
+              "order": 28
+            },
+            {
+              "name": "RoyaltiesTotalGross",
+              "visible": true,
+              "order": 29
+            },
+            {
+              "name": "RoyaltiesTotalNet",
+              "visible": true,
+              "order": 30
+            },
+            {
+              "name": "RoyaltiesTotalNet%",
+              "visible": true,
+              "order": 31
+            },
+            {
+              "name": "SalesAd",
+              "visible": true,
+              "order": 32
+            },
+            {
+              "name": "SpendAuto",
+              "visible": true,
+              "order": 33
+            },
+            {
+              "name": "SpendManual",
+              "visible": true,
+              "order": 34
+            },
+            {
+              "name": "SpendTotal",
+              "visible": true,
+              "order": 35
+            },
+            {
+              "name": "UnitsSoldDistribution",
+              "visible": true,
+              "order": 36
+            },
+            {
+              "name": "UnitsSoldeBookFree",
+              "visible": true,
+              "order": 37
+            },
+            {
+              "name": "UnitsSoldeBookPaid",
+              "visible": true,
+              "order": 38
+            },
+            {
+              "name": "UnitsSoldeBookPreOrder",
+              "visible": true,
+              "order": 39
+            },
+            {
+              "name": "UnitsSoldeBookTotal",
+              "visible": true,
+              "order": 40
+            },
+            {
+              "name": "UnitsSoldHardcopy",
+              "visible": true,
+              "order": 41
+            },
+            {
+              "name": "UnitsSoldPaidTotal",
+              "visible": true,
+              "order": 42
+            },
+            {
+              "name": "UnitsSoldPaperback",
+              "visible": true,
+              "order": 43
+            },
+            {
+              "name": "UnitsSoldPrintTotal",
+              "visible": true,
+              "order": 44
+            },
+            {
+              "name": "UnitsSoldTotal",
+              "visible": true,
+              "order": 45
+            }
+          ]
+        },
+        {
+          "name": "AuthorsTable",
+          "displayName": "Authors Table",
+          "columns": [
+            {
+              "name": "Author",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "BookLive",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "ConversionRateAd",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "OrdersAd",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "PageReadAd",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "PageReadTotal",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "RoyaltiesDistribution",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "RoyaltieseBookPaid",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "RoyaltieseBookTotal",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "RoyaltiesHardcopy",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "RoyaltiesPageReadAd",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "RoyaltiesPageReadTotal",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "RoyaltiesPaperback",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "RoyaltiesPrint",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "RoyaltiesProjected",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "RoyaltiesTotalGross",
+              "visible": true,
+              "order": 23
+            },
+            {
+              "name": "RoyaltiesTotalNet",
+              "visible": true,
+              "order": 24
+            },
+            {
+              "name": "RoyaltiesTotalNetByMarketplace",
+              "visible": true,
+              "order": 25
+            },
+            {
+              "name": "RoyaltiesTotalNetByBooks",
+              "visible": true,
+              "order": 26
+            },
+            {
+              "name": "SalesAd",
+              "visible": true,
+              "order": 27
+            },
+            {
+              "name": "SpendAuto",
+              "visible": true,
+              "order": 28
+            },
+            {
+              "name": "SpendManual",
+              "visible": true,
+              "order": 29
+            },
+            {
+              "name": "SpendTotal",
+              "visible": true,
+              "order": 30
+            },
+            {
+              "name": "UnitsSoldDistribution",
+              "visible": true,
+              "order": 31
+            },
+            {
+              "name": "UnitsSoldeBookFree",
+              "visible": true,
+              "order": 32
+            },
+            {
+              "name": "UnitsSoldeBookPaid",
+              "visible": true,
+              "order": 33
+            },
+            {
+              "name": "UnitsSoldeBookPreOrder",
+              "visible": true,
+              "order": 34
+            },
+            {
+              "name": "UnitsSoldeBookTotal",
+              "visible": true,
+              "order": 35
+            },
+            {
+              "name": "UnitsSoldHardcopy",
+              "visible": true,
+              "order": 36
+            },
+            {
+              "name": "UnitsSoldPaidTotal",
+              "visible": true,
+              "order": 37
+            },
+            {
+              "name": "UnitsSoldPaperback",
+              "visible": true,
+              "order": 38
+            },
+            {
+              "name": "UnitsSoldPrintTotal",
+              "visible": true,
+              "order": 39
+            },
+            {
+              "name": "UnitsSoldTotal",
+              "visible": true,
+              "order": 40
+            },
+            {
+              "name": "Followers",
+              "visible": true,
+              "order": 41
+            }
+          ]
+        },
+        {
+          "name": "MarketplaceTable",
+          "displayName": "Marketplace Table",
+          "columns": [
+            {
+              "name": "Marketplace",
+              "visible": true,
+              "order": 1
+            },
+            {
+              "name": "ACoS",
+              "visible": true,
+              "order": 2
+            },
+            {
+              "name": "Clicks",
+              "visible": true,
+              "order": 3
+            },
+            {
+              "name": "ConversionRateAd",
+              "visible": true,
+              "order": 4
+            },
+            {
+              "name": "CPC",
+              "visible": true,
+              "order": 5
+            },
+            {
+              "name": "CTR",
+              "visible": true,
+              "order": 6
+            },
+            {
+              "name": "Impressions",
+              "visible": true,
+              "order": 7
+            },
+            {
+              "name": "OrdersAd",
+              "visible": true,
+              "order": 8
+            },
+            {
+              "name": "PageReadAd",
+              "visible": true,
+              "order": 9
+            },
+            {
+              "name": "PageReadTotal",
+              "visible": true,
+              "order": 10
+            },
+            {
+              "name": "ROAS",
+              "visible": true,
+              "order": 11
+            },
+            {
+              "name": "ROI",
+              "visible": true,
+              "order": 12
+            },
+            {
+              "name": "RoyaltiesDistribution",
+              "visible": true,
+              "order": 13
+            },
+            {
+              "name": "RoyaltieseBookPaid",
+              "visible": true,
+              "order": 14
+            },
+            {
+              "name": "RoyaltieseBookTotal",
+              "visible": true,
+              "order": 15
+            },
+            {
+              "name": "RoyaltiesHardcopy",
+              "visible": true,
+              "order": 16
+            },
+            {
+              "name": "RoyaltiesPageReadAd",
+              "visible": true,
+              "order": 17
+            },
+            {
+              "name": "RoyaltiesPageReadTotal",
+              "visible": true,
+              "order": 18
+            },
+            {
+              "name": "RoyaltiesPaperback",
+              "visible": true,
+              "order": 19
+            },
+            {
+              "name": "RoyaltiesPrint",
+              "visible": true,
+              "order": 20
+            },
+            {
+              "name": "RoyaltiesProjected",
+              "visible": true,
+              "order": 21
+            },
+            {
+              "name": "RoyaltiesTotalGross",
+              "visible": true,
+              "order": 22
+            },
+            {
+              "name": "RoyaltiesTotalNet",
+              "visible": true,
+              "order": 23
+            },
+            {
+              "name": "RoyaltiesTotalNetByMarketplace",
+              "visible": true,
+              "order": 24
+            },
+            {
+              "name": "RoyaltiesTotalNetByBooks",
+              "visible": true,
+              "order": 25
+            },
+            {
+              "name": "SalesAd",
+              "visible": true,
+              "order": 26
+            },
+            {
+              "name": "SpendAuto",
+              "visible": true,
+              "order": 27
+            },
+            {
+              "name": "SpendManual",
+              "visible": true,
+              "order": 28
+            },
+            {
+              "name": "SpendTotal",
+              "visible": true,
+              "order": 29
+            },
+            {
+              "name": "UnitsSoldDistribution",
+              "visible": true,
+              "order": 30
+            },
+            {
+              "name": "UnitsSoldeBookFree",
+              "visible": true,
+              "order": 31
+            },
+            {
+              "name": "UnitsSoldeBookPaid",
+              "visible": true,
+              "order": 32
+            },
+            {
+              "name": "UnitsSoldeBookPreOrder",
+              "visible": true,
+              "order": 33
+            },
+            {
+              "name": "UnitsSoldeBookTotal",
+              "visible": true,
+              "order": 34
+            },
+            {
+              "name": "UnitsSoldHardcopy",
+              "visible": true,
+              "order": 35
+            },
+            {
+              "name": "UnitsSoldPaidTotal",
+              "visible": true,
+              "order": 36
+            },
+            {
+              "name": "UnitsSoldPaperback",
+              "visible": true,
+              "order": 37
+            },
+            {
+              "name": "UnitsSoldPrintTotal",
+              "visible": true,
+              "order": 38
+            },
+            {
+              "name": "UnitsSoldTotal",
+              "visible": true,
+              "order": 39
+            }
+          ]
+        }
+      ],
+      "title": [
+        {
+          "name": "SearchTitle",
+          "value": "Search Title",
+          "searchable": true
+        },
+        {
+          "name": "",
+          "value": ""
+        }
+      ],
+      "author": [
+        {
+          "name": "SearchAuthor",
+          "value": "Search Author",
+          "searchable": true
+        },
+        {
+          "name": "",
+          "value": ""
+        }
+      ],
+      "campaign": [
+        {
+          "name": "SearchCampaign",
+          "value": "Search Campaign",
+          "searchable": true
+        },
+        {
+          "name": "",
+          "value": ""
+        }
+      ],
+      "Metric": [
+        {
+          "name": "ACOS",
+          "title": "ACOS",
+          "subTitle": "",
+          "description": "ACOS"
+        },
+        {
+          "name": "Budget",
+          "title": "Budget",
+          "subTitle": "",
+          "description": "Budget"
+        },
+        {
+          "name": "Sales",
+          "title": "Sales",
+          "subTitle": "",
+          "description": "Sales"
+        },
+        {
+          "name": "Order",
+          "title": "Order",
+          "subTitle": "",
+          "description": "Order"
+        },
+        {
+          "name": "CPC",
+          "title": "CPC",
+          "subTitle": "",
+          "description": "CPC"
+        },
+        {
+          "name": "CTR",
+          "title": "CTR",
+          "subTitle": "",
+          "description": "CTR"
+        },
+        {
+          "name": "Clicks",
+          "title": "Clicks",
+          "subTitle": "",
+          "description": "Clicks"
+        },
+        {
+          "name": "ROI",
+          "title": "ROI",
+          "subTitle": "",
+          "description": "ROI"
+        },
+        {
+          "name": "Cost",
+          "title": "Cost",
+          "subTitle": "",
+          "description": "Cost"
+        },
+        {
+          "name": "Impressions",
+          "title": "Impressions",
+          "subTitle": "",
+          "description": "Impressions"
+        },
+        {
+          "name": "Spend",
+          "title": "Spend",
+          "subTitle": "",
+          "description": "Spend"
+        },
+        {
+          "name": "PagesRead_Ads",
+          "title": "PagesRead",
+          "subTitle": "Ads",
+          "description": "PagesRead_Ads"
+        },
+        {
+          "name": "Royalties_Ads",
+          "title": "Royalties",
+          "subTitle": "Ads",
+          "description": "Royalties_Ads"
+        },
+        {
+          "name": "ROAS",
+          "title": "ROAS",
+          "subTitle": "",
+          "description": "ROAS"
+        },
+        {
+          "name": "CR",
+          "title": "",
+          "subTitle": "CR",
+          "description": "CR"
+        }
+      ],
+      "ChartMetric": [
+        {
+          "name": "ACOS",
+          "value": "ACOS"
+        },
+        {
+          "name": "Budget",
+          "value": "Budget"
+        },
+        {
+          "name": "Sales",
+          "value": "Sales"
+        },
+        {
+          "name": "Order",
+          "value": "Order"
+        },
+        {
+          "name": "CPC",
+          "value": "CPC"
+        },
+        {
+          "name": "CTR",
+          "value": "CTR"
+        },
+        {
+          "name": "Clicks",
+          "value": "Clicks"
+        },
+        {
+          "name": "ROI",
+          "value": "ROI"
+        },
+        {
+          "name": "Cost",
+          "value": "Cost"
+        },
+        {
+          "name": "Impressions",
+          "value": "Impressions"
+        },
+        {
+          "name": "Spend",
+          "value": "Spend"
+        },
+        {
+          "name": "PagesRead_Ads",
+          "value": "PagesRead_Ads"
+        },
+        {
+          "name": "Royalties_Ads",
+          "value": "Royalties_Ads"
+        },
+        {
+          "name": "ROAS",
+          "value": "ROAS"
+        },
+        {
+          "name": "CR",
+          "value": "CR"
+        },
+        {
+          "name": "RoyaltiesDistribution",
+          "value": "RoyaltiesDistribution"
+        },
+        {
+          "name": "RoyaltiesProjected",
+          "value": "RoyaltiesProjected"
+        }
+      ],
+      "DonutChart": [
+        {
+          "name": "Marketplace",
+          "title": "Marketplace",
+          "subTitle": "",
+          "description": "Marketplace",
+          "childValues": [
+            {
+              "name": "Budget",
+              "title": "Budget",
+              "subTitle": "",
+              "description": "Budget"
+            },
+            {
+              "name": "Spend",
+              "title": "Spend",
+              "subTitle": "",
+              "description": "Spend"
+            },
+            {
+              "name": "Sales_Ad",
+              "title": "Sales",
+              "subTitle": "Ad",
+              "description": "Sales_Ad"
+            },
+            {
+              "name": "Clicks",
+              "title": "Clicks",
+              "subTitle": "",
+              "description": "Clicks"
+            },
+            {
+              "name": "Impressions",
+              "title": "Impressions",
+              "subTitle": "",
+              "description": "Impressions"
+            },
+            {
+              "name": "Orders_Ad",
+              "title": "Orders",
+              "subTitle": "Ad",
+              "description": "Orders_Ad"
+            },
+            {
+              "name": "Royalties_TotalGross",
+              "title": "Royalties",
+              "subTitle": "Total Gross",
+              "description": "Royalties_TotalGross"
+            },
+            {
+              "name": "Royalties_TotalNet",
+              "title": "Royalties",
+              "subTitle": "Total Net",
+              "description": "Royalties_TotalNet"
+            },
+            {
+              "name": "PageRead_Ad",
+              "title": "PageRead",
+              "subTitle": "Ad",
+              "description": "PageRead_Ad"
+            },
+            {
+              "name": "PageRead_Total",
+              "title": "PageRead",
+              "subTitle": "Total",
+              "description": "PageRead_Total"
+            },
+            {
+              "name": "UnitSold_Total",
+              "title": "UnitSold",
+              "subTitle": "Total",
+              "description": "UnitSold _Total"
+            },
+            {
+              "name": "UnitSold_PaidTotal",
+              "title": "UnitSold",
+              "subTitle": "PaidTotal",
+              "description": "UnitSold_PaidTotal"
+            }
+          ]
+        },
+        {
+          "name": "AdPortfolio",
+          "title": "AdPortfolio",
+          "subTitle": "",
+          "description": "AdPortfolio",
+          "childValues": [
+            {
+              "name": "Budget",
+              "title": "Budget",
+              "subTitle": "",
+              "description": "Budget"
+            },
+            {
+              "name": "Spend",
+              "title": "Spend",
+              "subTitle": "",
+              "description": "Spend"
+            },
+            {
+              "name": "Sales_Ad",
+              "title": "Sales",
+              "subTitle": "Ad",
+              "description": "Sales_Ad"
+            },
+            {
+              "name": "Clicks",
+              "title": "Clicks",
+              "subTitle": "",
+              "description": "Clicks"
+            },
+            {
+              "name": "Impressions",
+              "title": "Impressions",
+              "subTitle": "",
+              "description": "Impressions"
+            },
+            {
+              "name": "Orders_Ad",
+              "title": "Orders",
+              "subTitle": "Ad",
+              "description": "Orders_Ad"
+            }
+          ]
+        },
+        {
+          "name": "AdType",
+          "title": "AdType",
+          "subTitle": "",
+          "description": "AdType",
+          "childValues": [
+            {
+              "name": "Budget",
+              "title": "Budget",
+              "subTitle": "",
+              "description": "Budget"
+            },
+            {
+              "name": "Spend",
+              "title": "Spend",
+              "subTitle": "",
+              "description": "Spend"
+            },
+            {
+              "name": "Sales_Ad",
+              "title": "Sales",
+              "subTitle": "Ad",
+              "description": "Sales_Ad"
+            },
+            {
+              "name": "Clicks",
+              "title": "Clicks",
+              "subTitle": "",
+              "description": "Clicks"
+            },
+            {
+              "name": "Impressions",
+              "title": "Impressions",
+              "subTitle": "",
+              "description": "Impressions"
+            },
+            {
+              "name": "Orders_Ad",
+              "title": "Orders",
+              "subTitle": "Ad",
+              "description": "Orders_Ad"
+            }
+          ]
+        }
+      ],
+      "FunnelChart": [
+        {
+          "name": "Marketplace",
+          "title": "Marketplace",
+          "subTitle": "",
+          "description": "Marketplace"
+        },
+        {
+          "name": "AdPortfolio",
+          "title": "AdPortfolio",
+          "subTitle": "",
+          "description": "AdPortfolio"
+        },
+        {
+          "name": "Author",
+          "title": "Author",
+          "subTitle": "",
+          "description": "Author"
+        },
+        {
+          "name": "Title",
+          "title": "Title",
+          "subTitle": "",
+          "description": "Title"
+        }
+      ],
+      "HeatMap": [
+        {
+          "name": "Marketplace",
+          "title": "Marketplace",
+          "subTitle": "",
+          "description": "Marketplace",
+          "childValues": [
+            {
+              "name": "Spend",
+              "title": "Ad",
+              "subTitle": "Spend",
+              "description": "Spend"
+            },
+            {
+              "name": "ROI",
+              "title": "ROI",
+              "subTitle": "",
+              "description": "ROI"
+            }
+          ]
+        },
+        {
+          "name": "Author",
+          "title": "Author",
+          "subTitle": "",
+          "description": "Author",
+          "childValues": [
+            {
+              "name": "Spend",
+              "title": "Ad",
+              "subTitle": "Spend",
+              "description": "Spend"
+            },
+            {
+              "name": "ROI",
+              "title": "ROI",
+              "subTitle": "",
+              "description": "ROI"
+            }
+          ]
+        },
+        {
+          "name": "Title",
+          "title": "Book",
+          "subTitle": "Title",
+          "description": "Title",
+          "childValues": [
+            {
+              "name": "Spend",
+              "title": "Ad",
+              "subTitle": "Spend",
+              "description": "Spend"
+            },
+            {
+              "name": "ROI",
+              "title": "ROI",
+              "subTitle": "",
+              "description": "ROI"
+            }
+          ]
+        }
+      ],
+      "HorizontalChart": [
+        {
+          "name": "Marketplace",
+          "title": "Marketplace",
+          "subTitle": "",
+          "description": "Marketplace",
+          "childValues": [
+            {
+              "name": "Budget",
+              "title": "Budget",
+              "subTitle": "",
+              "description": "Budget"
+            },
+            {
+              "name": "Spend",
+              "title": "Spend",
+              "subTitle": "",
+              "description": "Spend"
+            },
+            {
+              "name": "Sales_Ad",
+              "title": "Sales",
+              "subTitle": "Ad",
+              "description": "Sales_Ad"
+            },
+            {
+              "name": "Clicks",
+              "title": "Clicks",
+              "subTitle": "",
+              "description": "Clicks"
+            },
+            {
+              "name": "Impressions",
+              "title": "Impressions",
+              "subTitle": "",
+              "description": "Impressions"
+            },
+            {
+              "name": "Orders_Ad",
+              "title": "Orders",
+              "subTitle": "Ad",
+              "description": "Orders_Ad"
+            }
+          ]
+        },
+        {
+          "name": "AdPortfolio",
+          "title": "AdPortfolio",
+          "subTitle": "",
+          "description": "AdPortfolio",
+          "childValues": [
+            {
+              "name": "Budget",
+              "title": "Budget",
+              "subTitle": "",
+              "description": "Budget"
+            },
+            {
+              "name": "Spend",
+              "title": "Spend",
+              "subTitle": "",
+              "description": "Spend"
+            },
+            {
+              "name": "Sales_Ad",
+              "title": "Sales",
+              "subTitle": "Ad",
+              "description": "Sales_Ad"
+            },
+            {
+              "name": "Clicks",
+              "title": "Clicks",
+              "subTitle": "",
+              "description": "Clicks"
+            },
+            {
+              "name": "Impressions",
+              "title": "Impressions",
+              "subTitle": "",
+              "description": "Impressions"
+            },
+            {
+              "name": "Orders_Ad",
+              "title": "Orders",
+              "subTitle": "Ad",
+              "description": "Orders_Ad"
+            }
+          ]
+        },
+        {
+          "name": "Campaign",
+          "title": "Campaign",
+          "subTitle": "Campaign",
+          "description": "Campaign",
+          "childValues": [
+            {
+              "name": "Budget",
+              "title": "Budget",
+              "subTitle": "",
+              "description": "Budget"
+            },
+            {
+              "name": "Spend",
+              "title": "Spend",
+              "subTitle": "",
+              "description": "Spend"
+            },
+            {
+              "name": "Sales_Ad",
+              "title": "Sales",
+              "subTitle": "Ad",
+              "description": "Sales_Ad"
+            },
+            {
+              "name": "Clicks",
+              "title": "Clicks",
+              "subTitle": "",
+              "description": "Clicks"
+            },
+            {
+              "name": "Impressions",
+              "title": "Impressions",
+              "subTitle": "",
+              "description": "Impressions"
+            },
+            {
+              "name": "Orders_Ad",
+              "title": "Orders",
+              "subTitle": "Ad",
+              "description": "Orders_Ad"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

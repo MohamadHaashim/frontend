@@ -1,0 +1,50 @@
+.login-sadmin {
+    background-image: url("../../../src/assets/img/curved-images/curved-6.jpg");
+}
+
+.login-input-group {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.vendor-login-btn {
+    background: #014aac;
+    padding: 8px;
+    margin-bottom: 7px !important;
+    font-size: 10px;
+}
+
+.vendor-login-btn:hover {
+    background-color: #014aac !important;
+    border-color: #22c55e;
+}
+
+.biz-login-content-side {
+    font-size: 35px;
+    color: #0cc0df;
+    border-bottom: 4px solid #014aac;
+}
+
+.biz-login-content-side-1 {
+    color: #0cc0df;
+    font-weight: 700;
+}
+
+.login-bg-text-go {
+    color: white;
+}
+
+.login-sadmin {
+    background-image: url("../../../src/assets/img/bizno-2.jpg");
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.vendor-login-icon img {
+    width: 120px;
+    margin: 0 0 20px;
+}
+
+.vendor-login-txt {
+    margin-left: 5px;
+}

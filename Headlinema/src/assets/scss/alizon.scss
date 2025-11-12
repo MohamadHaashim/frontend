@@ -1,0 +1,139 @@
+// SET RTL OPTION
+$rtl: false;
+
+// Included Global Variables and Functions
+@import "_alizon_variables";
+
+// Included Fonts
+/** 01. FONTS */
+@import "core/fonts/roboto";
+@import "core/fonts/nunito";
+
+// Included Bootstarp
+@import "extend/bootstrap/variables";
+@import "extend/bootstrap/bootstrap";
+@import "extend/bootstrap/extend";
+
+// Include Other Vendors
+@import "vendors/bundle";
+
+// Include Core Alizon Style
+@import "core/style";
+
+////////////////////////// DO NOT REMOVE ABOVE ///////////////////////
+
+////// GLOBAL INCLUDED
+@import "global/style";
+
+//////  INDIVIDUL CONCEPTS
+@import "crypto/style";
+
+//////  APPLICATONS - Common Uses
+@import "apps/asterisk";
+@import "apps/reply-comment";
+@import "apps/attach";
+
+//////  Apps
+@import "apps/messages"; // - Support Messages
+@import "apps/inbox"; // - Inbox/ Mail App
+@import "apps/chats"; // - Chats
+@import "apps/responses"; // - Responses
+
+
+///////  PREVIEW PURPOSE
+@import "core/preview"; // Can be remove on real projoect
+
+///////  UI/MODE OVERRIDE
+@import "core/mode-override";
+
+///////  DARK MODE SKIN
+@import "core/dark-skin";
+
+/*! END @iO */
+////////////////////////// END STYLESHEET ////////////////////////////
+
+.col-lg-24 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.col-lg-24 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.bg-login {
+  background-image: url("https://headlinema.agilensmart.com/auth-success?code=RHIoiMvmQitHEFURlZDZ&scope=advertising%3A%3Acampaign_management&state=EU_673f6fd4690b76298c861557") !important;
+  background-size: cover !important;
+  background-color: #11274B !important;
+  background-blend-mode: color !important;
+  filter: saturate(1.7) !important;
+  // width: 386.5%;
+}
+
+.bg-login .nk-wrap {
+  background: transparent !important;
+}
+
+.bg-login .nk-footer {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.801);
+}
+
+.dropdown-toggle.nk-quick-nav-icon::before {
+  border-radius: 5px;
+  width: 100%;
+  height: 35px !important;
+  background-color: #c2671244 !important;
+  border: 1px solid #c26712d4;
+}
+.dropdown-toggle.nk-quick-nav-icon{
+  height: 35px !important;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #dbdfea !important;
+}
+
+
+.dropdown-toggle.nk-quick-nav-icon:hover {
+  color: #474747;
+}
+
+.dropdown-toggle.nk-quick-nav-icon:hover::before {
+  border-radius: 5px;
+  width: 100%;
+  height: 35px !important;
+  background-color: #c2671244 !important;
+  border: 1px solid #c26712d4;
+}
+
+.user-info.d-none.d-md-block {
+  margin-left: 0.5em;
+  margin-top: 2px;
+}
+
+.user-avatar.border.border-light.sm.mr-1.user-avatar-xs {
+  width: fit-content;
+  height: fit-content;
+}
+
+.user-avatar.border.border-light.sm.mr-1.user-avatar-xs img {
+  width: 23px;
+}
+
+.notification-dropdown {
+  padding-left: 0.2em !important;
+}
+.btn-yellow{
+  background-color: #f6ca51!important;
+  color: #040707 !important;
+}
+:where(.css-dev-only-do-not-override-11xg00t).ant-btn-primary,
+:where(.css-11xg00t).ant-btn-primary{
+  background: #c26712d4 !important;
+}
+:where(.css-dev-only-do-not-override-11xg00t).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover,
+:where(.css-11xg00t).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+  color: #c26712d4  !important;
+    border-color: #c26712d4 !important;
+}

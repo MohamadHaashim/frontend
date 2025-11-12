@@ -1,0 +1,127 @@
+<div class="profile-edit-btn">
+  <button *ngIf="!editMode" class="btn btn-sm btn-primary" (click)="enableEditMode()">Edit</button>
+  <button *ngIf="editMode" class="btn btn-sm btn-primary" (click)="enableViewMode()">Cancel Edit</button>
+</div>
+<div *ngIf="!editMode">
+<form *ngIf="studentDetails">
+  <h6 class="heading-small text-muted mb-4">Previous School - Education Details</h6>
+  <div class="pl-lg-4">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="form-control-label" for="input-username">Name</label>
+          <p><strong>{{studentDetails.name}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="form-control-label" for="input-email">Place</label>
+          <p><strong>{{studentDetails.place}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="form-control-label" for="input-first-name">Board</label>
+          <p><strong>{{studentDetails.board}}</strong></p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label class="form-control-label" for="input-last-name">Register No.</label>
+          <p><strong>{{studentDetails.register_no}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-4" />
+  <!-- Address -->
+  <h6 class="heading-small text-muted mb-4">Marks</h6>
+  <div class="pl-lg-4">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">English</label>
+          <p><strong>{{studentDetails.mark_english}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Malayalam</label>
+          <p><strong>{{studentDetails.mark_malayalam}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Hindi</label>
+          <p><strong>{{studentDetails.mark_hindi}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Physics</label>
+          <p><strong>{{studentDetails.mark_physics}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Chemistry</label>
+          <p><strong>{{studentDetails.mark_chemistry}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Mathematics</label>
+          <p><strong>{{studentDetails.mark_mathematics}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Biology</label>
+          <p><strong>{{studentDetails.mark_biology}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Histroy</label>
+          <p><strong>{{studentDetails.mark_histroy}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Geography</label>
+          <p><strong>{{studentDetails.mark_geography}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">IT</label>
+          <p><strong>{{studentDetails.mark_it}}</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Club Member in prevoius school</label>
+          <p><strong>{{studentDetails.club_member}}</strong></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="form-control-label" for="input-address">Other details</label>
+          <p><strong>{{studentDetails.other_details}}</strong></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <hr class="my-4" />
+
+</form>
+</div>
+<div *ngIf="editMode">
+  <app-student-profile-education-detail-form
+  [studentId]=studentId
+  [studentDetails]=studentDetails
+  ></app-student-profile-education-detail-form>
+</div>

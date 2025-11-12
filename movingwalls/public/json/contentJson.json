@@ -1,0 +1,961 @@
+[{
+        "name": "Landing Page",
+        "fields": [{
+                "components": [{
+                    "type": "panel",
+                    "title": "General settings",
+                    "components": [{
+                            "type": "htmlelement",
+                            "tag": "p",
+                            "label": "Upload your brand logo",
+                            "content": "<b>Upload your brand logo</b><br>Supports .eps, .svg and max upload size 22MB"
+                        },
+                        {
+                            "type": "editgrid",
+                            "key": "logoGrid",
+                            "label": "Logo Settings",
+                            "maxLength": 1,
+                            "components": [{
+                                    "key": "LargeLogo",
+                                    "url": "/builder/form_io_file_upload/",
+                                    "type": "file",
+                                    "image": true,
+                                    "input": true,
+                                    "label": "Large logo",
+                                    "storage": "url",
+                                    "fileTypes": [{
+                                        "label": "Image Files",
+                                        "value": ".jpg,.png,.svg"
+                                    }],
+                                    "fileMaxSize": "4MB"
+                                },
+                                {
+                                    "key": "MediumLogo",
+                                    "url": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                    "type": "file",
+                                    "image": true,
+                                    "input": true,
+                                    "label": "Medium logo",
+                                    "storage": "url",
+                                    "fileTypes": [{
+                                        "label": "Image Files",
+                                        "value": ".jpg,.png,.svg,.jpg,.svg"
+                                    }],
+                                    "fileMaxSize": "4MB"
+                                },
+                                {
+                                    "key": "SmallLogo",
+                                    "url": "/builder/form_io_file_upload/",
+                                    "type": "file",
+                                    "image": true,
+                                    "input": true,
+                                    "label": "Small logo",
+                                    "storage": "url",
+                                    "fileTypes": [{
+                                        "label": "Image Files",
+                                        "value": ".jpg,.png,.svg"
+                                    }],
+                                    "fileMaxSize": "4MB"
+                                }
+                            ],
+                            "validate": {
+                                "maxLength": 1
+                            },
+                            "addAnother": false,
+                            "defaultValue": [{
+                                "LargeLogo": [],
+                                "MediumLogo": [{
+                                    "storage": "url",
+                                    "name": "WhatsApp Image 2024-09-16 at 11.12.20_2d19a12d-c3ad9015-a8a7-4cd8-9e53-5cc948fdd6c0.jpg",
+                                    "url": "../../static/WhatsApp Image 2024-09-16 at 11.12.20_2d19a12d.jpg",
+                                    "size": 47428,
+                                    "type": "image/jpeg",
+                                    "data": {
+                                        "url": "../../static/WhatsApp Image 2024-09-16 at 11.12.20_2d19a12d.jpg",
+                                        "baseUrl": "https://api.form.io",
+                                        "project": "",
+                                        "form": ""
+                                    },
+                                    "originalName": "WhatsApp Image 2024-09-16 at 11.12.20_2d19a12d.jpg",
+                                    "hash": ""
+                                }],
+                                "SmallLogo": []
+                            }]
+                        },
+                        {
+                            "type": "htmlelement",
+                            "tag": "p",
+                            "label": "Upload your Favicon",
+                            "content": "<strong>Upload your Favicon</strong><br>Supports .ico and max upload size 4MB"
+                        },
+                        {
+                            "type": "editgrid",
+                            "key": "faviconGrid",
+                            "label": "Favicon Settings",
+                            "addAnotherPosition": "bottom",
+                            "maxLength": 1,
+                            "components": [{
+                                    "key": "LargeFav",
+                                    "url": "/builder/form_io_file_upload/",
+                                    "type": "file",
+                                    "image": true,
+                                    "input": true,
+                                    "label": "Large favicon 32px x 32px",
+                                    "storage": "url",
+                                    "fileTypes": [{
+                                        "label": "Image Files",
+                                        "value": ".ico"
+                                    }],
+                                    "fileMaxSize": "4MB"
+                                },
+                                {
+                                    "key": "SmallFav",
+                                    "url": "/builder/form_io_file_upload/",
+                                    "type": "file",
+                                    "image": true,
+                                    "input": true,
+                                    "label": "Small favicon 16px x 16px",
+                                    "storage": "url",
+                                    "fileTypes": [{
+                                        "label": "Image Files",
+                                        "value": ".ico"
+                                    }],
+                                    "fileMaxSize": "4MB"
+                                }
+                            ],
+                            "validate": {
+                                "maxLength": 1
+                            },
+                            "addAnother": false,
+                            "defaultValue": []
+                        }
+                    ],
+                    "collapsible": true
+                }]
+            },
+            {
+                "tag": "p",
+                "type": "htmlelement",
+                "content": "<strong>Landing page settings </strong><br><br> <strong>Headline & sub headline</strong>"
+            },
+            {
+                "key": "headline",
+                "type": "textfield",
+                "input": true,
+                "label": "Headline",
+                "validate": {
+                    "required": true
+                },
+                "defaultValue": "Maximize Your Reach"
+            },
+            {
+                "key": "sub headline",
+                "type": "textfield",
+                "input": true,
+                "label": "Sub headline",
+                "validate": {
+                    "required": true
+                },
+                "defaultValue": "with the largest inventory of digital hoardings"
+            },
+            {
+                "tag": "p",
+                "type": "htmlelement",
+                "label": "Upload you Fav logo",
+                "content": "<strong>Page Background</strong><br> Supports .jpeg,.png and max upload size 4MB"
+            },
+            {
+                "key": "Backgroundimage",
+                "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                "type": "file",
+                "input": true,
+                "label": "Upload Page background",
+                "storage": "url",
+                "fileTypes": [{
+                        "label": "JPEG",
+                        "value": ".jpeg"
+                    },
+                    {
+                        "label": "JPG",
+                        "value": ".jpg"
+                    },
+                    {
+                        "label": "PNG",
+                        "value": ".png"
+                    },
+                    {
+                        "label": "GIF",
+                        "value": ".gif"
+                    }
+                ],
+                "fileMaxSize": "4MB",
+                "defaultValue": [{
+                    "storage": "url",
+                    "name": "2023-01-12-12.56.46-1-9a095ba3-f6d5-4563-8486-c0925229fc65.gif",
+                    "url": "../../static/2023-01-12-12.56.46-1.gif",
+                    "size": 2179728,
+                    "type": "image/gif",
+                    "data": {
+                        "url": "../../static/2023-01-12-12.56.46-1.gif",
+                        "baseUrl": "https://api.form.io",
+                        "project": "",
+                        "form": ""
+                    },
+                    "originalName": "2023-01-12-12.56.46-1.gif",
+                    "hash": "",
+                    "fileType": "JPEG"
+                }]
+            },
+            {
+                "type": "panel",
+                "title": "Clients we have served",
+                "components": [{
+                        "tag": "p",
+                        "type": "htmlelement",
+                        "content": "Upload icons for clients you have served"
+                    },
+                    {
+                        "key": "ClientsIconsEntries",
+                        "type": "editgrid",
+                        "input": true,
+                        "label": "ClientsServed",
+                        "components": [{
+                            "key": "ClientIcons",
+                            "url": "/builder/form_io_file_upload/",
+                            "type": "file",
+                            "image": true,
+                            "input": true,
+                            "label": "Upload client icons",
+                            "storage": "url",
+                            "validate": {
+                                "custom": "valid = (input && input.length <= 6); if (!valid) { throw new Error('You can only upload up to 6 files.'); }"
+                            },
+                            "fileTypes": [{
+                                    "label": "Image",
+                                    "value": ".jpg"
+                                },
+                                {
+                                    "label": "Image",
+                                    "value": ".png"
+                                }
+                            ],
+                            "fileMaxSize": "5MB"
+                        }],
+                        "defaultValue": [{
+                                "ClientIcons": [{
+                                    "storage": "url",
+                                    "name": "Screenshot -39--60987ab4-1053-4e3a-b17c-4cc4d98f0118.png",
+                                    "url": "../../static/Screenshot (39).png",
+                                    "size": 2172180,
+                                    "type": "image/png",
+                                    "data": {
+                                        "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                        "baseUrl": "https://api.form.io",
+                                        "project": "",
+                                        "form": ""
+                                    },
+                                    "originalName": "Screenshot (39).png",
+                                    "hash": ""
+                                }]
+                            },
+                            {
+                                "ClientIcons": [{
+                                    "storage": "url",
+                                    "name": "Screenshot -39--72952f6a-2eb5-46c2-9871-3074a3bf9fc8.png",
+                                    "url": "../../static/Screenshot (39)_m8xr7rm.png",
+                                    "size": 2172180,
+                                    "type": "image/png",
+                                    "data": {
+                                        "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                        "baseUrl": "https://api.form.io",
+                                        "project": "",
+                                        "form": ""
+                                    },
+                                    "originalName": "Screenshot (39).png",
+                                    "hash": ""
+                                }]
+                            }
+
+                        ]
+                    }
+                ],
+                "collapsible": true
+            },
+            {
+                "type": "panel",
+                "title": "Testimonials",
+                "maxLength": 3,
+                "components": [{
+                        "tag": "p",
+                        "type": "htmlelement",
+                        "content": "Add testimonials content here"
+                    },
+                    {
+                        "key": "uploadCount",
+                        "tag": "p",
+                        "type": "htmlelement",
+                        "content": "max 3 can be uploaded"
+                    },
+                    {
+                        "key": "testimonials",
+                        "type": "container",
+                        "components": [{
+                            "components": [{
+                                "key": "employeeInformation",
+                                "type": "editgrid",
+                                "input": true,
+                                "label": "<strong>Employee Information</strong>",
+                                "maxLength": 3,
+                                "components": [{
+                                        "key": "fullname",
+                                        "type": "textfield",
+                                        "input": true,
+                                        "label": "Full name",
+                                        "defaultValue": ""
+                                    },
+                                    {
+                                        "key": "designation",
+                                        "type": "textfield",
+                                        "input": true,
+                                        "label": "Designation",
+                                        "defaultValue": ""
+                                    },
+                                    {
+                                        "key": "companyname",
+                                        "type": "textfield",
+                                        "input": true,
+                                        "label": "Company name",
+                                        "defaultValue": ""
+                                    },
+                                    {
+                                        "tag": "p",
+                                        "type": "htmlelement",
+                                        "content": "Testimonials text"
+                                    },
+                                    {
+                                        "key": "TestimonialsText",
+                                        "type": "textarea",
+                                        "input": true,
+                                        "label": "What Client says ",
+                                        "editor": "quill",
+                                        "customClass": "hide-inner-textarea"
+                                    },
+                                    {
+                                        "key": "ClientImage",
+                                        "url": "/builder/form_io_file_upload/",
+                                        "type": "file",
+                                        "image": true,
+                                        "input": true,
+                                        "label": "Upload client image",
+                                        "storage": "url",
+                                        "className": "ClientIconImages",
+                                        "validate": {
+                                            "custom": "valid = (input && input.length <= 6); if (!valid) { throw new Error('You can only upload up to 6 files.'); }"
+                                        },
+                                        "fileTypes": [{
+                                                "label": "Image",
+                                                "value": ".jpg"
+                                            },
+                                            {
+                                                "label": "Image",
+                                                "value": ".png"
+                                            }
+                                        ],
+                                        "fileMaxSize": "5MB"
+                                    }
+                                ],
+                                "validate": {
+                                    "maxLength": 3
+                                },
+                                "removeRowButston": true,
+                                "addAnotherPosition": "bottom"
+                            }]
+                        }],
+                        "defaultValue": {
+                            "testimonialEntries": [{
+                                    "ClientImage": [{
+                                        "storage": "url",
+                                        "name": "istockphoto-875947362-612x612-e6414c0a-af1b-413e-b9c3-5342b1e66bf5.jpg",
+                                        "url": "../../static/istockphoto-875947362-612x612_obX2BNA.jpg",
+                                        "size": 12977,
+                                        "type": "image/jpeg",
+                                        "data": {
+                                            "url": "../../static/istockphoto-875947362-612x612_obX2BNA.jpg",
+                                            "baseUrl": "https://api.form.io",
+                                            "project": "",
+                                            "form": ""
+                                        },
+                                        "originalName": "istockphoto-875947362-612x612.jpg",
+                                        "hash": ""
+                                    }]
+                                },
+                                {
+                                    "ClientImage": [{
+                                        "storage": "url",
+                                        "name": "moving_walls_logo-4d06bd51-bf63-4996-8355-275cc309f2fc.jpg",
+                                        "url": "../../static/moving_walls_logo_Ej9wvAC.jpg",
+                                        "size": 14408,
+                                        "type": "image/jpeg",
+                                        "data": {
+                                            "url": "../../static/moving_walls_logo_Ej9wvAC.jpg",
+                                            "baseUrl": "https://api.form.io",
+                                            "project": "",
+                                            "form": ""
+                                        },
+                                        "originalName": "moving_walls_logo.jpg",
+                                        "hash": ""
+                                    }]
+                                },
+                                {
+                                    "ClientImage": [{
+                                        "storage": "url",
+                                        "name": "VanigamLogo-f0aaf5b1-5dda-4d33-bb47-2d6f1151458c.jpg",
+                                        "url": "../../static/VanigamLogo_u4SJSvG.jpg",
+                                        "size": 47428,
+                                        "type": "image/jpeg",
+                                        "data": {
+                                            "url": "../../static/VanigamLogo_u4SJSvG.jpg",
+                                            "baseUrl": "https://api.form.io",
+                                            "project": "",
+                                            "form": ""
+                                        },
+                                        "originalName": "VanigamLogo.jpg",
+                                        "hash": ""
+                                    }]
+                                }
+                            ],
+                            "employeeInformation": [{
+                                    "fullname": "Sarah Johnson",
+                                    "designation": "CEO",
+                                    "companyname": "Adidas",
+                                    "TestimonialsText": "<p>\"<span style=\"color: rgb(93, 97, 108); background-color: rgb(251, 251, 251);\">Our visibility skyrocketed, and we’ve seen a significant increase in customer inquiries. The team is professional and supportive, making the process seamless from start to finish!\"</span></p>",
+                                    "ClientImage": [{
+                                        "storage": "url",
+                                        "name": "sarah john-6a92f606-6c19-4afa-8c58-39a23ed0bf41.jpg",
+                                        "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                        "size": 46515,
+                                        "type": "image/jpeg",
+                                        "data": {
+                                            "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                            "baseUrl": "https://api.form.io",
+                                            "project": "",
+                                            "form": ""
+                                        },
+                                        "originalName": "sarah john.jpg",
+                                        "hash": ""
+                                    }]
+                                },
+                                {
+                                    "fullname": "Hannah Schmitt",
+                                    "designation": "Business Consultant",
+                                    "companyname": "Mango",
+                                    "TestimonialsText": "<p><span style=\"background-color: rgb(251, 251, 251); color: rgb(93, 97, 108);\">Our visibility skyrocketed, and we’ve seen a significant increase in customer inquiries.</span></p>",
+                                    "ClientImage": [{
+                                        "storage": "url",
+                                        "name": "Hannah Schmitt-8fffdbee-6432-4579-9363-01e863fc11b5.jpg",
+                                        "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                        "size": 27195,
+                                        "type": "image/jpeg",
+                                        "data": {
+                                            "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                            "baseUrl": "https://api.form.io",
+                                            "project": "",
+                                            "form": ""
+                                        },
+                                        "originalName": "Hannah Schmitt.jpg",
+                                        "hash": ""
+                                    }]
+                                },
+                                {
+                                    "fullname": "Johnson",
+                                    "designation": "CEO",
+                                    "companyname": "Purple",
+                                    "TestimonialsText": "<p><span style=\"background-color: rgb(251, 251, 251); color: rgb(93, 97, 108);\">The team is professional and supportive, making the process seamless from start to finish</span></p>",
+                                    "ClientImage": [{
+                                        "storage": "url",
+                                        "name": "johnson-ecdffed9-0466-43a2-b61c-368c5207a016.jpg",
+                                        "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                        "size": 8864,
+                                        "type": "image/jpeg",
+                                        "data": {
+                                            "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                            "baseUrl": "https://api.form.io",
+                                            "project": "",
+                                            "form": ""
+                                        },
+                                        "originalName": "johnson.jpg",
+                                        "hash": ""
+                                    }]
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "collapsible": true
+            },
+            {
+                "key": "Contactusform",
+                "display": "form",
+                "components": [{
+                    "key": "contactUsForm",
+                    "type": "panel",
+                    "input": false,
+                    "title": "Contact us form",
+                    "components": [{
+                            "key": "contactus",
+                            "tag": "p",
+                            "type": "htmlelement",
+                            "input": false,
+                            "content": "Add contact us  content here"
+                        },
+                        {
+                            "key": "Contactheadline",
+                            "type": "textfield",
+                            "input": true,
+                            "label": "Headline",
+                            "suffix": "/45",
+                            "validate": {
+                                "maxLength": 45
+                            },
+                            "placeholder": "Line 1",
+                            "defaultValue": "Contact us",
+                            "showCharCount": true,
+                            "showWordCount": true
+                        },
+                        {
+                            "key": "contactsubHeadline",
+                            "type": "textfield",
+                            "input": true,
+                            "label": "Sub headline",
+                            "suffix": "/45",
+                            "validate": {
+                                "maxLength": 45
+                            },
+                            "placeholder": "Line 1",
+                            "defaultValue": "Within 24hrs your request  will be Done ",
+                            "showCharCount": true,
+                            "showWordCount": true
+                        },
+                        {
+                            "key": "contanctusClientImage",
+                            "url": "/builder/form_io_file_upload/",
+                            "type": "file",
+                            "image": true,
+                            "input": true,
+                            "label": "Upload Contact us background image",
+                            "storage": "url",
+                            "validate": {
+                                "custom": "valid = (input && input.length <= 6); if (!valid) { throw new Error('You can only upload up to 6 files.'); }"
+                            },
+                            "fileTypes": [{
+                                    "label": "Image",
+                                    "value": ".jpg"
+                                },
+                                {
+                                    "label": "Image",
+                                    "value": ".png"
+                                }
+                            ],
+                            "fileMaxSize": "5MB",
+                            "defaultValue": [{
+                                "storage": "url",
+                                "name": "images -8--3e5bfedb-cbbb-477e-bdcb-af9945b23c15.png",
+                                "url": "../../static/images (8).png",
+                                "size": 3127,
+                                "type": "image/png",
+                                "data": {
+                                    "url": "https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                                    "baseUrl": "https://api.form.io",
+                                    "project": "",
+                                    "form": ""
+                                },
+                                "originalName": "images (8).png",
+                                "hash": ""
+                            }]
+                        }
+                    ],
+                    "collapsible": true
+                }]
+            },
+            {
+                "key": "address",
+                "type": "textfield",
+                "input": true,
+                "label": "<strong>Address</strong>",
+                "defaultValue": "chennai, india "
+            },
+            {
+                "key": "WebsiteUrl",
+                "type": "textfield",
+                "input": true,
+                "label": "<strong>Website Url</strong>",
+                "defaultValue": "MO"
+            },
+            {
+                "key": "email",
+                "type": "email",
+                "input": true,
+                "label": "<strong>Email</strong>",
+                "validate": {
+                    "required": true
+                },
+                "defaultValue": "vanigam@gmail.com"
+            },
+            {
+                "key": "SocialmediaLinks",
+                "display": "form",
+                "components": [{
+                    "key": "socialMediaLinks",
+                    "type": "panel",
+                    "input": false,
+                    "label": "Social media links",
+                    "title": "Social media links",
+                    "components": [{
+                            "key": "facebookLink",
+                            "type": "textfield",
+                            "input": true,
+                            "label": "Facebook",
+                            "prefix": "<i class='fab fa-facebook-f'></i>",
+                            "validate": {
+                                "required": true
+                            },
+                            "placeholder": "Paste your Facebook link here",
+                            "defaultValue": "https://www.facebook.com/"
+                        },
+                        {
+                            "key": "twitterLink",
+                            "type": "textfield",
+                            "input": true,
+                            "label": "Twitter",
+                            "prefix": "<i class= 'fab fa-twitter'></i>",
+                            "validate": {
+                                "required": true
+                            },
+                            "placeholder": "Paste your Twitter link here",
+                            "defaultValue": "https://x.com/tarak9999?"
+                        },
+                        {
+                            "key": "instagramLink",
+                            "type": "textfield",
+                            "input": true,
+                            "label": "Instagram",
+                            "prefix": "<i class='fab fa-instagram'></i>",
+                            "validate": {
+                                "required": true
+                            },
+                            "placeholder": "Paste your Instagram link here",
+                            "defaultValue": "https://www.instagram.com/"
+                        },
+                        {
+                            "key": "linkedInLink",
+                            "type": "textfield",
+                            "input": true,
+                            "label": "Instagram",
+                            "prefix": "<i class='fab fa-linkedin'></i>",
+                            "validate": {
+                                "required": true
+                            },
+                            "placeholder": "Paste your linkedin link here",
+                            "defaultValue": "https://www.linkedin.com/"
+                        }
+                    ],
+                    "collapsible": true
+                }]
+            },
+            {
+                "type": "button",
+                "label": "Save Add Content",
+                "theme": "primary",
+                "action": "submit"
+            }
+        ]
+    },
+    {
+        "name": "Contact Us",
+        "fields": [{
+                "key": "firstName",
+                "type": "textfield",
+                "input": true,
+                "label": "First Name",
+                "maxLength": 45,
+                "placeholder": "Example: john"
+            },
+            {
+                "key": "lastName",
+                "type": "textfield",
+                "input": true,
+                "label": "Last Name",
+                "maxLength": 80,
+                "placeholder": "Example: Smith"
+            },
+            {
+                "key": "businessName",
+                "type": "textfield",
+                "input": false,
+                "label": "Business Name",
+                "placeholder": "e.g. Big outdoor services pvt. ltd."
+            },
+            {
+                "key": "email",
+                "type": "email",
+                "input": true,
+                "label": "Email",
+                "placeholder": "Example@mail.com",
+                "defaultValue": "vanigam@gmail.com"
+            },
+            {
+                "key": "phoneNumber",
+                "type": "phoneNumber",
+                "input": false,
+                "label": "Phone Number",
+                "prefix": "+91",
+                "placeholder": "Office or personal contact number"
+            },
+            {
+                "type": "button",
+                "label": "Save Add Content",
+                "theme": "primary",
+                "action": "submit"
+            }
+        ]
+    },
+    {
+        "name": "Privacy Policy",
+        "fields": [{
+            "components": [{
+                "type": "panel",
+                "title": "Upload Privacy Policy",
+                "components": [{
+                        "tag": "p",
+                        "type": "htmlelement",
+                        "content": "Supports .doc files & max upload size 4 MB"
+                    },
+                    {
+                        "key": "privacyPolicyDocument",
+                        "url": "/builder/form_io_file_upload/",
+                        "type": "file",
+                        "input": true,
+                        "label": "Upload your Privacy Policy document",
+                        "storage": "url",
+                        "fileTypes": [{
+                            "label": "Document",
+                            "value": ".doc"
+                        }],
+                        "fileMaxSize": "4MB",
+                        "defaultValue": []
+                    },
+                    {
+                        "tag": "p",
+                        "type": "htmlelement",
+                        "content": "or"
+                    },
+                    {
+                        "key": "privacyPolicyTemplate",
+                        "type": "textarea",
+                        "input": true,
+                        "label": "Create or edit your Privacy Policy template",
+                        "editor": "quill",
+                        "customClass": "hide-inner-textarea",
+                        "defaultValue": "<p>hi</p>"
+                    },
+                    {
+                        "type": "button",
+                        "label": "Save Add Content",
+                        "theme": "primary",
+                        "action": "submit"
+                    }
+                ],
+                "collapsible": true
+            }]
+        }]
+    },
+    {
+        "name": "Terms & conditions",
+        "fields": [{
+                "components": [{
+                    "type": "panel",
+                    "title": "Upload Terms & conditions",
+                    "components": [{
+                            "tag": "p",
+                            "type": "htmlelement",
+                            "content": "Supports .doc files & max upload size 4 MB"
+                        },
+                        {
+                            "key": "terms_conditionsDocument",
+                            "url": "/builder/form_io_file_upload/",
+                            "type": "file",
+                            "input": true,
+                            "label": "Upload your Terms & conditions document",
+                            "storage": "url",
+                            "fileTypes": [{
+                                "label": "Document",
+                                "value": ".doc"
+                            }],
+                            "fileMaxSize": "4MB",
+                            "defaultValue": [{
+                                "storage": "url",
+                                "name": "lorem-3ac13200-32fc-4025-8a14-86a78603df24.txt",
+                                "url": "../../static/lorem_gGzVv0G.txt",
+                                "size": 227,
+                                "type": "text/plain",
+                                "data": {
+                                    "url": "../../static/lorem_gGzVv0G.txt",
+                                    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eum eligendi? Vitae vero, maiores nihil consequatur, officiis recusandae sapiente delectus quod nesciunt maxime error. Atque accusamus optio officia ea earum.",
+                                    "baseUrl": "https://api.form.io",
+                                    "project": "",
+                                    "form": ""
+                                },
+                                "originalName": "lorem.txt",
+                                "hash": "",
+                                "fileType": "Document"
+                            }]
+                        },
+                        {
+                            "tag": "p",
+                            "type": "htmlelement",
+                            "content": "or"
+                        },
+                        {
+                            "as": "html",
+                            "key": "TermsText",
+                            "type": "textarea",
+                            "input": true,
+                            "label": "Enter/edit terms & conditions manually",
+                            "editor": "quill",
+                            "customClass": "hide-inner-textarea",
+                            "defaultValue": "<p>hai</p>"
+                        }
+                    ],
+                    "collapsible": true
+                }]
+            },
+            {
+                "type": "button",
+                "label": "Save Add Content",
+                "theme": "primary",
+                "action": "submit"
+            }
+        ]
+    },
+    {
+        "name": "Alert & Notification",
+        "fields": [{
+            "components": [{
+                "type": "panel",
+                "title": "Alerts and Notification Creation",
+                "components": [{
+                        "tag": "p",
+                        "type": "htmlelement",
+                        "content": "Email Template"
+                    },
+                    {
+                        "key": "headerImage",
+                        "type": "file",
+                        "image": true,
+                        "input": true,
+                        "label": "Upload your Header Image",
+                        "storage": "url",
+                        "fileTypes": [{
+                            "label": "Document",
+                            "value": ".jpeg"
+                        }],
+                        "fileMaxSize": "4MB",
+                        "defaultValue": []
+                    },
+                    {
+                        "key": "headerLogo",
+                        "type": "file",
+                        "image": true,
+                        "input": true,
+                        "label": "Upload your header logo",
+                        "storage": "url",
+                        "fileTypes": [{
+                            "label": "Document",
+                            "value": ".jpeg"
+                        }],
+                        "fileMaxSize": "4MB",
+                        "defaultValue": []
+                    },
+                    {
+                        "tag": "p",
+                        "type": "htmlelement",
+                        "content": "Header Text"
+                    },
+                    {
+                        "key": "HeaderTextEmail",
+                        "type": "textarea",
+                        "input": true,
+                        "label": "Headline text for the email. This is also optional",
+                        "editor": "quill",
+                        "customClass": "hide-inner-textarea",
+                        "defaultValue": "<p><br></p>"
+                    },
+                    {
+                        "tag": "p",
+                        "type": "htmlelement",
+                        "content": "Body Text"
+                    },
+                    {
+                        "key": "HeaderTextBody",
+                        "type": "textarea",
+                        "input": true,
+                        "label": "Specific fields in body text based on the template email",
+                        "editor": "quill",
+                        "customClass": "hide-inner-textarea",
+                        "defaultValue": "<p><br></p>"
+                    },
+                    {
+                        "key": "preview",
+                        "type": "button",
+                        "label": "Preview",
+                        "customClass": "preview-button",
+                        "defaultValue": false
+                    },
+                    {
+                        "type": "panel",
+                        "title": "WhatsApp Template",
+                        "components": [{
+                                "tag": "p",
+                                "type": "htmlelement",
+                                "content": "WhatsApp Template"
+                            },
+                            {
+                                "key": "addWhatsAppTemplate",
+                                "type": "button",
+                                "label": "+ Add Template",
+                                "customClass": "add-template-button",
+                                "defaultValue": false
+                            }
+                        ],
+                        "collapsible": true
+                    },
+                    {
+                        "type": "panel",
+                        "title": "SMS Template",
+                        "components": [{
+                                "tag": "p",
+                                "type": "htmlelement",
+                                "content": "SMS Template"
+                            },
+                            {
+                                "key": "addSMSTemplate",
+                                "type": "button",
+                                "label": "+ Add Template",
+                                "customClass": "add-template-button",
+                                "defaultValue": false
+                            }
+                        ],
+                        "collapsible": true
+                    },
+                    {
+                        "type": "button",
+                        "label": "Save Add Content",
+                        "theme": "primary",
+                        "action": "submit"
+                    }
+                ],
+                "collapsible": true
+            }]
+        }]
+    }
+]

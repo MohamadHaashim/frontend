@@ -1,0 +1,33 @@
+
+
+[
+  {
+    "name": "FAQ",
+    "to": "/faq",
+    "icon": "FAQ-icon",
+    "active": false,
+    "submenu": [{}]
+  },
+{
+  "name": "Resources",
+  "to": "#",
+  "icon": "resources-icon",
+  "active": false,
+  "submenu": [{}]
+},
+{
+  "name": "Help",
+  "to": "#",
+  "icon": "help-icon",
+  "active": false,
+  "submenu": [{}]
+},
+
+{
+  "name": "Settings",
+  "to": "#",
+  "icon": "settings-icon",
+  "active": false,
+  "submenu": [{}]
+}
+]

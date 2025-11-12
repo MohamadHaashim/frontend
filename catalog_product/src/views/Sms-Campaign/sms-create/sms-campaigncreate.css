@@ -1,0 +1,120 @@
+.promotionSMS {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.promotionSMS-container {
+    display: flex;
+    gap: 20px;
+    margin-top: -28px;
+}
+
+.promotionSMS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sms-radio {
+    margin-top: 10px;
+}
+
+.sms-label {
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.sms-label:hover {
+    color: #007bff;
+}
+
+.icon-text-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 8px;
+}
+
+.header {
+    color: "#ccc";
+    font-size: 15px;
+}
+
+.media-upload-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px 12px;
+    gap: 10px;
+    background: #fff;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.media-upload-input {
+    display: none;
+}
+
+.media-upload-label {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    color: #aeadad;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.icon-left {
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.media-upload-button {
+    display: flex;
+    align-items: center;
+    padding: 6px 14px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.media-upload-button:hover {
+    background-color: #e0e0e0;
+}
+
+.header {
+    font-size: small;
+    font-weight: 300;
+    color: #979696;
+}
+
+
+/* .smscard{
+    padding: 20px;
+    background: #edecec;
+    border-radius: 20px;  
+  } */
+
+.smscard {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.textcolor {
+    color: #71717A;
+    font-weight: 500;
+    font-size: small
+}

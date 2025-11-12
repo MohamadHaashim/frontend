@@ -1,0 +1,625 @@
+<h6 class="heading-small text-muted mb-4">Personal Details</h6>
+<form
+  [formGroup]="addStudentPersonalForm"
+  (ngSubmit)="addStudentPersonalSubmit()"
+>
+  <div class="row field-block">
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="gender">Gender</label>
+        <div
+          class="custom-radio"
+          [ngClass]="{ 'is-invalid': perSubmitted && perf['gender'].errors }"
+        >
+          <label for="gender1">
+            <input
+              type="radio"
+              id="gender1"
+              name="gender"
+              value="Male"
+              formControlName="gender"
+            />
+            Male</label
+          >
+          <label for="gender2">
+            <input
+              type="radio"
+              id="gender2"
+              name="gender"
+              value="Female"
+              [checked]="true"
+              formControlName="gender"
+            />
+            Female</label
+          >
+          <label for="gender3">
+            <input
+              type="radio"
+              id="gender3"
+              name="gender"
+              value="Other"
+              [checked]="true"
+              formControlName="gender"
+            />
+            Other</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="category">Category</label>
+        <select id="category" class="form-control" formControlName="category">
+          <option value="" disabled selected>Choose Category</option>
+          <option *ngFor="let category of categoryList" [ngValue]="category.id">
+            {{ category.category_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="caste">Caste</label>
+        <input
+          class="form-control"
+          placeholder="Enter Caste"
+          type="text"
+          id="caste"
+          maxlength="200"
+          formControlName="caste"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="religion">Religion</label>
+        <select id="religion" class="form-control" formControlName="religion">
+          <option value="" disabled selected>Choose Religion</option>
+          <option *ngFor="let religion of religionList" [ngValue]="religion.id">
+            {{ religion.religion_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="economicCategory"
+          >Economic Category</label
+        >
+        <div class="custom-radio">
+          <label for="economicCategory1">
+            <input
+              type="radio"
+              id="economicCategory1"
+              name="economicCategory"
+              value="BPL"
+              formControlName="economicCategory"
+            />
+            BPL</label
+          >
+          <label for="economicCategory2">
+            <input
+              type="radio"
+              id="economicCategory2"
+              name="economicCategory"
+              value="APL"
+              [checked]="true"
+              formControlName="economicCategory"
+            />
+            APL</label
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="bloodGroup">Blood Group</label>
+        <select
+          id="bloodGroup"
+          class="form-control"
+          formControlName="bloodGroup"
+        >
+          <option value="" disabled selected>Choose Blood Group</option>
+          <option
+            *ngFor="let bloodGroup of bloodGroupList"
+            [ngValue]="bloodGroup.id"
+          >
+            {{ bloodGroup.blood_group_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="ambition">Ambition</label>
+        <input
+          class="form-control"
+          placeholder="Enter Ambition"
+          type="text"
+          id="ambition"
+          maxlength="200"
+          formControlName="ambition"
+        />
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="motherTongue"
+          >Mother Tongue</label
+        >
+        <select
+          id="motherTongue"
+          class="form-control"
+          formControlName="motherTongue"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['motherTongue'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Mother Tongue</option>
+          <option
+            *ngFor="let language of motherTonqueList"
+            [ngValue]="language.id"
+          >
+            {{ language.language_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="hobbies">Hobbies</label>
+        <angular2-multiselect
+          [data]="hobbiesList"
+          [(ngModel)]="selectedHobbiesItems"
+          [settings]="dropdownHobbiesSettings"
+          (onSelect)="onItemSelect($event)"
+          (onDeSelect)="OnItemDeSelect($event)"
+          (onSelectAll)="onSelectAll($event)"
+          (onDeSelectAll)="onDeSelectAll($event)"
+          formControlName="hobbies"
+        >
+        </angular2-multiselect>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="culturalTalents"
+          >Cultural talents</label
+        >
+        <angular2-multiselect
+          [data]="culturalTalentsList"
+          [(ngModel)]="selectedTalentsItems"
+          [settings]="dropdownTalentsSettings"
+          (onSelect)="onItemSelect($event)"
+          (onDeSelect)="OnItemDeSelect($event)"
+          (onSelectAll)="onSelectAll($event)"
+          (onDeSelectAll)="onDeSelectAll($event)"
+          formControlName="culturalTalents"
+        >
+        </angular2-multiselect>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="howDoYouCome"
+          >How do you come to school</label
+        >
+        <angular2-multiselect
+          [data]="howDoYouComeList"
+          [(ngModel)]="selectedHowDoYouComeItems"
+          [settings]="dropdownHowDoYouComeSettings"
+          (onSelect)="onItemSelect($event)"
+          (onDeSelect)="OnItemDeSelect($event)"
+          (onSelectAll)="onSelectAll($event)"
+          (onDeSelectAll)="onDeSelectAll($event)"
+          formControlName="howDoYouCome"
+        >
+        </angular2-multiselect>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="sports">Sports</label>
+        <angular2-multiselect
+          [data]="sportsList"
+          [(ngModel)]="selectedSportsItems"
+          [settings]="dropdownSportsSettings"
+          (onSelect)="onItemSelect($event)"
+          (onDeSelect)="OnItemDeSelect($event)"
+          (onSelectAll)="onSelectAll($event)"
+          (onDeSelectAll)="onDeSelectAll($event)"
+          formControlName="sports"
+        >
+        </angular2-multiselect>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="strength">Strength</label>
+        <input
+          class="form-control"
+          placeholder="Enter Strength"
+          type="text"
+          id="strength"
+          maxlength="200"
+          formControlName="strength"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="weakness">Weakness</label>
+        <input
+          class="form-control"
+          placeholder="Enter Weakness"
+          type="text"
+          id="weakness"
+          maxlength="200"
+          formControlName="weakness"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="languagesKnown"
+          >Languages Known</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Languages Known"
+          type="text"
+          id="languagesKnown"
+          maxlength="200"
+          formControlName="languagesKnown"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="otherSkills">Other Skills</label>
+        <input
+          class="form-control"
+          placeholder="Enter Other Skills"
+          type="text"
+          id="otherSkills"
+          maxlength="200"
+          formControlName="otherSkills"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="differnetlyAbled"
+          >Differnetly Abled</label
+        >
+        <div
+          class="custom-radio"
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['differnetlyAbled'].errors
+          }"
+        >
+          <label for="differnetlyAbled1">
+            <input
+              type="radio"
+              id="differnetlyAbled1"
+              name="differnetlyAbled"
+              value="Yes"
+              formControlName="differnetlyAbled"
+            />
+            Yes</label
+          >
+          <label for="differnetlyAbled2">
+            <input
+              type="radio"
+              id="differnetlyAbled2"
+              name="differnetlyAbled"
+              value="No"
+              [checked]="true"
+              formControlName="differnetlyAbled"
+            />
+            No</label
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <p><strong>Resident Details</strong></p>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="residentState">State</label>
+        <select
+          id="residentState"
+          class="form-control"
+          formControlName="residentState"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['residentState'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose State</option>
+          <option *ngFor="let state of stateList" [ngValue]="state.id">
+            {{ state.state_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="residentDistrict"
+          >District</label
+        >
+        <select
+          id="residentDistrict"
+          class="form-control"
+          formControlName="residentDistrict"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['residentDistrict'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose District</option>
+          <option *ngFor="let district of districtList" [ngValue]="district.id">
+            {{ district.district_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="residentTaluk">Taluk</label>
+        <select
+          id="residentTaluk"
+          class="form-control"
+          formControlName="residentTaluk"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['residentTaluk'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Taluk</option>
+          <option *ngFor="let taluk of talukList" [ngValue]="taluk.id">
+            {{ taluk.taluk_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="residentPanchayat"
+          >Panchayat</label
+        >
+        <select
+          id="residentPanchayat"
+          class="form-control"
+          formControlName="residentPanchayat"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['residentPanchayat'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Panchayat</option>
+          <option
+            *ngFor="let panchayat of panchayatList"
+            [ngValue]="panchayat.id"
+          >
+            {{ panchayat.panchayat_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="residentWard">Ward</label>
+        <select
+          id="residentWard"
+          class="form-control"
+          formControlName="residentWard"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['residentWard'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Ward</option>
+          <option *ngFor="let ward of wardList" [ngValue]="ward.id">
+            {{ ward.ward_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="residentOtherDetail"
+          >Other details</label
+        >
+        <textarea
+          class="form-control"
+          placeholder="Enter Other Details"
+          type="text"
+          id="residentOtherDetail"
+          maxlength="200"
+          formControlName="residentOtherDetail"
+        ></textarea>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <p><strong>Father</strong></p>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherSalutation"
+          >Salutation</label
+        >
+        <select
+          id="fatherSalutation"
+          class="form-control"
+          formControlName="fatherSalutation"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['fatherSalutation'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Salutation</option>
+          <option
+            *ngFor="let salutation of salutationForMale"
+            [ngValue]="salutation.salutation_name"
+          >
+            {{ salutation.salutation_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherName">Name</label>
+        <input
+          class="form-control"
+          placeholder="Enter Father Name"
+          type="text"
+          id="fatherName"
+          maxlength="200"
+          formControlName="fatherName"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['fatherName'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherOccupation"
+          >Occupation</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Father Occupation"
+          type="text"
+          id="fatherOccupation"
+          maxlength="200"
+          formControlName="fatherOccupation"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['fatherOccupation'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="fatherOtherDetails"
+          >Other details</label
+        >
+        <textarea
+          class="form-control"
+          placeholder="Enter Other Details"
+          type="text"
+          id="fatherOtherDetails"
+          maxlength="200"
+          formControlName="fatherOtherDetails"
+        ></textarea>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <p><strong>Mother</strong></p>
+    </div>
+    <div class="col-lg-2">
+      <div class="form-group">
+        <label class="form-control-label" for="motherSalutation"
+          >Salutation</label
+        >
+        <select
+          id="motherSalutation"
+          class="form-control"
+          formControlName="motherSalutation"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['motherSalutation'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Salutation</option>
+          <option
+            *ngFor="let salutation of salutationForFemale"
+            [ngValue]="salutation.salutation_name"
+          >
+            {{ salutation.salutation_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="motherName">Name</label>
+        <input
+          class="form-control"
+          placeholder="Enter Mother Name"
+          type="text"
+          id="motherName"
+          maxlength="200"
+          formControlName="motherName"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['motherName'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="motherOccupation"
+          >Occupation</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Mother Occupation"
+          type="text"
+          id="motherOccupation"
+          maxlength="200"
+          formControlName="motherOccupation"
+          required
+          [ngClass]="{
+            'is-invalid': perSubmitted && perf['motherOccupation'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="motherOtherDetails"
+          >Other details</label
+        >
+        <textarea
+          class="form-control"
+          placeholder="Enter Other Details"
+          type="text"
+          id="motherOtherDetails"
+          maxlength="200"
+          formControlName="motherOtherDetails"
+        ></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row field-block">
+    <div class="col-lg-4">
+      <div class="form-group">
+        <label class="form-control-label" for="aadharNo">Aadhar No</label>
+        <input
+          class="form-control"
+          placeholder="Enter Aadhar No"
+          type="text"
+          id="aadharNo"
+          maxlength="200"
+          formControlName="aadharNo"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row f1-buttons">
+    <div class="col-lg-12 btn-next-con">
+      <button class="btn btn-primary btn-next">Save</button>
+    </div>
+  </div>
+</form>

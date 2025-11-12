@@ -1,0 +1,33 @@
+
+.proof-header {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.17px;
+    text-align: left;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.proof-header-1 {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.proof-data-1 {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*  */

@@ -1,0 +1,172 @@
+/*Account-Form Start*/
+
+
+/* .admin-bg {
+    background: #F2F6FA;
+} */
+
+.myaccount-full-form {
+    background: #F2F6FA;
+    padding-bottom: 2%;
+}
+
+
+/* .my-account-form {
+    margin-top: 4%;
+} */
+
+.account-form {
+    font-family: 'Proxima Nova';
+    background-color: white;
+    padding: 1% 1%;
+    /* margin: 0 1%; */
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px 5px #00000008;
+}
+
+.account-head h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 55px;
+    text-align: left;
+}
+
+.account-headlf h3,
+.account-headrg h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+}
+
+.account-field-left label,
+.account-field-right label {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Proxima Nova';
+    line-height: 30px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.account-field-left input,
+.account-field-right input {
+    border-bottom: 1.5px solid #D9D9D9;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 3% 0%;
+}
+
+.account-field-right-button {
+    padding: 13px 3%;
+    margin: 1% 4%;
+    font-family: 'Proxima Nova';
+}
+
+.account-field-right-btn1 button {
+    width: 121%;
+    margin-left: -2rem;
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: #014DC0;
+    font-weight: 600;
+}
+
+.account-field-right-btn2 button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10% 25.7%;
+    background: #014DC0;
+}
+
+
+/*Reset-your-password*/
+
+.myacc-reset-password-header {
+    width: 423px;
+    height: 68px;
+    gap: 0px;
+    border-radius: 15px 15px 0px 0px;
+    background: #F2F6FA;
+    border: none;
+}
+
+.myacc-reset-password-header h6 {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+    height: 19px;
+}
+
+.myacc-reset-password-header button {
+    margin-left: 11.6rem;
+    border: none;
+    background: transparent;
+    color: #5A5A5A;
+    width: 13.18px;
+}
+
+.myacc-reset-password-popup {
+    width: 424px;
+    gap: 0px;
+    border-radius: 15px;
+    opacity: 0px;
+}
+
+.myacc-reset-password-popup-footer {
+    border: none;
+    text-align: center;
+}
+
+.myacc-reset-password-body input {
+    border-bottom: 1px solid #D9D9D9;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 383px;
+    height: 55px;
+    margin-bottom: 1rem;
+}
+
+.myacc-reset-password-body label {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.myacc-reset-password-forgetbtn {
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: center;
+    color: #014DC0;
+}
+
+.myacc-reset-password-savebtn {
+    width: 384px;
+    height: 56px;
+    border-radius: 10px;
+    background: #014DC0;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/*Account-Form End*/

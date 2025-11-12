@@ -1,0 +1,47 @@
+
+//abstract//
+@import './assets/scss/abstracts/variable';
+
+// components
+
+@import './assets/scss/components/sidebar';
+@import './assets/scss/components/form';
+@import './assets/scss/components/header';
+@import './assets/scss/components/button';
+@import './assets/scss/components/table';
+
+
+//other //
+@import './assets/scss/other/input';
+@import './assets/scss/other/deleteModal';
+@import './assets/scss/other/spinner';
+@import './assets/scss/other/container';
+
+// pages
+@import './assets/scss/pages/login';
+@import './assets/scss/pages/dashboard';
+@import './assets/scss/pages/settings';
+@import './assets/scss/pages/campaign';
+@import './assets/scss/pages/budgetRule';
+@import './assets/scss/pages/forgotpassword';
+@import './assets/scss/pages/resetPassword';
+@import './assets/scss/pages/ruleModal';
+@import './assets/scss/pages/signup';
+@import './assets/scss/pages/changePwd';
+@import './assets/scss/pages/scheduler';
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.rs-anim-fade.rs-anim-in.placement-bottom-start.rs-picker-date-menu.rs-picker-menu {
+    z-index: 99999;
+}
+.rs-anim-fade.rs-anim-in.placement-bottom-start.rs-picker-date-menu.rs-picker-menu {
+    top: 363px !important;
+}
+
+.rs-picker.rs-picker-date.rs-picker-default.rs-picker-toggle-wrapper.rs-picker-cleanable {
+    width: 100%;
+}

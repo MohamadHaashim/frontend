@@ -1,0 +1,122 @@
+[
+{
+  "name": "Dashboard",
+  "to": "/scheduler",
+  "icon": "dashboard-icon",
+  "active": "scheduler",
+  "hasSubMenu": false,
+  "submenuList": null 
+},
+{
+  "name": "Ads",
+  "to": "#",
+  "icon": "ads-status-icon",
+  "active": "ads",
+  "hasSubMenu": true,
+  "submenuList": [
+  {
+    "name": "Campaign Manager",
+    "to": "/ads/ads-compaign-manager",
+    "active": "ads-compaign-manager",
+    "parent": "ads"
+  },
+  {
+    "name": "Automation Rules",
+    "to": "/ads/automation-rules",
+    "active": "automation-rules",
+    "parent": "ads"
+  },
+  {
+    "name": "Rules Template",
+    "to": "/ads/rules-template",
+    "active": "rules-template",
+    "parent": "ads"
+  },
+  {
+    "name": "Campaigns",
+    "to": "/ads/campaign",
+    "active": "campaign",
+    "parent": "ads"
+  }
+  ]
+},
+{
+  "name": "Budget Optimizer",
+  "to": "/budget/ads-budget-optimizer",
+  "active": "budget",
+  "icon": "dollar-icon"
+  
+},
+{
+  "name": "Audit Log",
+  "to": "#",
+  "icon": "bookshelfs-icon",
+  "active": "log",
+  "hasSubMenu": true,
+  "submenuList": [
+  {
+    "name": "Change Log",
+    "to": "/log/change-log",
+    "active": "change-log",
+    "parent": "log"
+  },
+  {
+    "name": "Recommendation",
+    "to": "/log/recommendation",
+    "active": "recommendation",
+    "parent": "log"
+  }
+
+  ]
+},
+
+{
+  "name": "Reports",
+  "to": "#",
+  "icon": "resources-icon",
+  "active": "reports",
+  "hasSubMenu": true,
+  "submenuList": [
+  {
+    "name": "Sales",
+    "to": "/reports/sales",
+    "active": "sales",
+    "parent": "reports"
+  },
+  {
+    "name": "Traffic & Conversion",
+    "to": "/reports/sp-traffic-conversion",
+    "active": "sp-traffic-conversion",
+    "parent": "reports"
+  },
+  {
+    "name": "Tacos",
+    "to": "/reports/tacos",
+    "active": "tacos",
+    "parent": "reports"
+  }
+  ]
+},
+
+{
+  "name": "Admin",
+  "to": "#",
+  "icon": "adminicon",
+  "active": "admin",
+  "hasSubMenu": true,
+  "submenuList": [
+    {
+      "name": "Profiles",
+      "to": "/admin/profile",
+      "active": "profile",
+      "parent": "admins"
+    },
+  {
+      "name": "Users",
+      "to": "/admin/user",
+      "active": "user",
+      "parent": "admins"
+    }
+  ]
+}
+]

@@ -1,0 +1,1864 @@
+
+  <div class="elements-block f1">
+    <div class="inner">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="f1-steps">
+            <div class="f1-progress">
+              <div
+                class="f1-progress-line"
+                data-now-value="16.66"
+                data-number-of-steps="3"
+                style="width: 16.66%"
+              ></div>
+            </div>
+            <div class="f1-step tab-menu-1 active">
+              <div class="f1-step-icon" (click)="clickMenuWizard(1)">
+                <i class="mdi mdi-security"></i>
+              </div>
+              <p>Primary Details</p>
+            </div>
+            <div class="f1-step tab-menu-2">
+              <div class="f1-step-icon" (click)="clickMenuWizard(2)">
+                <i class="mdi mdi-account"></i>
+              </div>
+              <p>Personal Details</p>
+            </div>
+            <div class="f1-step tab-menu-3">
+              <div class="f1-step-icon" (click)="clickMenuWizard(3)">
+                <i class="mdi mdi-contact-mail"></i>
+              </div>
+              <p>Contact Details</p>
+            </div>
+            <div class="f1-step tab-menu-4">
+              <div class="f1-step-icon" (click)="clickMenuWizard(4)">
+                <i class="mdi mdi-book-open-page-variant"></i>
+              </div>
+              <p>Education Details</p>
+            </div>
+            <div class="f1-step tab-menu-5">
+              <div class="f1-step-icon" (click)="clickMenuWizard(5)">
+                <i class="mdi mdi-book"></i>
+              </div>
+              <p>Course Details</p>
+            </div>
+            <div class="f1-step tab-menu-6">
+              <div class="f1-step-icon" (click)="clickMenuWizard(6)">
+                <i class="mdi mdi-checkbox-multiple-blank-circle-outline"></i>
+              </div>
+              <p>Other Details</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12 fieldset tab-cont-1 active">
+          <form [formGroup]="addStudentPrimaryForm" (ngSubmit)="addStudentPrimarySubmit()">
+            <div class="row field-block">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="name">Name</label>
+                  <input
+                    class="form-control"
+                    placeholder="Enter Name"
+                    type="text"
+                    id="name"
+                    maxlength="200"
+                    formControlName="name"
+                    required
+                    [ngClass]="{
+                      'is-invalid': priSubmitted && prif.name.errors
+                    }"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="class">Class</label>
+                  <select
+                    id="class"
+                    class="form-control"
+                    formControlName="class"
+                    required
+                    [ngClass]="{
+                      'is-invalid': priSubmitted && prif.class.errors
+                    }"
+                  >
+                    <option value="" disabled selected>Choose Class</option>
+                    <option
+                      *ngFor="let classes of classesList"
+                      [ngValue]="classes.id"
+                    >
+                      {{ classes.class_name }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="admissionNo"
+                    >Admission No.</label
+                  >
+                  <input
+                    class="form-control"
+                    placeholder="Enter Admission No."
+                    type="text"
+                    id="admissionNo"
+                    maxlength="200"
+                    formControlName="admissionNo"
+                    required
+                    [ngClass]="{
+                      'is-invalid': priSubmitted && prif.admissionNo.errors
+                    }"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label" for="dob"
+                    >Date of Birth</label
+                  >
+                  <input
+                    class="form-control"
+                    placeholder="Choose Date of Birth"
+                    type="text"
+                    id="dob"
+                    maxlength="200"
+                    formControlName="dob"
+                    required
+                    [ngClass]="{ 'is-invalid': priSubmitted && prif.dob.errors }"
+                    bsDatepicker
+                    readonly
+                    [bsConfig]="{ dateInputFormat: 'DD-MM-YYYY' }"
+                  />
+
+                </div>
+              </div>
+            </div>
+            <div class="row f1-buttons">
+              <div class="col-lg-6 btn-prev-con"></div>
+              <div class="col-lg-6 btn-next-con">
+                <button
+                  class="btn btn-primary btn-next"
+
+                >
+                Save & Continue
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-md-12 fieldset tab-cont-2">
+          <form [formGroup]="addStudentPersonalForm" (ngSubmit)="addStudentPersonalSubmit()">
+            <div class="form-inner-container">
+              <div class="col-lg-12">
+                <h5>Personal Details <span>- {{studentId}}</span></h5>
+                <hr />
+              </div>
+              <div class="col-lg-12">
+                <div class="row field-block">
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="gender"
+                        >Gender</label
+                      >
+                      <div class="custom-radio" [ngClass]="{ 'is-invalid': perSubmitted && perf.gender.errors }">
+                        <label for="gender1">
+                          <input
+                            type="radio"
+                            id="gender1"
+                            name="gender"
+                            value="Male"
+                            formControlName="gender"
+                          />
+                          Male</label
+                        >
+                        <label for="gender2">
+                          <input
+                            type="radio"
+                            id="gender2"
+                            name="gender"
+                            value="Female"
+                            [checked]="true"
+                            formControlName="gender"
+                          />
+                          Female</label
+                        >
+                        <label for="gender3">
+                          <input
+                            type="radio"
+                            id="gender3"
+                            name="gender"
+                            value="Other"
+                            [checked]="true"
+                            formControlName="gender"
+                          />
+                          Other</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="category"
+                        >Category</label
+                      >
+                      <select
+                        id="category"
+                        class="form-control"
+                        formControlName="category"
+                      >
+                        <option value="" disabled selected>
+                          Choose Category
+                        </option>
+                        <option
+                          *ngFor="let category of categoryList"
+                          [ngValue]="category.id"
+                        >
+                          {{ category.category_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="caste">Caste</label>
+                      <input
+                        class="form-control"
+                        placeholder="Enter Caste"
+                        type="text"
+                        id="caste"
+                        maxlength="200"
+                        formControlName="caste"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="religion"
+                        >Religion</label
+                      >
+                      <select
+                        id="religion"
+                        class="form-control"
+                        formControlName="religion"
+                      >
+                        <option value="" disabled selected>
+                          Choose Religion
+                        </option>
+                        <option
+                          *ngFor="let religion of religionList"
+                          [ngValue]="religion.id"
+                        >
+                          {{ religion.religion_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="economicCategory"
+                        >Economic Category</label
+                      >
+                      <div class="custom-radio">
+                        <label for="economicCategory1">
+                          <input
+                            type="radio"
+                            id="economicCategory1"
+                            name="economicCategory"
+                            value="BPL"
+                            formControlName="economicCategory"
+                          />
+                          BPL</label
+                        >
+                        <label for="economicCategory2">
+                          <input
+                            type="radio"
+                            id="economicCategory2"
+                            name="economicCategory"
+                            value="APL"
+                            [checked]="true"
+                            formControlName="economicCategory"
+                          />
+                          APL</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="bloodGroup"
+                        >Blood Group</label
+                      >
+                      <select
+                        id="bloodGroup"
+                        class="form-control"
+                        formControlName="bloodGroup"
+                      >
+                        <option value="" disabled selected>
+                          Choose Blood Group
+                        </option>
+                        <option
+                          *ngFor="let bloodGroup of bloodGroupList"
+                          [ngValue]="bloodGroup.id"
+                        >
+                          {{ bloodGroup.blood_group_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="ambition"
+                        >Ambition</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Ambition"
+                        type="text"
+                        id="ambition"
+                        maxlength="200"
+                        formControlName="ambition"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherTongue"
+                        >Mother Tongue</label
+                      >
+                      <select
+                        id="motherTongue"
+                        class="form-control"
+                        formControlName="motherTongue"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.motherTongue.errors
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Choose Mother Tongue
+                        </option>
+                        <option
+                          *ngFor="let language of motherTonqueList"
+                          [ngValue]="language.id"
+                        >
+                          {{ language.language_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="hobbies"
+                        >Hobbies</label
+                      >
+                      <angular2-multiselect [data]="hobbiesList" [(ngModel)]="selectedHobbiesItems"
+                                  [settings]="dropdownHobbiesSettings"
+                                  (onSelect)="onItemSelect($event)"
+                                  (onDeSelect)="OnItemDeSelect($event)"
+                                  (onSelectAll)="onSelectAll($event)"
+                                  (onDeSelectAll)="onDeSelectAll($event)" formControlName="hobbies">
+                      </angular2-multiselect>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="culturalTalents"
+                        >Cultural talents</label
+                      >
+                      <angular2-multiselect [data]="culturalTalentsList" [(ngModel)]="selectedTalentsItems"
+                                  [settings]="dropdownTalentsSettings"
+                                  (onSelect)="onItemSelect($event)"
+                                  (onDeSelect)="OnItemDeSelect($event)"
+                                  (onSelectAll)="onSelectAll($event)"
+                                  (onDeSelectAll)="onDeSelectAll($event)" formControlName="culturalTalents">
+                      </angular2-multiselect>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="howDoYouCome"
+                        >How do you come to school</label
+                      >
+                      <angular2-multiselect [data]="howDoYouComeList" [(ngModel)]="selectedHowDoYouComeItems"
+                                  [settings]="dropdownHowDoYouComeSettings"
+                                  (onSelect)="onItemSelect($event)"
+                                  (onDeSelect)="OnItemDeSelect($event)"
+                                  (onSelectAll)="onSelectAll($event)"
+                                  (onDeSelectAll)="onDeSelectAll($event)" formControlName="howDoYouCome">
+                      </angular2-multiselect>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="sports"
+                        >Sports</label
+                      >
+                      <angular2-multiselect [data]="sportsList" [(ngModel)]="selectedSportsItems"
+                                  [settings]="dropdownSportsSettings"
+                                  (onSelect)="onItemSelect($event)"
+                                  (onDeSelect)="OnItemDeSelect($event)"
+                                  (onSelectAll)="onSelectAll($event)"
+                                  (onDeSelectAll)="onDeSelectAll($event)" formControlName="sports">
+                      </angular2-multiselect>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="strength"
+                        >Strength</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Strength"
+                        type="text"
+                        id="strength"
+                        maxlength="200"
+                        formControlName="strength"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="weakness"
+                        >Weakness</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Weakness"
+                        type="text"
+                        id="weakness"
+                        maxlength="200"
+                        formControlName="weakness"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="languagesKnown"
+                        >Languages Known</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Languages Known"
+                        type="text"
+                        id="languagesKnown"
+                        maxlength="200"
+                        formControlName="languagesKnown"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="otherSkills"
+                        >Other Skills</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Other Skills"
+                        type="text"
+                        id="otherSkills"
+                        maxlength="200"
+                        formControlName="otherSkills"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="differnetlyAbled"
+                        >Differnetly Abled</label
+                      >
+                      <div class="custom-radio" [ngClass]="{ 'is-invalid': perSubmitted && perf.differnetlyAbled.errors }">
+                        <label for="differnetlyAbled1">
+                          <input
+                            type="radio"
+                            id="differnetlyAbled1"
+                            name="differnetlyAbled"
+                            value="Yes"
+                            formControlName="differnetlyAbled"
+                          />
+                          Yes</label
+                        >
+                        <label for="differnetlyAbled2">
+                          <input
+                            type="radio"
+                            id="differnetlyAbled2"
+                            name="differnetlyAbled"
+                            value="No"
+                            [checked]="true"
+                            formControlName="differnetlyAbled"
+                          />
+                          No</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <p><strong>Resident Details</strong></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="residentState"
+                        >State</label
+                      >
+                      <select
+                        id="residentState"
+                        class="form-control"
+                        formControlName="residentState"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.residentState.errors
+                        }"
+                      >
+                        <option value="" disabled selected>Choose State</option>
+                        <option *ngFor="let state of stateList" [ngValue]="state.id">
+                          {{ state.state_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="residentDistrict"
+                        >District</label
+                      >
+                      <select
+                        id="residentDistrict"
+                        class="form-control"
+                        formControlName="residentDistrict"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.residentDistrict.errors
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Choose District
+                        </option>
+                        <option
+                          *ngFor="let district of districtList"
+                          [ngValue]="district.id"
+                        >
+                          {{ district.district_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="residentTaluk"
+                        >Taluk</label
+                      >
+                      <select
+                        id="residentTaluk"
+                        class="form-control"
+                        formControlName="residentTaluk"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.residentTaluk.errors
+                        }"
+                      >
+                        <option value="" disabled selected>Choose Taluk</option>
+                        <option *ngFor="let taluk of talukList" [ngValue]="taluk.id">
+                          {{ taluk.taluk_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="residentPanchayat"
+                        >Panchayat</label
+                      >
+                      <select
+                        id="residentPanchayat"
+                        class="form-control"
+                        formControlName="residentPanchayat"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.residentPanchayat.errors
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Choose Panchayat
+                        </option>
+                        <option
+                          *ngFor="let panchayat of panchayatList"
+                          [ngValue]="panchayat.id"
+                        >
+                          {{ panchayat.panchayat_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="residentWard"
+                        >Ward</label
+                      >
+                      <select
+                        id="residentWard"
+                        class="form-control"
+                        formControlName="residentWard"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.residentWard.errors
+                        }"
+                      >
+                        <option value="" disabled selected>Choose Ward</option>
+                        <option *ngFor="let ward of wardList" [ngValue]="ward.id">
+                          {{ ward.ward_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="residentOtherDetail"
+                        >Other details</label
+                      >
+                      <textarea
+                        class="form-control"
+                        placeholder="Enter Other Details"
+                        type="text"
+                        id="residentOtherDetail"
+                        maxlength="200"
+                        formControlName="residentOtherDetail"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <p><strong>Father</strong></p>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherSalutation"
+                        >Salutation</label
+                      >
+                      <select
+                        id="fatherSalutation"
+                        class="form-control"
+                        formControlName="fatherSalutation"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.fatherSalutation.errors
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Choose Salutation
+                        </option>
+                        <option
+                          *ngFor="let salutation of salutationForMale"
+                          [ngValue]="salutation.salutation_name"
+                        >
+                          {{ salutation.salutation_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherName"
+                        >Name</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Father Name"
+                        type="text"
+                        id="fatherName"
+                        maxlength="200"
+                        formControlName="fatherName"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.fatherName.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherOccupation"
+                        >Occupation</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Father Occupation"
+                        type="text"
+                        id="fatherOccupation"
+                        maxlength="200"
+                        formControlName="fatherOccupation"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.fatherOccupation.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherOtherDetails"
+                        >Other details</label
+                      >
+                      <textarea
+                        class="form-control"
+                        placeholder="Enter Other Details"
+                        type="text"
+                        id="fatherOtherDetails"
+                        maxlength="200"
+                        formControlName="fatherOtherDetails"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <p><strong>Mother</strong></p>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherSalutation"
+                        >Salutation</label
+                      >
+                      <select
+                        id="motherSalutation"
+                        class="form-control"
+                        formControlName="motherSalutation"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.motherSalutation.errors
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Choose Salutation
+                        </option>
+                        <option
+                          *ngFor="let salutation of salutationForFemale"
+                          [ngValue]="salutation.salutation_name"
+                        >
+                          {{ salutation.salutation_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherName"
+                        >Name</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Mother Name"
+                        type="text"
+                        id="motherName"
+                        maxlength="200"
+                        formControlName="motherName"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.motherName.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherOccupation"
+                        >Occupation</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Mother Occupation"
+                        type="text"
+                        id="motherOccupation"
+                        maxlength="200"
+                        formControlName="motherOccupation"
+                        required
+                        [ngClass]="{
+                          'is-invalid': perSubmitted && perf.motherOccupation.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherOtherDetails"
+                        >Other details</label
+                      >
+                      <textarea
+                        class="form-control"
+                        placeholder="Enter Other Details"
+                        type="text"
+                        id="motherOtherDetails"
+                        maxlength="200"
+                        formControlName="motherOtherDetails"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row field-block">
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="aadharNo"
+                        >Aadhar No</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Aadhar No"
+                        type="text"
+                        id="aadharNo"
+                        maxlength="200"
+                        formControlName="aadharNo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row f1-buttons">
+              <div class="col-lg-6 btn-prev-con">
+                <button type="button" class="btn btn-previous" (click)="clickPrevWizard(2)">Previous</button>
+              </div>
+              <div class="col-lg-6 btn-next-con">
+                <button class="btn btn-primary btn-next">Save & Continue</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-md-12 fieldset tab-cont-3">
+          <form [formGroup]="addStudentContactForm" (ngSubmit)="addStudentContactSubmit()">
+            <div class="form-inner-container">
+              <div class="col-lg-12">
+                <h5>Contact Details <span>- {{studentId}}</span></h5>
+                <hr />
+              </div>
+              <div class="col-lg-12">
+                <div class="row field-block">
+                  <div class="col-lg-12">
+                    <p><strong>Permanent Address</strong></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="contactPermanentAddressLine1"
+                        >Address Line 1</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Address"
+                        type="text"
+                        id="contactPermanentAddressLine1"
+                        maxlength="200"
+                        formControlName="contactPermanentAddressLine1"
+                        required
+                        [ngClass]="{
+                          'is-invalid':
+                          conSubmitted && conf.contactPermanentAddressLine1.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="contactPermanentAddressLine2"
+                        >Address Line 2</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Address"
+                        type="text"
+                        id="contactPermanentAddressLine2"
+                        maxlength="200"
+                        formControlName="contactPermanentAddressLine2"
+                        required
+                        [ngClass]="{
+                          'is-invalid':
+                          conSubmitted && conf.contactPermanentAddressLine2.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="contactPermanentAddressPIN"
+                        >PIN</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter PIN"
+                        type="text"
+                        id="contactPermanentAddressPIN"
+                        maxlength="200"
+                        formControlName="contactPermanentAddressPIN"
+                        required
+                        [ngClass]="{
+                          'is-invalid':
+                          conSubmitted && conf.contactPermanentAddressPIN.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <p><strong>Contact Address</strong></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="contactContactAddressLine1"
+                        >Address Line 1</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Address"
+                        type="text"
+                        id="contactContactAddressLine1"
+                        maxlength="200"
+                        formControlName="contactContactAddressLine1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="contactContactAddressLine2"
+                        >Address Line 2</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Address"
+                        type="text"
+                        id="contactContactAddressLine2"
+                        maxlength="200"
+                        formControlName="contactContactAddressLine2"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="contactContactAddressPIN"
+                        >PIN</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter PIN"
+                        type="text"
+                        id="contactContactAddressPIN"
+                        maxlength="200"
+                        formControlName="contactContactAddressPIN"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <p><strong>Student's/Personal</strong></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="studentPhone1"
+                        >Pone No 1</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Phone No."
+                        type="text"
+                        id="studentPhone1"
+                        maxlength="200"
+                        formControlName="studentPhone1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="studentPhone2"
+                        >Pone No 2</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Phone No."
+                        type="text"
+                        id="studentPhone2"
+                        maxlength="200"
+                        formControlName="studentPhone2"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="studentWhatsAppNo"
+                        >WhatsAppNo</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Whats App No."
+                        type="text"
+                        id="studentWhatsAppNo"
+                        maxlength="200"
+                        formControlName="studentWhatsAppNo"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="studentTelegramNo"
+                        >Telegram Number</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Telegram No."
+                        type="text"
+                        id="studentTelegramNo"
+                        maxlength="200"
+                        formControlName="studentTelegramNo"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="studentEmail"
+                        >Email</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Email Address"
+                        type="text"
+                        id="studentEmail"
+                        maxlength="200"
+                        formControlName="studentEmail"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <p><strong>Father</strong></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherPhoneNo1"
+                        >Pone No 1</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Father Phone No."
+                        type="text"
+                        id="fatherPhoneNo1"
+                        maxlength="200"
+                        formControlName="fatherPhoneNo1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherPhoneNo2"
+                        >Pone No 2</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Father Phone No."
+                        type="text"
+                        id="fatherPhoneNo2"
+                        maxlength="200"
+                        formControlName="fatherPhoneNo2"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherPhoneNoOffice"
+                        >Pone No (Office)</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Father Office No."
+                        type="text"
+                        id="fatherPhoneNoOffice"
+                        maxlength="200"
+                        formControlName="fatherPhoneNoOffice"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherTelegramNo"
+                        >Telegram Number</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Father Telegram No."
+                        type="text"
+                        id="fatherTelegramNo"
+                        maxlength="200"
+                        formControlName="fatherTelegramNo"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="fatherEmail"
+                        >Email</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Father Email Address"
+                        type="text"
+                        id="fatherEmail"
+                        maxlength="200"
+                        formControlName="fatherEmail"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <p><strong>Mother</strong></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherPhoneNo1"
+                        >Pone No 1</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Mother Phone No."
+                        type="text"
+                        id="motherPhoneNo1"
+                        maxlength="200"
+                        formControlName="motherPhoneNo1"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherPhoneNo2"
+                        >Pone No 2</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Mother Phone No."
+                        type="text"
+                        id="motherPhoneNo2"
+                        maxlength="200"
+                        formControlName="motherPhoneNo2"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherPhoneNoOffice"
+                        >Pone No (Office)</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Mother Office No."
+                        type="text"
+                        id="motherPhoneNoOffice"
+                        maxlength="200"
+                        formControlName="motherPhoneNoOffice"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherTelegramNo"
+                        >Telegram Number</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Mother Telegram No."
+                        type="text"
+                        id="motherTelegramNo"
+                        maxlength="200"
+                        formControlName="motherTelegramNo"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="motherEmail"
+                        >Email</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Mother Email"
+                        type="text"
+                        id="motherEmail"
+                        maxlength="200"
+                        formControlName="motherEmail"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label class="form-control-label" for="sibiling"
+                        >Sibling Details</label
+                      >
+                      <textarea
+                        class="form-control"
+                        placeholder="Enter Sibiling Details"
+                        type="text"
+                        id="sibiling"
+                        maxlength="200"
+                        formControlName="sibiling"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row f1-buttons">
+              <div class="col-lg-6 btn-prev-con">
+                <button type="button" class="btn btn-previous" (click)="clickPrevWizard(3)">Previous</button>
+              </div>
+              <div class="col-lg-6 btn-next-con">
+                <button class="btn btn-primary btn-next">Save & Continue</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-xs-12 col-md-12 fieldset tab-cont-4">
+          <form [formGroup]="addStudentEducationForm" (ngSubmit)="addStudentEducationSubmit()">
+            <div class="form-inner-container">
+              <div class="col-lg-12">
+                <h5>Previous School - Education Details <span>- {{studentId}}</span></h5>
+                <hr />
+              </div>
+              <div class="col-lg-12">
+                <div class="row field-block">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="previousSchoolName"
+                        >Name</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Previous School Name"
+                        type="text"
+                        id="previousSchoolName"
+                        maxlength="200"
+                        formControlName="previousSchoolName"
+                        required
+                        [ngClass]="{
+                          'is-invalid': eduSubmitted && eduf.previousSchoolName.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="previousSchoolPlace"
+                        >Place</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Previous School Place"
+                        type="text"
+                        id="previousSchoolPlace"
+                        maxlength="200"
+                        formControlName="previousSchoolPlace"
+                        required
+                        [ngClass]="{
+                          'is-invalid': eduSubmitted && eduf.previousSchoolPlace.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="previousSchoolBoard"
+                        >Board</label
+                      >
+                      <select
+                        id="previousSchoolBoard"
+                        class="form-control"
+                        formControlName="previousSchoolBoard"
+                        required
+                        [ngClass]="{
+                          'is-invalid': eduSubmitted && eduf.previousSchoolBoard.errors
+                        }"
+                      >
+                        <option value="" disabled selected>Choose Board</option>
+                        <option *ngFor="let board of boardList" [ngValue]="board.board_name">
+                          {{ board.board_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolRegistrationNo"
+                        >Register No.</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Registration No."
+                        type="text"
+                        id="previousSchoolRegistrationNo"
+                        maxlength="200"
+                        formControlName="previousSchoolRegistrationNo"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <p><strong>Marks</strong></p>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkEnglish"
+                        >English</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter English Mark"
+                        type="text"
+                        id="previousSchoolMarkEnglish"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkEnglish"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkMalayalam"
+                        >Malayalam</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Malayalam Mark"
+                        type="text"
+                        id="previousSchoolMarkMalayalam"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkMalayalam"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkHindi"
+                        >Hindi</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Hindi Mark"
+                        type="text"
+                        id="previousSchoolMarkHindi"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkHindi"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkPhysics"
+                        >Physics</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Physics Mark"
+                        type="text"
+                        id="previousSchoolMarkPhysics"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkPhysics"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkChemistry"
+                        >Chemistry</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Chemistry Mark"
+                        type="text"
+                        id="previousSchoolMarkChemistry"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkChemistry"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkMaths"
+                        >Mathematics</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Maths Mark"
+                        type="text"
+                        id="previousSchoolMarkMaths"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkMaths"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkBiology"
+                        >Biology</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Biology Mark"
+                        type="text"
+                        id="previousSchoolMarkBiology"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkBiology"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkHistroy"
+                        >Histroy</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter History Mark"
+                        type="text"
+                        id="previousSchoolMarkHistroy"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkHistroy"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolMarkGeography"
+                        >Geography</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Geography Mark"
+                        type="text"
+                        id="previousSchoolMarkGeography"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkGeography"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-group">
+                      <label class="form-control-label" for="previousSchoolMarkIT"
+                        >IT</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter IT Mark"
+                        type="text"
+                        id="previousSchoolMarkIT"
+                        maxlength="200"
+                        formControlName="previousSchoolMarkIT"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row field-block">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolClubMember"
+                        >Club Member in prevoius school</label
+                      >
+                      <select
+                        id="previousSchoolClubMember"
+                        class="form-control"
+                        formControlName="previousSchoolClubMember"
+                      >
+                        <option value="" disabled selected>
+                          Choose Club Member
+                        </option>
+                        <option *ngFor="let club of clubList" [ngValue]="club.club_name">
+                          {{ club.club_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="previousSchoolOtherDetails"
+                        >Other details</label
+                      >
+                      <textarea
+                        class="form-control"
+                        placeholder="Enter Other Details"
+                        type="text"
+                        id="previousSchoolOtherDetails"
+                        maxlength="200"
+                        formControlName="previousSchoolOtherDetails"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row f1-buttons">
+              <div class="col-lg-6 btn-prev-con">
+                <button type="button" class="btn btn-previous" (click)="clickPrevWizard(4)">Previous</button>
+              </div>
+              <div class="col-lg-6 btn-next-con">
+                <button class="btn btn-primary btn-next">Save & Continue</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-md-12 fieldset tab-cont-5">
+          <form [formGroup]="addStudentCourseForm" (ngSubmit)="addStudentCourseSubmit()">
+            <div class="form-inner-container">
+              <div class="col-lg-12">
+                <h5>Course Details <span>- {{studentId}}</span></h5>
+                <hr />
+              </div>
+              <div class="col-lg-12">
+                <div class="row field-block">
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="courseAdmittedCategory"
+                        >Admitted Category</label
+                      >
+                      <select
+                        id="courseAdmittedCategory"
+                        class="form-control"
+                        formControlName="courseAdmittedCategory"
+                        required
+                        [ngClass]="{
+                          'is-invalid':
+                          couSubmitted && couf.courseAdmittedCategory.errors
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Choose Admitted Category
+                        </option>
+                        <option
+                          *ngFor="let admittedCategory of admittedCategoryList"
+                          [ngValue]="admittedCategory.id"
+                        >
+                          {{ admittedCategory.admitted_category_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="courseClassNo"
+                        >Class No:</label
+                      >
+                      <textarea
+                        class="form-control"
+                        placeholder="Enter Class No."
+                        type="text"
+                        id="courseClassNo"
+                        maxlength="200"
+                        formControlName="courseClassNo"
+                        required
+                        [ngClass]="{
+                          'is-invalid': couSubmitted && couf.courseClassNo.errors
+                        }"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="courseSecondLanguage"
+                        >Second Language</label
+                      >
+                      <select
+                        id="courseSecondLanguage"
+                        class="form-control"
+                        formControlName="courseSecondLanguage"
+                        required
+                        [ngClass]="{
+                          'is-invalid': couSubmitted && couf.courseSecondLanguage.errors
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Choose Second Language
+                        </option>
+                        <option
+                          *ngFor="let secondLanguage of secondaryLanguageList"
+                          [ngValue]="secondLanguage.id"
+                        >
+                          {{ secondLanguage.language_name }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label
+                        class="form-control-label"
+                        for="courseExamRegistrationNo"
+                        >Exam Registration Number</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Exam Registration No"
+                        type="text"
+                        id="courseExamRegistrationNo"
+                        maxlength="200"
+                        formControlName="courseExamRegistrationNo"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="courseRecommendedBy"
+                        >Recommended by</label
+                      >
+                      <input
+                        class="form-control"
+                        placeholder="Enter Recommended By"
+                        type="text"
+                        id="courseRecommendedBy"
+                        maxlength="200"
+                        formControlName="courseRecommendedBy"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="courseOtherDetails"
+                        >Other Details</label
+                      >
+                      <textarea
+                        class="form-control"
+                        placeholder="Enter Other Details"
+                        type="text"
+                        id="courseOtherDetails"
+                        maxlength="200"
+                        formControlName="courseOtherDetails"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="courseCompleted"
+                        >Course Completed</label
+                      >
+                      <div class="custom-radio" [ngClass]="{ 'is-invalid': couSubmitted && couf.courseCompleted.errors }">
+                        <label for="courseCompleted1">
+                          <input
+                            type="radio"
+                            id="courseCompleted1"
+                            name="courseCompleted"
+                            value="Yes"
+                            formControlName="courseCompleted"
+                          />
+                          Yes</label
+                        >
+                        <label for="courseCompleted2">
+                          <input
+                            type="radio"
+                            id="courseCompleted2"
+                            name="courseCompleted"
+                            value="No"
+                            [checked]="true"
+                            formControlName="courseCompleted"
+                          />
+                          No</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label class="form-control-label" for="courseTCIssued"
+                        >TC issued</label
+                      >
+                      <div class="custom-radio" [ngClass]="{ 'is-invalid': couSubmitted && couf.courseTCIssued.errors }">
+                        <label for="courseTCIssued1">
+                          <input
+                            type="radio"
+                            id="courseTCIssued1"
+                            name="courseTCIssued"
+                            value="Yes"
+                            formControlName="courseTCIssued"
+                          />
+                          Yes</label
+                        >
+                        <label for="courseTCIssued2">
+                          <input
+                            type="radio"
+                            id="courseTCIssued2"
+                            name="courseTCIssued"
+                            value="No"
+                            [checked]="true"
+                            formControlName="courseTCIssued"
+                          />
+                          No</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row f1-buttons">
+              <div class="col-lg-6 btn-prev-con">
+                <button type="button" class="btn btn-previous" (click)="clickPrevWizard(5)">Previous</button>
+              </div>
+              <div class="col-lg-6 btn-next-con">
+                <button class="btn btn-primary btn-next">Save & Continue</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-md-12 fieldset tab-cont-6">
+          <form [formGroup]="addStudentOtherForm" (ngSubmit)="addStudentOtherSubmit()">
+            <div class="form-inner-container">
+              <div class="col-lg-12">
+                <h5>Other Details <span>- {{studentId}}</span></h5>
+                <hr />
+              </div>
+              <div class="col-lg-12">
+                <div class="row field-block">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label class="form-control-label" for="otherDetailApplyFor"
+                        >Do you like to apply for NSS/SPC/Scout&Guides</label
+                      >
+                      <div class="custom-radio">
+                        <label for="otherDetailApplyFor1">
+                          <input
+                            type="radio"
+                            id="otherDetailApplyFor1"
+                            name="otherDetailApplyFor"
+                            value="Yes"
+                            formControlName="otherDetailApplyFor"
+                          />
+                          Yes</label
+                        >
+                        <label for="otherDetailApplyFor2">
+                          <input
+                            type="radio"
+                            id="otherDetailApplyFor2"
+                            name="otherDetailApplyFor"
+                            value="No"
+                            [checked]="true"
+                            formControlName="otherDetailApplyFor"
+                          />
+                          No</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="otherDetailFirstOption"
+                        >First Option</label
+                      >
+                      <select
+                        id="otherDetailFirstOption"
+                        class="form-control"
+                        formControlName="otherDetailFirstOption"
+                      >
+                      <option value="" disabled selected>Choose Option</option>
+                      <option
+                        *ngFor="let option of likeToApplyForList"
+                        [ngValue]="option.option_name"
+                      >
+                        {{ option.option_name }}
+                      </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="otherDetailSecondOption"
+                        >Second Option</label
+                      >
+                      <select
+                        id="otherDetailSecondOption"
+                        class="form-control"
+                        formControlName="otherDetailSecondOption"
+                      >
+                      <option value="" disabled selected>Choose Option</option>
+                      <option
+                        *ngFor="let option of likeToApplyForList"
+                        [ngValue]="option.option_name"
+                      >
+                        {{ option.option_name }}
+                      </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label class="form-control-label" for="otherDetailThirdOption"
+                        >Third Option</label
+                      >
+                      <select
+                        id="otherDetailThirdOption"
+                        class="form-control"
+                        formControlName="otherDetailThirdOption"
+                      >
+                      <option value="" disabled selected>Choose Option</option>
+                      <option
+                        *ngFor="let option of likeToApplyForList"
+                        [ngValue]="option.option_name"
+                      >
+                        {{ option.option_name }}
+                      </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row f1-buttons">
+              <div class="col-lg-6 btn-prev-con">
+                <button type="button" class="btn btn-previous" (click)="clickPrevWizard(6)">Previous</button>
+              </div>
+              <div class="col-lg-6 btn-next-con">
+                <button class="btn btn-primary btn-next">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="col-xs-12 col-md-12">
+          <div class="row field-block">
+            <div class="col-xs-12 col-md-12 text-center">
+              <button class="btn btn-primary btn-md">
+                <span
+                  *ngIf="loading"
+                  class="spinner-border spinner-border-sm mr-1"
+                ></span>
+                Add Student
+              </button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>

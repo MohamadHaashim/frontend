@@ -1,0 +1,681 @@
+/*Global CSS*/
+
+.landing-bg {
+    background-color: #FBFBFB;
+}
+
+
+/*Align CSS*/
+
+.landing-navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F2F6FA;
+}
+
+.btn-outline-primary:hover {
+    background-color: white;
+}
+
+.logo-img {
+    width: 125px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.btn-outline-primary {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #014DC0;
+    width: 170px;
+    font-family: Proxima Nova;
+    font-size: 15px;
+}
+
+.landing-nav .landing-btn {
+    color: #014DC0;
+    margin-left: 20px;
+    background-color: transparent;
+    height: 40px;
+    font-family: Proxima Nova semi-bold;
+    font-size: 14px;
+}
+
+.login-btn {
+    border: none;
+}
+
+
+/*landing start*/
+
+
+/* .landing-img {
+    background-image: url('../../assets/images/mask-group@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+} */
+
+
+/* .landing-img:not(.show-image) {
+    background: none;
+} */
+
+.landing-content {
+    color: #FFFFFF;
+    padding: 150px 0;
+}
+
+.landing-cnt1 {
+    width: 285px;
+    font-size: 56px;
+}
+
+.landing-cnt2 {
+    width: 468px;
+    color: #FFFFFFB2;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: normal;
+    font-family: "Proxima Nova";
+}
+
+.landing-btn1 {
+    background: #014DC0;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 250px;
+    height: 70px;
+    font-family: "Proxima Nova";
+}
+
+
+/*landing end*/
+
+
+/*explore start*/
+
+.explore-pro {
+    padding-top: 100px;
+    font-family: "Proxima Nova";
+}
+
+.explore-cnt1 h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: "Proxima Nova";
+}
+
+.explore-cnt2 {
+    text-align: right;
+    color: #014DC0;
+    font-size: 14px;
+}
+
+.explore-cnt2 p a,
+.explore-cnt2 p {
+    text-decoration: none;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card-body {
+    line-height: 30px;
+    padding: 15px 0px !important;
+    margin-left: 0px !important;
+}
+
+.card-title {
+    font-size: 16px;
+    width: 180px;
+    font-family: "Proxima Nova bold";
+}
+
+.card-text {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    color: #00000080;
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+.card-img {
+    height: 188px;
+    border-radius: 10px;
+}
+
+.card-price {
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.explore-card {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card-btn {
+    background: #014DC0;
+    font-size: 16px;
+    width: 100%;
+}
+
+.fa-circle {
+    font-size: 10px;
+}
+
+.card-frame1 {
+    position: absolute;
+    top: 26px;
+    padding: 4px 10px;
+    left: 25px;
+    font-size: 12px;
+    background-color: white;
+    color: #CAC32D;
+    border-radius: 4px;
+}
+
+.card-frame2 {
+    position: absolute;
+    top: 26px;
+    padding: 4px 10px;
+    left: 25px;
+    font-size: 12px;
+    background-color: white;
+    color: #10AC01;
+    border-radius: 4px;
+}
+
+.card-frame3 {
+    position: absolute;
+    top: 26px;
+    padding: 4px 10px;
+    left: 25px;
+    font-size: 12px;
+    background-color: white;
+    color: #FF0000;
+    border-radius: 4px;
+}
+
+
+/*explore end*/
+
+
+/*Properties-Carousel start*/
+
+.properties-carousel {
+    padding: 50px 0px;
+}
+
+.properties-carousel h2 {
+    font-size: 24px;
+    font-family: 'Proxima Nova semi-bold';
+    padding-bottom: 15px;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    /* height: 80%; */
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../../assets/images/vector.svg');
+    height: 3rem;
+    width: 3rem;
+    margin-top: -5rem;
+    /* margin-right: 5rem; */
+}
+
+.carousel-control-next-icon {
+    background-image: url('../../assets/images/vector-1.svg');
+    height: 3rem;
+    width: 3rem;
+    margin-top: -5rem;
+    /* margin-right: -5rem; */
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0%;
+    left: 50%;
+    top: 92%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    padding: 2% 3% 10%;
+    color: #fff;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    bottom: 0px;
+}
+
+.carousel-caption-title {
+    font-size: 26px;
+    font-family: 'Proxima Nova bold';
+}
+
+.carousel-caption-text {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -44px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #014DC0;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transition: opacity .6s ease;
+}
+
+
+/*Client carousel*/
+
+.carousel-indicators-client .active {
+    opacity: 1;
+}
+
+.carousel-indicators-client {
+    position: absolute;
+    right: 0;
+    bottom: -44px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.carousel-indicators-client [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #014DC0;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transition: opacity .6s ease;
+}
+
+.carousel-title {
+    font-weight: 700;
+    font-size: 24px;
+    width: 180px;
+    font-family: 'Proxima Nova';
+}
+
+.carousel-text {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.carousel-price {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Proxima Nova';
+}
+
+.carousel-btn {
+    text-align: right;
+}
+
+.carousel-btn-view {
+    background-color: #014DC0;
+    border-radius: 10px;
+    padding: 17px 80px;
+    border: none;
+    font-family: 'Proxima Nova';
+}
+
+
+/*Properties-Carousel end*/
+
+
+/*Client-served Start*/
+
+.client-served-cnt {
+    padding: 50px 0px 25px 0px;
+}
+
+.client-served-cnt h2 {
+    font-size: 24px;
+    font-family: 'Proxima Nova semi-bold';
+}
+
+.client-served-images {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.client_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+/*Client-served End*/
+
+
+/*Client-says Start*/
+
+.client-says-container .client-says-card {
+    position: relative;
+    width: 100%;
+    background-image: url('../../assets/images/client-says-bg.png');
+    background-size: 100%;
+    min-width: 100px;
+    min-height: 390px;
+    background-repeat: no-repeat;
+}
+
+.client-says-container .client-photo {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+    max-width: 100px;
+    width: 40%;
+}
+
+.client-says-container .client-photo img {
+    width: 100%;
+}
+
+.client-says-container .client-says-header {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.client-says-container .client-says-header h2 {
+    font-family: 'Proxima Nova bold';
+    font-size: 22px;
+}
+
+.client-says-container .client-says-header p {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.client-says-container .client-says-quote {
+    text-align: center;
+}
+
+.client-says-container .client-says-content {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.client-says-container .client-says-content p {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+}
+
+.client-says-cnt {
+    padding: 40px 0px 25px 0px;
+}
+
+.client-says-cnt h2 {
+    font-family: 'Proxima Nova semi-bold';
+    font-size: 24px;
+}
+
+.client-says-cnt-content {
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.client-says-cardrow {
+    position: relative;
+    padding: 0 0 0 3%;
+}
+
+.client-says-card1 img {
+    width: 310px;
+    height: 336px;
+    margin-left: -1rem;
+}
+
+.client-says-card2 img {
+    width: 383.39px;
+    height: 424.52px;
+}
+
+.client-cnt .blockqoutes {
+    width: 35px;
+    height: 35px;
+}
+
+.client-cnt img {
+    height: 100px;
+    width: 100px;
+}
+
+.client-cnt {
+    font-family: 'Proxima Nova';
+    position: absolute;
+    top: -2rem;
+    text-align: center;
+    left: 3rem;
+    width: 75%;
+}
+
+.client-desc {
+    color: #5D616C;
+}
+
+.client-cnt h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.client-says-card1 {
+    margin-left: 21px;
+    margin-bottom: 60px;
+}
+
+.client-says-card2 {
+    position: absolute;
+    top: -11px;
+    left: -61px;
+}
+
+.client-start button {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    padding: 1.5% 10%;
+    background-color: #014DC0;
+    font-size: 20px;
+    font-family: 'Proxima Nova';
+}
+
+
+/*Client-says End*/
+
+
+/*Question-cnt Start*/
+
+.question-cnt {
+    padding: 20px 0px 80px 0px;
+}
+
+.question-cnt h1 {
+    width: 100%;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Caudex', sans-serif;
+    margin-bottom: 2.4rem;
+}
+
+.question-cnt p {
+    width: 96%;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Caudex', sans-serif;
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20) !important; */
+}
+
+
+/* .question-cnt-right {
+    background-image: url("../../assets/images/mask-group-7@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 20px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+} */
+
+.question-form {
+    font-family: 'Proxima Nova';
+    background-color: white;
+    width: 100%;
+    line-height: 25.5px;
+    border-radius: 15px;
+    padding: 1rem 2rem 1rem 3rem;
+}
+
+.question-form input {
+    border-bottom: 1.5px solid #00000080;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+}
+
+.question-form label {
+    margin-top: 10px;
+}
+
+.question-form button {
+    padding: 4% 16%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: #014DC0;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 10px;
+}
+
+
+/*Question-cnt End*/
+
+
+/*Footer-cnt Start*/
+
+.footer-container {
+    padding: 50px 0px;
+}
+
+.footer-cnt {
+    font-family: 'Proxima Nova';
+    background-color: #014DC0;
+    color: #FFFFFF;
+}
+
+.footer-left-cnt {
+    padding-bottom: 20px;
+}
+
+.footer-right-cnt {
+    text-align: right;
+}
+
+.footer-right-cnt i {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.footer-left-cnt p {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    line-height: 0;
+    letter-spacing: 2px;
+}
+
+.footer-right-cnt p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-right-cnt a {
+    color: white;
+}
+
+.footer-left-cnt h5 {
+    font-family: 'Proxima Nova semi-bold';
+    font-size: 24px;
+}
+
+.basic_property {
+    background-color: teal;
+}
+
+.basic-clientImg {
+    width: 100%;
+    height: 100px;
+    border-radius: 100%;
+}
+
+
+/*Footer-cnt End*/

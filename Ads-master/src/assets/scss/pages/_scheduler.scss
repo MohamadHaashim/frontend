@@ -1,0 +1,25 @@
+
+.scheduler{
+    .title {
+        background: #e9ecef;
+        padding: 6px 14px;
+        font-size: 14px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+
+        span{
+            
+            font-weight: bold;
+        }
+    }
+   
+}
+
+.time{
+   .campaign_list label {
+        color: rgb(46, 139, 192);
+        font-weight: 600;
+        font-size: 16px;
+    }
+}

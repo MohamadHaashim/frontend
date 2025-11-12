@@ -1,0 +1,96 @@
+@import "rsuite/dist/rsuite.css";
+.tab-container{
+    padding: 0 !important;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.filer-container{
+    position: relative;
+    padding: 0 30px;
+}
+
+.column-link-container .dropdown-container{
+    min-width: 300px;
+}
+
+.global-filter{
+    width: 500px;
+}
+.vertical-top{
+    vertical-align: top;
+}
+
+
+.cus-dropdown .dropdown-container.open{
+    display: block;
+}
+
+.btn{
+    font-size: 14px !important;
+}
+/* .steperDesign div div div div a{
+    line-height: 30px !important;
+    color: #ffffff !important;
+}
+.steperDesign div div div div  {
+background-color: #00976D !important;
+} */ 
+.StepButton-0-2-4.active{
+    border:1px solid #00976D !important;
+}
+.steperDesign .active{
+    background-color: #EAFFEC !important;  
+    color:#00976D !important;
+    
+}
+.steperDesign .completed{
+    background-color: #00976D !important;    
+}
+.steperDesign .completed:hover{
+    background-color: #00976D !important;     
+}
+.col-title{
+    width: 100%;
+}
+
+.col-rulename{
+    width: 100%;
+    word-wrap: break-word;
+}
+.col-rulename .col-title{
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.col-rulename .market-place i{
+    padding: 10px !important;
+    margin: auto 5px;
+}
+.rule-and-or-container{
+    display: flex;
+}
+.rule-and-or-container .form-check{
+    padding: 10px 24px;
+}
+select{
+     color:  #374151 !important;
+}
+.fade.modal.show{
+    background-color: rgba(0, 0, 0, 0.15) !important;
+}
+.black-text{
+    color: black !important;
+}
+.refresh-button{
+    border: 1px solid #d1d5db ;
+    border-radius: 4px;
+}
+.refresh-button:hover{
+    cursor: pointer;
+    background-color: #FE9900;
+}
+.refresh-button:hover .fa-arrows-rotate{
+    color: #080d1c !important;
+}

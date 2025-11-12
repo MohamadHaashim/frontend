@@ -1,0 +1,1875 @@
+<form [formGroup]="addStudentForm" (ngSubmit)="addStudentSubmit()">
+  <div class="elements-block">
+    <div class="inner">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="row field-block">
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="class"
+                  >Class</label
+                >
+                <select
+                  id="class"
+                  class="form-control"
+                  formControlName="class"
+                  required
+                  [ngClass]="{
+                    'is-invalid': submitted && f.class.errors
+                  }"
+                >
+                  <option value="" disabled selected>Choose Class</option>
+                  <option
+                    *ngFor="let classes of classesList"
+                    [ngValue]="classes"
+                  >
+                    {{ classes.class_name }}
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="admissionNo"
+                  >Admission No.</label
+                >
+                <input
+                  class="form-control"
+                  placeholder="Enter Admission No."
+                  type="text"
+                  id="admissionNo"
+                  maxlength="200"
+                  formControlName="admissionNo"
+                  required
+                  [ngClass]="{ 'is-invalid': submitted && f.admissionNo.errors }"
+                />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label" for="dob"
+                  >Date of Birth</label
+                >
+                <input
+                  class="form-control"
+                  placeholder="Choose Date of Birth"
+                  type="text"
+                  id="dob"
+                  maxlength="200"
+                  formControlName="dob"
+                  required
+                  [ngClass]="{ 'is-invalid': submitted && f.dob.errors }"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-12">
+          <div class="form-inner-container">
+            <div class="col-lg-12">
+              <h5>Personal Details</h5>
+              <hr />
+            </div>
+            <div class="col-lg-12">
+              <div class="row field-block">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="name"
+                      >Name</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Name"
+                      type="text"
+                      id="name"
+                      maxlength="200"
+                      formControlName="name"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.name.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="gender"
+                      >Gender</label
+                    >
+                    <div class="custom-radio">
+                      <label for="gender1">
+                        <input
+                          type="radio"
+                          id="gender1"
+                          name="gender"
+                          value="Male"
+                          formControlName="gender"
+                        />
+                        Male</label
+                      >
+                      <label for="gender2">
+                        <input
+                          type="radio"
+                          id="gender2"
+                          name="gender"
+                          value="Female"
+                          [checked]="true"
+                          formControlName="gender"
+                        />
+                        Female</label
+                      >
+                      <label for="gender3">
+                        <input
+                          type="radio"
+                          id="gender3"
+                          name="gender"
+                          value="Other"
+                          [checked]="true"
+                          formControlName="gender"
+                        />
+                        Other</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="category"
+                      >Category</label
+                    >
+                    <select
+                      id="category"
+                      class="form-control"
+                      formControlName="category"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.category.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Category
+                      </option>
+                      <option
+                        *ngFor="let category of categoryList"
+                        [ngValue]="category"
+                      >
+                        {{ category.category_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="caste"
+                      >Caste</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Caste"
+                      type="text"
+                      id="caste"
+                      maxlength="200"
+                      formControlName="caste"
+                      required
+                      [ngClass]="{ 'is-invalid': submitted && f.caste.errors }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="religion"
+                      >Religion</label
+                    >
+                    <select
+                      id="religion"
+                      class="form-control"
+                      formControlName="religion"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.religion.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Religion
+                      </option>
+                      <option
+                        *ngFor="let religion of religionList"
+                        [ngValue]="religion"
+                      >
+                        {{ religion.religion_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="economicCategory"
+                      >Economic Category</label
+                    >
+                    <div class="custom-radio">
+                      <label for="economicCategory1">
+                        <input
+                          type="radio"
+                          id="economicCategory1"
+                          name="economicCategory"
+                          value="BPL"
+                          formControlName="economicCategory"
+                        />
+                        BPL</label
+                      >
+                      <label for="economicCategory2">
+                        <input
+                          type="radio"
+                          id="economicCategory2"
+                          name="economicCategory"
+                          value="APL"
+                          [checked]="true"
+                          formControlName="economicCategory"
+                        />
+                        APL</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="bloodGroup"
+                      >Blood Group</label
+                    >
+                    <select
+                      id="bloodGroup"
+                      class="form-control"
+                      formControlName="bloodGroup"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.bloodGroup.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Blood Group
+                      </option>
+                      <option
+                        *ngFor="let bloodGroup of bloodGroupList"
+                        [ngValue]="bloodGroup"
+                      >
+                        {{ bloodGroup.blood_group_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="ambition"
+                      >Ambition</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Ambition"
+                      type="text"
+                      id="ambition"
+                      maxlength="200"
+                      formControlName="ambition"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.ambition.errors
+                      }"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherTongue"
+                      >Mother Tongue</label
+                    >
+                    <select
+                      id="motherTongue"
+                      class="form-control"
+                      formControlName="motherTongue"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherTongue.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Mother Tongue
+                      </option>
+                      <option
+                        *ngFor="let language of motherTonqueList"
+                        [ngValue]="language"
+                      >
+                        {{ language.language_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="hobbies"
+                      >Hobbies</label
+                    >
+                    <select
+                      id="hobbies"
+                      multiple
+                      class="form-control"
+                      formControlName="hobbies"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.hobbies.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Hobbies
+                      </option>
+                      <option
+                        *ngFor="let hobbies of hobbiesList"
+                        [ngValue]="hobbies"
+                      >
+                        {{ hobbies.hobby_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="culturalTalents"
+                      >Cultural talents</label
+                    >
+                    <select
+                      id="culturalTalents"
+                      multiple
+                      class="form-control"
+                      formControlName="culturalTalents"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.culturalTalents.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Cultural Talents
+                      </option>
+                      <option
+                        *ngFor="let talent of culturalTalentsList"
+                        [ngValue]="talent"
+                      >
+                        {{ talent.talent_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="howDoYouCome"
+                      >How do you come to school</label
+                    >
+                    <select
+                      id="howDoYouCome"
+                      multiple
+                      class="form-control"
+                      formControlName="howDoYouCome"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.howDoYouCome.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose How do you come
+                      </option>
+                      <option
+                        *ngFor="let conveyance of howDoYouComeList"
+                        [ngValue]="conveyance"
+                      >
+                        {{ conveyance.conveyance_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="sports"
+                      >Sports</label
+                    >
+                    <select
+                      id="sports"
+                      multiple
+                      class="form-control"
+                      formControlName="sports"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.sports.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Sports
+                      </option>
+                      <option
+                        *ngFor="let sports of sportsList"
+                        [ngValue]="sports"
+                      >
+                        {{ sports.sports_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="strength"
+                      >Strength</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Strength"
+                      type="text"
+                      id="strength"
+                      maxlength="200"
+                      formControlName="strength"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.strength.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="weakness"
+                      >Weakness</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Weakness"
+                      type="text"
+                      id="weakness"
+                      maxlength="200"
+                      formControlName="weakness"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.weakness.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="languagesKnown"
+                      >Languages Known</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Languages Known"
+                      type="text"
+                      id="languagesKnown"
+                      maxlength="200"
+                      formControlName="languagesKnown"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.languagesKnown.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="otherSkills"
+                      >Other Skills</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Other Skills"
+                      type="text"
+                      id="otherSkills"
+                      maxlength="200"
+                      formControlName="otherSkills"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.otherSkills.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="differnetlyAbled"
+                      >Differnetly Abled</label
+                    >
+                    <div class="custom-radio">
+                      <label for="differnetlyAbled1">
+                        <input
+                          type="radio"
+                          id="differnetlyAbled1"
+                          name="differnetlyAbled"
+                          value="No"
+                          formControlName="differnetlyAbled"
+                        />
+                        Yes</label
+                      >
+                      <label for="differnetlyAbled2">
+                        <input
+                          type="radio"
+                          id="differnetlyAbled2"
+                          name="differnetlyAbled"
+                          value="No"
+                          [checked]="true"
+                          formControlName="differnetlyAbled"
+                        />
+                        No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p><strong>Resident Details</strong></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="residentState"
+                      >State</label
+                    >
+                    <select
+                      id="residentState"
+                      class="form-control"
+                      formControlName="residentState"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.residentState.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose State
+                      </option>
+                      <option
+                        *ngFor="let state of stateList"
+                        [ngValue]="state"
+                      >
+                        {{ state.state_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="residentDistrict"
+                      >District</label
+                    >
+                    <select
+                      id="residentDistrict"
+                      class="form-control"
+                      formControlName="residentDistrict"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.residentDistrict.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose District
+                      </option>
+                      <option
+                        *ngFor="let district of districtList"
+                        [ngValue]="district"
+                      >
+                        {{ district.district_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="residentTaluk"
+                      >Taluk</label
+                    >
+                    <select
+                      id="residentTaluk"
+                      class="form-control"
+                      formControlName="residentTaluk"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.residentTaluk.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Taluk
+                      </option>
+                      <option
+                        *ngFor="let taluk of talukList"
+                        [ngValue]="taluk"
+                      >
+                        {{ taluk.taluk_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="residentPanchayat"
+                      >Panchayat</label
+                    >
+                    <select
+                      id="residentPanchayat"
+                      class="form-control"
+                      formControlName="residentPanchayat"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.residentPanchayat.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Panchayat
+                      </option>
+                      <option
+                        *ngFor="let panchayat of panchayatList"
+                        [ngValue]="panchayat"
+                      >
+                        {{ panchayat.panchayat_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="residentWard"
+                      >Ward</label
+                    >
+                    <select
+                      id="residentWard"
+                      class="form-control"
+                      formControlName="residentWard"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.residentWard.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Ward
+                      </option>
+                      <option
+                        *ngFor="let ward of wardList"
+                        [ngValue]="ward"
+                      >
+                        {{ ward.ward_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="residentOtherDetail"
+                      >Other details</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Enter Other Details"
+                      type="text"
+                      id="residentOtherDetail"
+                      maxlength="200"
+                      formControlName="residentOtherDetail"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.residentOtherDetail.errors
+                      }"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p><strong>Father</strong></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherSalutation"
+                      >Salutation</label
+                    >
+                    <select
+                      id="fatherSalutation"
+                      class="form-control"
+                      formControlName="fatherSalutation"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherSalutation.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Salutation
+                      </option>
+                      <option
+                        *ngFor="let salutation of salutationForMale"
+                        [ngValue]="salutation"
+                      >
+                        {{ salutation.salutation_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherName"
+                      >Name</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Father Name"
+                      type="text"
+                      id="fatherName"
+                      maxlength="200"
+                      formControlName="fatherName"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherName.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherOccupation"
+                      >Occupation</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Father Occupation"
+                      type="text"
+                      id="fatherOccupation"
+                      maxlength="200"
+                      formControlName="fatherOccupation"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherOccupation.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherOtherDetails"
+                      >Other details</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Enter Other Details"
+                      type="text"
+                      id="fatherOtherDetails"
+                      maxlength="200"
+                      formControlName="fatherOtherDetails"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherOtherDetails.errors
+                      }"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p><strong>Mother</strong></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherSalutation"
+                      >Salutation</label
+                    >
+                    <select
+                      id="motherSalutation"
+                      class="form-control"
+                      formControlName="motherSalutation"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherSalutation.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Salutation
+                      </option>
+                      <option
+                        *ngFor="let salutation of salutationForFemale"
+                        [ngValue]="salutation"
+                      >
+                        {{ salutation.salutation_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherName"
+                      >Name</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Mother Name"
+                      type="text"
+                      id="motherName"
+                      maxlength="200"
+                      formControlName="motherName"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherName.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherOccupation"
+                      >Occupation</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Mother Occupation"
+                      type="text"
+                      id="motherOccupation"
+                      maxlength="200"
+                      formControlName="motherOccupation"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherOccupation.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherOtherDetails"
+                      >Other details</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Enter Other Details"
+                      type="text"
+                      id="motherOtherDetails"
+                      maxlength="200"
+                      formControlName="motherOtherDetails"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherOtherDetails.errors
+                      }"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row field-block">
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="aadharNo"
+                      >Aadhar No</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Aadhar No"
+                      type="text"
+                      id="aadharNo"
+                      maxlength="200"
+                      formControlName="aadharNo"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.aadharNo.errors
+                      }"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-12">
+          <div class="form-inner-container">
+            <div class="col-lg-12">
+              <h5>Contact Details</h5>
+              <hr />
+            </div>
+            <div class="col-lg-12">
+              <div class="row field-block">
+                <div class="col-lg-12">
+                  <p><strong>Permanent Address</strong></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contactPermanentAddressLine1"
+                      >Address Line 1</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Address"
+                      type="text"
+                      id="contactPermanentAddressLine1"
+                      maxlength="200"
+                      formControlName="contactPermanentAddressLine1"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.contactPermanentAddressLine1.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contactPermanentAddressLine2"
+                      >Address Line 2</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Address"
+                      type="text"
+                      id="contactPermanentAddressLine2"
+                      maxlength="200"
+                      formControlName="contactPermanentAddressLine2"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.contactPermanentAddressLine2.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contactPermanentAddressPIN"
+                      >PIN</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter PIN"
+                      type="text"
+                      id="contactPermanentAddressPIN"
+                      maxlength="200"
+                      formControlName="contactPermanentAddressPIN"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.contactPermanentAddressPIN.errors
+                      }"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <p><strong>Contact Address</strong></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contactContactAddressLine1"
+                      >Address Line 1</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Address"
+                      type="text"
+                      id="contactContactAddressLine1"
+                      maxlength="200"
+                      formControlName="contactContactAddressLine1"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.contactContactAddressLine1.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contactContactAddressLine2"
+                      >Address Line 2</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Address"
+                      type="text"
+                      id="contactContactAddressLine2"
+                      maxlength="200"
+                      formControlName="contactContactAddressLine2"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.contactContactAddressLine2.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="contactContactAddressPIN"
+                      >PIN</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter PIN"
+                      type="text"
+                      id="contactContactAddressPIN"
+                      maxlength="200"
+                      formControlName="contactContactAddressPIN"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.contactContactAddressPIN.errors
+                      }"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <p><strong>Student's/Personal</strong></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="studentPhone1"
+                      >Pone No 1</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Phone No."
+                      type="text"
+                      id="studentPhone1"
+                      maxlength="200"
+                      formControlName="studentPhone1"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.studentPhone1.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="studentPhone2"
+                      >Pone No 2</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Phone No."
+                      type="text"
+                      id="studentPhone1"
+                      maxlength="200"
+                      formControlName="studentPhone1"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.studentPhone1.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="studentWhatsAppNo"
+                      >WhatsAppNo</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Whats App No."
+                      type="text"
+                      id="studentWhatsAppNo"
+                      maxlength="200"
+                      formControlName="studentWhatsAppNo"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.studentWhatsAppNo.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="studentTelegramNo"
+                      >Telegram Number</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Telegram No."
+                      type="text"
+                      id="studentTelegramNo"
+                      maxlength="200"
+                      formControlName="studentTelegramNo"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.studentTelegramNo.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="studentEmail"
+                      >Email</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Email Address"
+                      type="text"
+                      id="studentEmail"
+                      maxlength="200"
+                      formControlName="studentEmail"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.studentEmail.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p><strong>Father</strong></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherPhoneNo1"
+                      >Pone No 1</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Father Phone No."
+                      type="text"
+                      id="fatherPhoneNo1"
+                      maxlength="200"
+                      formControlName="fatherPhoneNo1"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherPhoneNo1.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherPhoneNo2"
+                      >Pone No 2</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Father Phone No."
+                      type="text"
+                      id="fatherPhoneNo2"
+                      maxlength="200"
+                      formControlName="fatherPhoneNo2"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherPhoneNo2.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherPhoneNoOffice"
+                      >Pone No (Office)</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Father Office No."
+                      type="text"
+                      id="fatherPhoneNoOffice"
+                      maxlength="200"
+                      formControlName="fatherPhoneNoOffice"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherPhoneNoOffice.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherTelegramNo"
+                      >Telegram Number</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Father Telegram No."
+                      type="text"
+                      id="fatherTelegramNo"
+                      maxlength="200"
+                      formControlName="fatherTelegramNo"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherTelegramNo.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="fatherEmail"
+                      >Email</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Father Email Address"
+                      type="text"
+                      id="fatherEmail"
+                      maxlength="200"
+                      formControlName="fatherEmail"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.fatherEmail.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p><strong>Mother</strong></p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherPhoneNo1"
+                      >Pone No 1</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Mother Phone No."
+                      type="text"
+                      id="motherPhoneNo1"
+                      maxlength="200"
+                      formControlName="motherPhoneNo1"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherPhoneNo1.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherPhoneNo2"
+                      >Pone No 2</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Mother Phone No."
+                      type="text"
+                      id="motherPhoneNo2"
+                      maxlength="200"
+                      formControlName="motherPhoneNo2"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherPhoneNo2.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherPhoneNoOffice"
+                      >Pone No (Office)</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Mother Office No."
+                      type="text"
+                      id="motherPhoneNoOffice"
+                      maxlength="200"
+                      formControlName="motherPhoneNoOffice"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherPhoneNoOffice.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherTelegramNo"
+                      >Telegram Number</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Mother Telegram No."
+                      type="text"
+                      id="motherTelegramNo"
+                      maxlength="200"
+                      formControlName="motherTelegramNo"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherTelegramNo.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label class="form-control-label" for="motherEmail"
+                      >Email</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Mother Email"
+                      type="text"
+                      id="motherEmail"
+                      maxlength="200"
+                      formControlName="motherEmail"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.motherEmail.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="sibiling"
+                      >Sibling Details</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Enter Sibiling Details"
+                      type="text"
+                      id="sibiling"
+                      maxlength="200"
+                      formControlName="sibiling"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.sibiling.errors
+                      }"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6">
+          <div class="form-inner-container">
+            <div class="col-lg-12">
+              <h5>Previous School - Education Details</h5>
+              <hr />
+            </div>
+            <div class="col-lg-12">
+              <div class="row field-block">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolName"
+                      >Name</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Previous School Name"
+                      type="text"
+                      id="previousSchoolName"
+                      maxlength="200"
+                      formControlName="previousSchoolName"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolName.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolPlace"
+                      >Place</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Previous School Place"
+                      type="text"
+                      id="previousSchoolPlace"
+                      maxlength="200"
+                      formControlName="previousSchoolPlace"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolPlace.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolBoard"
+                      >Board</label
+                    >
+                    <select
+                      id="previousSchoolBoard"
+                      class="form-control"
+                      formControlName="previousSchoolBoard"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolBoard.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Board
+                      </option>
+                      <option
+                        *ngFor="let board of boardList"
+                        [ngValue]="board"
+                      >
+                        {{ board.board_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolRegistrationNo"
+                      >Register No.</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Registration No."
+                      type="text"
+                      id="previousSchoolRegistrationNo"
+                      maxlength="200"
+                      formControlName="previousSchoolRegistrationNo"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolRegistrationNo.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <p><strong>Marks</strong></p>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkEnglish"
+                      >English</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter English Mark"
+                      type="text"
+                      id="previousSchoolMarkEnglish"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkEnglish"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkEnglish.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkMalayalam"
+                      >Malayalam</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Malayalam Mark"
+                      type="text"
+                      id="previousSchoolMarkMalayalam"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkMalayalam"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkMalayalam.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkHindi"
+                      >Hindi</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Hindi Mark"
+                      type="text"
+                      id="previousSchoolMarkHindi"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkHindi"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkHindi.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkPhysics"
+                      >Physics</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Physics Mark"
+                      type="text"
+                      id="previousSchoolMarkPhysics"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkPhysics"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkPhysics.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkChemistry"
+                      >Chemistry</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Chemistry Mark"
+                      type="text"
+                      id="previousSchoolMarkChemistry"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkChemistry"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkChemistry.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkMaths"
+                      >Mathematics</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Maths Mark"
+                      type="text"
+                      id="previousSchoolMarkMaths"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkMaths"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkMaths.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkBiology"
+                      >Biology</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Biology Mark"
+                      type="text"
+                      id="previousSchoolMarkBiology"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkBiology"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkBiology.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkHistroy"
+                      >Histroy</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter History Mark"
+                      type="text"
+                      id="previousSchoolMarkHistroy"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkHistroy"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkHistroy.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkGeography"
+                      >Geography</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Geography Mark"
+                      type="text"
+                      id="previousSchoolMarkGeography"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkGeography"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkGeography.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolMarkIT"
+                      >IT</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter IT Mark"
+                      type="text"
+                      id="previousSchoolMarkIT"
+                      maxlength="200"
+                      formControlName="previousSchoolMarkIT"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolMarkIT.errors
+                      }"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row field-block">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolClubMember"
+                      >Club Member in prevoius school</label
+                    >
+                    <select
+                      id="previousSchoolClubMember"
+                      class="form-control"
+                      formControlName="previousSchoolClubMember"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolClubMember.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Club Member
+                      </option>
+                      <option
+                        *ngFor="let club of clubList"
+                        [ngValue]="club"
+                      >
+                        {{ club.club_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="previousSchoolOtherDetails"
+                      >Other details</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Enter Other Details"
+                      type="text"
+                      id="previousSchoolOtherDetails"
+                      maxlength="200"
+                      formControlName="previousSchoolOtherDetails"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.previousSchoolOtherDetails.errors
+                      }"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="form-inner-container">
+            <div class="col-lg-12">
+              <h5>Course Details</h5>
+              <hr />
+            </div>
+            <div class="col-lg-12">
+              <div class="row field-block">
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="courseAdmittedCategory"
+                      >Admitted Category</label
+                    >
+                    <select
+                      id="courseAdmittedCategory"
+                      class="form-control"
+                      formControlName="courseAdmittedCategory"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.courseAdmittedCategory.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Admitted Category
+                      </option>
+                      <option
+                        *ngFor="let category of categoryList"
+                        [ngValue]="category"
+                      >
+                        {{ category.category_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="courseClassNo"
+                      >Class No:</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Enter Class No."
+                      type="text"
+                      id="courseClassNo"
+                      maxlength="200"
+                      formControlName="courseClassNo"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.courseClassNo.errors
+                      }"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="courseSecondLanguage"
+                      >Second Language</label
+                    >
+                    <select
+                      id="courseSecondLanguage"
+                      class="form-control"
+                      formControlName="courseSecondLanguage"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.courseSecondLanguage.errors
+                      }"
+                    >
+                      <option value="" disabled selected>
+                        Choose Second Language
+                      </option>
+                      <option
+                        *ngFor="let secondLanguage of secondaryLanguageList"
+                        [ngValue]="secondLanguage"
+                      >
+                        {{ secondLanguage.language_name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label class="form-control-label" for="courseExamRegistrationNo"
+                      >Exam Registration Number</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Exam Registration No"
+                      type="text"
+                      id="courseExamRegistrationNo"
+                      maxlength="200"
+                      formControlName="courseExamRegistrationNo"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.courseExamRegistrationNo.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="courseRecommendedBy"
+                      >Recommended by</label
+                    >
+                    <input
+                      class="form-control"
+                      placeholder="Enter Recommended By"
+                      type="text"
+                      id="courseRecommendedBy"
+                      maxlength="200"
+                      formControlName="courseRecommendedBy"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.courseRecommendedBy.errors
+                      }"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="courseOtherDetails"
+                      >Other Details</label
+                    >
+                    <textarea
+                      class="form-control"
+                      placeholder="Enter Other Details"
+                      type="text"
+                      id="courseOtherDetails"
+                      maxlength="200"
+                      formControlName="courseOtherDetails"
+                      required
+                      [ngClass]="{
+                        'is-invalid': submitted && f.courseOtherDetails.errors
+                      }"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="courseCompleted"
+                      >Course Completed</label
+                    >
+                    <div class="custom-radio">
+                      <label for="courseCompleted1">
+                        <input
+                          type="radio"
+                          id="courseCompleted1"
+                          name="courseCompleted"
+                          value="No"
+                          formControlName="courseCompleted"
+                        />
+                        Yes</label
+                      >
+                      <label for="courseCompleted2">
+                        <input
+                          type="radio"
+                          id="courseCompleted2"
+                          name="courseCompleted"
+                          value="No"
+                          [checked]="true"
+                          formControlName="courseCompleted"
+                        />
+                        No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="courseTCIssued"
+                      >TC issued</label
+                    >
+                    <div class="custom-radio">
+                      <label for="courseTCIssued1">
+                        <input
+                          type="radio"
+                          id="courseTCIssued1"
+                          name="courseTCIssued"
+                          value="No"
+                          formControlName="courseTCIssued"
+                        />
+                        Yes</label
+                      >
+                      <label for="courseTCIssued2">
+                        <input
+                          type="radio"
+                          id="courseTCIssued2"
+                          name="courseTCIssued"
+                          value="No"
+                          [checked]="true"
+                          formControlName="courseTCIssued"
+                        />
+                        No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-12">
+          <div class="row field-block">
+            <div class="col-xs-12 col-md-12 text-center">
+              <button
+                [disabled]="loading"
+                class="btn btn-primary btn-md"
+                href="#"
+              >
+                <span
+                  *ngIf="loading"
+                  class="spinner-border spinner-border-sm mr-1"
+                ></span>
+                Create Student
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,163 @@
+.scrolldown {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+table.scrolldown {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table.scrolldown tbody,
+table.scrolldown thead {
+    display: block;
+}
+
+thead tr th {
+    height: 40px;
+    line-height: 40px;
+}
+
+table.scrolldown tbody {
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tbody td,
+thead th {
+    width: auto;
+}
+
+.admin-profile-scroll{
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+table.admin-profile-scroll {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table.admin-profile-scroll tbody,
+table.admin-profile-scroll thead {
+    display: block;
+}
+
+table.admin-profile-scroll tbody {
+    height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+tbody .ad-pro-scroll,
+thead .ad-pro-scroll {
+    width: 350px;
+}
+
+.admin-profile-popup-ok{
+    background-color: #FE9900;
+}
+
+.admin-profile-popup-cancel{
+    background-color:transparent;
+    color: white;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+
+.admin-profile-popup-cancel:hover{
+    background-color:rgb(239, 239, 239);
+}
+
+.admin-profile-flag{
+    width: 30px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.admin-profile-active-btn{
+    border-radius: 5px;
+}
+
+.admin-profile-nodata{
+    height: 400px;
+}
+
+.admin-user-table-body {
+    display: block;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+.admin-user-table-head,
+.admin-user-table-body tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.admin-user-custom-modal .modal-content {
+    background: linear-gradient(135deg, #f0f2f5, #dfe3e8);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.admin-user-custom-modal-header {
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.custom-textarea-label {
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.admin-profile-textarea{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.custom-textarea {
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    transition: border 0.3s;
+    resize: none; 
+    outline: none;
+}
+
+.custom-textarea:focus {
+    border-color: #d0d1d2; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(239, 239, 240, 0.5); /* Optional focus effect */
+}
+
+.admin-user-custom-modal-footer {
+    display: flex;
+    justify-content: center; /* Center buttons in footer */
+    gap: 15px; /* Space between buttons */
+}
+
+/* Fade-in animation */
+.admin-user-custom-modal .modal-dialog {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

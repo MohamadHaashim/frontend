@@ -1,0 +1,272 @@
+<h6 class="heading-small text-muted mb-4">
+  Previous School - Education Details
+</h6>
+<form
+  [formGroup]="addStudentEducationForm"
+  (ngSubmit)="addStudentEducationSubmit()"
+>
+  <div class="row field-block">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolName">Name</label>
+        <input
+          class="form-control"
+          placeholder="Enter Previous School Name"
+          type="text"
+          id="previousSchoolName"
+          maxlength="200"
+          formControlName="previousSchoolName"
+          required
+          [ngClass]="{
+            'is-invalid': eduSubmitted && eduf['previousSchoolName'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolPlace"
+          >Place</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Previous School Place"
+          type="text"
+          id="previousSchoolPlace"
+          maxlength="200"
+          formControlName="previousSchoolPlace"
+          required
+          [ngClass]="{
+            'is-invalid': eduSubmitted && eduf['previousSchoolPlace'].errors
+          }"
+        />
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolBoard"
+          >Board</label
+        >
+        <select
+          id="previousSchoolBoard"
+          class="form-control"
+          formControlName="previousSchoolBoard"
+          required
+          [ngClass]="{
+            'is-invalid': eduSubmitted && eduf['previousSchoolBoard'].errors
+          }"
+        >
+          <option value="" disabled selected>Choose Board</option>
+          <option *ngFor="let board of boardList" [ngValue]="board.board_name">
+            {{ board.board_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolRegistrationNo"
+          >Register No.</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Registration No."
+          type="text"
+          id="previousSchoolRegistrationNo"
+          maxlength="200"
+          formControlName="previousSchoolRegistrationNo"
+        />
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <p><strong>Marks</strong></p>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkEnglish"
+          >English</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter English Mark"
+          type="text"
+          id="previousSchoolMarkEnglish"
+          maxlength="200"
+          formControlName="previousSchoolMarkEnglish"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkMalayalam"
+          >Malayalam</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Malayalam Mark"
+          type="text"
+          id="previousSchoolMarkMalayalam"
+          maxlength="200"
+          formControlName="previousSchoolMarkMalayalam"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkHindi"
+          >Hindi</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Hindi Mark"
+          type="text"
+          id="previousSchoolMarkHindi"
+          maxlength="200"
+          formControlName="previousSchoolMarkHindi"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkPhysics"
+          >Physics</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Physics Mark"
+          type="text"
+          id="previousSchoolMarkPhysics"
+          maxlength="200"
+          formControlName="previousSchoolMarkPhysics"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkChemistry"
+          >Chemistry</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Chemistry Mark"
+          type="text"
+          id="previousSchoolMarkChemistry"
+          maxlength="200"
+          formControlName="previousSchoolMarkChemistry"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkMaths"
+          >Mathematics</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Maths Mark"
+          type="text"
+          id="previousSchoolMarkMaths"
+          maxlength="200"
+          formControlName="previousSchoolMarkMaths"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkBiology"
+          >Biology</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Biology Mark"
+          type="text"
+          id="previousSchoolMarkBiology"
+          maxlength="200"
+          formControlName="previousSchoolMarkBiology"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkHistroy"
+          >Histroy</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter History Mark"
+          type="text"
+          id="previousSchoolMarkHistroy"
+          maxlength="200"
+          formControlName="previousSchoolMarkHistroy"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkGeography"
+          >Geography</label
+        >
+        <input
+          class="form-control"
+          placeholder="Enter Geography Mark"
+          type="text"
+          id="previousSchoolMarkGeography"
+          maxlength="200"
+          formControlName="previousSchoolMarkGeography"
+        />
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolMarkIT">IT</label>
+        <input
+          class="form-control"
+          placeholder="Enter IT Mark"
+          type="text"
+          id="previousSchoolMarkIT"
+          maxlength="200"
+          formControlName="previousSchoolMarkIT"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row field-block">
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolClubMember"
+          >Club Member in prevoius school</label
+        >
+        <select
+          id="previousSchoolClubMember"
+          class="form-control"
+          formControlName="previousSchoolClubMember"
+        >
+          <option value="" disabled selected>Choose Club Member</option>
+          <option *ngFor="let club of clubList" [ngValue]="club.club_name">
+            {{ club.club_name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label class="form-control-label" for="previousSchoolOtherDetails"
+          >Other details</label
+        >
+        <textarea
+          class="form-control"
+          placeholder="Enter Other Details"
+          type="text"
+          id="previousSchoolOtherDetails"
+          maxlength="200"
+          formControlName="previousSchoolOtherDetails"
+        ></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row f1-buttons">
+    <div class="col-lg-12 btn-next-con">
+      <button class="btn btn-primary btn-next">Save</button>
+    </div>
+  </div>
+</form>

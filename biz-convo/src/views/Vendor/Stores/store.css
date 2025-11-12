@@ -1,0 +1,128 @@
+.store-view-label p {
+    font-size: 13.5px;
+}
+
+.store-pagination {
+    float: right !important;
+    padding: 0.5% 5%;
+}
+
+.page-item.active span {
+    color: white;
+}
+
+.import-loader {
+    width: 75px;
+    height: 18px;
+    background: #004aad;
+    /* margin-top: 40px; */
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    position: relative;
+    border-radius: 3px;
+}
+
+.import-container {
+    margin-top: -2px;
+    text-align: center;
+    color: #d3d3d7;
+    font-size: 12px;
+}
+
+.import-txt {
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.import-loader::after {
+    content: '';
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    position: absolute;
+    border: 15px solid transparent;
+    border-top-color: #0dc0df;
+    box-sizing: border-box;
+    animation: bump 0.4s ease-in-out infinite alternate;
+}
+
+.import-loader::before {
+    content: '';
+    left: 50%;
+    bottom: 25px;
+    transform: translate(-50%, 0);
+    position: absolute;
+    width: 12px;
+    height: 25px;
+    background: #0dc0df;
+    box-sizing: border-box;
+    animation: bump 0.4s ease-in-out infinite alternate;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@keyframes bump {
+    0% {
+        transform: translate(-50%, 5px);
+    }
+    100% {
+        transform: translate(-50%, -5px);
+    }
+}
+
+.downloadLoad-container {
+    margin-top: -2px;
+    text-align: center;
+    color: #d3d3d7;
+    font-size: 12px;
+}
+
+.downloadLoad-txt {
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.download-loader {
+    width: 75px;
+    height: 18px;
+    /* margin-top: 40px; */
+    background: #004aad;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.download-loader::after {
+    content: '';
+    left: 50%;
+    top: -54px;
+    transform: translate(-50%, 0);
+    position: absolute;
+    border: 15px solid transparent;
+    border-bottom-color: #0dc0df;
+    box-sizing: border-box;
+    animation: bump 0.4s ease-in-out infinite alternate;
+}
+
+.download-loader::before {
+    content: '';
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    background: #0dc0df;
+    box-sizing: border-box;
+    animation: bump 0.4s ease-in-out infinite alternate;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@keyframes bump {
+    0% {
+        transform: translate(-50%, 5px);
+    }
+    100% {
+        transform: translate(-50%, -5px);
+    }
+}

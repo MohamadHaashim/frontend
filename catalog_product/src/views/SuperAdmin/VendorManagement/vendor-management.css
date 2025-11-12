@@ -1,0 +1,15 @@
+.vendor-passwordInput {
+    position: relative;
+}
+
+.vendor-passwordInputicon {
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    font-size: 12px;
+    right: 20px;
+}
+
+.danger-iconz {
+    animation: swal2-animate-error-icon .5s;
+}

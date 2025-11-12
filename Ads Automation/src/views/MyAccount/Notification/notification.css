@@ -1,0 +1,50 @@
+.my-account-notification {
+  margin-bottom: 3rem;
+  margin-top: 6rem;
+}
+.my-account-notification .notificationCard {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.my-account-notification .notificationContainer {
+  margin-top: 1.5rem;
+}
+.my-account-notification .notificationCard h2 {
+  color: #111827 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+.my-account-notification .emailNotification h6 {
+  font-size: 16px !important;
+}
+.my-account-notification .pushNotification h6 {
+  font-size: 16px !important;
+}
+.my-account-notification .emailNotification p {
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 400;
+}
+.my-account-notification .pushNotification p {
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form-switch .form-check-input {
+  background-color: #4b5563 !important;
+  cursor: pointer;
+  height: 24px !important;
+  width: 40px !important;
+}
+.my-account-notification .emailBodyContent,
+.my-account-notification .pushBodyContent {
+  display: flex;
+}
+.my-account-notification .rightContent {
+  margin-left: 12px;
+}
+.form-switch .form-check-input:checked {
+  background-color: #44a048 !important;
+  border-color: #44a048 !important;
+}

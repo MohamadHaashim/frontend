@@ -1,0 +1,50 @@
+.payment-letter {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.75px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.card {
+    padding: 30px;
+}
+
+.payment-letters {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.75px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.proceedconfirm-footers button {
+    width: 367px;
+    height: 50px;
+    top: 529px;
+    left: 537px;
+    gap: 0px;
+    opacity: 1;
+}
+
+.credit-card {
+    font-size: 6rem;
+    text-align: center;
+}

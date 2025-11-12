@@ -1,0 +1,12 @@
+.store-view-label p {
+    font-size: 13.5px;
+}
+
+.store-pagination {
+    float: right !important;
+    padding: 0.5% 5%;
+}
+
+.page-item.active span {
+    color: white;
+}

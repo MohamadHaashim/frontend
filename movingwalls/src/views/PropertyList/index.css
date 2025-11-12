@@ -1,0 +1,333 @@
+.card_camp_header {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card_date_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_date_start,
+.card_date_end {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.date-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.date-text p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: -2px;
+}
+
+.custom-header button {
+    background: transparent;
+    border: none;
+    color: #014DC0;
+    font-size: 21px;
+    margin-top: -4px;
+}
+
+.datepicker-wrapper {
+    position: absolute;
+    top: 70px;
+    left: -130px;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.property-list-date-wrapper {
+    margin-left: -130px;
+}
+
+.react-datepicker__day-names {
+    margin-top: 15px;
+}
+
+.react-datepicker__day-name {
+    margin: 7px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: left;
+    color: #252525;
+}
+
+.update-button {
+    font-family: 'Proxima Nova';
+    float: right;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #014DC0;
+    color: white;
+}
+
+.card_date_header {
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.49px;
+    text-align: left;
+    color: #000000;
+}
+
+.datepicker-wrapper .react-datepicker {
+    border: none;
+}
+
+.datepicker-wrapper .react-datepicker__header {
+    background-color: #fff;
+    border-bottom: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #2f4f4f;
+}
+
+.datepicker-wrapper .react-datepicker__day {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.datepicker-wrapper .react-datepicker__day--selected,
+.datepicker-wrapper .react-datepicker__day--keyboard-selected {
+    background: #F2F6FA;
+    color: #014DC0;
+}
+
+.datepicker-wrapper .react-datepicker__navigation--previous {
+    left: 10px;
+}
+
+.datepicker-wrapper .react-datepicker__navigation--next {
+    right: 10px;
+}
+
+.datepicker-wrapper .update-button {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    background: #014DC0;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+    width: 100px;
+    margin-left: auto;
+}
+
+.close-icon {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.datepicker-wrapper {
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.custom-header span {
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.custom-header button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.month-picker {
+    text-align: center;
+}
+
+.month-picker .months-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.month-picker button {
+    padding: 17px;
+    background: #f0f0f0;
+    color: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.month-picker button:hover {
+    background: #F2F6FA;
+    color: #014DC0;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+.close-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card_date_header {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.date-icon {
+    cursor: pointer;
+}
+
+.date-text p {
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .datepicker-wrapper {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .month-picker .months-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.year-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.years-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.year-button {
+    padding: 11px 14px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    color: #D9D9D9;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.year-button:hover {
+    background: #F2F6FA;
+    color: #014DC0;
+}
+
+.month-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.months-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.month-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.month-button:hover {
+    background-color: #e9ecef;
+}
+
+.month-name,
+.year-name {
+    margin: 0;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.month-name,
+.year-name {
+    margin: 0;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.datepicker-wrapper {
+    position: absolute;
+    z-index: 1000;
+}
+
+.close-icon {
+    cursor: pointer;
+    font-size: 20px;
+    text-align: right;
+    color: black;
+    margin-top: -5px;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+.property-nav-bar .css-1dimb5e-singleValue,
+.property-nav-bar .css-1cfo1cf,
+.property-nav-bar .css-19bb58m{
+    color: #ffffff !important;
+    outline: none;
+}
+.property-nav-bar .property-nav-bar .css-b62m3t-container .css-1nmdiq5-menu{
+    z-index: 2;
+}

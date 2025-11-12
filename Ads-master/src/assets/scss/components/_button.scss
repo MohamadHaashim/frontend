@@ -1,0 +1,39 @@
+.blue_btn {
+    background: $primary-bg;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+}
+
+.border_btn {
+    background: transparent;
+    border: 1px solid $primary-bg;
+    outline: none;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: $primary-bg;
+}
+
+.filter_icon {
+    background: $primary-bg;
+    color: $white;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cancel {
+    background-color: #0a2351 !important;
+    color: white !important;
+}
+
+.save {
+    background-color: #ffc720 !important;
+    color: white !important;
+}

@@ -1,0 +1,311 @@
+.negotiate-header {
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.17px;
+    text-align: left;
+    color: #000000;
+}
+
+.negotiation-full-content {
+    background: #F2F6FA;
+    padding-bottom: 2%;
+}
+
+.negotiate-field-name {
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.62px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.negotiate-field-value {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #000000;
+}
+
+.nogosition_list_header {
+    font-family: 'Proxima nova';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.51px;
+    text-align: left;
+    color: #000000;
+}
+
+.nogosition_list_header_1 {
+    font-family: 'Proxima nova';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.negosition_header_notification {
+    background: #014DC0;
+    color: #FFFFFF;
+    font-family: 'Proxima nova';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.5px;
+    border-radius: 15px;
+}
+
+.negosition_scroll {
+    max-height: 300px;
+}
+
+.negosition_list_first_header {
+    font-family: 'Proxima nova';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    text-align: left;
+    color: #5A5A5A;
+}
+
+.negosition_list_img {
+    width: 89px;
+    height: 53px;
+    border-radius: 5px;
+}
+
+.negosition_list_sunny {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.05px;
+    text-align: left;
+    color: #000000;
+}
+
+.negosition_text_avail {
+    width: 60px;
+    background: #10AC011A;
+    font-family: 'Fira Sans';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #10AC01;
+    padding: 4px 0px 4px 8px;
+    border-radius: 4px;
+}
+
+.negosition_value_imp {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: start;
+    color: #000000;
+}
+
+.negosition_right_side_container_1 {
+    background-color: #e7eef4;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Proxima nova';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16.34px;
+    text-align: left;
+    color: #5A5A5A;
+    margin-top: 65px;
+}
+
+.negosition_right_inside_container_1 {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.05px;
+    text-align: left;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.negosition_side_container_img {
+    margin-left: 10px;
+}
+
+.negosition_side_container_con_2 {
+    width: 380px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17.05px;
+    text-align: left;
+    color: #5A5A5A;
+    padding-top: 10px;
+}
+
+.negosition_side_container_con_3 {
+    border-bottom: 0.5px solid #5A5A5A;
+}
+
+.negosition_footer_btn_1 {
+    border: 1px solid #014DC0;
+    border-radius: 50px;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    color: #014DC0;
+    padding: 10px 30px 10px 30px;
+}
+
+.negosition_footer_btn_2 {
+    background: #013684;
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.92px;
+    text-align: left;
+    color: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px 40px 10px 40px;
+}
+
+.negosition_table_container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.negosition_side_container_con_2 input {
+    border: none;
+}
+
+.media-owner {
+    padding-top: 40px;
+}
+
+.negotiation_side_container_con_3 .nego-input {
+    border-bottom: 1px solid black;
+    width: 12rem;
+}
+
+.negotiate-campaign-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    /* This will make the container horizontally scrollable if content overflows */
+    max-width: 100%;
+}
+
+.negotiate-field-name,
+.negotiate-field-value {
+    white-space: nowrap;
+    /* Ensure text does not wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* If text is too long, it will be truncated with ellipsis */
+}
+
+
+/* Optional: Add a scrollable div with a max-height for vertical scrolling if needed */
+
+.negotiate-campaign-container {
+    max-height: 400px;
+    /* Set a max-height if you want to control vertical scrolling */
+    overflow-y: auto;
+    /* Enables vertical scrolling if content overflows */
+}
+
+.table-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+    /* scrollbar-width: thin; */
+}
+
+.table-scroll ::-webkit-scrollbar-track {
+    background-color: #E5E5E5;
+}
+
+.table-scroll::-webkit-scrollbar {
+    width: 5px;
+    background-color: #E5E5E5;
+}
+
+.table-scroll::-webkit-scrollbar-thumb {
+    background-color: #014DC0;
+    border-radius: 10px;
+}
+
+.negosition-img {
+    padding: 10px !important;
+    margin: 0 !important;
+}
+
+.negotiation-cnt {
+    margin-left: 20px;
+}
+
+
+/* .negotiaition-duration {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-width 0.3s ease;
+    max-width: 100%; 
+} */
+
+.negotiaition-duration {
+    display: block;
+    /* This makes the whole content in a block layout */
+}
+
+.date {
+    display: block;
+    /* Ensure each date is on a new line */
+    margin-bottom: 4px;
+    /* Add space below the date */
+}
+
+.to {
+    display: block;
+    /* Make "to" appear on its own line */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* .negotiaition-duration:hover {
+    max-width: none;
+    white-space: normal;
+    padding: 5px;
+} */
+
+.negotiation-highlighted {
+    background-color: rgba(0, 50, 155, 0.1);
+    /* border: 2px solid #007bff; */
+}
+
+.negotiation-highlighted .negosition-img {
+    background-color: rgba(0, 50, 155, 0.1);
+}
+
+.negotiation_value_imp span {
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    font-weight: 400;
+    top: -5px !important;
+    position: relative;
+}

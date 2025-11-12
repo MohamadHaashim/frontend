@@ -1,0 +1,9 @@
+.schoolContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.schoolImg {
+    width: 200px;
+    height: 100px
+}

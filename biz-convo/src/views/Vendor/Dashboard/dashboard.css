@@ -1,0 +1,61 @@
+.vendor-dash-bg-img {
+    background-repeat: no-repeat;
+    background-image: url('../../../../src/assets/img/vendor-dash-1.png');
+    background-size: cover;
+    background-position: right;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vendor-dash-bg-img1 {
+    background-repeat: no-repeat;
+    background-image: url('../../../../src/assets/img/vendor-dash-01.png');
+    background-size: cover;
+    background-position: right;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vendor-dash-bg-img2 {
+    background-repeat: no-repeat;
+    background-image: url('../../../../src/assets/img/vendor-dash-5.png');
+    background-size: cover;
+    background-position: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vendor-dash-bg-img3 {
+    background-repeat: no-repeat;
+    background-image: url('../../../../src/assets/img/vendor-dash-4.png');
+    background-size: cover;
+    background-position: right;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vendor-dashboard-icon {
+    color: white !important;
+}
+
+.vendor-dashboard-iconbg {
+    background: #0cc0df !important;
+}
+
+.vendordash-total {
+    font-size: 12px !important;
+}
+
+.vendordash-manage {
+    font-size: 14px !important;
+}
+
+.vendor-dashboard-card {
+    padding: 5px !important;
+}
