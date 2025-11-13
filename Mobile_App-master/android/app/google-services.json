@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "490509769992",
+    "project_id": "klassride-56d41",
+    "storage_bucket": "klassride-56d41.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490509769992:android:15eec0e7b16570e5c9a0bd",
+        "android_client_info": {
+          "package_name": "com.KlassRide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490509769992-5d0ik35ruf05mcm1tvq736dktu6pr7qp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.KlassRide",
+            "certificate_hash": "acd53c79a293ac05e92a31ad688d66b9d1e6d26e"
+          }
+        },
+        {
+          "client_id": "490509769992-l9e5g5as1icefnrpbqptusmis3mpia1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1mNcs2WaASM2gfrvyzLVe7s-CybWJOpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490509769992-l9e5g5as1icefnrpbqptusmis3mpia1s.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "490509769992-1il0h1e023h3ke19uvj3f2b5h4dotumv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.KlassRide"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+ 
